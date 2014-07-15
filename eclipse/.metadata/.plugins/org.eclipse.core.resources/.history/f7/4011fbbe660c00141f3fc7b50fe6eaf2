@@ -1,0 +1,41 @@
+package com.callumhutchy.runecraft2;
+
+import handler.ConfigurationHandler;
+import reference.Reference;
+import utility.LogHelper;
+
+import com.callumhutchy.runecraft2.proxy.IProxy;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
+public class Runecraft2 {
+	
+	@Mod.Instance("Runecraft2")
+	public static Runecraft2 instance;
+	
+	@SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.SERVER_PROXY)
+	public static IProxy proxy;
+	
+	
+	@Mod.EventHandler
+	public void preInit(FMLPreInitializationEvent event) {
+
+		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+		LogHelper.info("Pre Initialization Complete!");
+	}
+	
+	@Mod.EventHandler
+	public void Init(FMLInitializationEvent event){
+		LogHelper.info("Initialization Complete!");
+	}
+	
+	@Mod.EventHandler
+	public void PostInit(FMLPostInitializationEvent event){
+		LogHelper.info("Post Initialization Complete!");
+	}
+}

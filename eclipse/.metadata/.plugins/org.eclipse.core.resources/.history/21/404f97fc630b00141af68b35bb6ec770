@@ -1,0 +1,10 @@
+package com.callumhutchy.runecraft2;
+
+import cpw.mods.fml.common.Mod;
+
+@Mod(modid = "Runecraft2", name = "Runecraft 2", version = "1.7.10-1.0")
+
+public class Runecraft2 
+{
+
+}

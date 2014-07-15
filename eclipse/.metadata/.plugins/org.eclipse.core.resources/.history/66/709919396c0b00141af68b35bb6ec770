@@ -1,0 +1,35 @@
+package com.callumhutchy.runecraft2;
+
+import com.callumhutchy.runecraft2.proxy.IProxy;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+
+@Mod(modid = "Runecraft2", name = "Runecraft 2", version = "1.7.10-1.0")
+public class Runecraft2 {
+	
+	@Mod.Instance("Runecraft2")
+	public static Runecraft2 instance;
+	
+	@SidedProxy(clientSide = "com.callumhutchy.runecraft2.proxy.ClientProxy", serverSide = "com.callumhutchy.runecraft2.proxy.ServerProxy")
+	public static IProxy proxy;
+	
+	
+	@Mod.EventHandler
+	public void preInit(FMLPreInitializationEvent event) {
+
+	}
+	
+	@Mod.EventHandler
+	public void Init(FMLInitializationEvent event){
+		
+	}
+	
+	@Mod.EventHandler
+	public void PostInit(FMLPostInitializationEvent event){
+		
+	}
+}
