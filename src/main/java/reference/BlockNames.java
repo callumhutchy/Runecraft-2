@@ -8,7 +8,7 @@ public class BlockNames {
 	public static String TinOre_Lo = "Tin Ore";
 	
 	//Altars
-	
+	public static String Altar_Lo = "Altar";
 	
 	
 	
@@ -18,6 +18,6 @@ public class BlockNames {
 	public static String TinOre_Unlo = "tinore";
 	
 	//Altars
-	
+	public static String Altar_Unlo = "altar";
 	
 }

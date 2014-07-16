@@ -27,11 +27,11 @@ public class Blocks{
 
 	public static void init(){
 		//Altar
-		Altar = new Altar(Material.rock).setCreativeTab(Runecraft2.tabRunecraft2Magic);
+		Altar = new Altar(Material.rock).setCreativeTab(Runecraft2.tabRunecraft2Magic).setBlockName("altar");
 		
 		//Ore
-		CopperOre = new CopperOreBlock(Material.rock, "runecraft2:textures/blocks/OreModelCopperTexture.png").setBlockTextureName("runecraft2:OreModelCopperTexture").setBlockName("copperore");
-		TinOre = new TinOreBlock(Material.rock, "runecraft2:textures/blocks/OreModelTinTexture.png").setBlockTextureName("runecraft2:OreModelTinTexture");
+		CopperOre = new CopperOreBlock(Material.rock, "runecraft2:textures/blocks/OreModelCopperTexture.png").setBlockTextureName("runecraft2:OreModelCopperTexture").setBlockName(BlockNames.CopperOre_Unlo);
+		TinOre = new TinOreBlock(Material.rock, "runecraft2:textures/blocks/OreModelTinTexture.png").setBlockTextureName("runecraft2:OreModelTinTexture").setBlockName(BlockNames.TinOre_Unlo);
 				
 		
 	}
@@ -39,9 +39,9 @@ public class Blocks{
 	
 	
 	public static void gameRegistry(){
-		GameRegistry.registerBlock(Altar, "Altar");
-		GameRegistry.registerBlock(CopperOre, "copperore");
-		GameRegistry.registerBlock(TinOre, "TinOre");
+		GameRegistry.registerBlock(Altar, BlockNames.Altar_Unlo);
+		GameRegistry.registerBlock(CopperOre, BlockNames.CopperOre_Unlo);
+		GameRegistry.registerBlock(TinOre, BlockNames.TinOre_Unlo);
 	}
 	
 }

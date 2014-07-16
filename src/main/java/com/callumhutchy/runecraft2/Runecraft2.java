@@ -60,8 +60,7 @@ public class Runecraft2 {
 		LogHelper.info("Blocks have been registered with the game.");
 		Items.init();
 		LogHelper.info("Items Initialised!");
-		Items.addNames();
-		LogHelper.info("Item Names added.");
+		
 		Items.gameRegistery();
 		LogHelper.info("Items have been registered to the game.");
 		Items.craftingRecipes();

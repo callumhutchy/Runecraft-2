@@ -1,0 +1,46 @@
+//Ores
+tile.copperore.name=Copper Ore
+tile.tinore.name=Tin Ore
+
+
+//Altars
+tile.altar.name=Altar
+
+
+//Runes
+item.airrune.name=Air Rune
+item.armadylrune.name=Armadyl Rune
+item.astralrune.name=Astral Rune
+item.bloodrune.name=Blood Rune
+item.bodyrune.name=Body Rune
+item.chaosrune.name=Chaos Rune
+item.cosmicrune.name=Cosmic Rune
+item.deathrune.name=Death Rune
+item.dustrune.name=Dust Rune
+item.earthrune.name=Earth Rune
+item.firerune.name=Fire Rune
+item.lavarune.name=Lava Rune
+item.lawrune.name=Law Rune
+item.mindrune.name=Mind Rune
+item.mistrune.name=Mist Rune
+item.mudrune.name=Mud Rune
+item.naturerune.name=Nature Rune
+item.smokerune.name=Smoke Rune
+item.soulrune.name=Soul Rune
+item.steamrune.name=Steam Rune
+item.waterrune.name=Water Rune
+
+//Ores
+item.adamantiteore.name=Adamantite Ore
+item.coalore.name=Coal Ore
+item.copperore.name=Copper Ore
+item.goldore.name=Gold Ore
+item.ironore.name=Iron Ore
+item.mithrilore.name=Mithril Ore
+item.runiteore.name=Runite Ore
+item.silverore.name=Silver Ore
+item.tinore.name=Tin Ore
+
+
+//Talismans
+item.airtalisman.name=Air Talisman

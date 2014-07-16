@@ -10,7 +10,7 @@ public class CopperOreBlock extends OreBlock{
 
 	public CopperOreBlock(Material p_i45394_1_, String resourceLocation) {
 		super(p_i45394_1_, resourceLocation);
-		this.setBlockName("copperore");
+	
 	}
 
 	@Override
