@@ -1,0 +1,29 @@
+package com.callumhutchy.runecraft2.blocks;
+
+import com.callumhutchy.runecraft2.Runecraft2;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+
+
+public class Blocks{
+
+	//Altar
+	public static Block Altar;
+
+	public static void init(){
+		Altar = new Altar(Material.rock).setCreativeTab(Runecraft2.tabRunecraft2Magic);
+	}
+	
+	public static void addNames(){
+		LanguageRegistry.addName(Altar, "Altar");
+	}
+	
+	public static void gameRegistry(){
+		GameRegistry.registerBlock(Altar, "Altar");
+	}
+	
+}

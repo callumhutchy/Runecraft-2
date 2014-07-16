@@ -1,0 +1,24 @@
+package com.callumhutchy.runecraft2.blocks;
+
+import net.minecraft.block.Block;
+
+
+
+public class Blocks{
+
+	//Altar
+	public static Block Altar;
+
+	public static void init(){
+		
+	}
+	
+	public static void addNames(){
+		
+	}
+	
+	public static void gameRegistry(){
+		
+	}
+	
+}

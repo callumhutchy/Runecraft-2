@@ -1,0 +1,1 @@
+tile.copperore.name =Copper Ore

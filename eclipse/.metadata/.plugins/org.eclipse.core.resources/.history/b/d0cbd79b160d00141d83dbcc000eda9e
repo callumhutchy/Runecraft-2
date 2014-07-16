@@ -1,0 +1,5 @@
+package com.callumhutchy.runecraft2.blocks.renderer;
+
+public class CopperOreRenderer extends OreRenderer{
+
+}

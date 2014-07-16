@@ -7,6 +7,9 @@ import reference.Reference;
 import utility.LogHelper;
 
 import com.callumhutchy.runecraft2.blocks.Blocks;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityAltar;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityCopperOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityTinOre;
 import com.callumhutchy.runecraft2.items.Items;
 import com.callumhutchy.runecraft2.proxy.IProxy;
 
@@ -16,6 +19,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
@@ -36,6 +40,13 @@ public class Runecraft2 {
 		}
 	};
 	
+	public static CreativeTabs tabRunecraft2Metal = new CreativeTabs("tabRunecraft2Metal") {
+		@Override
+		public Item getTabIconItem() {
+			return Items.airRune;
+		}
+	};
+	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 
@@ -44,6 +55,9 @@ public class Runecraft2 {
 		
 		Blocks.init();
 		LogHelper.info("Blocks Initialised!");
+		
+		Blocks.gameRegistry();
+		LogHelper.info("Blocks have been registered with the game.");
 		Items.init();
 		LogHelper.info("Items Initialised!");
 		Items.addNames();
@@ -60,8 +74,12 @@ public class Runecraft2 {
 	public void Init(FMLInitializationEvent event){
 		
 		LanguageRegistry.instance().addStringLocalization("itemGroup.tabRunecraft2Magic", "en_US", "Runecraft 2 Magic");
+		LanguageRegistry.instance().addStringLocalization("itemGroup.tabRunecraft2Metal", "en_US", "Runecraft 2 Metal");
 		
-		
+		proxy.registerRenderThings();
+        GameRegistry.registerTileEntity(TileEntityAltar.class, "tileEntityAltar");
+        GameRegistry.registerTileEntity(TileEntityCopperOre.class, "tileEntityCopperOre");
+        GameRegistry.registerTileEntity(TileEntityTinOre.class, "tileEntityTinOre");
 		
 		
 		LogHelper.info("Initialisation Complete!");
