@@ -1,0 +1,11 @@
+package com.callumhutchy.runecraft2.blocks.renderer;
+
+import com.callumhutchy.runecraft2.blocks.renderer.OreRenderer;
+
+public class TinOreRenderer extends OreRenderer {
+
+	public TinOreRenderer(){
+		this.ResourceLocationvar = "runecraft2:textures/blocks/OreModelTinTexture.png";
+	}
+	
+}

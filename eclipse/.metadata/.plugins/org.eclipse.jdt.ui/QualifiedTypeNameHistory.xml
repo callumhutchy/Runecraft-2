@@ -1,26 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.Mod.EventHandler"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.event.FMLInitializationEvent"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.Mod.Instance"/>
-<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.proxy.IProxy"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.SidedProxy"/>
-<fullyQualifiedTypeName name="java.io.File"/>
-<fullyQualifiedTypeName name="configuration.ConfigurationHandler"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.client.event.ConfigChangedEvent"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.client.event.ConfigChangedEvent.OnConfigChangedEvent"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.eventhandler.SubscribeEvent"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.client.IModGuiFactory"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.client.config.GuiConfig"/>
-<fullyQualifiedTypeName name="handler.ConfigurationHandler"/>
-<fullyQualifiedTypeName name="net.minecraftforge.common.config.Configuration"/>
-<fullyQualifiedTypeName name="net.minecraftforge.common.config.ConfigElement"/>
-<fullyQualifiedTypeName name="org.apache.logging.log4j.Level"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.FMLLog"/>
-<fullyQualifiedTypeName name="reference.Reference"/>
-<fullyQualifiedTypeName name="utility.LogHelper"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.FMLCommonHandler"/>
-<fullyQualifiedTypeName name="net.minecraft.client.renderer.texture.IIconRegister"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.relauncher.SideOnly"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.relauncher.Side"/>
 <fullyQualifiedTypeName name="reference.ItemNames"/>
@@ -41,7 +20,6 @@
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.Runecraft2"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
 <fullyQualifiedTypeName name="net.minecraft.world.IBlockAccess"/>
-<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.items.Items"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer"/>
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.models.OreModel"/>
@@ -60,4 +38,26 @@
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityCopperOre"/>
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityTinOre"/>
 <fullyQualifiedTypeName name="reference.BlockNames"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.items.Items"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.ore.AdamantiteOreBlock"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.ore.CoalOreBlock"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.ore.GoldOreBlock"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.ore.IronOreBlock"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.ore.MithrilOreBlock"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.ore.RuniteOreBlock"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.ore.SilverOreBlock"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityAdamantiteOre"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.renderer.ore.AdamantiteOreRenderer"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityCoalOre"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityGoldOre"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityIronOre"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityMithrilOre"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRuniteOre"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntitySilverOre"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.renderer.ore.CoalOreRenderer"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.renderer.ore.GoldOreRenderer"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.renderer.ore.IronOreRenderer"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.renderer.ore.MithrilOreRenderer"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.renderer.ore.RuniteOreRenderer"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.renderer.ore.SilverOreRenderer"/>
 </qualifiedTypeNameHistroy>

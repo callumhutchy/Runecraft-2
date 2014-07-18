@@ -1,6 +1,13 @@
-//Ores
+//Ores Blocks
 tile.copperore.name=Copper Ore
 tile.tinore.name=Tin Ore
+tile.adamantiteore.name=Adamantite Ore
+tile.coalore.name=Coal
+tile.goldore.name=Gold Ore
+tile.ironore.name=Iron Ore
+tile.mithrilore.name=Mithril Ore
+tile.runiteore.name=Runite Ore
+tile.silverore.name=Silver Ore
 
 
 //Altars
@@ -30,7 +37,7 @@ item.soulrune.name=Soul Rune
 item.steamrune.name=Steam Rune
 item.waterrune.name=Water Rune
 
-//Ores
+//Ores Items
 item.adamantiteore.name=Adamantite Ore
 item.coalore.name=Coal Ore
 item.copperore.name=Copper Ore
