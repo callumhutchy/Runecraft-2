@@ -1,8 +1,8 @@
-[22:18:38] [main/INFO]: Setting user: ForgeDevName
-[22:18:39] [Client thread/INFO]: LWJGL Version: 2.9.1
-[22:18:43] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
-[22:18:44] [Sound Library Loader/INFO]: Sound engine started
-[22:18:46] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/MISSING_ICON_BLOCK_165_altar.png
+[17:49:44] [main/INFO]: Setting user: ForgeDevName
+[17:49:46] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:49:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
+[17:49:51] [Sound Library Loader/INFO]: Sound engine started
+[17:49:53] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/MISSING_ICON_BLOCK_165_altar.png
 java.io.FileNotFoundException: minecraft:textures/blocks/MISSING_ICON_BLOCK_165_altar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -27,7 +27,7 @@ java.io.FileNotFoundException: minecraft:textures/blocks/MISSING_ICON_BLOCK_165_
 	at GradleStart.bounce(GradleStart.java:95) [start/:?]
 	at GradleStart.startClient(GradleStart.java:88) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:46] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelTinTexture.png
+[17:49:53] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelTinTexture.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
@@ -51,7 +51,7 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 	at GradleStart.bounce(GradleStart.java:95) [start/:?]
 	at GradleStart.startClient(GradleStart.java:88) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:46] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelMithrilTexture.png
+[17:49:53] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelMithrilTexture.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
@@ -75,7 +75,7 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 	at GradleStart.bounce(GradleStart.java:95) [start/:?]
 	at GradleStart.startClient(GradleStart.java:88) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:46] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelCopperTexture.png
+[17:49:53] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelCopperTexture.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
@@ -99,7 +99,7 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 	at GradleStart.bounce(GradleStart.java:95) [start/:?]
 	at GradleStart.startClient(GradleStart.java:88) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:46] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelAdamantiteTexture.png
+[17:49:53] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelAdamantiteTexture.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
@@ -123,7 +123,7 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 	at GradleStart.bounce(GradleStart.java:95) [start/:?]
 	at GradleStart.startClient(GradleStart.java:88) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:46] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelIronTexture.png
+[17:49:53] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelIronTexture.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
@@ -147,7 +147,7 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 	at GradleStart.bounce(GradleStart.java:95) [start/:?]
 	at GradleStart.startClient(GradleStart.java:88) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:46] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelRuniteTexture.png
+[17:49:53] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelRuniteTexture.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
@@ -171,7 +171,7 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 	at GradleStart.bounce(GradleStart.java:95) [start/:?]
 	at GradleStart.startClient(GradleStart.java:88) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:46] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelSilverTexture.png
+[17:49:53] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelSilverTexture.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
@@ -195,7 +195,7 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 	at GradleStart.bounce(GradleStart.java:95) [start/:?]
 	at GradleStart.startClient(GradleStart.java:88) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:47] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelCoalTexture.png
+[17:49:53] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelCoalTexture.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
@@ -219,7 +219,7 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 	at GradleStart.bounce(GradleStart.java:95) [start/:?]
 	at GradleStart.startClient(GradleStart.java:88) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:47] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelGoldTexture.png
+[17:49:54] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelGoldTexture.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
@@ -243,164 +243,11 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 	at GradleStart.bounce(GradleStart.java:95) [start/:?]
 	at GradleStart.startClient(GradleStart.java:88) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:47] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[22:18:47] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/items/adamantiteore.png
-java.lang.RuntimeException: broken aspect ratio and not an animation
-	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
-	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
-	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
-	at net.minecraft.client.Minecraft.startGame(Minecraft.java:593) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_60]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_60]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_60]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_60]
-	at GradleStart.bounce(GradleStart.java:95) [start/:?]
-	at GradleStart.startClient(GradleStart.java:88) [start/:?]
-	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:47] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/items/coalore.png
-java.lang.RuntimeException: broken aspect ratio and not an animation
-	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
-	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
-	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
-	at net.minecraft.client.Minecraft.startGame(Minecraft.java:593) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_60]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_60]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_60]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_60]
-	at GradleStart.bounce(GradleStart.java:95) [start/:?]
-	at GradleStart.startClient(GradleStart.java:88) [start/:?]
-	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:47] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/items/goldore.png
-java.lang.RuntimeException: broken aspect ratio and not an animation
-	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
-	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
-	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
-	at net.minecraft.client.Minecraft.startGame(Minecraft.java:593) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_60]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_60]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_60]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_60]
-	at GradleStart.bounce(GradleStart.java:95) [start/:?]
-	at GradleStart.startClient(GradleStart.java:88) [start/:?]
-	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:47] [Client thread/INFO]: Created: 2048x2048 textures/items-atlas
-[22:18:48] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
-[22:18:48] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/items/adamantiteore.png
-java.lang.RuntimeException: broken aspect ratio and not an animation
-	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
-	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
-	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.onResourceManagerReload(TextureManager.java:170) [TextureManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:653) [Minecraft.class:?]
-	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:303) [FMLClientHandler.class:?]
-	at net.minecraft.client.Minecraft.startGame(Minecraft.java:596) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_60]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_60]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_60]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_60]
-	at GradleStart.bounce(GradleStart.java:95) [start/:?]
-	at GradleStart.startClient(GradleStart.java:88) [start/:?]
-	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:48] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/items/coalore.png
-java.lang.RuntimeException: broken aspect ratio and not an animation
-	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
-	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
-	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.onResourceManagerReload(TextureManager.java:170) [TextureManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:653) [Minecraft.class:?]
-	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:303) [FMLClientHandler.class:?]
-	at net.minecraft.client.Minecraft.startGame(Minecraft.java:596) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_60]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_60]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_60]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_60]
-	at GradleStart.bounce(GradleStart.java:95) [start/:?]
-	at GradleStart.startClient(GradleStart.java:88) [start/:?]
-	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:48] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/items/goldore.png
-java.lang.RuntimeException: broken aspect ratio and not an animation
-	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
-	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
-	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.onResourceManagerReload(TextureManager.java:170) [TextureManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:653) [Minecraft.class:?]
-	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:303) [FMLClientHandler.class:?]
-	at net.minecraft.client.Minecraft.startGame(Minecraft.java:596) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_60]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_60]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_60]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_60]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_60]
-	at GradleStart.bounce(GradleStart.java:95) [start/:?]
-	at GradleStart.startClient(GradleStart.java:88) [start/:?]
-	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:48] [Client thread/INFO]: Created: 2048x2048 textures/items-atlas
-[22:18:48] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/MISSING_ICON_BLOCK_165_altar.png
+[17:49:54] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[17:49:54] [Client thread/INFO]: Created: 2048x2048 textures/items-atlas
+[17:49:54] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
+[17:49:55] [Client thread/INFO]: Created: 2048x2048 textures/items-atlas
+[17:49:55] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/MISSING_ICON_BLOCK_165_altar.png
 java.io.FileNotFoundException: minecraft:textures/blocks/MISSING_ICON_BLOCK_165_altar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -428,7 +275,7 @@ java.io.FileNotFoundException: minecraft:textures/blocks/MISSING_ICON_BLOCK_165_
 	at GradleStart.bounce(GradleStart.java:95) [start/:?]
 	at GradleStart.startClient(GradleStart.java:88) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:48] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelTinTexture.png
+[17:49:55] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelTinTexture.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
@@ -455,7 +302,7 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 	at GradleStart.bounce(GradleStart.java:95) [start/:?]
 	at GradleStart.startClient(GradleStart.java:88) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:48] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelMithrilTexture.png
+[17:49:55] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelMithrilTexture.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
@@ -482,7 +329,7 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 	at GradleStart.bounce(GradleStart.java:95) [start/:?]
 	at GradleStart.startClient(GradleStart.java:88) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:48] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelCopperTexture.png
+[17:49:55] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelCopperTexture.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
@@ -509,7 +356,7 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 	at GradleStart.bounce(GradleStart.java:95) [start/:?]
 	at GradleStart.startClient(GradleStart.java:88) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:48] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelAdamantiteTexture.png
+[17:49:55] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelAdamantiteTexture.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
@@ -536,7 +383,7 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 	at GradleStart.bounce(GradleStart.java:95) [start/:?]
 	at GradleStart.startClient(GradleStart.java:88) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:48] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelIronTexture.png
+[17:49:55] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelIronTexture.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
@@ -563,7 +410,7 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 	at GradleStart.bounce(GradleStart.java:95) [start/:?]
 	at GradleStart.startClient(GradleStart.java:88) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:48] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelRuniteTexture.png
+[17:49:55] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelRuniteTexture.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
@@ -590,7 +437,7 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 	at GradleStart.bounce(GradleStart.java:95) [start/:?]
 	at GradleStart.startClient(GradleStart.java:88) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:48] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelSilverTexture.png
+[17:49:55] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelSilverTexture.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
@@ -617,7 +464,7 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 	at GradleStart.bounce(GradleStart.java:95) [start/:?]
 	at GradleStart.startClient(GradleStart.java:88) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:48] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelCoalTexture.png
+[17:49:55] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelCoalTexture.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
@@ -644,7 +491,7 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 	at GradleStart.bounce(GradleStart.java:95) [start/:?]
 	at GradleStart.startClient(GradleStart.java:88) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:48] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelGoldTexture.png
+[17:49:55] [Client thread/ERROR]: Unable to parse metadata from runecraft2:textures/blocks/OreModelGoldTexture.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:245) ~[TextureAtlasSprite.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:170) [TextureMap.class:?]
@@ -671,29 +518,42 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 	at GradleStart.bounce(GradleStart.java:95) [start/:?]
 	at GradleStart.startClient(GradleStart.java:88) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[22:18:48] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[22:18:49] [Sound Library Loader/INFO]: Sound engine started
-[22:18:59] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[22:18:59] [Server thread/INFO]: Generating keypair
-[22:18:59] [Server thread/INFO]: Converting map!
-[22:18:59] [Server thread/INFO]: Scanning folders...
-[22:18:59] [Server thread/INFO]: Total conversion count is 0
-[22:19:01] [Server thread/INFO]: Preparing start region for level 0
-[22:19:02] [Server thread/INFO]: Changing view distance to 12, from 10
-[22:19:02] [Server thread/INFO]: ForgeDevName[local:E:55b3c970] logged in with entity id 21 at (-1652.5, 4.0, -135.5)
-[22:19:02] [Server thread/INFO]: ForgeDevName joined the game
-[22:19:06] [Server thread/INFO]: ForgeDevName has just earned the achievement [Taking Inventory]
-[22:19:06] [Client thread/INFO]: [CHAT] ForgeDevName has just earned the achievement [Taking Inventory]
-[22:19:55] [Server thread/INFO]: Saving and pausing game...
-[22:19:55] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[22:19:55] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[22:19:55] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[22:19:56] [Client thread/INFO]: Stopping!
-[22:19:56] [Server thread/INFO]: Stopping server
-[22:19:56] [Server thread/INFO]: Saving players
-[22:19:56] [Server thread/INFO]: Saving worlds
-[22:19:56] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[22:19:56] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[22:19:56] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[22:19:56] [Client Shutdown Thread/INFO]: Stopping server
-[22:19:56] [Client Shutdown Thread/INFO]: Saving players
+[17:49:55] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[17:49:56] [Sound Library Loader/INFO]: Sound engine started
+[17:50:05] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:50:05] [Server thread/INFO]: Generating keypair
+[17:50:06] [Server thread/INFO]: Converting map!
+[17:50:06] [Server thread/INFO]: Scanning folders...
+[17:50:06] [Server thread/INFO]: Total conversion count is 0
+[17:50:06] [Server thread/INFO]: Preparing start region for level 0
+[17:50:07] [Server thread/INFO]: Preparing spawn area: 8%
+[17:50:08] [Server thread/INFO]: Preparing spawn area: 22%
+[17:50:09] [Server thread/INFO]: Preparing spawn area: 40%
+[17:50:11] [Server thread/INFO]: Preparing spawn area: 55%
+[17:50:12] [Server thread/INFO]: Preparing spawn area: 68%
+[17:50:13] [Server thread/INFO]: Preparing spawn area: 83%
+[17:50:14] [Server thread/INFO]: Preparing spawn area: 98%
+[17:50:14] [Server thread/INFO]: Changing view distance to 12, from 10
+[17:50:14] [Server thread/INFO]: ForgeDevName[local:E:0c0e572d] logged in with entity id 282 at (137.5, 72.0, 245.5)
+[17:50:14] [Server thread/INFO]: ForgeDevName joined the game
+[17:50:17] [Server thread/INFO]: ForgeDevName has just earned the achievement [Taking Inventory]
+[17:50:17] [Client thread/INFO]: [CHAT] ForgeDevName has just earned the achievement [Taking Inventory]
+[17:50:23] [Client thread/INFO]: Warning: Clientside chunk ticking took 174 ms
+[17:50:24] [Client thread/INFO]: Warning: Clientside chunk ticking took 110 ms
+[17:50:24] [Client thread/INFO]: Warning: Clientside chunk ticking took 109 ms
+[17:50:24] [Client thread/INFO]: Warning: Clientside chunk ticking took 107 ms
+[17:50:24] [Client thread/INFO]: Warning: Clientside chunk ticking took 105 ms
+[17:50:24] [Client thread/INFO]: Warning: Clientside chunk ticking took 132 ms
+[17:51:06] [Server thread/INFO]: Saving and pausing game...
+[17:51:06] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:51:06] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:51:06] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:51:10] [Client thread/INFO]: Stopping!
+[17:51:10] [Server thread/INFO]: Stopping server
+[17:51:10] [Server thread/INFO]: Saving players
+[17:51:10] [Server thread/INFO]: Saving worlds
+[17:51:10] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:51:10] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:51:10] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:51:10] [Client Shutdown Thread/INFO]: Stopping server
+[17:51:10] [Client Shutdown Thread/INFO]: Saving players

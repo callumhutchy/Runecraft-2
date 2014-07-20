@@ -8,6 +8,7 @@ import com.callumhutchy.runecraft2.items.Items;
 
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
@@ -23,9 +24,28 @@ public class TinOreBlock extends OreBlock {
 		 return new TileEntityTinOre();
 	}
 	
-	public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_, Item itemDropped)
+	public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_)
     {
         return Items.tinOre;
     }
+
+	@Override
+	public boolean handleRenderType(ItemStack item, ItemRenderType type) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean shouldUseRenderHelper(ItemRenderType type, ItemStack item,
+			ItemRendererHelper helper) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void renderItem(ItemRenderType type, ItemStack item, Object... data) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }

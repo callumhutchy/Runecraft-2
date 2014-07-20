@@ -7,13 +7,15 @@ import com.callumhutchy.runecraft2.blocks.renderer.ore.OreRenderer;
 import com.callumhutchy.runecraft2.items.Items;
 
 import net.minecraft.block.BlockContainer;
+import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.client.IItemRenderer;
 
-public abstract class OreBlock extends BlockContainer {
+public abstract class OreBlock extends BlockContainer implements IItemRenderer{
 
 	
 
