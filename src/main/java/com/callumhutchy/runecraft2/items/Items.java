@@ -34,6 +34,8 @@ public class Items {
 	public static Item steamRune;
 	public static Item waterRune;
 	
+	public static Item runeEssence;
+	public static Item pureEssence;
 	
 	//Talismans
 	public static Item airTalisman;
@@ -54,27 +56,30 @@ public class Items {
 	
 	public static void init(){
 		//Runes
-		airRune = new Rune().setUnlocalizedName(ItemNames.AirRune_Unlo);
-		armadylRune = new Rune().setUnlocalizedName(ItemNames.ArmadylRune_Unlo);
-		astralRune = new Rune().setUnlocalizedName(ItemNames.AstralRune_Unlo);
-		bloodRune = new Rune().setUnlocalizedName(ItemNames.BloodRune_Unlo);
-		bodyRune = new Rune().setUnlocalizedName(ItemNames.BodyRune_Unlo);
-		chaosRune = new Rune().setUnlocalizedName(ItemNames.ChaosRune_Unlo);
-		cosmicRune = new Rune().setUnlocalizedName(ItemNames.CosmicRune_Unlo);
-		deathRune = new Rune().setUnlocalizedName(ItemNames.DeathRune_Unlo);
-		dustRune = new Rune().setUnlocalizedName(ItemNames.DustRune_Unlo);
-		earthRune = new Rune().setUnlocalizedName(ItemNames.EarthRune_Unlo);
-		fireRune = new Rune().setUnlocalizedName(ItemNames.FireRune_Unlo);
-		lavaRune = new Rune().setUnlocalizedName(ItemNames.LavaRune_Unlo);
-		lawRune = new Rune().setUnlocalizedName(ItemNames.LawRune_Unlo);
-		mindRune = new Rune().setUnlocalizedName(ItemNames.MindRune_Unlo);
-		mistRune = new Rune().setUnlocalizedName(ItemNames.MistRune_Unlo);
-		mudRune = new Rune().setUnlocalizedName(ItemNames.MudRune_Unlo);
-		natureRune = new Rune().setUnlocalizedName(ItemNames.NatureRune_Unlo);
-		smokeRune = new Rune().setUnlocalizedName(ItemNames.SmokeRune_Unlo);
-		soulRune = new Rune().setUnlocalizedName(ItemNames.SoulRune_Unlo);
-		steamRune = new Rune().setUnlocalizedName(ItemNames.SteamRune_Unlo);
-		waterRune = new Rune().setUnlocalizedName(ItemNames.WaterRune_Unlo);
+		airRune = new Rune(ItemNames.AirRune_Unlo);
+		armadylRune = new Rune(ItemNames.ArmadylRune_Unlo);
+		astralRune = new Rune(ItemNames.AstralRune_Unlo);
+		bloodRune = new Rune(ItemNames.BloodRune_Unlo);
+		bodyRune = new Rune(ItemNames.BodyRune_Unlo);
+		chaosRune = new Rune(ItemNames.ChaosRune_Unlo);
+		cosmicRune = new Rune(ItemNames.CosmicRune_Unlo);
+		deathRune = new Rune(ItemNames.DeathRune_Unlo);
+		dustRune = new Rune(ItemNames.DustRune_Unlo);
+		earthRune = new Rune(ItemNames.EarthRune_Unlo);
+		fireRune = new Rune(ItemNames.FireRune_Unlo);
+		lavaRune = new Rune(ItemNames.LavaRune_Unlo);
+		lawRune = new Rune(ItemNames.LawRune_Unlo);
+		mindRune = new Rune(ItemNames.MindRune_Unlo);
+		mistRune = new Rune(ItemNames.MistRune_Unlo);
+		mudRune = new Rune(ItemNames.MudRune_Unlo);
+		natureRune = new Rune(ItemNames.NatureRune_Unlo);
+		smokeRune = new Rune(ItemNames.SmokeRune_Unlo);
+		soulRune = new Rune(ItemNames.SoulRune_Unlo);
+		steamRune = new Rune(ItemNames.SteamRune_Unlo);
+		waterRune = new Rune(ItemNames.WaterRune_Unlo);
+		
+		runeEssence = new Rune(ItemNames.RuneEssence_Unlo);
+		pureEssence = new Rune(ItemNames.PureEssence_Unlo);
 		//Talismans
 		airTalisman = new BaseItem().setUnlocalizedName(ItemNames.AirTalisman_Unlo).setCreativeTab(Runecraft2.tabRunecraft2Magic);
 		
@@ -119,6 +124,8 @@ public class Items {
 		GameRegistry.registerItem(steamRune, steamRune.getUnlocalizedName());
 		GameRegistry.registerItem(waterRune, waterRune.getUnlocalizedName());
 		
+		GameRegistry.registerItem(runeEssence, runeEssence.getUnlocalizedName());
+		GameRegistry.registerItem(pureEssence, pureEssence.getUnlocalizedName());
 		
 		//Talismans
 		GameRegistry.registerItem(airTalisman, airTalisman.getUnlocalizedName());

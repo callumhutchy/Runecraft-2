@@ -1,0 +1,50 @@
+package com.callumhutchy.runecraft2.proxy;
+
+import net.minecraft.item.Item;
+import net.minecraftforge.client.MinecraftForgeClient;
+
+import com.callumhutchy.runecraft2.blocks.Blocks;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityAdamantiteOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityAltar;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityCoalOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityCopperOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityGoldOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityIronOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityMithrilOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRuniteOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntitySilverOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityTinOre;
+import com.callumhutchy.runecraft2.blocks.renderer.AltarRenderer;
+import com.callumhutchy.runecraft2.blocks.renderer.ore.ItemRenderOre;
+import com.callumhutchy.runecraft2.blocks.renderer.ore.OreRenderer;
+
+import cpw.mods.fml.client.registry.ClientRegistry;
+
+public class ClientProxy extends CommonProxy {
+
+	public void registerRenderThings() {
+        
+		//Altars
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltar.class, new AltarRenderer());
+        
+		
+        //Ores
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityTinOre.class, new OreRenderer());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCopperOre.class, new OreRenderer());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAdamantiteOre.class, new OreRenderer());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCoalOre.class, new OreRenderer());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityGoldOre.class, new OreRenderer());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityIronOre.class, new OreRenderer());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityMithrilOre.class, new OreRenderer());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityRuniteOre.class, new OreRenderer());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySilverOre.class, new OreRenderer());
+        
+        
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.AdamantiteOre), new ItemRenderOre(new OreRenderer(), new TileEntityOre()));
+	
+	
+	
+	}
+	
+}

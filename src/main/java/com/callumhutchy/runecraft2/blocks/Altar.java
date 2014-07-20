@@ -1,18 +1,38 @@
 package com.callumhutchy.runecraft2.blocks;
 
-import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityAltar;
+import java.util.Random;
 
+import reference.Reference;
+
+import com.callumhutchy.runecraft2.Runecraft2;
+import com.callumhutchy.runecraft2.blocks.models.AltarModel;
+import com.callumhutchy.runecraft2.blocks.models.OreModel;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityAltar;
+import com.callumhutchy.runecraft2.items.Items;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
 public class Altar extends BlockContainer {
 
-	protected Altar(Material p_i45386_1_) {
+	public Item itemToBeDropped;
+	private AltarModel model;
+	public String tileEntityClass;
+	
+	protected Altar(Material p_i45386_1_,String textureName, String unlocalisedName, Item item, String tileEntity) {
 		super(p_i45386_1_);
-		// TODO Auto-generated constructor stub
+		this.setCreativeTab(Runecraft2.tabRunecraft2Magic);
+		this.setBlockName(unlocalisedName);
+		this.setBlockTextureName(textureName);
+		itemToBeDropped = item;
+		tileEntityClass = tileEntity;
+		this.model = new AltarModel();
 	}
 
 	@Override
@@ -37,9 +57,17 @@ public class Altar extends BlockContainer {
             return false;
     }
     
-    //This is the icon to use for showing the block in your hand.
-    public void registerIcons(IIconRegister icon) {
-            this.blockIcon = icon.registerIcon("runecraft2:AltarTexture");
+   
+    
+    public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_)
+    {
+		return itemToBeDropped;
     }
+    
+    @SideOnly(Side.CLIENT)
+	public void registerBlockIcons(IIconRegister iconRegister) {
+		this.blockIcon = iconRegister.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(5));
+	}
+
 	
 }

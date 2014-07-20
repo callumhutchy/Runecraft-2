@@ -37,6 +37,9 @@ item.soulrune.name=Soul Rune
 item.steamrune.name=Steam Rune
 item.waterrune.name=Water Rune
 
+item.runeessence.name=Rune Essence
+item.pureessence.name=Pure Essence
+
 //Ores Items
 item.adamantiteore.name=Adamantite Ore
 item.coalore.name=Coal Ore

@@ -1,0 +1,5 @@
+package com.callumhutchy.runecraft2.blocks.models.tileentities;
+
+public class TileEntityGoldOre {
+
+}

@@ -35,6 +35,9 @@ public class ItemNames {
 	public static String SteamRune_Unlo = "steamrune";
 	public static String WaterRune_Unlo = "waterrune";
 	
+	public static String RuneEssence_Unlo = "runeessence";
+	public static String PureEssence_Unlo = "pureessence";
+	
 	
 	
 	//Talismans

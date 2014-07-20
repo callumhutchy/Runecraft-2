@@ -43,7 +43,7 @@ public class Runecraft2 {
 	public static CreativeTabs tabRunecraft2Metal = new CreativeTabs("tabRunecraft2Metal") {
 		@Override
 		public Item getTabIconItem() {
-			return Items.airRune;
+			return Item.getItemFromBlock(Blocks.RuniteOre);
 		}
 	};
 	
@@ -76,9 +76,7 @@ public class Runecraft2 {
 		LanguageRegistry.instance().addStringLocalization("itemGroup.tabRunecraft2Metal", "en_US", "Runecraft 2 Metal");
 		
 		proxy.registerRenderThings();
-        GameRegistry.registerTileEntity(TileEntityAltar.class, "tileEntityAltar");
-        GameRegistry.registerTileEntity(TileEntityCopperOre.class, "tileEntityCopperOre");
-        GameRegistry.registerTileEntity(TileEntityTinOre.class, "tileEntityTinOre");
+        
 		
 		
 		LogHelper.info("Initialisation Complete!");

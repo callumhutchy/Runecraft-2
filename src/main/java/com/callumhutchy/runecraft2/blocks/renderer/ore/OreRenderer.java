@@ -3,8 +3,8 @@ package com.callumhutchy.runecraft2.blocks.renderer.ore;
 import org.lwjgl.opengl.GL11;
 
 import com.callumhutchy.runecraft2.blocks.Blocks;
+import com.callumhutchy.runecraft2.blocks.OreBlock;
 import com.callumhutchy.runecraft2.blocks.models.OreModel;
-import com.callumhutchy.runecraft2.blocks.ore.OreBlock;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
@@ -16,11 +16,14 @@ import net.minecraft.world.World;
 public class OreRenderer extends TileEntitySpecialRenderer
 {
 	//The model of your block
-    private final OreModel model;
+    private OreModel model;
+    
     public String ResourceLocationvar;
     
-    public OreRenderer() {
-            this.model = new OreModel();
+    public OreRenderer(String resourceLocation) {
+       
+    	this.model = new OreModel();
+            ResourceLocationvar = resourceLocation;
     }
     
     private void adjustRotatePivotViaMeta(World world, int x, int y, int z) {
