@@ -10,6 +10,8 @@ public class BlockNames {
 	//Altars
 	public static String Altar_Lo = "Altar";
 	
+
+	
 	
 	
 	//UnLocalised
@@ -28,5 +30,7 @@ public class BlockNames {
 	
 	//Altars
 	public static String Altar_Unlo = "altar";
+
+	public static String AltarRune_Unlo = "altarrune";
 	
 }

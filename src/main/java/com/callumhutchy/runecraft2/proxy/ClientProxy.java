@@ -6,6 +6,7 @@ import net.minecraftforge.client.MinecraftForgeClient;
 import com.callumhutchy.runecraft2.blocks.Blocks;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityAdamantiteOre;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityAltar;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityAltarRune;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityCoalOre;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityCopperOre;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityGoldOre;
@@ -16,6 +17,7 @@ import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRuniteOr
 import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntitySilverOre;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityTinOre;
 import com.callumhutchy.runecraft2.blocks.renderer.ore.AltarRenderer;
+import com.callumhutchy.runecraft2.blocks.renderer.ore.AltarRuneRenderer;
 import com.callumhutchy.runecraft2.blocks.renderer.ore.ItemRender;
 import com.callumhutchy.runecraft2.blocks.renderer.ore.OreRenderer;
 
@@ -27,7 +29,7 @@ public class ClientProxy extends CommonProxy {
         //Block Rendering
 		//Altars
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltar.class, new AltarRenderer("runecraft2:textures/blocks/AltarTexture.png"));
-        
+		
 		
         //Ores
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityTinOre.class, new OreRenderer("runecraft2:textures/blocks/OreModelTinTexture.png"));
@@ -39,11 +41,11 @@ public class ClientProxy extends CommonProxy {
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityMithrilOre.class, new OreRenderer("runecraft2:textures/blocks/OreModelMithrilTexture.png"));
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityRuniteOre.class, new OreRenderer("runecraft2:textures/blocks/OreModelRuniteTexture.png"));
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySilverOre.class, new OreRenderer("runecraft2:textures/blocks/OreModelSilverTexture.png"));
-        
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltarRune.class, new AltarRuneRenderer("runecraft2:textures/blocks/AltarRuneTexture.png"));
         //Item Rendering
         //Altars
         MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.Altar), new ItemRender(new AltarRenderer("runecraft2:textures/blocks/AltarTexture.png"), new TileEntityAltar(), "altar"));
-        
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.AltarRune), new ItemRender(new AltarRuneRenderer("runecraft2:textures/blocks/AltarRuneTexture.png"), new TileEntityAltarRune(), "altar"));
         
         
         //Ores

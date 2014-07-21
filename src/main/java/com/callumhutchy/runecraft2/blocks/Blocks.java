@@ -23,6 +23,8 @@ public class Blocks{
 	//Altar
 	public static Block Altar;
 	
+	public static Block AltarRune;
+	
 	//Ores
 	public static Block CopperOre;
 	public static Block TinOre;
@@ -39,6 +41,8 @@ public class Blocks{
 		//Altar
 		Altar = new Altar(Material.rock, "runecraft2:textures/blocks/AltarTexture.png" ,BlockNames.Altar_Unlo, Item.getItemFromBlock(Blocks.Altar), "altar");
 		
+		
+		AltarRune = new Altar(Material.rock, "runecraft2:textures/blocks/AltarRuneTexture.png", BlockNames.AltarRune_Unlo, Item.getItemFromBlock(Blocks.AltarRune), "altarrune");
 		//Ores
 		CopperOre = new OreBlock(Material.rock, "runecraft2:OreModelCopperTexture",BlockNames.CopperOre_Unlo, Items.copperOre, "copper");
 		TinOre = new OreBlock(Material.rock, "runecraft2:OreModelTinTexture",BlockNames.TinOre_Unlo, Items.tinOre, "tin");
@@ -56,6 +60,8 @@ public class Blocks{
 	public static void gameRegistry(){
 		//Altars
 		GameRegistry.registerBlock(Altar, BlockNames.Altar_Unlo);
+		
+		GameRegistry.registerBlock(AltarRune, BlockNames.AltarRune_Unlo);
 		
 		//Ores
 		GameRegistry.registerBlock(CopperOre, BlockNames.CopperOre_Unlo);

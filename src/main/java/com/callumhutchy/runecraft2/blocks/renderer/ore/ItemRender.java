@@ -59,6 +59,13 @@ public class ItemRender implements IItemRenderer {
 						0.0F);
 				mustundotranslate = true;
 			}
+			if (type == IItemRenderer.ItemRenderType.ENTITY) {
+				GL11.glTranslatef(0.5f, 0.2f, 0.0f);
+				this.render.renderTileEntityAt(this.entity, 0.0D, 0.0D, 0.0D,
+						0.0F);
+				mustundotranslate = true;
+			}
+			
 		}
 
 		if (typeOfItem == "altar") {
@@ -76,6 +83,12 @@ public class ItemRender implements IItemRenderer {
 				mustundotranslate = true;
 			}
 			if (type == IItemRenderer.ItemRenderType.EQUIPPED) {
+				GL11.glTranslatef(0.5f, 0.2f, 0.0f);
+				this.render.renderTileEntityAt(this.entity, 0.0D, 0.0D, 0.0D,
+						0.0F);
+				mustundotranslate = true;
+			}
+			if (type == IItemRenderer.ItemRenderType.ENTITY) {
 				GL11.glTranslatef(0.5f, 0.2f, 0.0f);
 				this.render.renderTileEntityAt(this.entity, 0.0D, 0.0D, 0.0D,
 						0.0F);

@@ -10,18 +10,23 @@ import net.minecraft.world.World;
 import org.lwjgl.opengl.GL11;
 
 import com.callumhutchy.runecraft2.blocks.models.AltarModel;
+import com.callumhutchy.runecraft2.blocks.models.AltarRuneModel;
 import com.callumhutchy.runecraft2.blocks.models.OreModel;
 
 public class AltarRenderer extends TileEntitySpecialRenderer{
 
 private AltarModel model;
+
     
     public String ResourceLocationvar;
+    
     
     public AltarRenderer(String resourceLocation) {
        
     	this.model = new AltarModel();
+    	
             ResourceLocationvar = resourceLocation;
+            
     }
     
     private void adjustRotatePivotViaMeta(World world, int x, int y, int z) {
@@ -51,7 +56,9 @@ private AltarModel model;
             GL11.glPushMatrix();
             GL11.glRotatef(180F, 0.0F, 0.0F, 1.0F);
     //A reference to your Model file. Again, very important.
+          
             this.model.render((Entity)null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
+            
     //Tell it to stop rendering for both the PushMatrix's
             GL11.glPopMatrix();
             GL11.glPopMatrix();
