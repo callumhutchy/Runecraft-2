@@ -17,13 +17,18 @@ buildscript {
 
 apply plugin: 'forge'
 
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
+
 version = "1.7.10-1.0"
 group= "com.callumhutchy.runecraft2" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Runecraft2"
 
 minecraft {
     version = "1.7.10-10.13.0.1180"
-    assetDir = "eclipse/assets"
+    //assetDir = "rundir/assets"
+    runDir = "rundir/assets"
+    
 }
 
 dependencies {

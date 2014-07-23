@@ -39,6 +39,16 @@ public class Items {
 	
 	//Talismans
 	public static Item airTalisman;
+	public static Item waterTalisman;
+	public static Item fireTalisman;
+	public static Item earthTalisman;
+	public static Item mindTalisman;
+	public static Item bodyTalisman;
+	public static Item cosmicTalisman;
+	public static Item chaosTalisman;
+	public static Item natureTalisman;
+	public static Item lawTalisman;
+	public static Item deathTalisman;
 	
 	//Ores
 	public static Item adamantiteOre;
@@ -81,7 +91,19 @@ public class Items {
 		runeEssence = new Rune(ItemNames.RuneEssence_Unlo);
 		pureEssence = new Rune(ItemNames.PureEssence_Unlo);
 		//Talismans
-		airTalisman = new BaseItem().setUnlocalizedName(ItemNames.AirTalisman_Unlo).setCreativeTab(Runecraft2.tabRunecraft2Magic);
+		airTalisman = new BaseMagicItem(ItemNames.AirTalisman_Unlo, 1);
+		waterTalisman = new BaseMagicItem(ItemNames.WaterTalisman_Unlo, 1);
+		fireTalisman = new BaseMagicItem(ItemNames.FireTalisman_Unlo, 1);
+		earthTalisman = new BaseMagicItem(ItemNames.EarthTalisman_Unlo, 1);
+		mindTalisman = new BaseMagicItem(ItemNames.MindTalisman_Unlo, 1);
+		bodyTalisman = new BaseMagicItem(ItemNames.BodyTalisman_Unlo, 1);
+		cosmicTalisman = new BaseMagicItem(ItemNames.CosmicTalisman_Unlo, 1);
+		chaosTalisman = new BaseMagicItem(ItemNames.ChaosTalisman_Unlo, 1);
+		natureTalisman = new BaseMagicItem(ItemNames.NatureTalisman_Unlo, 1);
+		lawTalisman = new BaseMagicItem(ItemNames.LawTalisman_Unlo, 1);
+		deathTalisman = new BaseMagicItem(ItemNames.DeathTalisman_Unlo, 1);
+		
+		
 		
 		
 		//Ores
@@ -129,6 +151,16 @@ public class Items {
 		
 		//Talismans
 		GameRegistry.registerItem(airTalisman, airTalisman.getUnlocalizedName());
+		GameRegistry.registerItem(waterTalisman, waterTalisman.getUnlocalizedName());
+		GameRegistry.registerItem(fireTalisman, fireTalisman.getUnlocalizedName());
+		GameRegistry.registerItem(earthTalisman, earthTalisman.getUnlocalizedName());
+		GameRegistry.registerItem(mindTalisman, mindTalisman.getUnlocalizedName());
+		GameRegistry.registerItem(bodyTalisman, bodyTalisman.getUnlocalizedName());
+		GameRegistry.registerItem(cosmicTalisman, cosmicTalisman.getUnlocalizedName());
+		GameRegistry.registerItem(chaosTalisman, chaosTalisman.getUnlocalizedName());
+		GameRegistry.registerItem(natureTalisman, natureTalisman.getUnlocalizedName());
+		GameRegistry.registerItem(lawTalisman, lawTalisman.getUnlocalizedName());
+		GameRegistry.registerItem(deathTalisman, deathTalisman.getUnlocalizedName());
 		
 		//Ores
 		GameRegistry.registerItem(adamantiteOre, adamantiteOre.getUnlocalizedName());
@@ -146,8 +178,18 @@ public class Items {
 	
 	
 	public static void craftingRecipes(){
+		//Talismans
 		GameRegistry.addShapelessRecipe(new ItemStack(airTalisman), airRune, Item.getItemById(280));
-		
+		GameRegistry.addShapelessRecipe(new ItemStack(waterTalisman), waterRune, Item.getItemById(280));
+		GameRegistry.addShapelessRecipe(new ItemStack(fireTalisman), fireRune, Item.getItemById(280));
+		GameRegistry.addShapelessRecipe(new ItemStack(earthTalisman), earthRune, Item.getItemById(280));
+		GameRegistry.addShapelessRecipe(new ItemStack(mindTalisman), mindRune, Item.getItemById(280));
+		GameRegistry.addShapelessRecipe(new ItemStack(bodyTalisman), bodyRune, Item.getItemById(280));
+		GameRegistry.addShapelessRecipe(new ItemStack(cosmicTalisman), cosmicRune, Item.getItemById(280));
+		GameRegistry.addShapelessRecipe(new ItemStack(chaosTalisman), chaosRune, Item.getItemById(280));
+		GameRegistry.addShapelessRecipe(new ItemStack(natureTalisman), natureRune, Item.getItemById(280));
+		GameRegistry.addShapelessRecipe(new ItemStack(lawTalisman), lawRune, Item.getItemById(280));
+		GameRegistry.addShapelessRecipe(new ItemStack(deathTalisman), deathRune, Item.getItemById(280));
 		
 	}
 	

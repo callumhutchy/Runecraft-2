@@ -42,6 +42,17 @@ public class ItemNames {
 	
 	//Talismans
 	public static String AirTalisman_Unlo = "airtalisman";
+	public static String WaterTalisman_Unlo = "watertalisman";
+	public static String FireTalisman_Unlo = "firetalisman";
+	public static String EarthTalisman_Unlo = "earthtalisman";
+	public static String MindTalisman_Unlo = "mindtalisman";
+	public static String BodyTalisman_Unlo = "bodytalisman";
+	public static String CosmicTalisman_Unlo = "cosmictalisman";
+	public static String ChaosTalisman_Unlo = "chaostalisman";
+	public static String NatureTalisman_Unlo = "naturetalisman";
+	public static String LawTalisman_Unlo = "lawtalisman";
+	public static String DeathTalisman_Unlo = "deathtalisman";
+	
 	
 	//Ores
 	public static String AdamantiteOre_Unlo = "adamantiteore";

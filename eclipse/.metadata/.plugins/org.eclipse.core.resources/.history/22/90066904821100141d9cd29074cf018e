@@ -1,0 +1,11 @@
+package com.callumhutchy.runecraft2.items;
+
+import com.callumhutchy.runecraft2.Runecraft2;
+
+public class Rune extends BaseMagicItem{
+
+	public Rune(String unlocalisedName){
+		this.setMaxStackSize(64);
+	}
+	
+}

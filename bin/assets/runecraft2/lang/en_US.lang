@@ -54,3 +54,13 @@ item.tinore.name=Tin Ore
 
 //Talismans
 item.airtalisman.name=Air Talisman
+item.watertalisman.name=Water Talisman
+item.firetalisman.name=Fire Talisman
+item.earthtalisman.name=Earth Talisman
+item.mindtalisman.name=Mind Talisman
+item.bodytalisman.name=Body Talisman
+item.cosmictalisman.name=Cosmic Talisman
+item.chaostalisman.name=Chaos Talisman
+item.naturetalisman.name=Nature Talisman
+item.lawtalisman.name=Law Talisman
+item.deathtalisman.name=Death Talisman

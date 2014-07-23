@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraft.client.model.ModelRenderer"/>
 <fullyQualifiedTypeName name="net.minecraft.world.IBlockAccess"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.models.OreModel"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.models.AltarModel"/>
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.renderer.ore.AltarRenderer"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.item.EntityItem"/>
 </qualifiedTypeNameHistroy>
