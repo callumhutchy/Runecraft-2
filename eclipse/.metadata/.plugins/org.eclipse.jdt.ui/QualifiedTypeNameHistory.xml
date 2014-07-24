@@ -34,7 +34,6 @@
 <fullyQualifiedTypeName name="cpw.mods.fml.relauncher.SideOnly"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.relauncher.Side"/>
 <fullyQualifiedTypeName name="net.minecraft.client.renderer.texture.IIconRegister"/>
-<fullyQualifiedTypeName name="reference.BlockNames"/>
 <fullyQualifiedTypeName name="net.minecraft.block.ITileEntityProvider"/>
 <fullyQualifiedTypeName name="net.minecraftforge.client.IItemRenderer"/>
 <fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.renderer.ore.AltarRenderer"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.item.EntityItem"/>
+<fullyQualifiedTypeName name="reference.BlockNames"/>
 </qualifiedTypeNameHistroy>

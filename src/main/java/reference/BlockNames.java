@@ -10,7 +10,7 @@ public class BlockNames {
 	//Altars
 	public static String Altar_Lo = "Altar";
 	
-
+	
 	
 	
 	
@@ -32,5 +32,35 @@ public class BlockNames {
 	public static String Altar_Unlo = "altar";
 
 	public static String AltarRune_Unlo = "altarrune";
+	
+	public static String AirAltar_Unlo = "airaltar";
+	public static String WaterAltar_Unlo = "wateraltar";
+	public static String FireAltar_Unlo = "firealtar";
+	public static String EarthAltar_Unlo = "earthaltar";
+	public static String MindAltar_Unlo = "mindaltar";
+	public static String BodyAltar_Unlo = "bodyaltar";
+	public static String CosmicAltar_Unlo = "cosmicaltar";
+	public static String ChaosAltar_Unlo = "chaosaltar";
+	public static String NatureAltar_Unlo = "naturealtar";
+	public static String LawAltar_Unlo = "lawaltar";
+	public static String DeathAltar_Unlo = "deathaltar";
+	public static String BloodAltar_Unlo = "bloodaltar";
+	public static String AstralAltar_Unlo = "astralaltar";
+	public static String SoulAltar_Unlo = "soulaltar";
+	
+	public static String AirRuneAltar_Unlo = "airrunealtar";
+	public static String WaterRuneAltar_Unlo = "waterrunealtar";
+	public static String FireRuneAltar_Unlo = "firerunealtar";
+	public static String EarthRuneAltar_Unlo = "earthrunealtar";
+	public static String MindRuneAltar_Unlo = "mindrunealtar";
+	public static String BodyRuneAltar_Unlo = "bodyrunealtar";
+	public static String CosmicRuneAltar_Unlo = "cosmicrunealtar";
+	public static String ChaosRuneAltar_Unlo = "chaosrunealtar";
+	public static String NatureRuneAltar_Unlo = "naturerunealtar";
+	public static String LawRuneAltar_Unlo = "lawrunealtar";
+	public static String DeathRuneAltar_Unlo = "deathrunealtar";
+	public static String BloodRuneAltar_Unlo = "bloodrunealtar";
+	public static String AstralRuneAltar_Unlo = "astralrunealtar";
+	public static String SoulRuneAltar_Unlo = "soulrunealtar";
 	
 }

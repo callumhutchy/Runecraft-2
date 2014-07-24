@@ -18,7 +18,7 @@ public class AltarRenderer extends TileEntitySpecialRenderer{
 private AltarModel model;
 
     
-    public String ResourceLocationvar;
+    public String ResourceLocationvar = "";
     
     
     public AltarRenderer(String resourceLocation) {
@@ -62,6 +62,7 @@ private AltarModel model;
     //Tell it to stop rendering for both the PushMatrix's
             GL11.glPopMatrix();
             GL11.glPopMatrix();
+           
     }
 	
 }

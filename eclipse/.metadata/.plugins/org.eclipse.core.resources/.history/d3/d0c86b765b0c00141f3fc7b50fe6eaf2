@@ -1,7 +1,0 @@
-package com.callumhutchy.runecraft2.client.gui;
-
-import cpw.mods.fml.client.config.GuiConfig;
-
-public class ModGuiConfig extends GuiConfig {
-
-}

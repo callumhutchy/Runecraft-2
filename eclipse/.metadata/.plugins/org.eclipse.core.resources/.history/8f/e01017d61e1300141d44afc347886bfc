@@ -1,0 +1,39 @@
+package com.callumhutchy.runecraft2.items;
+
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.IIcon;
+
+import com.callumhutchy.runecraft2.Runecraft2;
+
+public class Rune extends BaseItem{
+
+	public Rune(String unlocalisedName){
+		this.setMaxStackSize(64);
+		this.setCreativeTab(Runecraft2.tabRunecraft2Magic);
+		this.setUnlocalizedName(unlocalisedName);
+		this.setHasSubtypes(true);
+		this.setMaxDamage(0);
+		
+	}
+	
+	@Override
+    public IIcon getIconFromDamage(int i){
+            return i; // Returning this allows your items metadata to coincide with your texturing so if your texture is on the 0 slot then make it 0
+    }
+	
+	
+	public String getItemNameIS(ItemStack stack){
+              // You could also use a switch statement here as well for all those saying that
+		
+		switch(stack){
+		case"":
+			default: return null;
+		}
+		
+//              if(stack == <value here>){
+//                      return <value>;
+//              } else{
+//                      return <default value>;
+//              }
+     }
+}

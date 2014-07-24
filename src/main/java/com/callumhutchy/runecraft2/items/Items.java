@@ -10,62 +10,26 @@ import net.minecraft.item.ItemStack;
 
 public class Items {
 
-	
-	//Runes
-	public static Item airRune;
-	public static Item armadylRune;
-	public static Item astralRune;
-	public static Item bloodRune;
-	public static Item bodyRune;
-	public static Item chaosRune;
-	public static Item cosmicRune;
-	public static Item deathRune;
-	public static Item dustRune;
-	public static Item earthRune;
-	public static Item fireRune;
-	public static Item lavaRune;
-	public static Item lawRune;
-	public static Item mindRune;
-	public static Item mistRune;
-	public static Item mudRune;
-	public static Item natureRune;
-	public static Item smokeRune;
-	public static Item soulRune;
-	public static Item steamRune;
-	public static Item waterRune;
-	
-	public static Item runeEssence;
-	public static Item pureEssence;
-	
-	//Talismans
-	public static Item airTalisman;
-	public static Item waterTalisman;
-	public static Item fireTalisman;
-	public static Item earthTalisman;
-	public static Item mindTalisman;
-	public static Item bodyTalisman;
-	public static Item cosmicTalisman;
-	public static Item chaosTalisman;
-	public static Item natureTalisman;
-	public static Item lawTalisman;
-	public static Item deathTalisman;
-	
-	//Ores
-	public static Item adamantiteOre;
-	public static Item coalOre;
-	public static Item copperOre;
-	public static Item goldOre;
-	public static Item ironOre;
-	public static Item mithrilOre;
-	public static Item runiteOre;
-	public static Item silverOre;
-	public static Item tinOre;
-	
-	
-	
-	
-	public static void init(){
-		//Runes
+	// Runes
+	public static Item	airRune, armadylRune, astralRune, bloodRune, bodyRune,
+			chaosRune, cosmicRune, deathRune, dustRune, earthRune, fireRune,
+			lavaRune, lawRune, mindRune, mistRune, mudRune, natureRune,
+			smokeRune, soulRune, steamRune, waterRune;
+
+	public static Item	runeEssence, pureEssence;
+
+	// Talismans
+	public static Item	airTalisman, waterTalisman, fireTalisman,
+			earthTalisman, mindTalisman, bodyTalisman, cosmicTalisman,
+			chaosTalisman, natureTalisman, lawTalisman, deathTalisman,
+			bloodTalisman, astralTalisman, soulTalisman;
+
+	// Ores
+	public static Item	adamantiteOre, coalOre, copperOre, goldOre, ironOre,
+			mithrilOre, runiteOre, silverOre, tinOre;
+
+	public static void init() {
+		// Runes
 		airRune = new Rune(ItemNames.AirRune_Unlo);
 		armadylRune = new Rune(ItemNames.ArmadylRune_Unlo);
 		astralRune = new Rune(ItemNames.AstralRune_Unlo);
@@ -87,10 +51,10 @@ public class Items {
 		soulRune = new Rune(ItemNames.SoulRune_Unlo);
 		steamRune = new Rune(ItemNames.SteamRune_Unlo);
 		waterRune = new Rune(ItemNames.WaterRune_Unlo);
-		
+
 		runeEssence = new Rune(ItemNames.RuneEssence_Unlo);
 		pureEssence = new Rune(ItemNames.PureEssence_Unlo);
-		//Talismans
+		// Talismans
 		airTalisman = new BaseMagicItem(ItemNames.AirTalisman_Unlo, 1);
 		waterTalisman = new BaseMagicItem(ItemNames.WaterTalisman_Unlo, 1);
 		fireTalisman = new BaseMagicItem(ItemNames.FireTalisman_Unlo, 1);
@@ -102,11 +66,11 @@ public class Items {
 		natureTalisman = new BaseMagicItem(ItemNames.NatureTalisman_Unlo, 1);
 		lawTalisman = new BaseMagicItem(ItemNames.LawTalisman_Unlo, 1);
 		deathTalisman = new BaseMagicItem(ItemNames.DeathTalisman_Unlo, 1);
-		
-		
-		
-		
-		//Ores
+		bloodTalisman = new BaseMagicItem(ItemNames.BodyTalisman_Unlo, 1);
+		astralTalisman = new BaseMagicItem(ItemNames.AstralRune_Unlo, 1);
+		soulTalisman = new BaseMagicItem(ItemNames.SoulRune_Unlo, 1);
+
+		// Ores
 		adamantiteOre = new Ore().setUnlocalizedName(ItemNames.AdamantiteOre_Unlo);
 		coalOre = new Ore().setUnlocalizedName(ItemNames.CoalOre_Unlo);
 		copperOre = new Ore().setUnlocalizedName(ItemNames.CopperOre_Unlo);
@@ -116,14 +80,11 @@ public class Items {
 		runiteOre = new Ore().setUnlocalizedName(ItemNames.RuniteOre_Unlo);
 		silverOre = new Ore().setUnlocalizedName(ItemNames.SilverOre_Unlo);
 		tinOre = new Ore().setUnlocalizedName(ItemNames.TinOre_Unlo);
-		
-	}
-	
 
-	
-	
-	public static void gameRegistery(){
-		//Runes
+	}
+
+	public static void gameRegistery() {
+		// Runes
 		GameRegistry.registerItem(airRune, airRune.getUnlocalizedName());
 		GameRegistry.registerItem(armadylRune, armadylRune.getUnlocalizedName());
 		GameRegistry.registerItem(astralRune, astralRune.getUnlocalizedName());
@@ -145,11 +106,11 @@ public class Items {
 		GameRegistry.registerItem(soulRune, soulRune.getUnlocalizedName());
 		GameRegistry.registerItem(steamRune, steamRune.getUnlocalizedName());
 		GameRegistry.registerItem(waterRune, waterRune.getUnlocalizedName());
-		
+
 		GameRegistry.registerItem(runeEssence, runeEssence.getUnlocalizedName());
 		GameRegistry.registerItem(pureEssence, pureEssence.getUnlocalizedName());
-		
-		//Talismans
+
+		// Talismans
 		GameRegistry.registerItem(airTalisman, airTalisman.getUnlocalizedName());
 		GameRegistry.registerItem(waterTalisman, waterTalisman.getUnlocalizedName());
 		GameRegistry.registerItem(fireTalisman, fireTalisman.getUnlocalizedName());
@@ -161,8 +122,8 @@ public class Items {
 		GameRegistry.registerItem(natureTalisman, natureTalisman.getUnlocalizedName());
 		GameRegistry.registerItem(lawTalisman, lawTalisman.getUnlocalizedName());
 		GameRegistry.registerItem(deathTalisman, deathTalisman.getUnlocalizedName());
-		
-		//Ores
+
+		// Ores
 		GameRegistry.registerItem(adamantiteOre, adamantiteOre.getUnlocalizedName());
 		GameRegistry.registerItem(coalOre, coalOre.getUnlocalizedName());
 		GameRegistry.registerItem(copperOre, copperOre.getUnlocalizedName());
@@ -172,13 +133,11 @@ public class Items {
 		GameRegistry.registerItem(runiteOre, runiteOre.getUnlocalizedName());
 		GameRegistry.registerItem(silverOre, silverOre.getUnlocalizedName());
 		GameRegistry.registerItem(tinOre, tinOre.getUnlocalizedName());
-		
-		
+
 	}
-	
-	
-	public static void craftingRecipes(){
-		//Talismans
+
+	public static void craftingRecipes() {
+		// Talismans
 		GameRegistry.addShapelessRecipe(new ItemStack(airTalisman), airRune, Item.getItemById(280));
 		GameRegistry.addShapelessRecipe(new ItemStack(waterTalisman), waterRune, Item.getItemById(280));
 		GameRegistry.addShapelessRecipe(new ItemStack(fireTalisman), fireRune, Item.getItemById(280));
@@ -190,7 +149,7 @@ public class Items {
 		GameRegistry.addShapelessRecipe(new ItemStack(natureTalisman), natureRune, Item.getItemById(280));
 		GameRegistry.addShapelessRecipe(new ItemStack(lawTalisman), lawRune, Item.getItemById(280));
 		GameRegistry.addShapelessRecipe(new ItemStack(deathTalisman), deathRune, Item.getItemById(280));
-		
+
 	}
-	
+
 }

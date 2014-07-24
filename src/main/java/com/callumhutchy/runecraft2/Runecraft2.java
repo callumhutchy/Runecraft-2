@@ -7,9 +7,9 @@ import reference.Reference;
 import utility.LogHelper;
 
 import com.callumhutchy.runecraft2.blocks.Blocks;
-import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityAltar;
-import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityCopperOre;
-import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityTinOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.altars.TileEntityAltar;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityCopperOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityTinOre;
 import com.callumhutchy.runecraft2.items.Items;
 import com.callumhutchy.runecraft2.proxy.IProxy;
 
@@ -72,8 +72,7 @@ public class Runecraft2 {
 	@Mod.EventHandler
 	public void Init(FMLInitializationEvent event){
 		
-		LanguageRegistry.instance().addStringLocalization("itemGroup.tabRunecraft2Magic", "en_US", "Runecraft 2 Magic");
-		LanguageRegistry.instance().addStringLocalization("itemGroup.tabRunecraft2Metal", "en_US", "Runecraft 2 Metal");
+		
 		
 		proxy.registerRenderThings();
         

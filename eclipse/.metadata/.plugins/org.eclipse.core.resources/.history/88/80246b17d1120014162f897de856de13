@@ -1,0 +1,94 @@
+package com.callumhutchy.runecraft2.proxy;
+
+import net.minecraft.item.Item;
+import net.minecraftforge.client.MinecraftForgeClient;
+
+import com.callumhutchy.runecraft2.blocks.Blocks;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityAltarRune;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.altars.TileEntityAltar;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityAdamantiteOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityCoalOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityCopperOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityGoldOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityIronOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityMithrilOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityRuniteOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntitySilverOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityTinOre;
+import com.callumhutchy.runecraft2.blocks.renderer.ore.AltarRenderer;
+import com.callumhutchy.runecraft2.blocks.renderer.ore.AltarRuneRenderer;
+import com.callumhutchy.runecraft2.blocks.renderer.ore.ItemRender;
+import com.callumhutchy.runecraft2.blocks.renderer.ore.OreRenderer;
+
+import cpw.mods.fml.client.registry.ClientRegistry;
+
+public class ClientProxy extends CommonProxy {
+
+	public void registerRenderThings() {
+        //Block Rendering
+		//Altars
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltar.class, new AltarRenderer("runecraft2:textures/blocks/AltarTexture.png"));
+		
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltar.class, new AltarRenderer("runecraft2:textures/blocks/AirAltarTexture.png"));
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltar.class, new AltarRenderer("runecraft2:textures/blocks/WaterAltarTexture.png"));
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltar.class, new AltarRenderer("runecraft2:textures/blocks/FireAltarTexture.png"));
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltar.class, new AltarRenderer("runecraft2:textures/blocks/EarthAltarTexture.png"));
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltar.class, new AltarRenderer("runecraft2:textures/blocks/MindAltarTexture.png"));
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltar.class, new AltarRenderer("runecraft2:textures/blocks/BodyAltarTexture.png"));
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltar.class, new AltarRenderer("runecraft2:textures/blocks/CosmicAltarTexture.png"));
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltar.class, new AltarRenderer("runecraft2:textures/blocks/ChaosAltarTexture.png"));
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltar.class, new AltarRenderer("runecraft2:textures/blocks/NatureAltarTexture.png"));
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltar.class, new AltarRenderer("runecraft2:textures/blocks/LawAltarTexture.png"));
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltar.class, new AltarRenderer("runecraft2:textures/blocks/DeathAltarTexture.png"));
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltar.class, new AltarRenderer("runecraft2:textures/blocks/BloodAltarTexture.png"));
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltar.class, new AltarRenderer("runecraft2:textures/blocks/AstralAltarTexture.png"));
+	
+		
+        //Ores
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityTinOre.class, new OreRenderer("runecraft2:textures/blocks/OreModelTinTexture.png"));
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCopperOre.class, new OreRenderer("runecraft2:textures/blocks/OreModelCopperTexture.png"));
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAdamantiteOre.class, new OreRenderer("runecraft2:textures/blocks/OreModelAdamantiteTexture.png"));
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCoalOre.class, new OreRenderer("runecraft2:textures/blocks/OreModelCoalTexture.png"));
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityGoldOre.class, new OreRenderer("runecraft2:textures/blocks/OreModelGoldTexture.png"));
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityIronOre.class, new OreRenderer("runecraft2:textures/blocks/OreModelIronTexture.png"));
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityMithrilOre.class, new OreRenderer("runecraft2:textures/blocks/OreModelMithrilTexture.png"));
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityRuniteOre.class, new OreRenderer("runecraft2:textures/blocks/OreModelRuniteTexture.png"));
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySilverOre.class, new OreRenderer("runecraft2:textures/blocks/OreModelSilverTexture.png"));
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAltarRune.class, new AltarRuneRenderer("runecraft2:textures/blocks/AltarRuneTexture.png"));
+        //Item Rendering
+        //Altars
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.Altar), new ItemRender(new AltarRenderer("runecraft2:textures/blocks/AltarTexture.png"), new TileEntityAltar(), "altar"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.AltarRune), new ItemRender(new AltarRuneRenderer("runecraft2:textures/blocks/AltarRuneTexture.png"), new TileEntityAltarRune(), "altar"));
+        
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.AirAltar), new ItemRender(new AltarRenderer("runecraft2:textures/blocks/AirAltarTexture.png"), new TileEntityAltar(), "altar"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.WaterAltar), new ItemRender(new AltarRenderer("runecraft2:textures/blocks/WaterAltarTexture.png"), new TileEntityAltar(), "altar"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.FireAltar), new ItemRender(new AltarRenderer("runecraft2:textures/blocks/FireAltarTexture.png"), new TileEntityAltar(), "altar"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.EarthAltar), new ItemRender(new AltarRenderer("runecraft2:textures/blocks/EarthAltarTexture.png"), new TileEntityAltar(), "altar"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.MindAltar), new ItemRender(new AltarRenderer("runecraft2:textures/blocks/MindAltarTexture.png"), new TileEntityAltar(), "altar"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.BodyAltar), new ItemRender(new AltarRenderer("runecraft2:textures/blocks/BodyAltarTexture.png"), new TileEntityAltar(), "altar"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.CosmicAltar), new ItemRender(new AltarRenderer("runecraft2:textures/blocks/CosmicAltarTexture.png"), new TileEntityAltar(), "altar"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.ChaosAltar), new ItemRender(new AltarRenderer("runecraft2:textures/blocks/ChaosAltarTexture.png"), new TileEntityAltar(), "altar"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.NatureAltar), new ItemRender(new AltarRenderer("runecraft2:textures/blocks/NatureAltarTexture.png"), new TileEntityAltar(), "altar"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.LawAltar), new ItemRender(new AltarRenderer("runecraft2:textures/blocks/LawAltarTexture.png"), new TileEntityAltar(), "altar"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.DeathAltar), new ItemRender(new AltarRenderer("runecraft2:textures/blocks/DeathAltarTexture.png"), new TileEntityAltar(), "altar"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.BloodAltar), new ItemRender(new AltarRenderer("runecraft2:textures/blocks/BloodAltarTexture.png"), new TileEntityAltar(), "altar"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.AstralAltar), new ItemRender(new AltarRenderer("runecraft2:textures/blocks/AstralAltarTexture.png"), new TileEntityAltar(), "altar"));
+       
+        
+        
+        //Ores
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.AdamantiteOre), new ItemRender(new OreRenderer("runecraft2:textures/blocks/OreModelAdamantiteTexture.png"), new TileEntityAdamantiteOre(), "ore"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.TinOre), new ItemRender(new OreRenderer("runecraft2:textures/blocks/OreModelTinTexture.png"), new TileEntityTinOre(), "ore"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.CopperOre), new ItemRender(new OreRenderer("runecraft2:textures/blocks/OreModelCopperTexture.png"), new TileEntityCopperOre(), "ore"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.GoldOre), new ItemRender(new OreRenderer("runecraft2:textures/blocks/OreModelGoldTexture.png"), new TileEntityGoldOre(), "ore"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.CoalOre), new ItemRender(new OreRenderer("runecraft2:textures/blocks/OreModelCoalTexture.png"), new TileEntityCoalOre(), "ore"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.IronOre), new ItemRender(new OreRenderer("runecraft2:textures/blocks/OreModelIronTexture.png"), new TileEntityIronOre(), "ore"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.MithrilOre), new ItemRender(new OreRenderer("runecraft2:textures/blocks/OreModelMithrilTexture.png"), new TileEntityMithrilOre(), "ore"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.RuniteOre), new ItemRender(new OreRenderer("runecraft2:textures/blocks/OreModelRuniteTexture.png"), new TileEntityRuniteOre(), "ore"));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.SilverOre), new ItemRender(new OreRenderer("runecraft2:textures/blocks/OreModelSilverTexture.png"), new TileEntitySilverOre(), "ore"));
+	
+	
+	}
+	
+}

@@ -13,15 +13,15 @@ import reference.Reference;
 
 import com.callumhutchy.runecraft2.Runecraft2;
 import com.callumhutchy.runecraft2.blocks.models.OreModel;
-import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityAdamantiteOre;
-import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityCoalOre;
-import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityCopperOre;
-import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityGoldOre;
-import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityIronOre;
-import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityMithrilOre;
-import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRuniteOre;
-import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntitySilverOre;
-import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityTinOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityAdamantiteOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityCoalOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityCopperOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityGoldOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityIronOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityMithrilOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityRuniteOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntitySilverOre;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityTinOre;
 import com.callumhutchy.runecraft2.items.Items;
 
 import cpw.mods.fml.relauncher.Side;

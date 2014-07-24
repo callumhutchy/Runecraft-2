@@ -1,9 +1,0 @@
-package reference;
-
-public class ItemNames {
-
-	public static String AirRune = "Air Rune";
-	
-	
-	
-}
