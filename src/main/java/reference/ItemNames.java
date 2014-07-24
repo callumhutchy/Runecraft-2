@@ -52,6 +52,8 @@ public class ItemNames {
 	public static String NatureTalisman_Unlo = "naturetalisman";
 	public static String LawTalisman_Unlo = "lawtalisman";
 	public static String DeathTalisman_Unlo = "deathtalisman";
+	public static String BloodTalisman_Unlo = "bloodtalisman";
+	public static String AstralTalisman_Unlo = "astraltalisman";
 	
 	
 	//Ores

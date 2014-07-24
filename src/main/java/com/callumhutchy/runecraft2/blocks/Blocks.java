@@ -19,10 +19,8 @@ public class Blocks {
 	public static Random	random;
 
 	// Altar
-	public static Block		Altar;
 
-	public static Block		AltarRune;
-//No soul altar not in RS
+	// No soul altar not in RS
 	public static Block		AirAltar, WaterAltar, FireAltar, EarthAltar,
 			MindAltar, BodyAltar, CosmicAltar, ChaosAltar, NatureAltar,
 			LawAltar, DeathAltar, BloodAltar, AstralAltar;
@@ -36,10 +34,10 @@ public class Blocks {
 	public static Block		CopperOre, TinOre, AdamantiteOre, CoalOre, GoldOre,
 			IronOre, MithrilOre, RuniteOre, SilverOre;
 
+	public static Block		RuneEssenceOre, PureEssenceOre;
+
 	public static void init() {
 		// Altar
-
-		Altar = new Altar(Material.rock, "runecraft2:textures/blocks/AltarTexture.png", BlockNames.Altar_Unlo, "altar");
 
 		AirAltar = new Altar(Material.rock, "runecraft2:textures/blocks/AirAltarTexture.png", BlockNames.AirAltar_Unlo, "airaltar");
 		WaterAltar = new Altar(Material.rock, "runecraft2:textures/blocks/WaterAltarTexture.png", BlockNames.WaterAltar_Unlo, "wateraltar");
@@ -53,8 +51,8 @@ public class Blocks {
 		LawAltar = new Altar(Material.rock, "runecraft2:textures/blocks/LawAltarTexture.png", BlockNames.LawAltar_Unlo, "lawaltar");
 		DeathAltar = new Altar(Material.rock, "runecraft2:textures/blocks/DeathAltarTexture.png", BlockNames.DeathAltar_Unlo, "deathaltar");
 		BloodAltar = new Altar(Material.rock, "runecraft2:textures/blocks/BloodAltarTexture.png", BlockNames.BloodAltar_Unlo, "bloodaltar");
-		AstralAltar = new Altar(Material.rock, "runecraft2:textures/blocks/AstralAltarTexture.png", BlockNames.AstralAltar_Unlo, "astralaltar");
-		
+		AstralAltar = new Altar(Material.rock, "runecraft2:textures/blocks/AstralAltarTexture.png", BlockNames.AstralAltar_Unlo, "bloodaltar");
+
 		AirRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/AirRuneAltarTexture.png", BlockNames.AirRuneAltar_Unlo, "airrunealtar");
 		WaterRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/WaterRuneAltarTexture.png", BlockNames.WaterRuneAltar_Unlo, "waterrunealtar");
 		FireRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/FireRuneAltarTexture.png", BlockNames.FireRuneAltar_Unlo, "firerunealtar");
@@ -68,9 +66,6 @@ public class Blocks {
 		DeathRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/DeathRuneAltarTexture.png", BlockNames.DeathRuneAltar_Unlo, "deathrunealtar");
 		BloodRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/BloodRuneAltarTexture.png", BlockNames.BloodRuneAltar_Unlo, "bloodrunealtar");
 		AstralRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/AstralRuneAltarTexture.png", BlockNames.AstralRuneAltar_Unlo, "astralrunealtar");
-		
-
-		AltarRune = new Altar(Material.rock, "runecraft2:textures/blocks/AltarRuneTexture.png", BlockNames.AltarRune_Unlo, "altarrune");
 
 		// Ores
 		CopperOre = new OreBlock(Material.rock, "runecraft2:OreModelCopperTexture", BlockNames.CopperOre_Unlo, Items.copperOre, "copper");
@@ -82,13 +77,14 @@ public class Blocks {
 		MithrilOre = new OreBlock(Material.rock, "runecraft2:OreModelMithrilTexture", BlockNames.MithrilOre_Unlo, Items.mithrilOre, "mithril");
 		RuniteOre = new OreBlock(Material.rock, "runecraft2:OreModelRuniteTexture", BlockNames.RuniteOre_Unlo, Items.runiteOre, "runite");
 		SilverOre = new OreBlock(Material.rock, "runecraft2:OreModelSilverTexture", BlockNames.SilverOre_Unlo, Items.silverOre, "silver");
+
+		RuneEssenceOre = new OreBlock(Material.rock, "runecraft2:OreModelRuneEssenceTexture", BlockNames.RuneEssenceOre_Unlo, Items.runeEssence, "runeessenc");
+		PureEssenceOre = new OreBlock(Material.rock, "runecraft2:OreModelPureEssenceTexture", BlockNames.PureEssenceOre_Unlo, Items.pureEssence, "pureessence");
+
 	}
 
 	public static void gameRegistry() {
 		// Altars
-		GameRegistry.registerBlock(Altar, BlockNames.Altar_Unlo);
-
-		GameRegistry.registerBlock(AltarRune, BlockNames.AltarRune_Unlo);
 
 		GameRegistry.registerBlock(AirAltar, BlockNames.AirAltar_Unlo);
 		GameRegistry.registerBlock(WaterAltar, BlockNames.WaterAltar_Unlo);
@@ -103,8 +99,7 @@ public class Blocks {
 		GameRegistry.registerBlock(DeathAltar, BlockNames.DeathAltar_Unlo);
 		GameRegistry.registerBlock(BloodAltar, BlockNames.BloodAltar_Unlo);
 		GameRegistry.registerBlock(AstralAltar, BlockNames.AstralAltar_Unlo);
-		
-		
+
 		GameRegistry.registerBlock(AirRuneAltar, BlockNames.AirRuneAltar_Unlo);
 		GameRegistry.registerBlock(WaterRuneAltar, BlockNames.WaterRuneAltar_Unlo);
 		GameRegistry.registerBlock(FireRuneAltar, BlockNames.FireRuneAltar_Unlo);
@@ -118,7 +113,6 @@ public class Blocks {
 		GameRegistry.registerBlock(DeathRuneAltar, BlockNames.DeathRuneAltar_Unlo);
 		GameRegistry.registerBlock(BloodRuneAltar, BlockNames.BloodRuneAltar_Unlo);
 		GameRegistry.registerBlock(AstralRuneAltar, BlockNames.AstralRuneAltar_Unlo);
-	
 
 		// Ores
 		GameRegistry.registerBlock(CopperOre, BlockNames.CopperOre_Unlo);
@@ -130,6 +124,9 @@ public class Blocks {
 		GameRegistry.registerBlock(MithrilOre, BlockNames.MithrilOre_Unlo);
 		GameRegistry.registerBlock(RuniteOre, BlockNames.RuniteOre_Unlo);
 		GameRegistry.registerBlock(SilverOre, BlockNames.SilverOre_Unlo);
+		
+		GameRegistry.registerBlock(RuneEssenceOre, BlockNames.RuneEssenceOre_Unlo);
+		GameRegistry.registerBlock(PureEssenceOre, BlockNames.PureEssenceOre_Unlo);
 	}
 
 }

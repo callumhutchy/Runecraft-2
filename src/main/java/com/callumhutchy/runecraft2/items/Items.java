@@ -66,10 +66,9 @@ public class Items {
 		natureTalisman = new BaseMagicItem(ItemNames.NatureTalisman_Unlo, 1);
 		lawTalisman = new BaseMagicItem(ItemNames.LawTalisman_Unlo, 1);
 		deathTalisman = new BaseMagicItem(ItemNames.DeathTalisman_Unlo, 1);
-		bloodTalisman = new BaseMagicItem(ItemNames.BodyTalisman_Unlo, 1);
-		astralTalisman = new BaseMagicItem(ItemNames.AstralRune_Unlo, 1);
-		soulTalisman = new BaseMagicItem(ItemNames.SoulRune_Unlo, 1);
-
+		bloodTalisman = new BaseMagicItem(ItemNames.BloodTalisman_Unlo, 1);
+		astralTalisman = new BaseMagicItem(ItemNames.AstralTalisman_Unlo, 1);
+		
 		// Ores
 		adamantiteOre = new Ore().setUnlocalizedName(ItemNames.AdamantiteOre_Unlo);
 		coalOre = new Ore().setUnlocalizedName(ItemNames.CoalOre_Unlo);
@@ -122,6 +121,10 @@ public class Items {
 		GameRegistry.registerItem(natureTalisman, natureTalisman.getUnlocalizedName());
 		GameRegistry.registerItem(lawTalisman, lawTalisman.getUnlocalizedName());
 		GameRegistry.registerItem(deathTalisman, deathTalisman.getUnlocalizedName());
+		GameRegistry.registerItem(bloodTalisman, bloodTalisman.getUnlocalizedName());
+		GameRegistry.registerItem(astralTalisman, astralTalisman.getUnlocalizedName());
+		
+		
 
 		// Ores
 		GameRegistry.registerItem(adamantiteOre, adamantiteOre.getUnlocalizedName());

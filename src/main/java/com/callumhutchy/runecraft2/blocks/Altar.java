@@ -16,7 +16,6 @@ import reference.Reference;
 import com.callumhutchy.runecraft2.Runecraft2;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.altars.TileEntityAirAltar;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.altars.TileEntityAirRuneAltar;
-import com.callumhutchy.runecraft2.blocks.models.tileentities.altars.TileEntityAltar;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.altars.TileEntityAstralAltar;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.altars.TileEntityAstralRuneAltar;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.altars.TileEntityBloodAltar;
@@ -74,7 +73,7 @@ public class Altar extends BlockContainer {
 	@Override
 	public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
 		
-		switch(tileEntityClass){
+		switch(altarName){
 		case"airaltar":return new TileEntityAirAltar();
 		case"airrunealtar":return new TileEntityAirRuneAltar();
 		case"wateraltar":return new TileEntityWaterAltar();
@@ -103,7 +102,7 @@ public class Altar extends BlockContainer {
 		case"astralrunealtar":return new TileEntityAstralRuneAltar();
 		
 		
-		default: return new TileEntityAltar();
+		default: return new TileEntityAirAltar();
 		}
 
 	}
@@ -137,8 +136,9 @@ public class Altar extends BlockContainer {
 		if (entity.inventory.getCurrentItem() != null) {
 			item = entity.inventory.getCurrentItem().getItem();
 		}
-
-		switch (tileEntityClass) {
+System.out.println(altarType);
+		
+		switch (altarType) {
 		case "airaltar":
 			if (item == Items.runeEssence) {
 				numberOfRuneEssences = entity.inventory.getCurrentItem().stackSize;
@@ -278,9 +278,9 @@ public class Altar extends BlockContainer {
 				world.setBlockToAir(varx, vary, varz);
 				world.setBlock(varx, vary, varz, Blocks.AstralRuneAltar);
 				entity.getHeldItem().stackSize = 0;
-//				TileEntityAstralRuneAltar tileEntity = (TileEntityAstralRuneAltar) world.getTileEntity(varx, vary, varz);
-//				tileEntity.quantityOfRuneEssence = numberOfRuneEssences;
-//				item = null;
+				TileEntityAstralRuneAltar tileEntity = (TileEntityAstralRuneAltar) world.getTileEntity(varx, vary, varz);
+				tileEntity.quantityOfRuneEssence = numberOfRuneEssences;
+				item = null;
 			}
 
 		case "airrunealtar":
@@ -492,9 +492,10 @@ public class Altar extends BlockContainer {
 					TileEntityChaosRuneAltar tileEntity = (TileEntityChaosRuneAltar) world.getTileEntity(varx, vary, varz);
 					world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.chaosRune,tileEntity.quantityOfRuneEssence)));
 				item = null;
-				}
 				world.setBlockToAir(varx, vary, varz);
 				world.setBlock(varx, vary, varz, Blocks.ChaosAltar);
+				}
+				
 				
 			}
 		case "naturerunealtar":
@@ -519,9 +520,10 @@ public class Altar extends BlockContainer {
 						}
 						randomint = 10;
 						item = null;
+						world.setBlockToAir(varx, vary, varz);
+						world.setBlock(varx, vary, varz, Blocks.NatureAltar);
 					}
-					world.setBlockToAir(varx, vary, varz);
-					world.setBlock(varx, vary, varz, Blocks.NatureAltar);
+					
 					
 				}
 			}
@@ -547,9 +549,10 @@ public class Altar extends BlockContainer {
 						}
 						randomint = 10;
 						item = null;
+						world.setBlockToAir(varx, vary, varz);
+						world.setBlock(varx, vary, varz, Blocks.LawAltar);
 					}
-					world.setBlockToAir(varx, vary, varz);
-					world.setBlock(varx, vary, varz, Blocks.LawAltar);
+					
 					
 				}
 			}
@@ -559,9 +562,10 @@ public class Altar extends BlockContainer {
 					TileEntityDeathRuneAltar tileEntity = (TileEntityDeathRuneAltar) world.getTileEntity(varx, vary, varz);
 					world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.deathRune,tileEntity.quantityOfRuneEssence)));
 				item = null;
-				}
 				world.setBlockToAir(varx, vary, varz);
 				world.setBlock(varx, vary, varz, Blocks.DeathAltar);
+				}
+				
 				
 			}
 		case "bloodrunealtar":
@@ -570,26 +574,29 @@ public class Altar extends BlockContainer {
 					TileEntityBloodRuneAltar tileEntity = (TileEntityBloodRuneAltar) world.getTileEntity(varx, vary, varz);
 					world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.bloodRune,tileEntity.quantityOfRuneEssence)));
 				item = null;
-				}
 				world.setBlockToAir(varx, vary, varz);
 				world.setBlock(varx, vary, varz, Blocks.BloodAltar);
+				}
+				
 				
 			}
 		case "astralrunealtar":
 			if (!world.isRemote) {
 				if (item == Items.astralTalisman) {
-//						TileEntityAstralRuneAltar tileEntity = (TileEntityAstralRuneAltar) world.getTileEntity(varx, vary, varz);
-//					world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.astralRune,tileEntity.quantityOfRuneEssence)));
-//				item = null;
-				}
+						TileEntityAstralRuneAltar tileEntity = (TileEntityAstralRuneAltar) world.getTileEntity(varx, vary, varz);
+					world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.astralRune,tileEntity.quantityOfRuneEssence)));
+				item = null;
 				world.setBlockToAir(varx, vary, varz);
 				world.setBlock(varx, vary, varz, Blocks.AstralAltar);
+				}
+				
 			
 			}
 			
-
+			default: System.out.println("oh no");
 		}
 
+	
 		item = null;
 		return true;
 

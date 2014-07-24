@@ -7,11 +7,11 @@ import reference.Reference;
 import utility.LogHelper;
 
 import com.callumhutchy.runecraft2.blocks.Blocks;
-import com.callumhutchy.runecraft2.blocks.models.tileentities.altars.TileEntityAltar;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityCopperOre;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityTinOre;
 import com.callumhutchy.runecraft2.items.Items;
 import com.callumhutchy.runecraft2.proxy.IProxy;
+import com.callumhutchy.runecraft2.worldgen.WorldGeneratorRunecraft2;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
@@ -75,7 +75,7 @@ public class Runecraft2 {
 		
 		
 		proxy.registerRenderThings();
-        
+		GameRegistry.registerWorldGenerator(new WorldGeneratorRunecraft2(), 10);
 		
 		
 		LogHelper.info("Initialisation Complete!");
