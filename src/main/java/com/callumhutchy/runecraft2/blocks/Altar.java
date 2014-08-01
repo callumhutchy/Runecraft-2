@@ -14,6 +14,8 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.ChatComponentText;
+import net.minecraft.util.IChatComponent;
 import net.minecraft.world.World;
 import reference.ExpChart;
 import reference.Reference;
@@ -394,8 +396,9 @@ public class Altar extends BlockContainer {
 
 								world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.airRune, tileEntity.quantityOfRuneEssence)));
 								props.currentRunecraftingExp = props.currentRunecraftingExp + tileEntity.quantityOfRuneEssence * ExpChart.AIR_RUNE_EXP;
-								Minecraft.getMinecraft().thePlayer.sendChatMessage("You gained " + tileEntity.quantityOfRuneEssence * ExpChart.AIR_RUNE_EXP + " Runecrafting Experience.");
-
+								if(!props.suppressExpMessages){
+								Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("You gained " + tileEntity.quantityOfRuneEssence * ExpChart.AIR_RUNE_EXP + " Runecrafting Experience."));
+								}
 								if (numberOfRuneEssences >= 5) {
 									int randomint = randInt(1, 5);
 									if (randomint == 1) {
@@ -443,7 +446,9 @@ public class Altar extends BlockContainer {
 							if (item == Items.waterTalisman && world.getBlock(varx, vary, varz) == Blocks.WaterRuneAltar) {
 								world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.waterRune, tileEntity.quantityOfRuneEssence)));
 								props.currentRunecraftingExp = props.currentRunecraftingExp + tileEntity.quantityOfRuneEssence * ExpChart.WATER_RUNE_EXP;
+								if(!props.suppressExpMessages){
 								Minecraft.getMinecraft().thePlayer.sendChatMessage("You gained " + tileEntity.quantityOfRuneEssence * ExpChart.WATER_RUNE_EXP + " Runecrafting Experience.");
+								}
 								if (numberOfRuneEssences >= 5) {
 									int randomint = randInt(1, 10);
 									if (randomint == 1) {
@@ -489,7 +494,9 @@ public class Altar extends BlockContainer {
 
 								world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.fireRune, tileEntity.quantityOfRuneEssence)));
 								props.currentRunecraftingExp = props.currentRunecraftingExp + tileEntity.quantityOfRuneEssence * ExpChart.FIRE_RUNE_EXP;
+								if(!props.suppressExpMessages){
 								Minecraft.getMinecraft().thePlayer.sendChatMessage("You gained " + tileEntity.quantityOfRuneEssence * ExpChart.FIRE_RUNE_EXP + " Runecrafting Experience.");
+								}
 								if (numberOfRuneEssences >= 5) {
 									int randomint = randInt(1, 10);
 									if (randomint == 1) {
@@ -531,7 +538,9 @@ public class Altar extends BlockContainer {
 							if (item == Items.earthTalisman && world.getBlock(varx, vary, varz) == Blocks.EarthRuneAltar) {
 								world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.earthRune, tileEntity.quantityOfRuneEssence)));
 								props.currentRunecraftingExp = props.currentRunecraftingExp + tileEntity.quantityOfRuneEssence * ExpChart.EARTH_RUNE_EXP;
+								if(!props.suppressExpMessages){
 								Minecraft.getMinecraft().thePlayer.sendChatMessage("You gained " + tileEntity.quantityOfRuneEssence * ExpChart.EARTH_RUNE_EXP + " Runecrafting Experience.");
+								}
 								if (numberOfRuneEssences >= 5) {
 									int randomint = randInt(1, 10);
 									if (randomint == 1) {

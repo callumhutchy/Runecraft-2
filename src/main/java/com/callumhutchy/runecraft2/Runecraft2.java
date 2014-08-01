@@ -10,9 +10,10 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraftforge.common.MinecraftForge;
 import reference.Reference;
 import reference.TileEntities;
-import utility.Commhandler;
 import utility.LogHelper;
-import utility.SkillsCommand;
+import utility.commands.HomeTeleportCMD;
+import utility.commands.SkillsCMD;
+import utility.commands.SuppressExpMessagesCMD;
 
 import com.callumhutchy.runecraft2.blocks.Blocks;
 import com.callumhutchy.runecraft2.client.gui.GuiHandler;
@@ -54,8 +55,9 @@ public class Runecraft2 {
 		MinecraftServer server = MinecraftServer.getServer();
 		ICommandManager command = server.getCommandManager();
 		ServerCommandManager manager = (ServerCommandManager) command;
-		manager.registerCommand(new Commhandler());
-		manager.registerCommand(new SkillsCommand());
+		manager.registerCommand(new HomeTeleportCMD());
+		manager.registerCommand(new SkillsCMD());
+		manager.registerCommand(new SuppressExpMessagesCMD());
     }
 
 	
