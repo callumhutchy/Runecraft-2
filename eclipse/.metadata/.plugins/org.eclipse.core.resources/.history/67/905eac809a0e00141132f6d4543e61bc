@@ -1,9 +1,0 @@
-package com.callumhutchy.runecraft2.blocks;
-
-public class IronOreBlock {
-
-	public IronOreBlock() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

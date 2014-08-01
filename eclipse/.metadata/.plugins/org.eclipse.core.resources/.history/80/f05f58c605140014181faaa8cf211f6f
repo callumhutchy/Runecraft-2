@@ -1,0 +1,12 @@
+package com.callumhutchy.runecraft2.keys;
+
+import net.minecraft.client.settings.KeyBinding;
+
+public class KeyBind {
+
+	public KeyBind(KeyBinding[] key, boolean[] repeat) {
+		
+		
+	}
+
+}

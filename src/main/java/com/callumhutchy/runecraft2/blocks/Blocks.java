@@ -51,7 +51,7 @@ public class Blocks {
 		LawAltar = new Altar(Material.rock, "runecraft2:textures/blocks/LawAltarTexture.png", BlockNames.LawAltar_Unlo, "lawaltar");
 		DeathAltar = new Altar(Material.rock, "runecraft2:textures/blocks/DeathAltarTexture.png", BlockNames.DeathAltar_Unlo, "deathaltar");
 		BloodAltar = new Altar(Material.rock, "runecraft2:textures/blocks/BloodAltarTexture.png", BlockNames.BloodAltar_Unlo, "bloodaltar");
-		AstralAltar = new Altar(Material.rock, "runecraft2:textures/blocks/AstralAltarTexture.png", BlockNames.AstralAltar_Unlo, "bloodaltar");
+		AstralAltar = new Altar(Material.rock, "runecraft2:textures/blocks/AstralAltarTexture.png", BlockNames.AstralAltar_Unlo, "astralaltar");
 
 		AirRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/AirRuneAltarTexture.png", BlockNames.AirRuneAltar_Unlo, "airrunealtar");
 		WaterRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/WaterRuneAltarTexture.png", BlockNames.WaterRuneAltar_Unlo, "waterrunealtar");
@@ -78,7 +78,7 @@ public class Blocks {
 		RuniteOre = new OreBlock(Material.rock, "runecraft2:OreModelRuniteTexture", BlockNames.RuniteOre_Unlo, Items.runiteOre, "runite");
 		SilverOre = new OreBlock(Material.rock, "runecraft2:OreModelSilverTexture", BlockNames.SilverOre_Unlo, Items.silverOre, "silver");
 
-		RuneEssenceOre = new OreBlock(Material.rock, "runecraft2:OreModelRuneEssenceTexture", BlockNames.RuneEssenceOre_Unlo, Items.runeEssence, "runeessenc");
+		RuneEssenceOre = new OreBlock(Material.rock, "runecraft2:OreModelRuneEssenceTexture", BlockNames.RuneEssenceOre_Unlo, Items.runeEssence, "runeessence");
 		PureEssenceOre = new OreBlock(Material.rock, "runecraft2:OreModelPureEssenceTexture", BlockNames.PureEssenceOre_Unlo, Items.pureEssence, "pureessence");
 
 	}

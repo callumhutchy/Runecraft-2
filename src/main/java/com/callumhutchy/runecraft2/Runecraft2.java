@@ -1,26 +1,43 @@
 package com.callumhutchy.runecraft2;
 
+import handler.ConfigurationHandler;
+import handler.Runecraft2EventHandler;
+import net.minecraft.command.ICommandManager;
+import net.minecraft.command.ServerCommandManager;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import handler.ConfigurationHandler;
+import net.minecraft.server.MinecraftServer;
+import net.minecraftforge.common.MinecraftForge;
 import reference.Reference;
+import reference.TileEntities;
+import utility.Commhandler;
 import utility.LogHelper;
+import utility.SkillsCommand;
 
 import com.callumhutchy.runecraft2.blocks.Blocks;
-import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityCopperOre;
-import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityTinOre;
+import com.callumhutchy.runecraft2.client.gui.GuiHandler;
 import com.callumhutchy.runecraft2.items.Items;
+import com.callumhutchy.runecraft2.keys.KeyBindings;
+import com.callumhutchy.runecraft2.keys.KeyInputHandler;
 import com.callumhutchy.runecraft2.proxy.IProxy;
-import com.callumhutchy.runecraft2.worldgen.WorldGeneratorRunecraft2;
+import com.callumhutchy.runecraft2.spells.tileentities.TileEntityAirStrike;
+import com.callumhutchy.runecraft2.spells.tileentities.TileEntityEarthStrike;
+import com.callumhutchy.runecraft2.spells.tileentities.TileEntityFireStrike;
+import com.callumhutchy.runecraft2.spells.tileentities.TileEntityWaterStrike;
+import com.callumhutchy.runecraft2.worldgen.AltarWorldGeneratorRunecraft2;
+import com.callumhutchy.runecraft2.worldgen.OreWorldGeneratorRunecraft2;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.event.FMLServerStartingEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
+import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class Runecraft2 {
@@ -30,6 +47,16 @@ public class Runecraft2 {
 	
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.SERVER_PROXY)
 	public static IProxy proxy;
+
+	@EventHandler
+    public void serverStart(FMLServerStartingEvent event)
+    {
+		MinecraftServer server = MinecraftServer.getServer();
+		ICommandManager command = server.getCommandManager();
+		ServerCommandManager manager = (ServerCommandManager) command;
+		manager.registerCommand(new Commhandler());
+		manager.registerCommand(new SkillsCommand());
+    }
 
 	
 	
@@ -72,10 +99,22 @@ public class Runecraft2 {
 	@Mod.EventHandler
 	public void Init(FMLInitializationEvent event){
 		
-		
+		int modEntityID = 0;
 		
 		proxy.registerRenderThings();
-		GameRegistry.registerWorldGenerator(new WorldGeneratorRunecraft2(), 10);
+		GameRegistry.registerWorldGenerator(new AltarWorldGeneratorRunecraft2(), 50);
+		GameRegistry.registerWorldGenerator(new OreWorldGeneratorRunecraft2(), 50);
+		TileEntities.init();
+		MinecraftForge.EVENT_BUS.register(new Runecraft2EventHandler());
+		KeyBindings.init();
+		 NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
+		 EntityRegistry.registerModEntity(TileEntityAirStrike.class, "Air Strike", ++modEntityID, this, 64, 10, true);
+		 EntityRegistry.registerModEntity(TileEntityWaterStrike.class, "Water Strike", ++modEntityID, this, 64, 10, true);
+		 EntityRegistry.registerModEntity(TileEntityEarthStrike.class, "Earth Strike", ++modEntityID, this, 64, 10, true);
+		 EntityRegistry.registerModEntity(TileEntityFireStrike.class, "Fire Strike", ++modEntityID, this, 64, 10, true);
+		FMLCommonHandler.instance().bus().register(new KeyInputHandler());
+		FMLCommonHandler.instance().bus().register(new Runecraft2EventHandler());
+		FMLCommonHandler.instance().bus().register(new GuiHandler());
 		
 		
 		LogHelper.info("Initialisation Complete!");

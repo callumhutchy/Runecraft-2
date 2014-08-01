@@ -1,0 +1,6 @@
+package com.callumhutchy.runecraft2.keys;
+
+import cpw.mods.fml.client.registry.KeyBindingRegistry.KeyHandler;
+public class KeyBinder extends KeyHandler {
+
+}

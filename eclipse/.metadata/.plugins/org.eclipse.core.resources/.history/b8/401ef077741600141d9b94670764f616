@@ -1,0 +1,5 @@
+package com.callumhutchy.runecraft2.worldgen;
+
+public class WorldGenFireAltar {
+
+}

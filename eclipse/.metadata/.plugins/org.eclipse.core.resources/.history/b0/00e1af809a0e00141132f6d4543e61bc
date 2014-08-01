@@ -1,9 +1,0 @@
-package com.callumhutchy.runecraft2.blocks;
-
-public class GoldOreBlock {
-
-	public GoldOreBlock() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

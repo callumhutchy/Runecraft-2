@@ -1,0 +1,82 @@
+---- Minecraft Crash Report ----
+// Why did you do that?
+
+Time: 25/07/14 17:53
+Description: Ticking memory connection
+
+java.lang.IllegalArgumentException: Duplicate id value for 0!
+	at net.minecraft.entity.DataWatcher.addObject(DataWatcher.java:56)
+	at handler.ExtendedPlayer.<init>(ExtendedPlayer.java:32)
+	at handler.ExtendedPlayer.register(ExtendedPlayer.java:46)
+	at handler.Runecraft2EventHandler.onEntityConstructing(Runecraft2EventHandler.java:22)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_6_Runecraft2EventHandler_onEntityConstructing_EntityConstructing.invoke(.dynamic)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:51)
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:122)
+	at net.minecraft.entity.Entity.<init>(Entity.java:250)
+	at net.minecraft.entity.EntityLivingBase.<init>(EntityLivingBase.java:167)
+	at net.minecraft.entity.player.EntityPlayer.<init>(EntityPlayer.java:179)
+	at net.minecraft.entity.player.EntityPlayerMP.<init>(EntityPlayerMP.java:162)
+	at net.minecraft.server.management.ServerConfigurationManager.createPlayerForUser(ServerConfigurationManager.java:434)
+	at net.minecraft.server.network.NetHandlerLoginServer.func_147326_c(NetHandlerLoginServer.java:105)
+	at net.minecraft.server.network.NetHandlerLoginServer.onNetworkTick(NetHandlerLoginServer.java:64)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:250)
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:182)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:736)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:624)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:495)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:762)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.entity.DataWatcher.addObject(DataWatcher.java:56)
+	at handler.ExtendedPlayer.<init>(ExtendedPlayer.java:32)
+	at handler.ExtendedPlayer.register(ExtendedPlayer.java:46)
+	at handler.Runecraft2EventHandler.onEntityConstructing(Runecraft2EventHandler.java:22)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_6_Runecraft2EventHandler_onEntityConstructing_EntityConstructing.invoke(.dynamic)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:51)
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:122)
+	at net.minecraft.entity.Entity.<init>(Entity.java:250)
+	at net.minecraft.entity.EntityLivingBase.<init>(EntityLivingBase.java:167)
+	at net.minecraft.entity.player.EntityPlayer.<init>(EntityPlayer.java:179)
+	at net.minecraft.entity.player.EntityPlayerMP.<init>(EntityPlayerMP.java:162)
+	at net.minecraft.server.management.ServerConfigurationManager.createPlayerForUser(ServerConfigurationManager.java:434)
+	at net.minecraft.server.network.NetHandlerLoginServer.func_147326_c(NetHandlerLoginServer.java:105)
+	at net.minecraft.server.network.NetHandlerLoginServer.onNetworkTick(NetHandlerLoginServer.java:64)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:250)
+
+-- Ticking connection --
+Details:
+	Connection: net.minecraft.network.NetworkManager@1654f367
+Stacktrace:
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:182)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:736)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:624)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:495)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:762)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_60, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 826308680 bytes (788 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.18.1180 Minecraft Forge 10.13.0.1180 4 mods loaded, 4 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.10.18.1180} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.0.1180.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.13.0.1180} [Minecraft Forge] (forgeSrc-1.7.10-10.13.0.1180.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Runecraft2{@VERSION@} [Runecraft 2] (bin) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Player Count: 0 / 8; []
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

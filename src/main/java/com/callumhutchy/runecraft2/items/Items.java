@@ -28,6 +28,11 @@ public class Items {
 	public static Item	adamantiteOre, coalOre, copperOre, goldOre, ironOre,
 			mithrilOre, runiteOre, silverOre, tinOre;
 
+	public static Item	spellbook;
+
+	public static Item	staff, staffofair, staffofwater, staffofearth,
+			staffoffire;
+
 	public static void init() {
 		// Runes
 		airRune = new Rune(ItemNames.AirRune_Unlo);
@@ -68,7 +73,7 @@ public class Items {
 		deathTalisman = new BaseMagicItem(ItemNames.DeathTalisman_Unlo, 1);
 		bloodTalisman = new BaseMagicItem(ItemNames.BloodTalisman_Unlo, 1);
 		astralTalisman = new BaseMagicItem(ItemNames.AstralTalisman_Unlo, 1);
-		
+
 		// Ores
 		adamantiteOre = new Ore().setUnlocalizedName(ItemNames.AdamantiteOre_Unlo);
 		coalOre = new Ore().setUnlocalizedName(ItemNames.CoalOre_Unlo);
@@ -80,6 +85,13 @@ public class Items {
 		silverOre = new Ore().setUnlocalizedName(ItemNames.SilverOre_Unlo);
 		tinOre = new Ore().setUnlocalizedName(ItemNames.TinOre_Unlo);
 
+		spellbook = new SpellBook(ItemNames.SpellBook_Unlo, 1);
+		// Staves
+		staff = new Staff(ItemNames.Staff_Unlo, 1, null, 0);
+		staffofair = new Staff(ItemNames.StaffOfAir_Unlo, 1, "air", 1);
+		staffofwater = new Staff(ItemNames.StaffOfWater_Unlo, 1, "water", 1);
+		staffofearth = new Staff(ItemNames.StaffOfEarth_Unlo, 1, "earth", 1);
+		staffoffire = new Staff(ItemNames.StaffOfFire_Unlo, 1, "fire", 1);
 	}
 
 	public static void gameRegistery() {
@@ -123,8 +135,6 @@ public class Items {
 		GameRegistry.registerItem(deathTalisman, deathTalisman.getUnlocalizedName());
 		GameRegistry.registerItem(bloodTalisman, bloodTalisman.getUnlocalizedName());
 		GameRegistry.registerItem(astralTalisman, astralTalisman.getUnlocalizedName());
-		
-		
 
 		// Ores
 		GameRegistry.registerItem(adamantiteOre, adamantiteOre.getUnlocalizedName());
@@ -136,6 +146,15 @@ public class Items {
 		GameRegistry.registerItem(runiteOre, runiteOre.getUnlocalizedName());
 		GameRegistry.registerItem(silverOre, silverOre.getUnlocalizedName());
 		GameRegistry.registerItem(tinOre, tinOre.getUnlocalizedName());
+
+		GameRegistry.registerItem(spellbook, spellbook.getUnlocalizedName());
+
+		// Staves
+		GameRegistry.registerItem(staff, staff.getUnlocalizedName());
+		GameRegistry.registerItem(staffofair, staffofair.getUnlocalizedName());
+		GameRegistry.registerItem(staffofwater, staffofwater.getUnlocalizedName());
+		GameRegistry.registerItem(staffofearth, staffofearth.getUnlocalizedName());
+		GameRegistry.registerItem(staffoffire, staffoffire.getUnlocalizedName());
 
 	}
 
@@ -152,6 +171,17 @@ public class Items {
 		GameRegistry.addShapelessRecipe(new ItemStack(natureTalisman), natureRune, Item.getItemById(280));
 		GameRegistry.addShapelessRecipe(new ItemStack(lawTalisman), lawRune, Item.getItemById(280));
 		GameRegistry.addShapelessRecipe(new ItemStack(deathTalisman), deathRune, Item.getItemById(280));
+		GameRegistry.addShapelessRecipe(new ItemStack(bloodTalisman), bloodRune, Item.getItemById(280));
+		GameRegistry.addShapelessRecipe(new ItemStack(astralTalisman), astralRune, Item.getItemById(280));
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(spellbook), Item.getItemById(340), runeEssence);
+
+		// Staffs
+		GameRegistry.addShapedRecipe(new ItemStack(staff), new Object[] { "OOX", "OXO", "XOO", 'X', Item.getItemById(280) });
+		GameRegistry.addShapedRecipe(new ItemStack(staffofair), new Object[] { "OZ", "XO", 'X', staff, 'Z', airRune });
+		GameRegistry.addShapedRecipe(new ItemStack(staffofwater), new Object[] { "OZ", "XO", 'X', staff, 'Z', waterRune });
+		GameRegistry.addShapedRecipe(new ItemStack(staffofearth), new Object[] { "OZ", "XO", 'X', staff, 'Z', earthRune });
+		GameRegistry.addShapedRecipe(new ItemStack(staffoffire), new Object[] { "OZ", "XO", 'X', staff, 'Z', fireRune });
 
 	}
 

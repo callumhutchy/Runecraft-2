@@ -8,10 +8,24 @@ tile.ironore.name=Iron Ore
 tile.mithrilore.name=Mithril Ore
 tile.runiteore.name=Runite Ore
 tile.silverore.name=Silver Ore
+tile.runeessence.name=Rune Essence
+tile.pureessence.name=Pure Essence
 
 
 //Altars
-tile.altar.name=Altar
+tile.airaltar.name=Air Altar
+tile.wateraltar.name=Water Altar
+tile.earthaltar.name=Earth Altar
+tile.firealtar.name=Fire Altar
+tile.mindaltar.name=Mind Altar
+tile.bodyaltar.name=Body Altar
+tile.cosmicaltar.name=Cosmic Altar
+tile.chaosaltar.name=Chaos Altar
+tile.naturealtar.name=Nature Altar
+tile.lawaltar.name=Law Altar
+tile.deathaltar.name=Death Altar
+tile.bloodaltar.name=Blood Altar
+tile.astralaltar.name=Astral Altar
 
 
 //Runes
@@ -64,3 +78,19 @@ item.chaostalisman.name=Chaos Talisman
 item.naturetalisman.name=Nature Talisman
 item.lawtalisman.name=Law Talisman
 item.deathtalisman.name=Death Talisman
+item.bloodtalisman.name=Blood Talisman
+item.astraltalisman.name=Astral Talisman
+
+//Staves
+item.staff.name=Staff
+item.staffofair.name=Staff of Air
+item.staffofwater.name=Staff of Water
+item.staffofearth.name=Staff of Earth
+item.staffoffire.name=Staff of Fire
+
+//Misc
+item.spellbook.name=Spellbook
+
+//Creative Tabs
+itemGroup.tabRunecraft2Magic=Runecraft 2 Magic
+itemGroup.tabRunecraft2Metal=Runecraft 2 Metal

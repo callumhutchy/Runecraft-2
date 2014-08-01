@@ -1,0 +1,217 @@
+package handler;
+
+import java.io.ByteArrayOutputStream;
+import java.io.DataOutputStream;
+
+import com.callumhutchy.runecraft2.proxy.CommonProxy;
+
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.world.World;
+import net.minecraftforge.common.IExtendedEntityProperties;
+
+public class ExtendedPlayer implements IExtendedEntityProperties{
+
+	public final static String EXT_PROP_NAME = "ExtendedPlayer";
+	public static final int MAGIC_EXP_WATCHER = 20;
+//	public static final int STRENGTH_EXP_WATCHER = 21;
+//	public static final int VITALITY_EXP_WATCHER = 22;
+//	public static final int DEFENSE_EXP_WATCHER = 23;
+//	public static final int COOKING_EXP_WATCHER = 24;
+	public static final int RUNECRAFTING_EXP_WATCHER = 25;
+//	public static final int MINING_EXP_WATCHER = 26;
+//	public static final int SMELTING_EXP_WATCHER = 27;
+	public static String currentSpell;
+	
+	public static int currentHomeTPx, currentHomeTPy, currentHomeTPz;
+	
+	public int currentMagicLevel, currentStrengthLevel, currentVitalityLevel, currentDefenseLevel,currentCookingLevel, currentRunecraftingLevel, currentMiningLevel, currentSmeltingLevel;
+	public int currentMagicExp, currentStrengthExp, currentVitalityExp, currentDefenseExp,currentCookingExp, currentRunecraftingExp, currentMiningExp, currentSmeltingExp;
+
+	public int maxSkill = 99;
+	private final EntityPlayer player;
+	
+	public ExtendedPlayer(EntityPlayer player)
+	{
+	this.player = player;
+	// Start with max mana. Every player starts with the same amount.
+	this.currentMagicLevel = this.currentStrengthLevel = this.currentVitalityLevel = this.currentCookingLevel = this.currentDefenseLevel = this.currentRunecraftingLevel = this.currentMiningLevel = this.currentSmeltingLevel = 1;
+	this.player.getDataWatcher().addObject(MAGIC_EXP_WATCHER, 1);
+//	this.player.getDataWatcher().addObject(STRENGTH_EXP_WATCHER, 0);
+//	this.player.getDataWatcher().addObject(VITALITY_EXP_WATCHER, 0);
+//	this.player.getDataWatcher().addObject(DEFENSE_EXP_WATCHER, 0);
+//	this.player.getDataWatcher().addObject(COOKING_EXP_WATCHER, 0);
+	this.player.getDataWatcher().addObject(RUNECRAFTING_EXP_WATCHER, 1);
+//	this.player.getDataWatcher().addObject(MINING_EXP_WATCHER, 0);
+//	this.player.getDataWatcher().addObject(SMELTING_EXP_WATCHER, 0);
+	this.currentSpell = "";
+	
+//	
+	}
+	
+	
+	public static final void register(EntityPlayer player)
+	{
+	player.registerExtendedProperties(ExtendedPlayer.EXT_PROP_NAME, new ExtendedPlayer(player));
+	}
+	
+	
+	public static final ExtendedPlayer get(EntityPlayer player)
+	{
+	return (ExtendedPlayer) player.getExtendedProperties(EXT_PROP_NAME);
+	}
+	
+	
+	@Override
+	public void saveNBTData(NBTTagCompound compound) {
+		NBTTagCompound properties = new NBTTagCompound();
+		//Levels
+		properties.setInteger("CurrentMagicLevel", this.currentMagicLevel);
+//		properties.setInteger("CurrentStrengthLevel", this.currentStrengthLevel);
+//		properties.setInteger("CurrentVitalityLevel", this.currentVitalityLevel);
+//		properties.setInteger("CurrentDefenseLevel", this.currentDefenseLevel);
+//		properties.setInteger("CurrentCookingLevel", this.currentCookingLevel);
+		properties.setInteger("CurrentRunecraftingLevel", this.currentRunecraftingLevel);
+//		properties.setInteger("CurrentMiningLevel", this.currentMiningLevel);
+//		properties.setInteger("CurrentSmeltingLevel", this.currentSmeltingLevel);
+		
+		
+		//Exp
+		properties.setInteger("CurrentMagicExp", this.player.getDataWatcher().getWatchableObjectInt(MAGIC_EXP_WATCHER));
+//		properties.setInteger("CurrentStrengthExp", this.player.getDataWatcher().getWatchableObjectInt(STRENGTH_EXP_WATCHER));
+//		properties.setInteger("CurrentVitalityExp", this.player.getDataWatcher().getWatchableObjectInt(VITALITY_EXP_WATCHER));
+//		properties.setInteger("CurrentDefenseExp", this.player.getDataWatcher().getWatchableObjectInt(DEFENSE_EXP_WATCHER));
+//		properties.setInteger("CurrentCookingExp", this.player.getDataWatcher().getWatchableObjectInt(COOKING_EXP_WATCHER));
+		properties.setInteger("CurrentRunecraftingExp", this.player.getDataWatcher().getWatchableObjectInt(RUNECRAFTING_EXP_WATCHER));
+//		properties.setInteger("CurrentMiningExp", this.player.getDataWatcher().getWatchableObjectInt(MINING_EXP_WATCHER));
+//		properties.setInteger("CurrentSmeltingExp", this.player.getDataWatcher().getWatchableObjectInt(SMELTING_EXP_WATCHER));
+		
+		//Spells
+		properties.setString("CurrentSpell", this.currentSpell);
+		compound.setTag(EXT_PROP_NAME, properties);
+		System.out.println("[TUT PROPS] Magic from NBT: " + this.currentMagicLevel + "/" + this.maxSkill);
+		
+		if(this.player.getDataWatcher().getWatchableObjectInt(MAGIC_EXP_WATCHER) == 10){
+			if(this.currentMagicLevel < 99){
+				this.currentMagicLevel++;
+				System.out.println("DING");
+				this.player.getDataWatcher().updateObject(MAGIC_EXP_WATCHER, 0);;
+			}
+			
+		}
+		
+	}
+
+	@Override
+	public void loadNBTData(NBTTagCompound compound) {
+		NBTTagCompound properties = (NBTTagCompound) compound.getTag(EXT_PROP_NAME);
+		//Levels
+		this.currentMagicLevel = properties.getInteger("CurrentMagicLevel");
+//		this.currentStrengthLevel = properties.getInteger("CurrentStrengthLevel");
+//		this.currentVitalityLevel = properties.getInteger("CurrentVitalityLevel");
+//		this.currentDefenseLevel = properties.getInteger("CurrentDefenseLevel");
+//		this.currentCookingLevel = properties.getInteger("CurrentCookingLevel");
+//		this.currentRunecraftingLevel = properties.getInteger("CurrentRunecraftingLevel");
+//		this.currentMiningLevel = properties.getInteger("CurrentMiningLevel");
+//		this.currentSmeltingLevel = properties.getInteger("CurrentSmeltingLevel");
+		
+		//Exp
+		this.player.getDataWatcher().updateObject(MAGIC_EXP_WATCHER, properties.getInteger("CurrentMagicExp"));	
+//		this.player.getDataWatcher().updateObject(STRENGTH_EXP_WATCHER, properties.getInteger("CurrentStrengthExp"));	
+//		this.player.getDataWatcher().updateObject(VITALITY_EXP_WATCHER, properties.getInteger("CurrentVitalityExp"));	
+//		this.player.getDataWatcher().updateObject(DEFENSE_EXP_WATCHER, properties.getInteger("CurrentDefenceExp"));	
+//		this.player.getDataWatcher().updateObject(COOKING_EXP_WATCHER, properties.getInteger("CurrentCookingExp"));	
+		this.player.getDataWatcher().updateObject(RUNECRAFTING_EXP_WATCHER, properties.getInteger("CurrentRunecraftingExp"));	
+//		this.player.getDataWatcher().updateObject(MINING_EXP_WATCHER, properties.getInteger("CurrentMiningExp"));	
+//		this.player.getDataWatcher().updateObject(SMELTING_EXP_WATCHER, properties.getInteger("CurrentSmeltingExp"));	
+//		
+		//Spells
+		this.currentSpell = properties.getString("CurrentSpell");
+		
+	}
+
+	@Override
+	public void init(Entity entity, World world) {
+		
+		
+	}
+	
+	public boolean isSkillHighEnough(String string, int amount){
+		switch(string){
+		case"magic":if(this.currentMagicLevel >= amount){
+		return true;	
+		}
+		case"strength":if(this.currentStrengthLevel >= amount){
+			return true;	
+			}
+		case"vitality":if(this.currentVitalityLevel >= amount){
+			return true;	
+			}
+		case"defense":if(this.currentDefenseLevel >= amount){
+			return true;	
+			}
+		case"cooking":if(this.currentCookingLevel >= amount){
+			return true;	
+			}
+		case"runecrafting":if(this.currentRunecraftingLevel >= amount){
+			return true;	
+			}
+		case"mining":if(this.currentMiningLevel >= amount){
+			return true;	
+			}
+		case"smelting":if(this.currentSmeltingLevel >= amount){
+			return true;	
+			}
+		default: return false;
+		}
+	}
+	
+	public void increaseSkill(String string){
+		switch(string){
+		case"magic":this.currentMagicLevel++;
+		case"strength":this.currentStrengthLevel++;
+		case"vitality":this.currentVitalityLevel++;
+		case"defense":this.currentDefenseLevel++;
+		case"cooking":this.currentCookingLevel++;
+		case"runecrafting":this.currentRunecraftingLevel++;
+		case"mining":this.currentMiningLevel++;
+		case"smelting":this.currentSmeltingLevel++;
+		}
+		
+	}
+
+
+	public void syncProperties() {
+		
+		
+	}
+
+
+	public static void saveProxyData(EntityPlayer player) {
+		ExtendedPlayer playerData = ExtendedPlayer.get(player);
+		NBTTagCompound savedData = new NBTTagCompound();
+
+		playerData.saveNBTData(savedData);
+		// Note that we made the CommonProxy method storeEntityData static,
+		// so now we don't need an instance of CommonProxy to use it! Great!
+		CommonProxy.storeEntityData(getSaveKey(player), savedData);
+		}
+
+	private static String getSaveKey(EntityPlayer player) {
+		String username = player.getCommandSenderName();
+		return username + ":" + EXT_PROP_NAME;
+		}
+
+	public static void loadProxyData(EntityPlayer player) {
+		ExtendedPlayer playerData = ExtendedPlayer.get(player);
+		NBTTagCompound savedData = CommonProxy.getEntityData(getSaveKey(player));
+
+		if(savedData != null) {
+		playerData.loadNBTData(savedData);
+		}
+		// note we renamed 'syncExtendedProperties' to 'syncProperties' because yay, it's shorter
+		playerData.syncProperties();
+		}
+}

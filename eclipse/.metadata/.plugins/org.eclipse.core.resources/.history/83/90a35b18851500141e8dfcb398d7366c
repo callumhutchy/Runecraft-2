@@ -1,0 +1,42 @@
+package utility;
+
+import handler.ExtendedPlayer;
+import net.minecraft.client.Minecraft;
+import net.minecraft.command.CommandBase;
+import net.minecraft.command.ICommandSender;
+import net.minecraft.entity.DataWatcher;
+import net.minecraft.entity.player.EntityPlayer;
+
+public class SkillsCommand extends CommandBase{
+
+	@Override
+	public String getCommandName() {
+		// TODO Auto-generated method stub
+		return "skills";
+	}
+
+	@Override
+	public String getCommandUsage(ICommandSender p_71518_1_) {
+		// TODO Auto-generated method stub
+		return "Displays your current skills progress.";
+	}
+
+	@Override
+	public void processCommand(ICommandSender icommandsender, String[] string) {
+		
+		if(icommandsender instanceof EntityPlayer){
+			EntityPlayer player = (EntityPlayer) icommandsender;
+			ExtendedPlayer props = ExtendedPlayer.get(player);
+			DataWatcher dw = player.getDataWatcher();
+			int MagicLevel = dw.getWatchableObjectInt(20);
+			int RunecraftingLevel = dw.getWatchableObjectInt(25);
+			Minecraft.getMinecraft().thePlayer.sendChatMessage("Your Magic level is " + props.currentMagicLevel + "/" + props.maxSkill);
+			Minecraft.getMinecraft().thePlayer.sendChatMessage("Your Runecrafting level is " + RunecraftingLevel + "/" + props.maxSkill);
+			
+		
+		}
+		
+		
+	}
+
+}

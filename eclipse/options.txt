@@ -3,8 +3,8 @@ mouseSensitivity:0.5
 fov:0.0
 gamma:0.0
 saturation:0.0
-renderDistance:12
-guiScale:0
+renderDistance:10
+guiScale:3
 particles:0
 bobView:true
 anaglyph3d:false
@@ -13,7 +13,7 @@ maxFps:120
 fboEnable:true
 difficulty:0
 fancyGraphics:true
-ao:2
+ao:0
 clouds:true
 resourcePacks:[]
 lastServer:
@@ -85,7 +85,8 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
-soundCategory_master:0.0066225166
+key_key.skillGui:37
+soundCategory_master:0.14238411
 soundCategory_music:1.0
 soundCategory_record:1.0
 soundCategory_weather:1.0

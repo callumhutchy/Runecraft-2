@@ -1,6 +1,0 @@
-package com.callumhutchy.runecraft2.blocks.renderer.ore;
-
-public class AdamantiteOreRenderer extends OreRenderer{
-	public AdamantiteOreRenderer(){
-			}
-}

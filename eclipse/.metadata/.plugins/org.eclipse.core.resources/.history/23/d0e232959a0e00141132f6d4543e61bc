@@ -1,9 +1,0 @@
-package com.callumhutchy.runecraft2.blocks;
-
-public class MithrilOreBlock {
-
-	public MithrilOreBlock() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

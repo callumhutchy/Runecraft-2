@@ -1,11 +1,16 @@
 package com.callumhutchy.runecraft2.blocks;
 
+import handler.ExtendedPlayer;
+
 import java.util.Random;
 
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
@@ -13,6 +18,7 @@ import reference.Reference;
 
 import com.callumhutchy.runecraft2.Runecraft2;
 import com.callumhutchy.runecraft2.blocks.models.OreModel;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.altars.TileEntityAirRuneAltar;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityAdamantiteOre;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityCoalOre;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityCopperOre;
@@ -47,16 +53,6 @@ public class OreBlock extends BlockContainer {
 		itemToBeDropped = item;
 		this.model = new OreModel();
 		tileEntityClass = tileEntity;
-		switch (tileEntity) {
-		case "runeessence":
-			Random rand = new Random(5);
-
-			this.quantityDropped(rand);
-		case "pureessence":
-			Random rand1 = new Random(5);
-
-			this.quantityDropped(rand1);
-		}
 
 	}
 
@@ -64,6 +60,37 @@ public class OreBlock extends BlockContainer {
 	@Override
 	public int getRenderType() {
 		return -1;
+	}
+
+	public int quantityDropped(Random rand) {
+		switch (tileEntityClass) {
+		case "adamantite":
+			return 1;
+		case "coal":
+			return 1;
+		case "copper":
+			return 1;
+		case "gold":
+			return 1;
+		case "iron":
+			return 1;
+		case "mithril":
+			return 1;
+		case "runite":
+			return 1;
+		case "silver":
+			return 1;
+		case "tin":
+			return 1;
+		case "runeessence":
+
+			return randInt(2, 4);
+		case "pureessence":
+			return randInt(2, 4);
+		default:
+			return 1;
+		}
+
 	}
 
 	public boolean shouldSideBeRendered(IBlockAccess iblockaccess, int i, int j, int k, int l) {
@@ -97,6 +124,7 @@ public class OreBlock extends BlockContainer {
 		case "tin":
 			return Items.tinOre;
 		case "runeessence":
+
 			return Items.runeEssence;
 		case "pureessence":
 			return Items.pureEssence;
@@ -129,6 +157,7 @@ public class OreBlock extends BlockContainer {
 		case "tin":
 			return new TileEntityTinOre();
 		case "runeessence":
+
 			return new TileEntityRuneEssenceOre();
 		case "pureessence":
 			return new TileEntityPureEssenceOre();
@@ -140,6 +169,76 @@ public class OreBlock extends BlockContainer {
 	@SideOnly(Side.CLIENT)
 	public void registerBlockIcons(IIconRegister iconRegister) {
 		this.blockIcon = iconRegister.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(5));
+	}
+
+	public static int randInt(int min, int max) {
+
+		// NOTE: Usually this should be a field rather than a method
+		// variable so that it is not re-seeded every call.
+		Random rand = new Random();
+
+		// nextInt is normally exclusive of the top value,
+		// so add 1 to make it inclusive
+		int randomNum = rand.nextInt((max - min) + 1) + min;
+
+		return randomNum;
+	}
+
+	public void onBlockDestroyedByPlayer(World world, int varx, int vary, int varz, int p_149664_5_) {
+		
+
+		}
+
+	
+
+	public boolean removedByPlayer(World world, EntityPlayer player, int x, int y, int z, boolean willHarvest) {
+		
+		ExtendedPlayer props = ExtendedPlayer.get(player);
+		switch (tileEntityClass) {
+		case "adamantite":
+			props.currentMiningExp = props.currentMiningExp + 95;
+			
+			break;
+		case "coal":
+			props.currentMiningExp = props.currentMiningExp + 50;
+			break;
+		case "copper":
+			props.currentMiningExp = props.currentMiningExp + 17;
+			break;
+		case "gold":
+			props.currentMiningExp = props.currentMiningExp + 65;
+			break;
+		case "iron":
+			props.currentMiningExp = props.currentMiningExp + 35;
+			break;
+		case "mithril":
+			props.currentMiningExp = props.currentMiningExp + 80;
+			break;
+		case "runite":
+			props.currentMiningExp = props.currentMiningExp + 125;
+			break;
+		case "silver":
+			props.currentMiningExp = props.currentMiningExp + 40;
+			break;
+		case "tin":
+			props.currentMiningExp = props.currentMiningExp + 17;
+			break;
+		case "runeessence":
+			int rand = randInt(1, 10);
+			if (rand == 1) {
+				if (!world.isRemote) {
+					world.spawnEntityInWorld(new EntityItem(world, x, y + 1, z, new ItemStack(Items.airRune, 1)));
+				}
+			}
+			props.currentMiningExp = props.currentMiningExp + 5;
+			break;
+		case "pureessence":
+			props.currentMiningExp = props.currentMiningExp + 5;
+			break;
+
+		}
+		super.removedByPlayer(world, player, x, y, z, true);
+		return true;
 	}
 
 }

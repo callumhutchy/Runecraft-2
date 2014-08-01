@@ -1,0 +1,50 @@
+package com.callumhutchy.runecraft2.items;
+
+import handler.ExtendedPlayer;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
+
+import com.callumhutchy.runecraft2.Runecraft2;
+import com.callumhutchy.runecraft2.client.gui.GuiSpellBook;
+import com.callumhutchy.runecraft2.spells.tileentities.TileEntityAirStrike;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
+public class Staff extends BaseMagicItem{
+
+	public String staffElement;
+	public int runesProvided;
+	
+	public Staff(String unlocalisedName, int maxSize, String type, int numberOfRunesProvided) {
+		super(unlocalisedName, maxSize);
+		staffElement = type;
+		runesProvided = numberOfRunesProvided;
+		
+	}
+	@SideOnly(Side.CLIENT)
+    public boolean isFull3D()
+    {
+        return true;
+    }
+	public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player)
+    {
+		ExtendedPlayer props = ExtendedPlayer.get(player);
+		System.out.println(props.currentSpell);
+       if(props.currentSpell == "airstrike"){
+		if(player.capabilities.isCreativeMode|| runesProvided >= 1 && staffElement == "air"||player.inventory.consumeInventoryItem(Items.airRune) )
+		   {
+		     world.playSoundAtEntity(player, "random.bow", 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
+		     if (!world.isRemote)
+		     {
+
+
+		       world.spawnEntityInWorld(new TileEntityAirStrike(world, player));
+		     }
+		   }
+		  
+       }
+       return item;
+    }
+}

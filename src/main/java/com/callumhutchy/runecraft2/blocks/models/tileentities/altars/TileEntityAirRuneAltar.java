@@ -7,7 +7,7 @@ import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityAirRuneAltar extends TileEntity {
 	public int	quantityOfRuneEssence;
-
+public int time;
 	public TileEntityAirRuneAltar() {
 		
 	}

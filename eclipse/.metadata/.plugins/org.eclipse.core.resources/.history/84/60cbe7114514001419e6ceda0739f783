@@ -1,0 +1,38 @@
+package com.callumhutchy.runecraft2.blocks.models.tileentities.altars;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class TileEntities {
+
+	public static void init(){
+		//Altars (base)
+		GameRegistry.registerTileEntity(TileEntityAirAltar.class, "teairaltar");
+		GameRegistry.registerTileEntity(TileEntityBloodAltar.class, "tebloodaltar");
+		GameRegistry.registerTileEntity(TileEntityBodyAltar.class, "tebodyaltar");
+		GameRegistry.registerTileEntity(TileEntityChaosAltar.class, "techaosaltar");
+		GameRegistry.registerTileEntity(TileEntityCosmicAltar.class, "tecosmicaltar");
+		GameRegistry.registerTileEntity(TileEntityDeathAltar.class, "tedeathaltar");
+		GameRegistry.registerTileEntity(TileEntityEarthAltar.class, "teearthaltar");
+		GameRegistry.registerTileEntity(TileEntityFireAltar.class, "tefirealtar");
+		GameRegistry.registerTileEntity(TileEntityLawAltar.class, "telawaltar");
+		GameRegistry.registerTileEntity(TileEntityMindAltar.class, "temindaltar");
+		GameRegistry.registerTileEntity(TileEntityNatureAltar.class, "tenaturealtar");
+		GameRegistry.registerTileEntity(TileEntityWaterAltar.class, "tewateraltar");
+		
+		//Altars (rune)
+		GameRegistry.registerTileEntity(TileEntityAirRuneAltar.class, "teairrunealtar");
+		GameRegistry.registerTileEntity(TileEntityBloodRuneAltar.class, "tebloodrunealtar");
+		GameRegistry.registerTileEntity(TileEntityBodyRuneAltar.class, "tebodyrunealtar");
+		GameRegistry.registerTileEntity(TileEntityChaosRuneAltar.class, "techaosrunealtar");
+		GameRegistry.registerTileEntity(TileEntityCosmicRuneAltar.class, "tecosmicrunealtar");
+		GameRegistry.registerTileEntity(TileEntityDeathRuneAltar.class, "tedeathrunealtar");
+		GameRegistry.registerTileEntity(TileEntityEarthRuneAltar.class, "teearthrunealtar");
+		GameRegistry.registerTileEntity(TileEntityFireRuneAltar.class, "tefirerunealtar");
+		GameRegistry.registerTileEntity(TileEntityLawRuneAltar.class, "telawrunealtar");
+		GameRegistry.registerTileEntity(TileEntityMindRuneAltar.class, "temindrunealtar");
+		GameRegistry.registerTileEntity(TileEntityNatureRuneAltar.class, "tenaturerunealtar");
+		GameRegistry.registerTileEntity(TileEntityWaterRuneAltar.class, "tewaterrunealtar");
+		
+		
+	}
+}

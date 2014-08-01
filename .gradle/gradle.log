@@ -8,14 +8,10 @@
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
-:sourceMainJava
-:compileJavaNote: C:\Users\Callum\Desktop\Minecraft Modding\Runecraft-2\build\sources\java\com\callumhutchy\runecraft2\Runecraft2.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-Note: C:\Users\Callum\Desktop\Minecraft Modding\Runecraft-2\build\sources\java\com\callumhutchy\runecraft2\client\gui\ModGuiConfig.java uses unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
-
+:sourceMainJava UP-TO-DATE
+:compileJava UP-TO-DATE
 :processResources UP-TO-DATE
-:classes
+:classes UP-TO-DATE
 :jar
 :extractUserDev UP-TO-DATE
 :getAssetsIndex
@@ -33,4 +29,4 @@ Note: Recompile with -Xlint:unchecked for details.
 
 BUILD SUCCESSFUL
 
-Total time: 22.537 secs
+Total time: 20.593 secs

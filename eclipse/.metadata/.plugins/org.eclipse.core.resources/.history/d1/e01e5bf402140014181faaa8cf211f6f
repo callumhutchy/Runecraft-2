@@ -1,0 +1,6 @@
+package com.callumhutchy.runecraft2.keys;
+
+
+public class KeyBinder extends KeyListener{
+
+}

@@ -11,7 +11,10 @@ import net.minecraftforge.common.config.Property;
 public class ConfigurationHandler {
 	
 	public static Configuration configuration;
-	public static boolean testValue = false;
+	public static boolean altarWorldGen = true;
+	public static boolean oreWorldGen = true;
+	
+	public static int WorldGenMultiplier = 20;
 
 	public static void init(File configFile){
 		//Create config object from the given config file
@@ -31,7 +34,9 @@ public class ConfigurationHandler {
 	}
 	
 	private static void loadConfiguration(){
-		testValue = configuration.getBoolean("configValue", Configuration.CATEGORY_GENERAL, false, "This is an example value");
+		altarWorldGen = configuration.getBoolean("Altar World Gen", Configuration.CATEGORY_GENERAL, false, "Whether the Altar world gens should be generated.");
+		oreWorldGen = configuration.getBoolean("Ore World Gen", Configuration.CATEGORY_GENERAL, false, "Whether the Ore world gens should be generated.");
+		WorldGenMultiplier = configuration.getInt("World Gen Multiplier", Configuration.CATEGORY_GENERAL, 20, 0, 100, "For testing purposes atm");
 		
 		if(configuration.hasChanged()){
 			configuration.save();
