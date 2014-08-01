@@ -1,8 +1,8 @@
-[17:17:17] [main/INFO]: Setting user: ForgeDevName
-[17:17:18] [Client thread/INFO]: LWJGL Version: 2.9.1
-[17:17:23] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
-[17:17:24] [Sound Library Loader/INFO]: Sound engine started
-[17:17:27] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/runeessence.png
+[17:28:02] [main/INFO]: Setting user: ForgeDevName
+[17:28:03] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:28:08] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
+[17:28:09] [Sound Library Loader/INFO]: Sound engine started
+[17:28:12] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/runeessence.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/runeessence.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -27,7 +27,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/runeessence.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:27] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/bodyrunealtar.png
+[17:28:12] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/bodyrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/bodyrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -52,7 +52,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/bodyrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:27] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/firerunealtar.png
+[17:28:12] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/firerunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/firerunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -77,7 +77,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/firerunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:27] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/astralrunealtar.png
+[17:28:12] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/astralrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/astralrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -102,7 +102,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/astralrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:27] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/deathrunealtar.png
+[17:28:12] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/deathrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/deathrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -127,7 +127,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/deathrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:27] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/mindrunealtar.png
+[17:28:12] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/mindrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/mindrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -152,7 +152,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/mindrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:27] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/lawrunealtar.png
+[17:28:12] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/lawrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/lawrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -177,7 +177,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/lawrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:27] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/airrunealtar.png
+[17:28:12] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/airrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/airrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -202,7 +202,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/airrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:27] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/chaosrunealtar.png
+[17:28:12] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/chaosrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/chaosrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -227,7 +227,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/chaosrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:27] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/bloodrunealtar.png
+[17:28:12] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/bloodrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/bloodrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -252,7 +252,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/bloodrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:27] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/naturerunealtar.png
+[17:28:12] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/naturerunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/naturerunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -277,7 +277,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/naturerunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:27] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/pureessence.png
+[17:28:12] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/pureessence.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/pureessence.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -302,7 +302,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/pureessence.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:27] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/earthrunealtar.png
+[17:28:12] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/earthrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/earthrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -327,7 +327,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/earthrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:27] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/waterrunealtar.png
+[17:28:12] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/waterrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/waterrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -352,7 +352,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/waterrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:27] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/cosmicrunealtar.png
+[17:28:12] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/cosmicrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/cosmicrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -377,11 +377,11 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/cosmicrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:27] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[17:17:28] [Client thread/INFO]: Created: 2048x2048 textures/items-atlas
-[17:17:28] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
-[17:17:29] [Client thread/INFO]: Created: 2048x2048 textures/items-atlas
-[17:17:29] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/runeessence.png
+[17:28:13] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[17:28:13] [Client thread/INFO]: Created: 2048x2048 textures/items-atlas
+[17:28:14] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
+[17:28:14] [Client thread/INFO]: Created: 2048x2048 textures/items-atlas
+[17:28:14] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/runeessence.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/runeessence.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -409,7 +409,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/runeessence.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:29] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/bodyrunealtar.png
+[17:28:14] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/bodyrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/bodyrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -437,7 +437,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/bodyrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:29] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/firerunealtar.png
+[17:28:14] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/firerunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/firerunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -465,7 +465,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/firerunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:29] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/astralrunealtar.png
+[17:28:14] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/astralrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/astralrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -493,7 +493,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/astralrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:29] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/deathrunealtar.png
+[17:28:14] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/deathrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/deathrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -521,7 +521,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/deathrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:29] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/mindrunealtar.png
+[17:28:14] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/mindrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/mindrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -549,7 +549,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/mindrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:29] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/lawrunealtar.png
+[17:28:14] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/lawrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/lawrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -577,7 +577,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/lawrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:29] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/airrunealtar.png
+[17:28:14] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/airrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/airrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -605,7 +605,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/airrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:29] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/chaosrunealtar.png
+[17:28:14] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/chaosrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/chaosrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -633,7 +633,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/chaosrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:29] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/bloodrunealtar.png
+[17:28:14] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/bloodrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/bloodrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -661,7 +661,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/bloodrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:29] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/naturerunealtar.png
+[17:28:14] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/naturerunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/naturerunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -689,7 +689,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/naturerunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:29] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/pureessence.png
+[17:28:14] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/pureessence.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/pureessence.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -717,7 +717,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/pureessence.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:29] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/earthrunealtar.png
+[17:28:14] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/earthrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/earthrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -745,7 +745,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/earthrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:29] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/waterrunealtar.png
+[17:28:14] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/waterrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/waterrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -773,7 +773,7 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/waterrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:29] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/cosmicrunealtar.png
+[17:28:14] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/blocks/cosmicrunealtar.png
 java.io.FileNotFoundException: runecraft2:textures/blocks/cosmicrunealtar.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -801,21 +801,21 @@ java.io.FileNotFoundException: runecraft2:textures/blocks/cosmicrunealtar.png
 	at GradleStart.bounce(GradleStart.java:108) [start/:?]
 	at GradleStart.startClient(GradleStart.java:101) [start/:?]
 	at GradleStart.main(GradleStart.java:56) [start/:?]
-[17:17:29] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[17:17:30] [Sound Library Loader/INFO]: Sound engine started
-[17:17:51] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[17:17:51] [Server thread/INFO]: Generating keypair
-[17:17:52] [Server thread/INFO]: Preparing start region for level 0
-[17:17:54] [Server thread/INFO]: ForgeDevName[local:E:4cdb2dbd] logged in with entity id 254 at (454.7952852573438, 4.0, -35.65906356714863)
-[17:17:54] [Server thread/INFO]: ForgeDevName joined the game
-[17:18:44] [Server thread/INFO]: Saving and pausing game...
-[17:18:44] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[17:18:44] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[17:18:44] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[17:18:45] [Client thread/INFO]: Stopping!
-[17:18:45] [Server thread/INFO]: Stopping server
-[17:18:45] [Server thread/INFO]: Saving players
-[17:18:45] [Server thread/INFO]: Saving worlds
-[17:18:45] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[17:18:45] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[17:18:45] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:28:14] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[17:28:15] [Sound Library Loader/INFO]: Sound engine started
+[17:28:58] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:28:58] [Server thread/INFO]: Generating keypair
+[17:28:58] [Server thread/INFO]: Preparing start region for level 0
+[17:29:00] [Server thread/INFO]: ForgeDevName[local:E:bb770dd0] logged in with entity id 259 at (501.0553784389743, 4.0, -95.8805032070951)
+[17:29:00] [Server thread/INFO]: ForgeDevName joined the game
+[17:29:12] [Server thread/INFO]: Saving and pausing game...
+[17:29:12] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:29:12] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:29:12] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:29:12] [Client thread/INFO]: Stopping!
+[17:29:12] [Server thread/INFO]: Stopping server
+[17:29:12] [Server thread/INFO]: Saving players
+[17:29:12] [Server thread/INFO]: Saving worlds
+[17:29:12] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:29:12] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:29:12] [Server thread/INFO]: Saving chunks for level 'New World'/The End
