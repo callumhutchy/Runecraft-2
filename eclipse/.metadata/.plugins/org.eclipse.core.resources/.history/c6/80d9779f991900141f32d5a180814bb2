@@ -240,7 +240,6 @@ public class Altar extends BlockContainer {
 						}
 					} finally {
 					}
-					break;
 				case "wateraltar":
 					if (item == Items.runeEssence) {
 						numberOfRuneEssences = entity.inventory.getCurrentItem().stackSize;
@@ -253,7 +252,6 @@ public class Altar extends BlockContainer {
 						item = null;
 					} else {
 					}
-					break;
 				case "firealtar":
 					if (item == Items.runeEssence) {
 						numberOfRuneEssences = entity.inventory.getCurrentItem().stackSize;
@@ -266,7 +264,6 @@ public class Altar extends BlockContainer {
 						item = null;
 					} else {
 					}
-					break;
 				case "earthaltar":
 					if (item == Items.runeEssence) {
 						numberOfRuneEssences = entity.inventory.getCurrentItem().stackSize;
@@ -279,7 +276,6 @@ public class Altar extends BlockContainer {
 						item = null;
 					} else {
 					}
-					break;
 				case "mindaltar":
 					if (item == Items.runeEssence) {
 						numberOfRuneEssences = entity.inventory.getCurrentItem().stackSize;
@@ -291,7 +287,6 @@ public class Altar extends BlockContainer {
 						tileEntity.quantityOfRuneEssence = numberOfRuneEssences;
 						item = null;
 					}
-					break;
 				case "bodyaltar":
 					if (item == Items.runeEssence) {
 						numberOfRuneEssences = entity.inventory.getCurrentItem().stackSize;
@@ -303,7 +298,6 @@ public class Altar extends BlockContainer {
 						tileEntity.quantityOfRuneEssence = numberOfRuneEssences;
 						item = null;
 					}
-					break;
 				case "cosmicaltar":
 					if (item == Items.pureEssence) {
 						numberOfRuneEssences = entity.inventory.getCurrentItem().stackSize;
@@ -315,7 +309,6 @@ public class Altar extends BlockContainer {
 						tileEntity.quantityOfRuneEssence = numberOfRuneEssences;
 						item = null;
 					}
-					break;
 				case "chaosaltar":
 					if (item == Items.pureEssence) {
 						numberOfRuneEssences = entity.inventory.getCurrentItem().stackSize;
@@ -327,7 +320,6 @@ public class Altar extends BlockContainer {
 						tileEntity.quantityOfRuneEssence = numberOfRuneEssences;
 						item = null;
 					}
-					break;
 				case "naturealtar":
 					if (item == Items.pureEssence) {
 						numberOfRuneEssences = entity.inventory.getCurrentItem().stackSize;
@@ -339,7 +331,6 @@ public class Altar extends BlockContainer {
 						tileEntity.quantityOfRuneEssence = numberOfRuneEssences;
 						item = null;
 					}
-					break;
 				case "lawaltar":
 					if (item == Items.pureEssence) {
 						numberOfRuneEssences = entity.inventory.getCurrentItem().stackSize;
@@ -350,8 +341,8 @@ public class Altar extends BlockContainer {
 						TileEntityLawRuneAltar tileEntity = (TileEntityLawRuneAltar) world.getTileEntity(varx, vary, varz);
 						tileEntity.quantityOfRuneEssence = numberOfRuneEssences;
 						item = null;
+					} else {
 					}
-					break;
 				case "deathaltar":
 					if (item == Items.pureEssence) {
 						numberOfRuneEssences = entity.inventory.getCurrentItem().stackSize;
@@ -362,8 +353,8 @@ public class Altar extends BlockContainer {
 						TileEntityDeathRuneAltar tileEntity = (TileEntityDeathRuneAltar) world.getTileEntity(varx, vary, varz);
 						tileEntity.quantityOfRuneEssence = numberOfRuneEssences;
 						item = null;
-					} 
-					break;
+					} else {
+					}
 				case "bloodaltar":
 					if (item == Items.pureEssence) {
 						numberOfRuneEssences = entity.inventory.getCurrentItem().stackSize;
@@ -374,8 +365,8 @@ public class Altar extends BlockContainer {
 						TileEntityBloodRuneAltar tileEntity = (TileEntityBloodRuneAltar) world.getTileEntity(varx, vary, varz);
 						tileEntity.quantityOfRuneEssence = numberOfRuneEssences;
 						item = null;
+					} else {
 					}
-					break;
 				case "astralaltar":
 					if (item == Items.pureEssence) {
 						numberOfRuneEssences = entity.inventory.getCurrentItem().stackSize;
@@ -386,8 +377,8 @@ public class Altar extends BlockContainer {
 						TileEntityAstralRuneAltar tileEntity = (TileEntityAstralRuneAltar) world.getTileEntity(varx, vary, varz);
 						tileEntity.quantityOfRuneEssence = numberOfRuneEssences;
 						item = null;
-					} 
-					break;
+					} else {
+					}
 					// ///////////////////////////////////////////////////////////////////////////////////////////////////
 				case "airrunealtar":
 					try {
@@ -440,7 +431,6 @@ public class Altar extends BlockContainer {
 						System.out.println("Altar threw error.");
 					} finally {
 					}
-					break;
 					// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 				case "waterrunealtar":
 					try {
@@ -489,7 +479,6 @@ public class Altar extends BlockContainer {
 						System.out.println("Altar threw error.");
 					} finally {
 					}
-					break;
 
 				case "firerunealtar":
 					try {
@@ -536,7 +525,6 @@ public class Altar extends BlockContainer {
 						System.out.println("Altar threw error.");
 					} finally {
 					}
-					break;
 				case "earthrunealtar":
 					try {
 						TileEntityEarthRuneAltar tileEntity = (TileEntityEarthRuneAltar) world.getTileEntity(varx, vary, varz);
@@ -582,7 +570,6 @@ public class Altar extends BlockContainer {
 						System.out.println("Altar threw error.");
 					} finally {
 					}
-					break;
 				case "mindrunealtar":
 
 					try {
@@ -631,7 +618,6 @@ public class Altar extends BlockContainer {
 						System.out.println("Altar threw error.");
 					} finally {
 					}
-					break;
 				case "bodyrunealtar":
 					try {
 						TileEntityBodyRuneAltar tileEntity = (TileEntityBodyRuneAltar) world.getTileEntity(varx, vary, varz);
@@ -679,7 +665,6 @@ public class Altar extends BlockContainer {
 						System.out.println("Altar threw error.");
 					} finally {
 					}
-					break;
 				case "cosmicrunealtar":
 					try {
 						TileEntityCosmicRuneAltar tileEntity = (TileEntityCosmicRuneAltar) world.getTileEntity(varx, vary, varz);
@@ -725,7 +710,6 @@ public class Altar extends BlockContainer {
 						System.out.println("Altar threw error.");
 					} finally {
 					}
-					break;
 				case "chaosrunealtar":
 					try {
 						TileEntityChaosRuneAltar tileEntity = (TileEntityChaosRuneAltar) world.getTileEntity(varx, vary, varz);
@@ -754,7 +738,6 @@ public class Altar extends BlockContainer {
 						System.out.println("Altar threw error.");
 					} finally {
 					}
-					break;
 
 				case "naturerunealtar":
 					try {
@@ -801,7 +784,6 @@ public class Altar extends BlockContainer {
 						System.out.println("Altar threw error.");
 					} finally {
 					}
-					break;
 				case "lawrunealtar":
 					try {
 						TileEntityLawRuneAltar tileEntity = (TileEntityLawRuneAltar) world.getTileEntity(varx, vary, varz);
@@ -847,7 +829,6 @@ public class Altar extends BlockContainer {
 						System.out.println("Altar threw error.");
 					} finally {
 					}
-					break;
 				case "deathrunealtar":
 					try {
 						TileEntityDeathRuneAltar tileEntity = (TileEntityDeathRuneAltar) world.getTileEntity(varx, vary, varz);
@@ -876,7 +857,6 @@ public class Altar extends BlockContainer {
 						System.out.println("Altar threw error.");
 					} finally {
 					}
-					break;
 
 				case "bloodrunealtar":
 					try {
@@ -907,7 +887,6 @@ public class Altar extends BlockContainer {
 						System.out.println("Altar threw error.");
 					} finally {
 					}
-					break;
 				case "astralrunealtar":
 					try {
 						TileEntityAstralRuneAltar tileEntity = (TileEntityAstralRuneAltar) world.getTileEntity(varx, vary, varz);
@@ -937,7 +916,6 @@ public class Altar extends BlockContainer {
 						System.out.println("Altar threw error.");
 					} finally {
 					}
-					break;
 
 				default:
 					;
