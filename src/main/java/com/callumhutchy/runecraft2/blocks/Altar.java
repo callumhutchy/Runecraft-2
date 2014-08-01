@@ -298,7 +298,7 @@ public class Altar extends BlockContainer {
 						item = null;
 					}
 				case "cosmicaltar":
-					if (item == Items.runeEssence) {
+					if (item == Items.pureEssence) {
 						numberOfRuneEssences = entity.inventory.getCurrentItem().stackSize;
 						System.out.println(numberOfRuneEssences);
 						world.setBlockToAir(varx, vary, varz);
@@ -309,7 +309,7 @@ public class Altar extends BlockContainer {
 						item = null;
 					}
 				case "chaosaltar":
-					if (item == Items.runeEssence) {
+					if (item == Items.pureEssence) {
 						numberOfRuneEssences = entity.inventory.getCurrentItem().stackSize;
 						System.out.println(numberOfRuneEssences);
 						world.setBlockToAir(varx, vary, varz);
@@ -320,7 +320,7 @@ public class Altar extends BlockContainer {
 						item = null;
 					}
 				case "naturealtar":
-					if (item == Items.runeEssence) {
+					if (item == Items.pureEssence) {
 						numberOfRuneEssences = entity.inventory.getCurrentItem().stackSize;
 						System.out.println(numberOfRuneEssences);
 						world.setBlockToAir(varx, vary, varz);
@@ -331,7 +331,7 @@ public class Altar extends BlockContainer {
 						item = null;
 					}
 				case "lawaltar":
-					if (item == Items.runeEssence) {
+					if (item == Items.pureEssence) {
 						numberOfRuneEssences = entity.inventory.getCurrentItem().stackSize;
 						System.out.println(numberOfRuneEssences);
 						world.setBlockToAir(varx, vary, varz);
@@ -343,7 +343,7 @@ public class Altar extends BlockContainer {
 					} else {
 					}
 				case "deathaltar":
-					if (item == Items.runeEssence) {
+					if (item == Items.pureEssence) {
 						numberOfRuneEssences = entity.inventory.getCurrentItem().stackSize;
 						System.out.println(numberOfRuneEssences);
 						world.setBlockToAir(varx, vary, varz);
@@ -355,7 +355,7 @@ public class Altar extends BlockContainer {
 					} else {
 					}
 				case "bloodaltar":
-					if (item == Items.runeEssence) {
+					if (item == Items.pureEssence) {
 						numberOfRuneEssences = entity.inventory.getCurrentItem().stackSize;
 						System.out.println(numberOfRuneEssences);
 						world.setBlockToAir(varx, vary, varz);
@@ -367,7 +367,7 @@ public class Altar extends BlockContainer {
 					} else {
 					}
 				case "astralaltar":
-					if (item == Items.runeEssence) {
+					if (item == Items.pureEssence) {
 						numberOfRuneEssences = entity.inventory.getCurrentItem().stackSize;
 						System.out.println(numberOfRuneEssences);
 						world.setBlockToAir(varx, vary, varz);
@@ -435,7 +435,7 @@ public class Altar extends BlockContainer {
 					try {
 
 						TileEntityWaterRuneAltar tileEntity = (TileEntityWaterRuneAltar) world.getTileEntity(varx, vary, varz);
-						if (item == Items.staff && world.getBlock(varx, vary, varz) == Blocks.WaterRuneAltar) {
+						if (item == Items.staff || item == Items.staffofair || item == Items.staffofearth || item == Items.staffoffire || item == Items.staffofwater&& world.getBlock(varx, vary, varz) == Blocks.WaterRuneAltar) {
 
 							world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.runeEssence, tileEntity.quantityOfRuneEssence)));
 							world.setBlockToAir(varx, vary, varz);
@@ -482,7 +482,7 @@ public class Altar extends BlockContainer {
 				case "firerunealtar":
 					try {
 						TileEntityFireRuneAltar tileEntity = (TileEntityFireRuneAltar) world.getTileEntity(varx, vary, varz);
-						if (item == Items.staff && world.getBlock(varx, vary, varz) == Blocks.FireRuneAltar) {
+						if (item == Items.staff|| item == Items.staffofair || item == Items.staffofearth || item == Items.staffoffire || item == Items.staffofwater&& world.getBlock(varx, vary, varz) == Blocks.FireRuneAltar) {
 
 							world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.runeEssence, tileEntity.quantityOfRuneEssence)));
 							world.setBlockToAir(varx, vary, varz);
@@ -527,7 +527,7 @@ public class Altar extends BlockContainer {
 				case "earthrunealtar":
 					try {
 						TileEntityEarthRuneAltar tileEntity = (TileEntityEarthRuneAltar) world.getTileEntity(varx, vary, varz);
-						if (item == Items.staff && world.getBlock(varx, vary, varz) == Blocks.EarthRuneAltar) {
+						if (item == Items.staff || item == Items.staffofair || item == Items.staffofearth || item == Items.staffoffire || item == Items.staffofwater&& world.getBlock(varx, vary, varz) == Blocks.EarthRuneAltar) {
 
 							world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.runeEssence, tileEntity.quantityOfRuneEssence)));
 							world.setBlockToAir(varx, vary, varz);
@@ -573,7 +573,7 @@ public class Altar extends BlockContainer {
 
 					try {
 						TileEntityMindRuneAltar tileEntity = (TileEntityMindRuneAltar) world.getTileEntity(varx, vary, varz);
-						if (item == Items.staff && world.getBlock(varx, vary, varz) == Blocks.MindRuneAltar) {
+						if (item == Items.staff|| item == Items.staffofair || item == Items.staffofearth || item == Items.staffoffire || item == Items.staffofwater && world.getBlock(varx, vary, varz) == Blocks.MindRuneAltar) {
 
 							world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.runeEssence, tileEntity.quantityOfRuneEssence)));
 							world.setBlockToAir(varx, vary, varz);
@@ -583,7 +583,10 @@ public class Altar extends BlockContainer {
 						if (props.isSkillHighEnough("runecrafting", 23)) {
 							if (item == Items.mindTalisman && world.getBlock(varx, vary, varz) == Blocks.MindRuneAltar) {
 								world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.mindRune, tileEntity.quantityOfRuneEssence)));
-
+								props.currentRunecraftingExp = props.currentRunecraftingExp + tileEntity.quantityOfRuneEssence * ExpChart.MIND_RUNE_EXP;
+								if(!props.suppressExpMessages){
+									Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("You gained " + tileEntity.quantityOfRuneEssence * ExpChart.MIND_RUNE_EXP + " Runecrafting Experience."));
+									}
 								if (numberOfRuneEssences >= 5) {
 									int randomint = randInt(1, 10);
 									if (randomint == 1) {
@@ -617,7 +620,7 @@ public class Altar extends BlockContainer {
 				case "bodyrunealtar":
 					try {
 						TileEntityBodyRuneAltar tileEntity = (TileEntityBodyRuneAltar) world.getTileEntity(varx, vary, varz);
-						if (item == Items.staff && world.getBlock(varx, vary, varz) == Blocks.BodyRuneAltar) {
+						if (item == Items.staff || item == Items.staffofair || item == Items.staffofearth || item == Items.staffoffire || item == Items.staffofwater&& world.getBlock(varx, vary, varz) == Blocks.BodyRuneAltar) {
 
 							world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.runeEssence, tileEntity.quantityOfRuneEssence)));
 							world.setBlockToAir(varx, vary, varz);
@@ -627,7 +630,10 @@ public class Altar extends BlockContainer {
 						if (props.isSkillHighEnough("runecrafting", 18)) {
 							if (item == Items.bodyTalisman && world.getBlock(varx, vary, varz) == Blocks.BodyRuneAltar) {
 								world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.bodyRune, tileEntity.quantityOfRuneEssence)));
-
+								props.currentRunecraftingExp = props.currentRunecraftingExp + tileEntity.quantityOfRuneEssence * ExpChart.BODY_RUNE_EXP;
+								if(!props.suppressExpMessages){
+									Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("You gained " + tileEntity.quantityOfRuneEssence * ExpChart.BODY_RUNE_EXP + " Runecrafting Experience."));
+									}
 								if (numberOfRuneEssences >= 5) {
 									int randomint = randInt(1, 10);
 									if (randomint == 1) {
@@ -661,9 +667,9 @@ public class Altar extends BlockContainer {
 				case "cosmicrunealtar":
 					try {
 						TileEntityCosmicRuneAltar tileEntity = (TileEntityCosmicRuneAltar) world.getTileEntity(varx, vary, varz);
-						if (item == Items.staff && world.getBlock(varx, vary, varz) == Blocks.CosmicRuneAltar) {
+						if (item == Items.staff || item == Items.staffofair || item == Items.staffofearth || item == Items.staffoffire || item == Items.staffofwater&& world.getBlock(varx, vary, varz) == Blocks.CosmicRuneAltar) {
 
-							world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.runeEssence, tileEntity.quantityOfRuneEssence)));
+							world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.pureEssence, tileEntity.quantityOfRuneEssence)));
 							world.setBlockToAir(varx, vary, varz);
 							world.setBlock(varx, vary, varz, Blocks.CosmicAltar);
 
@@ -671,7 +677,10 @@ public class Altar extends BlockContainer {
 						if (props.isSkillHighEnough("runecrafting", 27)) {
 							if (item == Items.cosmicTalisman && world.getBlock(varx, vary, varz) == Blocks.CosmicRuneAltar) {
 								world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.cosmicRune, tileEntity.quantityOfRuneEssence)));
-
+								props.currentRunecraftingExp = props.currentRunecraftingExp + tileEntity.quantityOfRuneEssence * ExpChart.COSMIC_RUNE_EXP;
+								if(!props.suppressExpMessages){
+									Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("You gained " + tileEntity.quantityOfRuneEssence * ExpChart.COSMIC_RUNE_EXP + " Runecrafting Experience."));
+									}
 								if (numberOfRuneEssences >= 5) {
 									int randomint = randInt(1, 20);
 									if (randomint == 1) {
@@ -703,9 +712,9 @@ public class Altar extends BlockContainer {
 				case "chaosrunealtar":
 					try {
 						TileEntityChaosRuneAltar tileEntity = (TileEntityChaosRuneAltar) world.getTileEntity(varx, vary, varz);
-						if (item == Items.staff && world.getBlock(varx, vary, varz) == Blocks.ChaosRuneAltar) {
+						if (item == Items.staff || item == Items.staffofair || item == Items.staffofearth || item == Items.staffoffire || item == Items.staffofwater&& world.getBlock(varx, vary, varz) == Blocks.ChaosRuneAltar) {
 
-							world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.runeEssence, tileEntity.quantityOfRuneEssence)));
+							world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.pureEssence, tileEntity.quantityOfRuneEssence)));
 							world.setBlockToAir(varx, vary, varz);
 							world.setBlock(varx, vary, varz, Blocks.ChaosAltar);
 
@@ -713,6 +722,10 @@ public class Altar extends BlockContainer {
 						if (props.isSkillHighEnough("runecrafting", 35)) {
 							if (item == Items.chaosTalisman && world.getBlock(varx, vary, varz) == Blocks.ChaosRuneAltar) {
 								world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.chaosRune, tileEntity.quantityOfRuneEssence)));
+								props.currentRunecraftingExp = props.currentRunecraftingExp + tileEntity.quantityOfRuneEssence * ExpChart.CHAOS_RUNE_EXP;
+								if(!props.suppressExpMessages){
+									Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("You gained " + tileEntity.quantityOfRuneEssence * ExpChart.CHAOS_RUNE_EXP + " Runecrafting Experience."));
+									}
 								item = null;
 								world.setBlockToAir(varx, vary, varz);
 								world.setBlock(varx, vary, varz, Blocks.ChaosAltar);
@@ -728,9 +741,9 @@ public class Altar extends BlockContainer {
 				case "naturerunealtar":
 					try {
 						TileEntityNatureRuneAltar tileEntity = (TileEntityNatureRuneAltar) world.getTileEntity(varx, vary, varz);
-						if (item == Items.staff && world.getBlock(varx, vary, varz) == Blocks.NatureRuneAltar) {
+						if (item == Items.staff || item == Items.staffofair || item == Items.staffofearth || item == Items.staffoffire || item == Items.staffofwater&& world.getBlock(varx, vary, varz) == Blocks.NatureRuneAltar) {
 
-							world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.runeEssence, tileEntity.quantityOfRuneEssence)));
+							world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.pureEssence, tileEntity.quantityOfRuneEssence)));
 							world.setBlockToAir(varx, vary, varz);
 							world.setBlock(varx, vary, varz, Blocks.NatureAltar);
 
@@ -738,7 +751,10 @@ public class Altar extends BlockContainer {
 						if (props.isSkillHighEnough("runecrafting", 44)) {
 							if (item == Items.natureTalisman && world.getBlock(varx, vary, varz) == Blocks.NatureRuneAltar) {
 								world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.natureRune, tileEntity.quantityOfRuneEssence)));
-
+								props.currentRunecraftingExp = props.currentRunecraftingExp + tileEntity.quantityOfRuneEssence * ExpChart.NATURE_RUNE_EXP;
+								if(!props.suppressExpMessages){
+									Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("You gained " + tileEntity.quantityOfRuneEssence * ExpChart.NATURE_RUNE_EXP + " Runecrafting Experience."));
+									}
 								if (numberOfRuneEssences >= 5) {
 									int randomint = randInt(1, 20);
 									if (randomint == 1) {
@@ -770,9 +786,9 @@ public class Altar extends BlockContainer {
 				case "lawrunealtar":
 					try {
 						TileEntityLawRuneAltar tileEntity = (TileEntityLawRuneAltar) world.getTileEntity(varx, vary, varz);
-						if (item == Items.staff && world.getBlock(varx, vary, varz) == Blocks.LawRuneAltar) {
+						if (item == Items.staff || item == Items.staffofair || item == Items.staffofearth || item == Items.staffoffire || item == Items.staffofwater&& world.getBlock(varx, vary, varz) == Blocks.LawRuneAltar) {
 
-							world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.runeEssence, tileEntity.quantityOfRuneEssence)));
+							world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.pureEssence, tileEntity.quantityOfRuneEssence)));
 							world.setBlockToAir(varx, vary, varz);
 							world.setBlock(varx, vary, varz, Blocks.LawAltar);
 
@@ -780,7 +796,10 @@ public class Altar extends BlockContainer {
 						if (props.isSkillHighEnough("runecrafting", 54)) {
 							if (item == Items.lawTalisman && world.getBlock(varx, vary, varz) == Blocks.LawRuneAltar) {
 								world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.lawRune, tileEntity.quantityOfRuneEssence)));
-
+								props.currentRunecraftingExp = props.currentRunecraftingExp + tileEntity.quantityOfRuneEssence * ExpChart.LAW_RUNE_EXP;
+								if(!props.suppressExpMessages){
+									Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("You gained " + tileEntity.quantityOfRuneEssence * ExpChart.LAW_RUNE_EXP + " Runecrafting Experience."));
+									}
 								if (numberOfRuneEssences >= 5) {
 									int randomint = randInt(1, 20);
 									if (randomint == 1) {
@@ -812,9 +831,9 @@ public class Altar extends BlockContainer {
 				case "deathrunealtar":
 					try {
 						TileEntityDeathRuneAltar tileEntity = (TileEntityDeathRuneAltar) world.getTileEntity(varx, vary, varz);
-						if (item == Items.staff && world.getBlock(varx, vary, varz) == Blocks.DeathRuneAltar) {
+						if (item == Items.staff || item == Items.staffofair || item == Items.staffofearth || item == Items.staffoffire || item == Items.staffofwater&& world.getBlock(varx, vary, varz) == Blocks.DeathRuneAltar) {
 
-							world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.runeEssence, tileEntity.quantityOfRuneEssence)));
+							world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.pureEssence, tileEntity.quantityOfRuneEssence)));
 							world.setBlockToAir(varx, vary, varz);
 							world.setBlock(varx, vary, varz, Blocks.DeathAltar);
 
@@ -822,6 +841,10 @@ public class Altar extends BlockContainer {
 						if (props.isSkillHighEnough("runecrafting", 65)) {
 							if (item == Items.deathTalisman && world.getBlock(varx, vary, varz) == Blocks.DeathRuneAltar) {
 								world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.deathRune, tileEntity.quantityOfRuneEssence)));
+								props.currentRunecraftingExp = props.currentRunecraftingExp + tileEntity.quantityOfRuneEssence * ExpChart.DEATH_RUNE_EXP;
+								if(!props.suppressExpMessages){
+									Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("You gained " + tileEntity.quantityOfRuneEssence * ExpChart.DEATH_RUNE_EXP + " Runecrafting Experience."));
+									}
 								item = null;
 								world.setBlockToAir(varx, vary, varz);
 								world.setBlock(varx, vary, varz, Blocks.DeathAltar);
@@ -837,9 +860,9 @@ public class Altar extends BlockContainer {
 				case "bloodrunealtar":
 					try {
 						TileEntityBloodRuneAltar tileEntity = (TileEntityBloodRuneAltar) world.getTileEntity(varx, vary, varz);
-						if (item == Items.staff && world.getBlock(varx, vary, varz) == Blocks.BloodRuneAltar) {
+						if (item == Items.staff || item == Items.staffofair || item == Items.staffofearth || item == Items.staffoffire || item == Items.staffofwater&& world.getBlock(varx, vary, varz) == Blocks.BloodRuneAltar) {
 
-							world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.runeEssence, tileEntity.quantityOfRuneEssence)));
+							world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.pureEssence, tileEntity.quantityOfRuneEssence)));
 							world.setBlockToAir(varx, vary, varz);
 							world.setBlock(varx, vary, varz, Blocks.BloodAltar);
 
@@ -847,6 +870,10 @@ public class Altar extends BlockContainer {
 						if (props.isSkillHighEnough("runecrafting", 77)) {
 							if (item == Items.bloodTalisman && world.getBlock(varx, vary, varz) == Blocks.BloodRuneAltar) {
 								world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.bloodRune, tileEntity.quantityOfRuneEssence)));
+								props.currentRunecraftingExp = props.currentRunecraftingExp + tileEntity.quantityOfRuneEssence * ExpChart.BLOOD_RUNE_EXP;
+								if(!props.suppressExpMessages){
+									Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("You gained " + tileEntity.quantityOfRuneEssence * ExpChart.BLOOD_RUNE_EXP + " Runecrafting Experience."));
+									}
 								item = null;
 								world.setBlockToAir(varx, vary, varz);
 								world.setBlock(varx, vary, varz, Blocks.BloodAltar);
@@ -862,9 +889,9 @@ public class Altar extends BlockContainer {
 				case "astralrunealtar":
 					try {
 						TileEntityAstralRuneAltar tileEntity = (TileEntityAstralRuneAltar) world.getTileEntity(varx, vary, varz);
-						if (item == Items.staff && world.getBlock(varx, vary, varz) == Blocks.AstralRuneAltar) {
+						if (item == Items.staff || item == Items.staffofair || item == Items.staffofearth || item == Items.staffoffire || item == Items.staffofwater&& world.getBlock(varx, vary, varz) == Blocks.AstralRuneAltar) {
 
-							world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.runeEssence, tileEntity.quantityOfRuneEssence)));
+							world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.pureEssence, tileEntity.quantityOfRuneEssence)));
 							world.setBlockToAir(varx, vary, varz);
 							world.setBlock(varx, vary, varz, Blocks.AstralAltar);
 
@@ -872,6 +899,10 @@ public class Altar extends BlockContainer {
 						if (props.isSkillHighEnough("runecrafting", 85)) {
 							if (item == Items.astralTalisman && world.getBlock(varx, vary, varz) == Blocks.AstralRuneAltar) {
 								world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.astralRune, tileEntity.quantityOfRuneEssence)));
+								props.currentRunecraftingExp = props.currentRunecraftingExp + tileEntity.quantityOfRuneEssence * ExpChart.ASTRAL_RUNE_EXP;
+								if(!props.suppressExpMessages){
+									Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("You gained " + tileEntity.quantityOfRuneEssence * ExpChart.ASTRAL_RUNE_EXP + " Runecrafting Experience."));
+									}
 								item = null;
 								world.setBlockToAir(varx, vary, varz);
 								world.setBlock(varx, vary, varz, Blocks.AstralAltar);
