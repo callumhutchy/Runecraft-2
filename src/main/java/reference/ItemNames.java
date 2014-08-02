@@ -64,6 +64,16 @@ public class ItemNames {
 	public static String	RuniteOre_Unlo		= "runiteore";
 	public static String	SilverOre_Unlo		= "silverore";
 	public static String	TinOre_Unlo			= "tinore";
+	
+	//Bars
+	public static String	BronzeBar_Unlo = "bronzebar";
+	public static String	IronBar_Unlo = "ironbar";
+	public static String	SilverBar_Unlo = "silverbar";
+	public static String	SteelBar_Unlo = "steelbar";
+	public static String	GoldBar_Unlo = "goldbar";
+	public static String	MithrilBar_Unlo = "mithrilbar";
+	public static String	AdamantBar_Unlo = "adamantbar";
+	public static String	RuneBar_Unlo = "runebar";
 
 	public static String	SpellBook_Unlo		= "spellbook";
 	// Staves

@@ -35,6 +35,8 @@ public class Blocks {
 			IronOre, MithrilOre, RuniteOre, SilverOre;
 
 	public static Block		RuneEssenceOre, PureEssenceOre;
+	
+	public static Block RCFurnace;
 
 	public static void init() {
 		// Altar
@@ -81,6 +83,8 @@ public class Blocks {
 		RuneEssenceOre = new OreBlock(Material.rock, "runecraft2:OreModelRuneEssenceTexture", BlockNames.RuneEssenceOre_Unlo, Items.runeEssence, "runeessence");
 		PureEssenceOre = new OreBlock(Material.rock, "runecraft2:OreModelPureEssenceTexture", BlockNames.PureEssenceOre_Unlo, Items.pureEssence, "pureessence");
 
+		RCFurnace = new RCFurnace(Material.iron);
+		
 	}
 
 	public static void gameRegistry() {
@@ -127,6 +131,8 @@ public class Blocks {
 		
 		GameRegistry.registerBlock(RuneEssenceOre, BlockNames.RuneEssenceOre_Unlo);
 		GameRegistry.registerBlock(PureEssenceOre, BlockNames.PureEssenceOre_Unlo);
+		
+		GameRegistry.registerBlock(RCFurnace, BlockNames.RCFurnace_Unlo);
 	}
 
 }

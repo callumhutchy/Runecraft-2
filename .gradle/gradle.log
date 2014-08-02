@@ -8,10 +8,12 @@
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
-:sourceMainJava UP-TO-DATE
-:compileJava UP-TO-DATE
-:processResources UP-TO-DATE
-:classes UP-TO-DATE
+:sourceMainJava
+:compileJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:processResources
+:classes
 :jar
 :extractUserDev UP-TO-DATE
 :getAssetsIndex
@@ -29,4 +31,4 @@
 
 BUILD SUCCESSFUL
 
-Total time: 20.593 secs
+Total time: 34.567 secs

@@ -27,6 +27,9 @@ public class Items {
 	// Ores
 	public static Item	adamantiteOre, coalOre, copperOre, goldOre, ironOre,
 			mithrilOre, runiteOre, silverOre, tinOre;
+	
+	//Bars
+	public static Item bronzeBar, ironBar, silverBar,steelBar,goldBar,mithrilBar,adamantBar, runeBar;
 
 	public static Item	spellbook;
 
@@ -85,6 +88,16 @@ public class Items {
 		silverOre = new Ore().setUnlocalizedName(ItemNames.SilverOre_Unlo);
 		tinOre = new Ore().setUnlocalizedName(ItemNames.TinOre_Unlo);
 
+		//Bars
+		bronzeBar = new Bar().setUnlocalizedName(ItemNames.BronzeBar_Unlo);
+		ironBar = new Bar().setUnlocalizedName(ItemNames.IronBar_Unlo);
+		silverBar = new Bar().setUnlocalizedName(ItemNames.SilverBar_Unlo);
+		steelBar = new Bar().setUnlocalizedName(ItemNames.SteelBar_Unlo);
+		goldBar = new Bar().setUnlocalizedName(ItemNames.GoldBar_Unlo);
+		mithrilBar = new Bar().setUnlocalizedName(ItemNames.MithrilBar_Unlo);
+		adamantBar = new Bar().setUnlocalizedName(ItemNames.AdamantBar_Unlo);
+		runeBar = new Bar().setUnlocalizedName(ItemNames.RuneBar_Unlo);
+		
 		spellbook = new SpellBook(ItemNames.SpellBook_Unlo, 1);
 		// Staves
 		staff = new Staff(ItemNames.Staff_Unlo, 1, null, 0);
@@ -146,6 +159,17 @@ public class Items {
 		GameRegistry.registerItem(runiteOre, runiteOre.getUnlocalizedName());
 		GameRegistry.registerItem(silverOre, silverOre.getUnlocalizedName());
 		GameRegistry.registerItem(tinOre, tinOre.getUnlocalizedName());
+		
+		//Bars
+		GameRegistry.registerItem(bronzeBar, bronzeBar.getUnlocalizedName());
+		GameRegistry.registerItem(ironBar, ironBar.getUnlocalizedName());
+		GameRegistry.registerItem(silverBar, silverBar.getUnlocalizedName());
+		GameRegistry.registerItem(steelBar, steelBar.getUnlocalizedName());
+		GameRegistry.registerItem(goldBar, goldBar.getUnlocalizedName());
+		GameRegistry.registerItem(mithrilBar, mithrilBar.getUnlocalizedName());
+		GameRegistry.registerItem(adamantBar, adamantBar.getUnlocalizedName());
+		GameRegistry.registerItem(runeBar, runeBar.getUnlocalizedName());
+		
 
 		GameRegistry.registerItem(spellbook, spellbook.getUnlocalizedName());
 
