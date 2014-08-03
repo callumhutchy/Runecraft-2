@@ -1,0 +1,26 @@
+package com.callumhutchy.runecraft2.blocks.containers;
+
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRCFurnace;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.Container;
+
+public class ContainerRCFurnace extends Container {
+	TileEntityRCFurnace	tileEntity;
+
+	public ContainerRCFurnace(InventoryPlayer inventoryPlayer, TileEntityRCFurnace te) {
+		tileEntity = te;
+
+		
+
+		
+	}
+
+	@Override
+	public boolean canInteractWith(EntityPlayer p_75145_1_) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

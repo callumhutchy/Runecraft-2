@@ -1,0 +1,24 @@
+package com.callumhutchy.runecraft2.blocks.models.tileentities;
+
+import com.callumhutchy.runecraft2.blocks.models.FurnaceModel;
+
+import net.minecraft.item.Item;
+import net.minecraft.tileentity.TileEntity;
+
+public class TileEntityRCFurnace extends TileEntity{
+public static FurnaceModel model;
+public Item furnaceProduct;
+public int amountOfProduct;
+public int time;
+
+public boolean canUpdate() {
+	return true;
+}
+
+@Override
+public void updateEntity() {
+
+
+}
+
+}
