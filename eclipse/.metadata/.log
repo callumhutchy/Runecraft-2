@@ -19602,3 +19602,45 @@ java.lang.NullPointerException
 
 !ENTRY com.instantiations.eclipse 1 0 2014-08-03 16:13:14.005
 !MESSAGE Compilation unit does not exist: CodecIBXM.java
+
+!ENTRY org.eclipse.egit.core 4 0 2014-08-03 20:14:58.795
+!MESSAGE An exception occurred during push on URI https://github.com/callumhutchy/Runecraft-2.git: https://github.com/callumhutchy/Runecraft-2.git: Error writing request body to server
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/callumhutchy/Runecraft-2.git: Error writing request body to server
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:160)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:228)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI.execute(PushOperationUI.java:167)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI$1.run(PushOperationUI.java:229)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/callumhutchy/Runecraft-2.git: Error writing request body to server
+	at org.eclipse.jgit.transport.BasePackPushConnection.doPush(BasePackPushConnection.java:217)
+	at org.eclipse.jgit.transport.TransportHttp$SmartHttpPushConnection.doPush(TransportHttp.java:808)
+	at org.eclipse.jgit.transport.BasePackPushConnection.push(BasePackPushConnection.java:152)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:165)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1173)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:156)
+	... 4 more
+Caused by: java.io.IOException: Error writing request body to server
+	at sun.net.www.protocol.http.HttpURLConnection$StreamingOutputStream.checkError(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$StreamingOutputStream.write(Unknown Source)
+	at org.eclipse.jgit.util.TemporaryBuffer.switchToOverflow(TemporaryBuffer.java:309)
+	at org.eclipse.jgit.util.TemporaryBuffer.reachedInCoreLimit(TemporaryBuffer.java:300)
+	at org.eclipse.jgit.util.TemporaryBuffer.write(TemporaryBuffer.java:122)
+	at org.eclipse.jgit.util.io.TimeoutOutputStream.write(TimeoutOutputStream.java:113)
+	at org.eclipse.jgit.internal.storage.pack.PackOutputStream.write(PackOutputStream.java:126)
+	at java.util.zip.DeflaterOutputStream.deflate(Unknown Source)
+	at java.util.zip.DeflaterOutputStream.finish(Unknown Source)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeWholeObjectDeflate(PackWriter.java:1571)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObjectImpl(PackWriter.java:1548)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeBase(PackWriter.java:1556)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeDeltaObjectDeflate(PackWriter.java:1576)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObjectImpl(PackWriter.java:1546)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObject(PackWriter.java:1491)
+	at org.eclipse.jgit.internal.storage.pack.PackOutputStream.writeObject(PackOutputStream.java:164)
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.writeObjects(WindowCursor.java:196)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObjects(PackWriter.java:1479)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObjects(PackWriter.java:1467)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writePack(PackWriter.java:1036)
+	at org.eclipse.jgit.transport.BasePackPushConnection.writePack(BasePackPushConnection.java:305)
+	at org.eclipse.jgit.transport.BasePackPushConnection.doPush(BasePackPushConnection.java:197)
+	... 9 more
