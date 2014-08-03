@@ -5,30 +5,11 @@
  R4wk, ZeuX, IngisKahn      
  MCP Data version : unknown
 ****************************
-:compileApiJava UP-TO-DATE
-:processApiResources UP-TO-DATE
-:apiClasses UP-TO-DATE
-:sourceMainJava
-:compileJavaNote: Some input files use unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
-
-:processResources
-:classes
-:jar
-:extractUserDev UP-TO-DATE
-:getAssetsIndex
-:getAssets
-:makeStart SKIPPED
-:compileTestJava UP-TO-DATE
-:processTestResources UP-TO-DATE
-:testClasses UP-TO-DATE
-:test UP-TO-DATE
-:genSrgs SKIPPED
-:reobf
-:assemble
-:check UP-TO-DATE
-:build
+:eclipseClasspath
+:eclipseJdt
+:eclipseProject
+:eclipse
 
 BUILD SUCCESSFUL
 
-Total time: 34.567 secs
+Total time: 17.241 secs
