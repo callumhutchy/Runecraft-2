@@ -1,0 +1,636 @@
+package com.callumhutchy.runecraft2.client.gui;
+
+import handler.ExtendedPlayer;
+import handler.Runecraft2EventHandler;
+
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+
+import org.lwjgl.input.Keyboard;
+import org.lwjgl.opengl.GL11;
+
+import com.callumhutchy.runecraft2.client.gui.GuiSpellBook.FontCodes;
+
+import net.minecraft.client.gui.GuiButton;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.gui.GuiTextField;
+import net.minecraft.client.resources.I18n;
+import net.minecraft.util.ResourceLocation;
+
+public class GuiRCFurnace extends GuiScreen {
+	private static final ResourceLocation	resourceLocation			= new ResourceLocation("runecraft2:textures/gui/furnacegui.png");
+	protected static final ResourceLocation	widgetTextures				= new ResourceLocation("runecraft2:textures/gui/furnaceicons.png");
+
+	public static final int					GUI_ID						= 21;
+
+	private static final int				SPELL_ICON_SIZE				= 16;
+	private static final int				SPELL_ICON_SPACING			= SPELL_ICON_SIZE + 4;
+	private static final int				SPELL_ICON_BASE_U_OFFSET	= 0;
+	private static final int				SPELL_ICON_BASE_V_OFFSET	= 198;
+	private static final int				SPELL_ICONS_PER_ROW			= 11;
+
+	public String							tooltipNewlineDelimeter		= "_p";
+
+	public long								tooltipDelay				= 900;
+
+	/**
+	 * The maximum width in pixels a tooltip can occupy before word wrapping
+	 * occurs
+	 */
+	public int								tooltipMaxWidth				= 150;
+
+	protected int							tooltipXOffset				= 0;
+	protected int							tooltipYOffset				= 10;
+
+	private final static int				LINE_HEIGHT					= 11;
+
+	private long							mouseoverTime				= 0;
+	private long							prevSystemTime				= -1;
+
+	public boolean							airstrikeselected,
+			hometeleportselected, waterstrikeselected, earthstrikeselected,
+			firestrikeselected = false;
+
+	int										xSize						= 248;
+	int										ySize						= 134;
+	int										xStart						= (width / 2) - (xSize / 2);
+	int										yStart						= (height / 2) - (ySize / 2);
+	int										iconyStart					= yStart + 22;
+	int										iconxStart					= xStart + 17;
+
+	int										bronzeminx, bronzemaxx, bronzeminy,
+			bronzemaxy;
+	int										ironminx, ironmaxx, ironminy,
+			ironmaxy;
+	int										silverminx, silvermaxx, silverminy,
+			silvermaxy;
+	int										steelminx, steelmaxx, steelminy,
+			steelmaxy;
+	int										goldminx, goldmaxx, goldminy,
+			goldmaxy;
+	int										mithrilminx, mithrilmaxx,
+			mithrilminy, mithrilmaxy;
+	int										adamantminx, adamantmaxx,
+			adamantminy, adamantmaxy;
+	int										runeminx, runemaxx, runeminy,
+			runemaxy;
+
+	int										frame						= 1;
+	private GuiButton						doneBtn, craftallBtn,
+			customcraftBtn, onecraftBtn, fivecraftBtn, tencraftBtn, craftBtn,
+			rightBtn, leftBtn;
+	private GuiTextField					codeTextField;
+
+	public void initGui() {
+		int xSize = 256;
+		int ySize = 256;
+		int xStart = (width / 2) - (xSize / 2);
+		int yStart = (height / 2) - (ySize / 2);
+		int iconyStart = yStart + 22;
+		int iconxStart = xStart + 17;
+		buttonList.clear();
+		buttonList.add(doneBtn = new GuiButton(1, this.width / 2 - 100, this.height / 4 + 96 + 12, "Done"));
+
+		buttonList.add(craftallBtn = new GuiButton(2, xStart + 6, yStart + 89, "All"));
+
+		buttonList.add(onecraftBtn = new GuiButton(4, xStart + 38, yStart + 89, "1"));
+		buttonList.add(fivecraftBtn = new GuiButton(5, xStart + 70, yStart + 89, "5"));
+		buttonList.add(tencraftBtn = new GuiButton(6, xStart + 102, yStart + 89, "10"));
+		buttonList.add(customcraftBtn = new GuiButton(3, xStart + 134, yStart + 89, "Custom"));
+		buttonList.add(craftBtn = new GuiButton(7, xStart + 180, yStart + 109, "Craft"));
+
+		buttonList.add(rightBtn = new GuiButton(8, xStart + 223, yStart + 87, ">"));
+
+		buttonList.add(leftBtn = new GuiButton(9, xStart + 223, yStart + 109, "<"));
+		Keyboard.enableRepeatEvents(true);
+
+		// this.codeTextField.setMaxStringLength(32767);
+		// this.codeTextField.setFocused(true);
+	}
+
+	public void drawScreen(int par1, int par2, float par3) {
+		int xSize = 256;
+		int ySize = 256;
+		int xStart = (width / 2) - (xSize / 2);
+		int yStart = (height / 2) - (ySize / 2);
+		int iconyStart = yStart + 22;
+		int iconxStart = xStart + 17;
+
+		rightBtn.width = leftBtn.width = 20;
+		rightBtn.height = leftBtn.height = 20;
+		onecraftBtn.width = fivecraftBtn.width = tencraftBtn.width = 30;
+		onecraftBtn.height = fivecraftBtn.height = tencraftBtn.height = 20;
+		craftallBtn.width = 30;
+		craftallBtn.height = craftBtn.height = customcraftBtn.height = 20;
+		customcraftBtn.width = 40;
+		craftBtn.width = 35;
+
+		this.codeTextField = new GuiTextField(this.fontRendererObj, this.width / 2 - 150, 60, 300, 20);
+
+		this.drawCenteredString(this.fontRendererObj, "Furnace:", this.width / 2, (this.height / 2) - (ySize / 2) - 20, 16777215);
+
+		// this.codeTextField.drawTextBox();
+		this.drawBackground(0);
+		this.doesGuiPauseGame();
+		this.IsButtonMouseovered(par1, par2, null);
+		this.drawSkills();
+		actionPerformed((GuiButton)buttonList);
+		super.drawScreen(par1, par2, par3);
+	}
+
+	protected void actionPerformed(GuiButton button) {
+
+		if (button.id == 1) {
+			System.out.println("Testing");
+			this.mc.thePlayer.closeScreen();
+
+		}
+
+		// switch (button.id) {
+		// case 1:
+		// this.mc.thePlayer.closeScreen();
+		// break;
+		// case 2:
+		// case 3:
+		// case 4:
+		// case 5:
+		// case 6:
+		// case 7:
+		// case 8:
+		// if (frame < 5) {
+		// frame++;
+		//
+		// }
+		// break;
+		// case 9:
+		// if (frame > 1) {
+		// frame--;
+		// }
+		// break;
+		// }
+	}
+
+	public void drawBackground(int p_146278_1_) {
+		int xSize = 256;
+		int ySize = 256;
+		int xStart = (width / 2) - (xSize / 2);
+		int yStart = (height / 2) - (ySize / 2);
+
+		GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+		this.mc.getTextureManager().bindTexture(resourceLocation);
+		this.drawTexturedModalRect(xStart, yStart, 0, 0, xSize, ySize);
+	}
+
+	public boolean doesGuiPauseGame(boolean var1) {
+		return false;
+
+	}
+
+	public void drawSkills() {
+		int xSize = 256;
+		int ySize = 256;
+		int xStart = (width / 2) - (xSize / 2);
+		int yStart = (height / 2) - (ySize / 2);
+		int iconyStart = yStart + 25;
+		int iconxStart = xStart + 13;
+		int width = 53;
+		int height = 55;
+		ExtendedPlayer props = ExtendedPlayer.get(this.mc.thePlayer);
+
+		switch (frame) {
+		case 1:
+			mc.getTextureManager().bindTexture(this.widgetTextures);
+			this.drawTexturedModalRect(iconxStart, iconyStart, 108, 57, width, height);
+			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+
+			bronzeminx = iconxStart;
+			bronzemaxx = iconxStart + width;
+			bronzeminy = iconyStart;
+			bronzemaxy = iconyStart + height;
+
+			mc.getTextureManager().bindTexture(this.widgetTextures);
+			this.drawTexturedModalRect(iconxStart + width + 4, iconyStart, 162, 57, width, height);
+
+			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			ironminx = iconxStart;
+			ironmaxx = iconxStart + width;
+			ironminy = iconyStart;
+			ironmaxy = iconyStart + height;
+
+			mc.getTextureManager().bindTexture(this.widgetTextures);
+			this.drawTexturedModalRect(iconxStart + width * 2 + 4 * 2, iconyStart, 108, 0, width, height);
+			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			silverminx = iconxStart + SPELL_ICON_SPACING;
+			silvermaxx = iconxStart + SPELL_ICON_SPACING + SPELL_ICON_SIZE;
+			silverminy = iconyStart;
+			silvermaxy = iconyStart + 16;
+
+			mc.getTextureManager().bindTexture(this.widgetTextures);
+			this.drawTexturedModalRect(iconxStart + width * 3 + 4 * 3, iconyStart, 162, 0, width, height);
+			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			steelminx = iconxStart + SPELL_ICON_SPACING;
+			steelmaxx = iconxStart + SPELL_ICON_SPACING + SPELL_ICON_SIZE;
+			steelminy = iconyStart;
+			steelmaxy = iconyStart + 16;
+
+			break;
+		case 2:
+			mc.getTextureManager().bindTexture(this.widgetTextures);
+			this.drawTexturedModalRect(iconxStart, iconyStart, 162, 57, width, height);
+			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+
+			ironminx = iconxStart;
+			ironmaxx = iconxStart + width;
+			ironminy = iconyStart;
+			ironmaxy = iconyStart + height;
+
+			mc.getTextureManager().bindTexture(this.widgetTextures);
+			this.drawTexturedModalRect(iconxStart + width + 4, iconyStart, 108, 0, width, height);
+
+			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			silverminx = iconxStart;
+			silvermaxx = iconxStart + width;
+			silverminy = iconyStart;
+			silvermaxy = iconyStart + height;
+
+			mc.getTextureManager().bindTexture(this.widgetTextures);
+			this.drawTexturedModalRect(iconxStart + width * 2 + 4 * 2, iconyStart, 162, 0, width, height);
+			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			steelminx = iconxStart + SPELL_ICON_SPACING;
+			steelmaxx = iconxStart + SPELL_ICON_SPACING + SPELL_ICON_SIZE;
+			steelminy = iconyStart;
+			steelmaxy = iconyStart + 16;
+
+			mc.getTextureManager().bindTexture(this.widgetTextures);
+			this.drawTexturedModalRect(iconxStart + width * 3 + 4 * 3, iconyStart, 0, 57, width, height);
+			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			goldminx = iconxStart + SPELL_ICON_SPACING;
+			goldmaxx = iconxStart + SPELL_ICON_SPACING + SPELL_ICON_SIZE;
+			goldminy = iconyStart;
+			goldmaxy = iconyStart + 16;
+
+			break;
+		case 3:
+			mc.getTextureManager().bindTexture(this.widgetTextures);
+			this.drawTexturedModalRect(iconxStart, iconyStart, 108, 0, width, height);
+			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+
+			silverminx = iconxStart;
+			silvermaxx = iconxStart + width;
+			silverminy = iconyStart;
+			silvermaxy = iconyStart + height;
+
+			mc.getTextureManager().bindTexture(this.widgetTextures);
+			this.drawTexturedModalRect(iconxStart + width + 4, iconyStart, 162, 0, width, height);
+
+			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			steelminx = iconxStart;
+			steelmaxx = iconxStart + width;
+			steelminy = iconyStart;
+			steelmaxy = iconyStart + height;
+
+			mc.getTextureManager().bindTexture(this.widgetTextures);
+			this.drawTexturedModalRect(iconxStart + width * 2 + 4 * 2, iconyStart, 0, 57, width, height);
+			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			goldminx = iconxStart + SPELL_ICON_SPACING;
+			goldmaxx = iconxStart + SPELL_ICON_SPACING + SPELL_ICON_SIZE;
+			goldminy = iconyStart;
+			goldmaxy = iconyStart + 16;
+
+			mc.getTextureManager().bindTexture(this.widgetTextures);
+			this.drawTexturedModalRect(iconxStart + width * 3 + 4 * 3, iconyStart, 0, 0, width, height);
+			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			mithrilminx = iconxStart + SPELL_ICON_SPACING;
+			mithrilmaxx = iconxStart + SPELL_ICON_SPACING + SPELL_ICON_SIZE;
+			mithrilminy = iconyStart;
+			mithrilmaxy = iconyStart + 16;
+
+			break;
+		case 4:
+			mc.getTextureManager().bindTexture(this.widgetTextures);
+			this.drawTexturedModalRect(iconxStart, iconyStart, 162, 0, width, height);
+			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+
+			steelminx = iconxStart;
+			steelmaxx = iconxStart + width;
+			steelminy = iconyStart;
+			steelmaxy = iconyStart + height;
+
+			mc.getTextureManager().bindTexture(this.widgetTextures);
+			this.drawTexturedModalRect(iconxStart + width + 4, iconyStart, 0, 57, width, height);
+
+			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			goldminx = iconxStart;
+			goldmaxx = iconxStart + width;
+			goldminy = iconyStart;
+			goldmaxy = iconyStart + height;
+
+			mc.getTextureManager().bindTexture(this.widgetTextures);
+			this.drawTexturedModalRect(iconxStart + width * 2 + 4 * 2, iconyStart, 0, 0, width, height);
+			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			mithrilminx = iconxStart + SPELL_ICON_SPACING;
+			mithrilmaxx = iconxStart + SPELL_ICON_SPACING + SPELL_ICON_SIZE;
+			mithrilminy = iconyStart;
+			mithrilmaxy = iconyStart + 16;
+
+			mc.getTextureManager().bindTexture(this.widgetTextures);
+			this.drawTexturedModalRect(iconxStart + width * 3 + 4 * 3, iconyStart, 54, 57, width, height);
+			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			adamantminx = iconxStart + SPELL_ICON_SPACING;
+			adamantmaxx = iconxStart + SPELL_ICON_SPACING + SPELL_ICON_SIZE;
+			adamantminy = iconyStart;
+			adamantmaxy = iconyStart + 16;
+
+			break;
+		case 5:
+			mc.getTextureManager().bindTexture(this.widgetTextures);
+			this.drawTexturedModalRect(iconxStart, iconyStart, 0, 57, width, height);
+			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+
+			goldminx = iconxStart;
+			goldmaxx = iconxStart + width;
+			goldminy = iconyStart;
+			goldmaxy = iconyStart + height;
+
+			mc.getTextureManager().bindTexture(this.widgetTextures);
+			this.drawTexturedModalRect(iconxStart + width + 4, iconyStart, 0, 0, width, height);
+
+			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			mithrilminx = iconxStart;
+			mithrilmaxx = iconxStart + width;
+			mithrilminy = iconyStart;
+			mithrilmaxy = iconyStart + height;
+
+			mc.getTextureManager().bindTexture(this.widgetTextures);
+			this.drawTexturedModalRect(iconxStart + width * 2 + 4 * 2, iconyStart, 54, 57, width, height);
+			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			adamantminx = iconxStart + SPELL_ICON_SPACING;
+			adamantmaxx = iconxStart + SPELL_ICON_SPACING + SPELL_ICON_SIZE;
+			adamantminy = iconyStart;
+			adamantmaxy = iconyStart + 16;
+
+			mc.getTextureManager().bindTexture(this.widgetTextures);
+			this.drawTexturedModalRect(iconxStart + width * 3 + 4 * 3, iconyStart, 54, 0, width, height);
+			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			runeminx = iconxStart + SPELL_ICON_SPACING;
+			runemaxx = iconxStart + SPELL_ICON_SPACING + SPELL_ICON_SIZE;
+			runeminy = iconyStart;
+			runemaxy = iconyStart + 16;
+
+			break;
+		}
+
+	}
+
+	protected void mouseClicked(int varx, int vary, int p_73864_3_) {
+		// ExtendedPlayer props = ExtendedPlayer.get(this.mc.thePlayer);
+		// System.out.println("Mouse was click at x " + varx + " and y " +
+		// vary);
+		// if (asminx < varx && varx < asmaxx && asminy < vary && vary < asmaxy)
+		// {
+		// airstrikeselected = !airstrikeselected;
+		// System.out.println(airstrikeselected);
+		// }
+		//
+		// if (airstrikeselected) {
+		// props.currentSpell = "airstrike";
+		// hometeleportselected = false;
+		// waterstrikeselected = false;
+		// }
+		// if (!airstrikeselected) {
+		// props.currentSpell = "";
+		// }
+		// if (htminx < varx && varx < htmaxx && htminy < vary && vary < htmaxy)
+		// {
+		// hometeleportselected = !hometeleportselected;
+		// }
+		// if (hometeleportselected) {
+		// props.currentSpell = "hometeleport";
+		// airstrikeselected = false;
+		// waterstrikeselected = false;
+		// }
+
+	}
+
+	protected boolean IsButtonMouseovered(int varx, int vary, GuiButton button) {
+		// if (asminx < varx && varx < asmaxx && asminy < vary && vary < asmaxy)
+		// {
+		//
+		// this.DrawTooltipScreen(varx, vary, "_lAir Strike:_r _p" +
+		// "1x Air Rune _p" + "Fires a weak bolt of air.");
+		//
+		// }
+		// if (htminx < varx && varx < htmaxx && htminy < vary && vary < htmaxy)
+		// {
+		//
+		// this.DrawTooltipScreen(varx, vary, "_lHome Teleport:_r _p" +
+		// "No rune cost. _p" +
+		// "Set your Home location with _o/sethometeleport_r _p" +
+		// "This will teleport you home.");
+		// }
+		// if (wsminx < varx && varx < wsmaxx && wsminy < vary && vary < wsmaxy)
+		// {
+		// this.DrawTooltipScreen(varx, vary, "_lWater Strike:_r _p" +
+		// "1x Water Rune _p" + "Fires a weak bolt of water.");
+		// }
+
+		return true;
+	}
+
+	private void DrawTooltipScreen(int varx, int vary, String string) {
+		RenderTooltip(varx, vary, string);
+
+	}
+
+	protected void RenderTooltip(int x, int y, String tooltip) {
+		String[] tooltipArray = ParseTooltipArrayFromString(tooltip);
+
+		int tooltipWidth = GetTooltipWidth(tooltipArray);
+		int tooltipHeight = GetTooltipHeight(tooltipArray);
+
+		int tooltipX = x + tooltipXOffset;
+		int tooltipY = y + tooltipYOffset;
+
+		if (tooltipX > width - tooltipWidth - 7)
+			tooltipX = width - tooltipWidth - 7;
+		if (tooltipY > height - tooltipHeight - 8)
+			tooltipY = height - tooltipHeight - 8;
+
+		// render the background inside box
+		int innerAlpha = -0xFEFFFF0; // very very dark purple
+		drawGradientRect(tooltipX, tooltipY - 1, tooltipX + tooltipWidth + 6, tooltipY, innerAlpha, innerAlpha);
+		drawGradientRect(tooltipX, tooltipY + tooltipHeight + 6, tooltipX + tooltipWidth + 6, tooltipY + tooltipHeight + 7, innerAlpha, innerAlpha);
+		drawGradientRect(tooltipX, tooltipY, tooltipX + tooltipWidth + 6, tooltipY + tooltipHeight + 6, innerAlpha, innerAlpha);
+		drawGradientRect(tooltipX - 1, tooltipY, tooltipX, tooltipY + tooltipHeight + 6, innerAlpha, innerAlpha);
+		drawGradientRect(tooltipX + tooltipWidth + 6, tooltipY, tooltipX + tooltipWidth + 7, tooltipY + tooltipHeight + 6, innerAlpha, innerAlpha);
+
+		// render the background outside box
+		int outerAlpha1 = 0x505000FF;
+		int outerAlpha2 = (outerAlpha1 & 0xFEFEFE) >> 1 | outerAlpha1 & -0x1000000;
+		drawGradientRect(tooltipX, tooltipY + 1, tooltipX + 1, tooltipY + tooltipHeight + 6 - 1, outerAlpha1, outerAlpha2);
+		drawGradientRect(tooltipX + tooltipWidth + 5, tooltipY + 1, tooltipX + tooltipWidth + 7, tooltipY + tooltipHeight + 6 - 1, outerAlpha1, outerAlpha2);
+		drawGradientRect(tooltipX, tooltipY, tooltipX + tooltipWidth + 3, tooltipY + 1, outerAlpha1, outerAlpha1);
+		drawGradientRect(tooltipX, tooltipY + tooltipHeight + 5, tooltipX + tooltipWidth + 7, tooltipY + tooltipHeight + 6, outerAlpha2, outerAlpha2);
+
+		// render the foreground text
+		int lineCount = 0;
+		for (String s : tooltipArray) {
+			mc.fontRenderer.drawStringWithShadow(s, tooltipX + 2, tooltipY + 2 + lineCount * LINE_HEIGHT, 0xFFFFFF);
+			lineCount++;
+		}
+	}
+
+	/**
+	 * Converts a String representation of a tooltip into a String[], and also
+	 * decodes any font codes used.
+	 * 
+	 * @param s
+	 *            Ex: "Hello,_nI am your _ltooltip_r and you love me."
+	 * @return An array of Strings such that each String width does not exceed
+	 *         tooltipMaxWidth
+	 */
+	protected String[] ParseTooltipArrayFromString(String s) {
+		s = DecodeStringCodes(s);
+		String[] tooltipSections = s.split(tooltipNewlineDelimeter);
+		ArrayList<String> tooltipArrayList = new ArrayList<String>();
+
+		for (String section : tooltipSections) {
+			String tooltip = "";
+			String[] tooltipWords = section.split(" ");
+
+			for (int i = 0; i < tooltipWords.length; i++) {
+				int lineWidthWithNextWord = mc.fontRenderer.getStringWidth(tooltip + tooltipWords[i]);
+				if (lineWidthWithNextWord > tooltipMaxWidth) {
+					tooltipArrayList.add(tooltip.trim());
+					tooltip = tooltipWords[i] + " ";
+				} else {
+					tooltip += tooltipWords[i] + " ";
+				}
+			}
+
+			tooltipArrayList.add(tooltip.trim());
+		}
+
+		String[] tooltipArray = new String[tooltipArrayList.size()];
+		tooltipArrayList.toArray(tooltipArray);
+
+		return tooltipArray;
+	}
+
+	/**
+	 * Decodes any font codes into something useable by the FontRenderer.
+	 * 
+	 * @param s
+	 *            E.x.: "Hello,_nI am your _ltooltip_r and you love me."
+	 * @return E.x. output (html not included): <br>
+	 *         "Hello,<br>
+	 *         I am your <b>tooltip</b> and you love me."
+	 */
+	private String DecodeStringCodes(String s) {
+		return s.replace("_0", FontCodes.BLACK).replace("_1", FontCodes.DARK_BLUE).replace("_2", FontCodes.DARK_GREEN).replace("_3", FontCodes.DARK_AQUA).replace("_4", FontCodes.DARK_RED).replace("_5", FontCodes.DARK_PURPLE).replace("_6", FontCodes.GOLD).replace("_7", FontCodes.GRAY).replace("_8", FontCodes.DARK_GREY).replace("_9", FontCodes.BLUE).replace("_a", FontCodes.GREEN).replace("_b", FontCodes.AQUA).replace("_c", FontCodes.RED).replace("_d", FontCodes.LIGHT_PURPLE).replace("_e", FontCodes.YELLOW).replace("_f", FontCodes.WHITE).replace("_k", FontCodes.OBFUSCATED).replace("_l", FontCodes.BOLD).replace("_m", FontCodes.STRIKETHROUGH).replace("_n", FontCodes.UNDERLINE).replace("_o", FontCodes.ITALICS).replace("_r", FontCodes.RESET);
+	}
+
+	/***
+	 * Gets the width of the tooltip in pixels.
+	 * 
+	 * @param tooltipArray
+	 * @return
+	 */
+	private int GetTooltipWidth(String[] tooltipArray) {
+		int longestWidth = 0;
+		for (String s : tooltipArray) {
+			int width = mc.fontRenderer.getStringWidth(s);
+			if (width > longestWidth)
+				longestWidth = width;
+		}
+		return longestWidth;
+	}
+
+	/**
+	 * Gets the height of the tooltip in pixels.
+	 * 
+	 * @param tooltipArray
+	 * @return
+	 */
+	private int GetTooltipHeight(String[] tooltipArray) {
+		int tooltipHeight = mc.fontRenderer.FONT_HEIGHT - 2;
+		if (tooltipArray.length > 1) {
+			tooltipHeight += (tooltipArray.length - 1) * LINE_HEIGHT;
+		}
+		return tooltipHeight;
+	}
+
+	/**
+	 * Gets a protected/private field from a class using reflection.
+	 * 
+	 * @param <T>
+	 *            The return type of the field you are getting
+	 * @param <E>
+	 *            The class the field is in
+	 * @param classToAccess
+	 *            The ".class" of the class the field is in
+	 * @param instance
+	 *            The instance of the class
+	 * @param fieldNames
+	 *            comma seperated names the field may have (i.e. obfuscated, non
+	 *            obfuscated). Obfustated field names can be found in
+	 *            fml/conf/fields.csv
+	 * @return
+	 */
+	public static <T, E> T GetFieldByReflection(Class<? super E> classToAccess, E instance, String... fieldNames) {
+		Field field = null;
+		for (String fieldName : fieldNames) {
+			try {
+				field = classToAccess.getDeclaredField(fieldName);
+			} catch (NoSuchFieldException e) {
+			}
+
+			if (field != null)
+				break;
+		}
+
+		if (field != null) {
+			field.setAccessible(true);
+			T fieldT = null;
+			try {
+				fieldT = (T) field.get(instance);
+			} catch (IllegalArgumentException e) {
+			} catch (IllegalAccessException e) {
+			}
+
+			return fieldT;
+		}
+
+		return null;
+	}
+
+	public class FontCodes {
+		// color codes for rendered strings
+		public static final String	BLACK			= "\2470";
+		public static final String	DARK_BLUE		= "\2471";
+		public static final String	DARK_GREEN		= "\2472";
+		public static final String	DARK_AQUA		= "\2473";
+		public static final String	DARK_RED		= "\2474";
+		public static final String	DARK_PURPLE		= "\2475";
+		public static final String	GOLD			= "\2476";
+		public static final String	GRAY			= "\2477";
+		public static final String	DARK_GREY		= "\2478";
+		public static final String	BLUE			= "\2479";
+		public static final String	GREEN			= "\247a";
+		public static final String	AQUA			= "\247b";
+		public static final String	RED				= "\247c";
+		public static final String	LIGHT_PURPLE	= "\247d";
+		public static final String	YELLOW			= "\247e";
+		public static final String	WHITE			= "\247f";
+
+		// font styles
+		public static final String	OBFUSCATED		= "\247k";
+		public static final String	BOLD			= "\247l";
+		public static final String	STRIKETHROUGH	= "\247m";
+		public static final String	UNDERLINE		= "\247n";
+		public static final String	ITALICS			= "\247o";
+
+		public static final String	RESET			= "\247r";
+	}
+
+}

@@ -11,6 +11,7 @@ import com.callumhutchy.runecraft2.items.Items;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockLeaves;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 
@@ -37,6 +38,7 @@ public class Blocks {
 	public static Block		RuneEssenceOre, PureEssenceOre;
 	
 	public static Block RCFurnace;
+
 
 	public static void init() {
 		// Altar
@@ -85,6 +87,7 @@ public class Blocks {
 
 		RCFurnace = new RCFurnace(Material.iron);
 		
+	
 	}
 
 	public static void gameRegistry() {
@@ -133,6 +136,8 @@ public class Blocks {
 		GameRegistry.registerBlock(PureEssenceOre, BlockNames.PureEssenceOre_Unlo);
 		
 		GameRegistry.registerBlock(RCFurnace, BlockNames.RCFurnace_Unlo);
+		
+	
 	}
 
 }

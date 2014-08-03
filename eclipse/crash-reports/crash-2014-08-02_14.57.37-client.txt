@@ -1,0 +1,107 @@
+---- Minecraft Crash Report ----
+// I blame Dinnerbone.
+
+Time: 02/08/14 14:57
+Description: Rendering screen
+
+java.lang.ClassCastException: java.util.ArrayList cannot be cast to net.minecraft.client.gui.GuiButton
+	at com.callumhutchy.runecraft2.client.gui.GuiRCFurnace.drawScreen(GuiRCFurnace.java:137)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1145)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1066)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:961)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at GradleStart.bounce(GradleStart.java:108)
+	at GradleStart.startClient(GradleStart.java:101)
+	at GradleStart.main(GradleStart.java:56)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.callumhutchy.runecraft2.client.gui.GuiRCFurnace.drawScreen(GuiRCFurnace.java:137)
+
+-- Screen render details --
+Details:
+	Screen name: com.callumhutchy.runecraft2.client.gui.GuiRCFurnace
+	Mouse location: Scaled: (213, 119). Absolute: (427, 240)
+	Screen size: Scaled: (427, 240). Absolute: (854, 480). Scale factor of 2
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['ForgeDevName'/93, l='MpServer', x=-1385.50, y=5.62, z=657.50]]
+	Chunk stats: MultiplayerChunkCache: 160, 160
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-1392,4,659), Chunk: (at 0,0,3 in -87,41; contains blocks -1392,0,656 to -1377,255,671), Region: (-3,1; contains chunks -96,32 to -65,63, blocks -1536,0,512 to -1025,255,1023)
+	Level time: 3111 game time, 3111 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 41 total; [EntitySheep['Sheep'/64, l='MpServer', x=-1340.72, y=4.00, z=626.66], EntityChicken['Chicken'/65, l='MpServer', x=-1338.41, y=4.00, z=634.27], EntityClientPlayerMP['ForgeDevName'/93, l='MpServer', x=-1385.50, y=5.62, z=657.50], EntityChicken['Chicken'/23, l='MpServer', x=-1452.44, y=4.00, z=664.59], EntityChicken['Chicken'/22, l='MpServer', x=-1448.53, y=4.00, z=667.03], EntitySheep['Sheep'/25, l='MpServer', x=-1446.91, y=4.00, z=676.88], EntityChicken['Chicken'/24, l='MpServer', x=-1448.84, y=4.00, z=672.63], EntityChicken['Chicken'/27, l='MpServer', x=-1454.44, y=4.00, z=682.47], EntitySheep['Sheep'/26, l='MpServer', x=-1455.81, y=4.00, z=672.78], EntityChicken['Chicken'/29, l='MpServer', x=-1433.73, y=4.00, z=665.91], EntitySheep['Sheep'/28, l='MpServer', x=-1445.88, y=4.00, z=672.09], EntityChicken['Chicken'/31, l='MpServer', x=-1433.41, y=4.00, z=679.63], EntityChicken['Chicken'/30, l='MpServer', x=-1434.34, y=4.00, z=674.44], EntitySheep['Sheep'/34, l='MpServer', x=-1408.09, y=4.00, z=596.06], EntityChicken['Chicken'/35, l='MpServer', x=-1421.59, y=4.00, z=676.53], EntitySheep['Sheep'/32, l='MpServer', x=-1411.91, y=4.00, z=587.69], EntitySheep['Sheep'/33, l='MpServer', x=-1408.78, y=4.00, z=583.06], EntityChicken['Chicken'/38, l='MpServer', x=-1407.03, y=4.00, z=582.72], EntityChicken['Chicken'/39, l='MpServer', x=-1401.16, y=4.00, z=587.63], EntitySheep['Sheep'/37, l='MpServer', x=-1393.66, y=4.00, z=579.22], EntitySheep['Sheep'/42, l='MpServer', x=-1392.31, y=4.00, z=582.63], EntityChicken['Chicken'/43, l='MpServer', x=-1393.59, y=4.00, z=594.75], EntityChicken['Chicken'/41, l='MpServer', x=-1405.53, y=4.00, z=585.53], EntityHorse['Horse'/46, l='MpServer', x=-1382.50, y=4.00, z=586.75], EntityChicken['Chicken'/47, l='MpServer', x=-1387.45, y=4.00, z=590.51], EntityPig['Pig'/45, l='MpServer', x=-1387.25, y=4.00, z=586.50], EntityPig['Pig'/51, l='MpServer', x=-1390.09, y=4.00, z=602.13], EntityChicken['Chicken'/50, l='MpServer', x=-1380.56, y=4.00, z=604.47], EntityChicken['Chicken'/49, l='MpServer', x=-1381.53, y=4.00, z=584.47], EntityHorse['Horse'/48, l='MpServer', x=-1385.47, y=4.00, z=590.53], EntityHorse['Horse'/55, l='MpServer', x=-1347.38, y=4.00, z=621.25], EntitySheep['Sheep'/54, l='MpServer', x=-1364.94, y=4.00, z=626.97], EntityPig['Pig'/53, l='MpServer', x=-1373.97, y=4.00, z=596.13], EntityHorse['Horse'/59, l='MpServer', x=-1349.41, y=4.00, z=631.53], EntitySheep['Sheep'/58, l='MpServer', x=-1352.09, y=4.00, z=625.94], EntityHorse['Horse'/57, l='MpServer', x=-1357.94, y=4.00, z=619.78], EntityChicken['Chicken'/56, l='MpServer', x=-1348.28, y=4.00, z=623.81], EntityHorse['Horse'/63, l='MpServer', x=-1340.22, y=4.00, z=632.72], EntityChicken['Chicken'/62, l='MpServer', x=-1347.56, y=4.00, z=643.47], EntitySheep['Sheep'/61, l='MpServer', x=-1347.31, y=4.00, z=644.81], EntityChicken['Chicken'/60, l='MpServer', x=-1347.28, y=4.00, z=630.16]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:417)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2567)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:983)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at GradleStart.bounce(GradleStart.java:108)
+	at GradleStart.startClient(GradleStart.java:101)
+	at GradleStart.main(GradleStart.java:56)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_60, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 725453008 bytes (691 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.18.1180 Minecraft Forge 10.13.0.1180 4 mods loaded, 4 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.10.18.1180} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.0.1180.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.13.0.1180} [Minecraft Forge] (forgeSrc-1.7.10-10.13.0.1180.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Runecraft2{@VERSION@} [Runecraft 2] (bin) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: AMD Radeon HD 7800 Series GL version 4.4.12874 Compatibility Profile Context 14.100.0.0, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

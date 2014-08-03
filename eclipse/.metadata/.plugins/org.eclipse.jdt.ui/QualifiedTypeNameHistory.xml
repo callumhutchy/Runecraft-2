@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.swing.text.html.parser.Entity"/>
-<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.spells.models.StrikeModel"/>
-<fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.Render"/>
-<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.spells.render.RenderAirStrike"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.client.registry.RenderingRegistry"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.relauncher.SideOnly"/>
-<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.spells.tileentities.TileEntityAirStrike"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.registry.EntityRegistry"/>
-<fullyQualifiedTypeName name="net.minecraft.client.resources.I18n"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.Mod.EventHandler"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.event.FMLServerStartingEvent"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
-<fullyQualifiedTypeName name="net.minecraft.server.MinecraftServer"/>
-<fullyQualifiedTypeName name="net.minecraft.command.ICommandManager"/>
-<fullyQualifiedTypeName name="net.minecraft.command.ServerCommandManager"/>
-<fullyQualifiedTypeName name="utility.Commhandler"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.DataWatcher"/>
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.proxy.CommonProxy"/>
 <fullyQualifiedTypeName name="java.io.ByteArrayOutputStream"/>
@@ -25,7 +9,6 @@
 <fullyQualifiedTypeName name="net.minecraft.entity.EntityLiving"/>
 <fullyQualifiedTypeName name="net.minecraft.command.CommandBase"/>
 <fullyQualifiedTypeName name="utility.SkillsCommand"/>
-<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiScreen"/>
 <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiButton"/>
 <fullyQualifiedTypeName name="java.text.Format.Field"/>
 <fullyQualifiedTypeName name="java.text.MessageFormat.Field"/>
@@ -41,7 +24,6 @@
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.spells.tileentities.TileEntityFireStrike"/>
 <fullyQualifiedTypeName name="net.minecraft.world.gen.feature.WorldGenerator"/>
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityAdamantiteOre"/>
-<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.Blocks"/>
 <fullyQualifiedTypeName name="com.jcraft.jorbis.Block"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemBook"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
@@ -52,12 +34,30 @@
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.items.models.StaffModel"/>
 <fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
 <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.Altar"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.gameevent.TickEvent.WorldTickEvent"/>
+<fullyQualifiedTypeName name="handler.Runecraft2EventHandler"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="net.minecraft.util.IChatComponent"/>
+<fullyQualifiedTypeName name="reference.ExpChart"/>
+<fullyQualifiedTypeName name="utility.commands.HomeTeleportCMD"/>
+<fullyQualifiedTypeName name="utility.commands.SkillsCMD"/>
+<fullyQualifiedTypeName name="utility.commands.SuppressExpMessagesCMD"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.items.Staff"/>
 <fullyQualifiedTypeName name="net.minecraft.client.model.ModelBase"/>
 <fullyQualifiedTypeName name="net.minecraft.client.model.ModelRenderer"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
-<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.Altar"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.gameevent.TickEvent.WorldTickEvent"/>
-<fullyQualifiedTypeName name="reference.ExpChart"/>
-<fullyQualifiedTypeName name="handler.Runecraft2EventHandler"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="mods.battlegear2.api.shield.IShield"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.renderer.RCFurnaceRenderer"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.Blocks"/>
+<fullyQualifiedTypeName name="net.minecraft.block.BlockContainer"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRCFurnace"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.Runecraft2"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.models.FurnaceModel"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiScreen"/>
+<fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntity"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.client.gui.tileentities.TileEntityRCFurnaceGui"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.client.gui.GuiRCFurnace"/>
+<fullyQualifiedTypeName name="net.minecraft.client.resources.I18n"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiTextField"/>
 </qualifiedTypeNameHistroy>
