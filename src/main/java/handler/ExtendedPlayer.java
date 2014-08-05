@@ -3,6 +3,7 @@ package handler;
 import java.io.ByteArrayOutputStream;
 import java.io.DataOutputStream;
 
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRCFurnace;
 import com.callumhutchy.runecraft2.proxy.CommonProxy;
 
 import net.minecraft.entity.Entity;
@@ -37,8 +38,9 @@ public class ExtendedPlayer implements IExtendedEntityProperties {
 			currentVitalityMaxExp, currentDefenseMaxExp, currentCookingMaxExp,
 			currentRunecraftingMaxExp, currentMiningMaxExp,
 			currentSmithingMaxExp;
-	
-	public boolean suppressExpMessages;
+	public TileEntityRCFurnace	currentRCFurnace;
+
+	public boolean				suppressExpMessages;
 
 	public int					maxSkill					= 99;
 	private final EntityPlayer	player;
@@ -51,7 +53,7 @@ public class ExtendedPlayer implements IExtendedEntityProperties {
 		this.currentMagicMaxExp = this.currentRunecraftingMaxExp = this.currentStrengthMaxExp = this.currentVitalityMaxExp = this.currentDefenseMaxExp = this.currentCookingMaxExp = this.currentMiningMaxExp = this.currentSmithingMaxExp = 0;
 		this.suppressExpMessages = false;
 		this.currentSpell = "";
-
+		this.currentRCFurnace = null;
 		//
 	}
 
@@ -93,7 +95,7 @@ public class ExtendedPlayer implements IExtendedEntityProperties {
 		System.out.println("[TUT PROPS] Magic from NBT: " + this.currentMagicLevel + "/" + this.maxSkill);
 
 		properties.setBoolean("SuppressExpMessage", this.suppressExpMessages);
-		
+
 	}
 
 	@Override
@@ -121,8 +123,7 @@ public class ExtendedPlayer implements IExtendedEntityProperties {
 		this.currentSmithingExp = properties.getInteger("CurrentSmithingExp");
 		// Spells
 		this.currentSpell = properties.getString("CurrentSpell");
-		
-		
+
 		this.suppressExpMessages = properties.getBoolean("SuppressExpMessages");
 
 	}

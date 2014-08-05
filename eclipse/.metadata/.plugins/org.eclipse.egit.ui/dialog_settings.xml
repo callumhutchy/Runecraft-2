@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="true" key="CommitDialog.showUntracked"/>
+	<item value="false" key="CommitDialog.showUntracked"/>
 	<list key="CommitDialog.authorValues">
 		<item value="callumhutchy &lt;callumhutchie@hotmail.co.uk&gt;"/>
 	</list>
@@ -12,15 +12,15 @@
 	<section name="org.eclipse.egit.ui.COMMIT_DIALOG_SECTION">
 		<item value="808" key="DIALOG_WIDTH"/>
 		<item value="74" key="DIALOG_Y_ORIGIN"/>
-		<item value="861" key="DIALOG_HEIGHT"/>
 		<item value="327" key="DIALOG_X_ORIGIN"/>
+		<item value="861" key="DIALOG_HEIGHT"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
 		<item value="666" key="DIALOG_WIDTH"/>
-		<item value="196" key="DIALOG_Y_ORIGIN"/>
+		<item value="204" key="DIALOG_Y_ORIGIN"/>
+		<item value="323" key="DIALOG_X_ORIGIN"/>
 		<item value="457" key="DIALOG_HEIGHT"/>
-		<item value="315" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 </section>

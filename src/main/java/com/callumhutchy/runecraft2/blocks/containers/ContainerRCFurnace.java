@@ -10,9 +10,9 @@ import net.minecraft.item.Item;
 public class ContainerRCFurnace extends Container {
 	TileEntityRCFurnace	tileEntity;
 
-	public ContainerRCFurnace(InventoryPlayer inventoryPlayer, TileEntityRCFurnace te) {
-		tileEntity = te;
-
+	public ContainerRCFurnace(EntityPlayer player) {
+		
+System.out.println("Buthole");
 		
 
 		

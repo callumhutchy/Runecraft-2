@@ -1,5 +1,7 @@
 package com.callumhutchy.runecraft2.blocks;
 
+import handler.ExtendedPlayer;
+
 import com.callumhutchy.runecraft2.Runecraft2;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRCFurnace;
 import com.callumhutchy.runecraft2.client.gui.GuiRCFurnace;
@@ -42,7 +44,8 @@ public class RCFurnace extends BlockContainer {
 	public boolean onBlockActivated(World world, int varx, int vary, int varz, EntityPlayer entity, int p_149727_6_, float p_149727_7_, float p_149727_8_, float p_149727_9_) {
 		
 		TileEntityRCFurnace tileEntity = (TileEntityRCFurnace) world.getTileEntity(varx, vary, varz);
-		
+		ExtendedPlayer props = ExtendedPlayer.get(entity);
+		props.currentRCFurnace = tileEntity;
 		entity.openGui(Runecraft2.instance, GuiRCFurnace.GUI_ID, world,0, 0, 0);
 		
 		return true;

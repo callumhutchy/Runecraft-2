@@ -14,7 +14,7 @@ public class GuiHandler implements IGuiHandler{
 	public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
 		 TileEntity tileEntity = world.getTileEntity(x, y, z);
          if(tileEntity instanceof TileEntityRCFurnace){
-                 return new ContainerRCFurnace(player.inventory, (TileEntityRCFurnace) tileEntity);
+                 return new ContainerRCFurnace(player);
          }
          return null;
 	}
@@ -25,11 +25,12 @@ public class GuiHandler implements IGuiHandler{
 //		if(ID == GuiSpellBook.GUI_ID){
 //			
 //		}
+		TileEntity tileEntity = world.getTileEntity(x, y, z);
 		switch(ID){
 		case GuiSpellBook.GUI_ID:
 			return new GuiSpellBook();
 		case GuiRCFurnace.GUI_ID:
-			return new GuiRCFurnace(null, null);
+			return new GuiRCFurnace(player);
 		default: return null;
 		}
 		

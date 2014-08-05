@@ -13,6 +13,7 @@ public static FurnaceModel model;
 public Item furnaceProduct;
 public int amountOfProduct;
 public boolean doneCooking = false;
+public boolean itemsToReturn = false;
 public int time = 0;
 private static Timer timer;
 private static int interval;
@@ -24,21 +25,26 @@ public boolean canUpdate() {
 @Override
 public void updateEntity() {
 if(time != 0){
-	int delay = 1000;
-    int period = 1000;
-    timer = new Timer();
-    interval = time;
-    System.out.println(interval);
-    timer.scheduleAtFixedRate(new TimerTask() {
-    	public void run() {
-    	System.out.println(setInterval());
-
-        }
-    }, delay, period);
-    if(time == 0){
-    	doneCooking = true;
-    }
+	interval++;
+	if(interval == 20){
+		time--;
+		interval = 0;
+	}
+	System.out.println(time);
+	if(time == 0){
+		System.out.println("Reached method 3");
+		doneCooking = true;
+		if(doneCooking){
+			doneCooking = false;
+			
+				itemsToReturn = true;
+				System.out.println("Its reached method 1");
+			
+		}
+	}
+    
 }
+
 
 
 }

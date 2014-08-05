@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
 
+import reference.ExpChart;
 import reference.OreTimes;
 
 import com.callumhutchy.runecraft2.blocks.containers.ContainerRCFurnace;
@@ -19,20 +20,24 @@ import com.callumhutchy.runecraft2.items.Items;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.GuiTextField;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.resources.I18n;
+import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ChatComponentText;
+import net.minecraft.util.IChatComponent;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 
 @SideOnly(Side.CLIENT)
-public class GuiRCFurnace extends  GuiContainer {
+public class GuiRCFurnace extends GuiContainer {
 	private static final ResourceLocation	resourceLocation			= new ResourceLocation("runecraft2:textures/gui/furnacegui.png");
 	protected static final ResourceLocation	widgetTextures				= new ResourceLocation("runecraft2:textures/gui/furnaceicons.png");
 
@@ -88,15 +93,31 @@ public class GuiRCFurnace extends  GuiContainer {
 	private GuiTextField					craftAmount;
 	private GuiTextField					craftTime;
 	int										amountToCraft;
-	public TileEntityRCFurnace tileEntityFurnace;
-	public World world;
+	public TileEntityRCFurnace				tileEntityFurnace;
+	public World							world;
+	public EntityPlayer						player;
 
-	public GuiRCFurnace(InventoryPlayer inventoryPlayer,TileEntityRCFurnace tileEntity){
-		super(new ContainerRCFurnace(inventoryPlayer, tileEntity));
-		tileEntityFurnace = tileEntity;
+	public GuiRCFurnace(EntityPlayer inventoryPlayer) {
+		super(new ContainerRCFurnace(inventoryPlayer));
+		System.out.println(inventoryPlayer);
+		player = inventoryPlayer;
+		ExtendedPlayer props = ExtendedPlayer.get(player);
+		player.addChatMessage(new ChatComponentText("Hey Player"));
+		player.addChatMessage(new ChatComponentText(props.currentRCFurnace.toString()));
+		tileEntityFurnace = props.currentRCFurnace;
+		world = player.worldObj;
+		if (tileEntityFurnace.itemsToReturn == true) {
+			System.out.println("Its reached method 2");
+			System.out.println(tileEntityFurnace.amountOfProduct);
+			System.out.println(tileEntityFurnace.furnaceProduct.toString());
+			player.inventory.addItemStackToInventory(new ItemStack(tileEntityFurnace.furnaceProduct, tileEntityFurnace.amountOfProduct));
+			tileEntityFurnace.itemsToReturn = false;
+			tileEntityFurnace.amountOfProduct = 0;
+		}
+
 		
 	}
-	
+
 	public void initGui() {
 		int xSize = 256;
 		int ySize = 256;
@@ -127,8 +148,6 @@ public class GuiRCFurnace extends  GuiContainer {
 
 		this.craftTime = new GuiTextField(this.fontRendererObj, xStart + 60, yStart + 111, 60, 20);
 
-		
-		
 	}
 
 	public void drawScreen(int par1, int par2, float par3) {
@@ -140,25 +159,27 @@ public class GuiRCFurnace extends  GuiContainer {
 		int iconyStart = yStart + 22;
 		int iconxStart = xStart + 17;
 
-		rightBtn.width = leftBtn.width = 20;
-		rightBtn.height = leftBtn.height = 20;
-		onecraftBtn.width = fivecraftBtn.width = tencraftBtn.width = 30;
-		onecraftBtn.height = fivecraftBtn.height = tencraftBtn.height = 20;
-		craftallBtn.width = 30;
-		craftallBtn.height = craftBtn.height = 20;
-
-		craftBtn.width = 35;
 		
 		this.drawBackground(0);
 		this.doesGuiPauseGame();
 
 		this.drawBars();
 		// this.DrawTooltipScreen();
-		
+
 		this.drawCenteredString(this.fontRendererObj, "Furnace", xStart + 40, yStart + 5, 16777215);
-		
+
 		this.craftAmount.drawTextBox();
 		this.craftTime.drawTextBox();
+		
+//		rightBtn.width = leftBtn.width = 20;
+//		rightBtn.height = leftBtn.height = 20;
+//		onecraftBtn.width = fivecraftBtn.width = tencraftBtn.width = 30;
+//		onecraftBtn.height = fivecraftBtn.height = tencraftBtn.height = 20;
+//		craftallBtn.width = 30;
+//		craftallBtn.height = craftBtn.height = 20;
+//
+//		craftBtn.width = 35;
+
 		super.drawScreen(par1, par2, par3);
 		this.IsButtonMouseovered(par1, par2, null);
 	}
@@ -652,16 +673,14 @@ public class GuiRCFurnace extends  GuiContainer {
 			}
 		case 7:
 			if (bronzebarselected) {
-				for(int i = 0; i < amountToCraft; i++){
-				consumeMultipleItems(this.mc.thePlayer, Items.copperOre, Items.tinOre);
-				
-				}
-
-				tileEntityFurnace.amountOfProduct = amountToCraft;
+				System.out.println(amountToCraft);
+				consumeMultipleOfOneItem(player, Items.copperOre, amountToCraft );
+				consumeMultipleOfOneItem(player, Items.tinOre, amountToCraft );
+				tileEntityFurnace.doneCooking = false;
 				tileEntityFurnace.furnaceProduct = Items.bronzeBar;
 				tileEntityFurnace.time = OreTimes.bronzeTime * amountToCraft;
-				
-				
+				tileEntityFurnace.amountOfProduct = amountToCraft;
+
 				break;
 			} else if (ironbarselected) {
 				this.mc.thePlayer.inventory.consumeInventoryItem(Items.ironBar);
@@ -2807,17 +2826,17 @@ public class GuiRCFurnace extends  GuiContainer {
 		this.mc.getTextureManager().bindTexture(resourceLocation);
 		this.drawTexturedModalRect(xStart, yStart, 0, 0, xSize, ySize);
 
-		
 	}
+
 	@Override
-    protected void drawGuiContainerForegroundLayer(int par1, int par2) {
+	protected void drawGuiContainerForegroundLayer(int par1, int par2) {
 		int xSize = 256;
 		int ySize = 256;
 		int xStart = (width / 2) - (xSize / 2);
 		int yStart = (height / 2) - (ySize / 2);
 		int iconyStart = yStart + 22;
 		int iconxStart = xStart + 17;
-
+		
 		rightBtn.width = leftBtn.width = 20;
 		rightBtn.height = leftBtn.height = 20;
 		onecraftBtn.width = fivecraftBtn.width = tencraftBtn.width = 30;
@@ -2832,14 +2851,14 @@ public class GuiRCFurnace extends  GuiContainer {
 
 		this.drawBars();
 		// this.DrawTooltipScreen();
-		
+
 		this.drawCenteredString(this.fontRendererObj, "Furnace", xStart + 40, yStart + 5, 16777215);
-		
+
 		this.craftAmount.drawTextBox();
 		this.craftTime.drawTextBox();
-		
+
 		this.IsButtonMouseovered(par1, par2, null);
-	
+
 	}
 
 }
