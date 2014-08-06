@@ -6,6 +6,10 @@ import handler.Runecraft2EventHandler;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.Formatter;
+import java.util.Locale;
+
+
 
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
@@ -185,7 +189,20 @@ public class GuiRCFurnace extends GuiContainer {
 	}
 
 	public void updateScreen() {
+		ExtendedPlayer props = ExtendedPlayer.get(player);
 		this.craftAmount.updateCursorCounter();
+		tileEntityFurnace = props.currentRCFurnace;
+		writeTime(tileEntityFurnace.time);
+		world = player.worldObj;
+		if (tileEntityFurnace.itemsToReturn == true) {
+			System.out.println("Its reached method 2");
+			System.out.println(tileEntityFurnace.amountOfProduct);
+			System.out.println(tileEntityFurnace.furnaceProduct.toString());
+			player.inventory.addItemStackToInventory(new ItemStack(tileEntityFurnace.furnaceProduct, tileEntityFurnace.amountOfProduct));
+			tileEntityFurnace.itemsToReturn = false;
+			tileEntityFurnace.amountOfProduct = 0;
+		}
+
 	}
 
 	protected void actionPerformed(GuiButton button) {
@@ -397,6 +414,7 @@ public class GuiRCFurnace extends GuiContainer {
 					amountToCraft = Math.min(numberOfCopperOre, numberOfTinOre);
 
 					if (amountToCraft >= 5) {
+						amountToCraft = 5;
 						craftAmount.setText(String.valueOf(5));
 					} else if (amountToCraft < 5) {
 						craftAmount.setText(String.valueOf(amountToCraft));
@@ -674,8 +692,10 @@ public class GuiRCFurnace extends GuiContainer {
 		case 7:
 			if (bronzebarselected) {
 				System.out.println(amountToCraft);
-				consumeMultipleOfOneItem(player, Items.copperOre, amountToCraft );
-				consumeMultipleOfOneItem(player, Items.tinOre, amountToCraft );
+				for(int i = 0; i < amountToCraft; i++){
+					consumeMultipleItems(this.mc.thePlayer, Items.copperOre, Items.tinOre);
+				}
+				
 				tileEntityFurnace.doneCooking = false;
 				tileEntityFurnace.furnaceProduct = Items.bronzeBar;
 				tileEntityFurnace.time = OreTimes.bronzeTime * amountToCraft;
@@ -2848,7 +2868,9 @@ public class GuiRCFurnace extends GuiContainer {
 		super.drawGuiContainerForegroundLayer(par1, par2);
 		this.drawBackground(0);
 		this.doesGuiPauseGame();
-
+		for (Object o : buttonList) {
+			 ((GuiButton)o).drawButton(mc, par1, par2);
+			}
 		this.drawBars();
 		// this.DrawTooltipScreen();
 
@@ -2861,4 +2883,41 @@ public class GuiRCFurnace extends GuiContainer {
 
 	}
 
+	public void writeTime(int time){
+		int hours = 0, minutes = 0, seconds = 0;
+		seconds = time;
+		if(time > 0){
+			if(seconds >= 60){
+				seconds -= 60;
+				minutes++;
+			}else if(seconds < 60){
+				
+			}
+			if(minutes  >= 60){
+				minutes -= 60;
+				hours++;
+			}
+			
+			if(time == 0){
+				seconds = 0;
+			}
+			
+			
+			
+			
+			 StringBuilder sb = new StringBuilder();
+			   // Send all output to the Appendable object sb
+			   Formatter formatter = new Formatter(sb, Locale.US);
+
+			   // Explicit argument indices may be used to re-order output.
+			   formatter.format("%02d:%02d:%02d", hours, minutes, seconds);
+			  
+			   String timeString;
+			System.out.printf(sb.toString());
+			System.out.println();
+			this.craftTime.setText(sb.toString());
+			
+		}
+	}
+	
 }

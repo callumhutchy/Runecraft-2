@@ -21,8 +21,6 @@
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.Altar"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.gameevent.TickEvent.WorldTickEvent"/>
 <fullyQualifiedTypeName name="handler.Runecraft2EventHandler"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="net.minecraft.util.IChatComponent"/>
 <fullyQualifiedTypeName name="reference.ExpChart"/>
 <fullyQualifiedTypeName name="utility.commands.HomeTeleportCMD"/>
 <fullyQualifiedTypeName name="utility.commands.SkillsCMD"/>
@@ -57,7 +55,9 @@
 <fullyQualifiedTypeName name="net.minecraft.client.gui.inventory.GuiContainer"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.player.InventoryPlayer"/>
 <fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntity"/>
-<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRCFurnace"/>
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.containers.ContainerRCFurnace"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="net.minecraft.util.IChatComponent"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRCFurnace"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

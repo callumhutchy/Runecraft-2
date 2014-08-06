@@ -11,6 +11,7 @@ import org.lwjgl.opengl.GL11;
 
 import com.callumhutchy.runecraft2.blocks.models.AltarModel;
 import com.callumhutchy.runecraft2.blocks.models.FurnaceModel;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRCFurnace;
 
 public class RCFurnaceRenderer extends TileEntitySpecialRenderer{
 
@@ -62,6 +63,27 @@ private FurnaceModel model;
             GL11.glPopMatrix();
             GL11.glPopMatrix();
            
+    }
+    public void setRotationAngles(TileEntity tileEntity) {
+    	TileEntityRCFurnace te = (TileEntityRCFurnace)tileEntity;
+    		boolean open;
+    		open = te.openDoors;
+    		System.out.println("ASSSSSS");
+    		if(open){
+    			System.out.println("BOOOOOOB");
+    			this.model.Door_Left.rotateAngleY = 130F;
+    			this.model.Door_Right.rotateAngleY = -130F;
+    		}
+    	
+    	
+    		if(!open){
+    			this.model.Door_Left.rotateAngleY = 0F;
+    			this.model.Door_Right.rotateAngleY = 0F;
+    		}
+    	
+    	
+    	
+    	
     }
 
 }
