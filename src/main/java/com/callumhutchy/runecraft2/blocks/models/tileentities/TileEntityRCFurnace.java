@@ -19,6 +19,7 @@ public class TileEntityRCFurnace extends TileEntity {
 	private static Timer		timer;
 	public static int			interval;
 	public static boolean openDoors = false;
+	public int direction;
 
 	public boolean canUpdate() {
 		return true;

@@ -9,8 +9,11 @@ import com.callumhutchy.runecraft2.client.gui.GuiSpellBook;
 
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
 public class RCFurnace extends BlockContainer {
@@ -50,6 +53,18 @@ public class RCFurnace extends BlockContainer {
 		
 		return true;
 		
+	}
+	
+	@Override
+	public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack)
+	{
+	if (entity == null)
+	{
+	return;
+	}
+
+	TileEntityRCFurnace tile = (TileEntityRCFurnace) world.getTileEntity(x, y, z);
+	tile.direction = MathHelper.floor_double((double)(entity.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
 	}
 	
 }
