@@ -714,7 +714,13 @@ public class GuiRCFurnace extends GuiContainer {
 
 				break;
 			} else if (ironbarselected) {
-				this.mc.thePlayer.inventory.consumeInventoryItem(Items.ironBar);
+				for (int i = 0; i < amountToCraft; i++) {
+					this.mc.thePlayer.inventory.consumeInventoryItem(Items.ironOre);
+				}
+				tileEntityFurnace.doneCooking = false;
+				tileEntityFurnace.furnaceProduct = Items.ironBar;
+				tileEntityFurnace.time = OreTimes.ironTime * amountToCraft;
+				tileEntityFurnace.amountOfProduct = amountToCraft;
 				// % that it won't craft
 				break;
 
@@ -730,27 +736,73 @@ public class GuiRCFurnace extends GuiContainer {
 				break;
 
 			} else if (steelbarselected) {
-				this.mc.thePlayer.inventory.consumeInventoryItem(Items.ironOre);
-				consumeMultipleOfOneItem(this.mc.thePlayer, Items.coalOre, 2);
+				
+				
+				
+				for (int i = 0; i < amountToCraft; i++) {
+					this.mc.thePlayer.inventory.consumeInventoryItem(Items.ironOre);
+					consumeMultipleOfOneItem(this.mc.thePlayer, Items.coalOre, 2);
+				}
+
+				tileEntityFurnace.doneCooking = false;
+				tileEntityFurnace.furnaceProduct = Items.steelBar;
+				tileEntityFurnace.time = OreTimes.steelTime * amountToCraft;
+				tileEntityFurnace.amountOfProduct = amountToCraft;
 				break;
 
 			} else if (goldbarselected) {
-				this.mc.thePlayer.inventory.consumeInventoryItem(Items.goldOre);
+				
+				for (int i = 0; i < amountToCraft; i++) {
+					this.mc.thePlayer.inventory.consumeInventoryItem(Items.goldOre);
+				}
+				tileEntityFurnace.doneCooking = false;
+				tileEntityFurnace.furnaceProduct = Items.goldBar;
+				tileEntityFurnace.time = OreTimes.goldTime * amountToCraft;
+				tileEntityFurnace.amountOfProduct = amountToCraft;
 				break;
 
 			} else if (mithrilbarselected) {
-				this.mc.thePlayer.inventory.consumeInventoryItem(Items.mithrilOre);
-				consumeMultipleOfOneItem(this.mc.thePlayer, Items.coalOre, 4);
+				
+				
+				for (int i = 0; i < amountToCraft; i++) {
+					this.mc.thePlayer.inventory.consumeInventoryItem(Items.mithrilOre);
+					consumeMultipleOfOneItem(this.mc.thePlayer, Items.coalOre, 4);
+					
+				}
+				tileEntityFurnace.doneCooking = false;
+				tileEntityFurnace.furnaceProduct = Items.mithrilBar;
+				tileEntityFurnace.time = OreTimes.mithrilTime * amountToCraft;
+				tileEntityFurnace.amountOfProduct = amountToCraft;
 				break;
 
 			} else if (adamantbarselected) {
-				this.mc.thePlayer.inventory.consumeInventoryItem(Items.adamantiteOre);
-				consumeMultipleOfOneItem(this.mc.thePlayer, Items.coalOre, 6);
+				
+				
+				for (int i = 0; i < amountToCraft; i++) {
+					this.mc.thePlayer.inventory.consumeInventoryItem(Items.adamantiteOre);
+					consumeMultipleOfOneItem(this.mc.thePlayer, Items.coalOre, 6);
+					
+				}
+				tileEntityFurnace.doneCooking = false;
+				tileEntityFurnace.furnaceProduct = Items.adamantBar;
+				tileEntityFurnace.time = OreTimes.adamantTime * amountToCraft;
+				tileEntityFurnace.amountOfProduct = amountToCraft;
 				break;
 
 			} else if (runebarselected) {
-				this.mc.thePlayer.inventory.consumeInventoryItem(Items.runiteOre);
-				consumeMultipleOfOneItem(this.mc.thePlayer, Items.coalOre, 8);
+				
+				
+				
+				for (int i = 0; i < amountToCraft; i++) {
+					this.mc.thePlayer.inventory.consumeInventoryItem(Items.runiteOre);
+					consumeMultipleOfOneItem(this.mc.thePlayer, Items.coalOre, 8);
+					
+				}
+				tileEntityFurnace.doneCooking = false;
+				tileEntityFurnace.furnaceProduct = Items.runeBar;
+				tileEntityFurnace.time = OreTimes.runeTime * amountToCraft;
+				tileEntityFurnace.amountOfProduct = amountToCraft;
+				
 				break;
 
 			}
