@@ -1,7 +1,11 @@
 package com.callumhutchy.runecraft2;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import handler.ConfigurationHandler;
 import handler.Runecraft2EventHandler;
+import mods.mud.ModUpdateDetector;
 import net.minecraft.command.ICommandManager;
 import net.minecraft.command.ServerCommandManager;
 import net.minecraft.creativetab.CreativeTabs;
@@ -81,7 +85,12 @@ public class Runecraft2 {
 
 		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
-		
+		try {
+			ModUpdateDetector.registerMod(FMLCommonHandler.instance().findContainerFor(this), new URL("https://www.dropbox.com/s/edvesmdvjb3v1vc/runecraft2updates.xml"),new URL( "https://www.dropbox.com/s/edvesmdvjb3v1vc/runecraft2updates.xml"));
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		Blocks.init();
 		LogHelper.info("Blocks Initialised!");
 		

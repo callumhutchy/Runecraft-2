@@ -42,6 +42,7 @@ public class TileEntityRCFurnace extends TileEntity {
 				if (doneCooking) {
 					doneCooking = false;
 					openDoors = false;
+					time = 0;
 					itemsToReturn = true;
 					System.out.println("Its reached method 1");
 

@@ -9,8 +9,6 @@ import java.util.ArrayList;
 import java.util.Formatter;
 import java.util.Locale;
 
-
-
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
 
@@ -119,7 +117,6 @@ public class GuiRCFurnace extends GuiContainer {
 			tileEntityFurnace.amountOfProduct = 0;
 		}
 
-		
 	}
 
 	public void initGui() {
@@ -163,7 +160,6 @@ public class GuiRCFurnace extends GuiContainer {
 		int iconyStart = yStart + 22;
 		int iconxStart = xStart + 17;
 
-		
 		this.drawBackground(0);
 		this.doesGuiPauseGame();
 
@@ -174,15 +170,15 @@ public class GuiRCFurnace extends GuiContainer {
 
 		this.craftAmount.drawTextBox();
 		this.craftTime.drawTextBox();
-		
-//		rightBtn.width = leftBtn.width = 20;
-//		rightBtn.height = leftBtn.height = 20;
-//		onecraftBtn.width = fivecraftBtn.width = tencraftBtn.width = 30;
-//		onecraftBtn.height = fivecraftBtn.height = tencraftBtn.height = 20;
-//		craftallBtn.width = 30;
-//		craftallBtn.height = craftBtn.height = 20;
-//
-//		craftBtn.width = 35;
+
+		// rightBtn.width = leftBtn.width = 20;
+		// rightBtn.height = leftBtn.height = 20;
+		// onecraftBtn.width = fivecraftBtn.width = tencraftBtn.width = 30;
+		// onecraftBtn.height = fivecraftBtn.height = tencraftBtn.height = 20;
+		// craftallBtn.width = 30;
+		// craftallBtn.height = craftBtn.height = 20;
+		//
+		// craftBtn.width = 35;
 
 		super.drawScreen(par1, par2, par3);
 		this.IsButtonMouseovered(par1, par2, null);
@@ -432,6 +428,7 @@ public class GuiRCFurnace extends GuiContainer {
 					amountToCraft = numberOfIronOre;
 
 					if (amountToCraft >= 5) {
+						amountToCraft = 5;
 						craftAmount.setText(String.valueOf(5));
 					} else if (amountToCraft < 5) {
 						craftAmount.setText(String.valueOf(amountToCraft));
@@ -449,6 +446,7 @@ public class GuiRCFurnace extends GuiContainer {
 					amountToCraft = numberOfSilverOre;
 
 					if (amountToCraft >= 5) {
+						amountToCraft = 5;
 						craftAmount.setText(String.valueOf(5));
 					} else if (amountToCraft < 5) {
 						craftAmount.setText(String.valueOf(amountToCraft));
@@ -467,6 +465,7 @@ public class GuiRCFurnace extends GuiContainer {
 					amountToCraft = Math.min(numberOfIronOre, numberOfCoalOre);
 
 					if (amountToCraft >= 5) {
+						amountToCraft = 5;
 						craftAmount.setText(String.valueOf(5));
 					} else if (amountToCraft < 5) {
 						craftAmount.setText(String.valueOf(amountToCraft));
@@ -484,6 +483,7 @@ public class GuiRCFurnace extends GuiContainer {
 					amountToCraft = numberOfGoldOre;
 
 					if (amountToCraft >= 5) {
+						amountToCraft = 5;
 						craftAmount.setText(String.valueOf(5));
 					} else if (amountToCraft < 5) {
 						craftAmount.setText(String.valueOf(amountToCraft));
@@ -502,6 +502,7 @@ public class GuiRCFurnace extends GuiContainer {
 					amountToCraft = Math.min(numberOfMithrilOre, numberOfCoalOre);
 
 					if (amountToCraft >= 5) {
+						amountToCraft = 5;
 						craftAmount.setText(String.valueOf(5));
 					} else if (amountToCraft < 5) {
 						craftAmount.setText(String.valueOf(amountToCraft));
@@ -520,6 +521,7 @@ public class GuiRCFurnace extends GuiContainer {
 					amountToCraft = Math.min(numberOfAdamantiteOre, numberOfCoalOre);
 
 					if (amountToCraft >= 5) {
+						amountToCraft = 5;
 						craftAmount.setText(String.valueOf(5));
 					} else if (amountToCraft < 5) {
 						craftAmount.setText(String.valueOf(amountToCraft));
@@ -538,6 +540,7 @@ public class GuiRCFurnace extends GuiContainer {
 					amountToCraft = Math.min(numberOfRuniteOre, numberOfCoalOre);
 
 					if (amountToCraft >= 5) {
+						amountToCraft = 5;
 						craftAmount.setText(String.valueOf(5));
 					} else if (amountToCraft < 5) {
 						craftAmount.setText(String.valueOf(amountToCraft));
@@ -557,6 +560,7 @@ public class GuiRCFurnace extends GuiContainer {
 					amountToCraft = Math.min(numberOfCopperOre, numberOfTinOre);
 
 					if (amountToCraft >= 10) {
+						amountToCraft = 10;
 						craftAmount.setText(String.valueOf(10));
 					} else if (amountToCraft < 10) {
 						craftAmount.setText(String.valueOf(amountToCraft));
@@ -574,6 +578,7 @@ public class GuiRCFurnace extends GuiContainer {
 					amountToCraft = numberOfIronOre;
 
 					if (amountToCraft >= 10) {
+						amountToCraft = 10;
 						craftAmount.setText(String.valueOf(10));
 					} else if (amountToCraft < 10) {
 						craftAmount.setText(String.valueOf(amountToCraft));
@@ -591,6 +596,7 @@ public class GuiRCFurnace extends GuiContainer {
 					amountToCraft = numberOfSilverOre;
 
 					if (amountToCraft >= 10) {
+						amountToCraft = 10;
 						craftAmount.setText(String.valueOf(10));
 					} else if (amountToCraft < 10) {
 						craftAmount.setText(String.valueOf(amountToCraft));
@@ -609,6 +615,7 @@ public class GuiRCFurnace extends GuiContainer {
 					amountToCraft = Math.min(numberOfIronOre, numberOfCoalOre);
 
 					if (amountToCraft >= 10) {
+						amountToCraft = 10;
 						craftAmount.setText(String.valueOf(10));
 					} else if (amountToCraft < 10) {
 						craftAmount.setText(String.valueOf(amountToCraft));
@@ -626,6 +633,7 @@ public class GuiRCFurnace extends GuiContainer {
 					amountToCraft = numberOfGoldOre;
 
 					if (amountToCraft >= 10) {
+						amountToCraft = 10;
 						craftAmount.setText(String.valueOf(10));
 					} else if (amountToCraft < 10) {
 						craftAmount.setText(String.valueOf(amountToCraft));
@@ -644,6 +652,7 @@ public class GuiRCFurnace extends GuiContainer {
 					amountToCraft = Math.min(numberOfMithrilOre, numberOfCoalOre);
 
 					if (amountToCraft >= 10) {
+						amountToCraft = 10;
 						craftAmount.setText(String.valueOf(10));
 					} else if (amountToCraft < 10) {
 						craftAmount.setText(String.valueOf(amountToCraft));
@@ -662,6 +671,7 @@ public class GuiRCFurnace extends GuiContainer {
 					amountToCraft = Math.min(numberOfAdamantiteOre, numberOfCoalOre);
 
 					if (amountToCraft >= 10) {
+						amountToCraft = 10;
 						craftAmount.setText(String.valueOf(10));
 					} else if (amountToCraft < 10) {
 						craftAmount.setText(String.valueOf(amountToCraft));
@@ -680,6 +690,7 @@ public class GuiRCFurnace extends GuiContainer {
 					amountToCraft = Math.min(numberOfRuniteOre, numberOfCoalOre);
 
 					if (amountToCraft >= 10) {
+						amountToCraft = 10;
 						craftAmount.setText(String.valueOf(10));
 					} else if (amountToCraft < 10) {
 						craftAmount.setText(String.valueOf(amountToCraft));
@@ -692,10 +703,10 @@ public class GuiRCFurnace extends GuiContainer {
 		case 7:
 			if (bronzebarselected) {
 				System.out.println(amountToCraft);
-				for(int i = 0; i < amountToCraft; i++){
+				for (int i = 0; i < amountToCraft; i++) {
 					consumeMultipleItems(this.mc.thePlayer, Items.copperOre, Items.tinOre);
 				}
-				
+
 				tileEntityFurnace.doneCooking = false;
 				tileEntityFurnace.furnaceProduct = Items.bronzeBar;
 				tileEntityFurnace.time = OreTimes.bronzeTime * amountToCraft;
@@ -708,7 +719,14 @@ public class GuiRCFurnace extends GuiContainer {
 				break;
 
 			} else if (silverbarselected) {
-				this.mc.thePlayer.inventory.consumeInventoryItem(Items.silverOre);
+
+				for (int i = 0; i < amountToCraft; i++) {
+					this.mc.thePlayer.inventory.consumeInventoryItem(Items.silverOre);
+				}
+				tileEntityFurnace.doneCooking = false;
+				tileEntityFurnace.furnaceProduct = Items.silverBar;
+				tileEntityFurnace.time = OreTimes.silverTime * amountToCraft;
+				tileEntityFurnace.amountOfProduct = amountToCraft;
 				break;
 
 			} else if (steelbarselected) {
@@ -2856,7 +2874,7 @@ public class GuiRCFurnace extends GuiContainer {
 		int yStart = (height / 2) - (ySize / 2);
 		int iconyStart = yStart + 22;
 		int iconxStart = xStart + 17;
-		
+
 		rightBtn.width = leftBtn.width = 20;
 		rightBtn.height = leftBtn.height = 20;
 		onecraftBtn.width = fivecraftBtn.width = tencraftBtn.width = 30;
@@ -2869,8 +2887,8 @@ public class GuiRCFurnace extends GuiContainer {
 		this.drawBackground(0);
 		this.doesGuiPauseGame();
 		for (Object o : buttonList) {
-			 ((GuiButton)o).drawButton(mc, par1, par2);
-			}
+			((GuiButton) o).drawButton(mc, par1, par2);
+		}
 		this.drawBars();
 		// this.DrawTooltipScreen();
 
@@ -2883,41 +2901,38 @@ public class GuiRCFurnace extends GuiContainer {
 
 	}
 
-	public void writeTime(int time){
+	public void writeTime(int time) {
 		int hours = 0, minutes = 0, seconds = 0;
 		seconds = time;
-		if(time > 0){
-			if(seconds >= 60){
-				seconds -= 60;
+		if (time > 0) {
+			for(int i = 60; i < seconds;){
+				seconds -=60;
 				minutes++;
-			}else if(seconds < 60){
-				
 			}
-			if(minutes  >= 60){
-				minutes -= 60;
+			
+			for (int i = 60; i < minutes;){
+				minutes -=60;
 				hours++;
 			}
 			
-			if(time == 0){
+
+			if (time == 0) {
 				seconds = 0;
 			}
-			
-			
-			
-			
-			 StringBuilder sb = new StringBuilder();
-			   // Send all output to the Appendable object sb
-			   Formatter formatter = new Formatter(sb, Locale.US);
 
-			   // Explicit argument indices may be used to re-order output.
-			   formatter.format("%02d:%02d:%02d", hours, minutes, seconds);
-			  
-			   String timeString;
+			StringBuilder sb = new StringBuilder();
+			// Send all output to the Appendable object sb
+			Formatter formatter = new Formatter(sb, Locale.US);
+
+			// Explicit argument indices may be used to re-order output.
+			formatter.format("%02d:%02d:%02d", hours, minutes, seconds);
+
+			String timeString;
 			System.out.printf(sb.toString());
 			System.out.println();
 			this.craftTime.setText(sb.toString());
-			
+
 		}
 	}
-	
+
 }

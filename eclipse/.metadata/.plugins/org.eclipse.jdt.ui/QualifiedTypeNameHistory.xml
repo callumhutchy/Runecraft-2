@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.reflect.Field"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.projectile.EntityThrowable"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.eventhandler.SubscribeEvent"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.gameevent.TickEvent.PlayerTickEvent"/>
-<fullyQualifiedTypeName name="handler.PlayerTickHandler"/>
-<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.spells.tileentities.TileEntityWaterStrike"/>
-<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.spells.tileentities.TileEntityEarthStrike"/>
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.spells.tileentities.TileEntityFireStrike"/>
 <fullyQualifiedTypeName name="net.minecraft.world.gen.feature.WorldGenerator"/>
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityAdamantiteOre"/>
@@ -60,4 +53,11 @@
 <fullyQualifiedTypeName name="net.minecraft.util.IChatComponent"/>
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRCFurnace"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.logging.Formatter"/>
+<fullyQualifiedTypeName name="java.util.Locale"/>
+<fullyQualifiedTypeName name="java.util.Formatter"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="mods.mud.ModUpdateDetector"/>
+<fullyQualifiedTypeName name="java.net.URL"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.FMLCommonHandler"/>
 </qualifiedTypeNameHistroy>
