@@ -86,7 +86,7 @@ public class Runecraft2 {
 		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 		try {
-			ModUpdateDetector.registerMod(FMLCommonHandler.instance().findContainerFor(this), new URL("https://www.dropbox.com/s/edvesmdvjb3v1vc/runecraft2updates.xml"),new URL( "https://www.dropbox.com/s/edvesmdvjb3v1vc/runecraft2updates.xml"));
+			ModUpdateDetector.registerMod(FMLCommonHandler.instance().findContainerFor(this), new URL("https://github.com/callumhutchy/Runecraft-2/blob/master/runecraft2updates.xml?dl=1"),new URL( "https://github.com/callumhutchy/Runecraft-2/blob/master/runecraft2updates.xml?dl=1"));
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
