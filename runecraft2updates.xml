@@ -3,17 +3,17 @@
 	<release type="beta" version="0.0.4"
 				 url="http://www.curse.com/mc-mods/minecraft/222854-runecraft-2"
                  download="http://www.curse.com/mc-mods/minecraft/222854-runecraft-2"
-                 md5="389888cfff1136125fa8d4179c930d56"
+                 
 				 />
 	<release type="beta" version="0.0.3"
 				 url="http://www.curse.com/mc-mods/minecraft/222854-runecraft-2"
                  download="http://www.curse.com/mc-mods/minecraft/222854-runecraft-2"
-                 md5="389888cfff1136125fa8d4179c930d56"
+                
 				 />       
 	   <release type="beta" version="0.0.2"
                  url="http://www.curse.com/mc-mods/minecraft/222854-runecraft-2"
                  download="http://www.curse.com/mc-mods/minecraft/222854-runecraft-2"
-                 md5="389888cfff1136125fa8d4179c930d56"
+                
                 />
 		
     </mcVersion>
