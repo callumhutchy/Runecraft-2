@@ -213,8 +213,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="C:/Users/Callum/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1180/start"/>
-	<classpathentry kind="lib" path="C:/Users/Callum/Desktop/Minecraft_Modding/Runecraft-2/battlegear api/1.7.2-MUD-Src-1.0.5.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Callum/Desktop/Minecraft_Modding/Runecraft-2/battlegear api/1.7.10-MUD-Bin-1.0.5.6.jar" sourcepath="battlegear api/1.7.10-MUD-Src-1.0.5.6.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Callum/Desktop/Minecraft_Modding/Runecraft-2/battlegear api/1.7.10-MUD-Src-1.0.5.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

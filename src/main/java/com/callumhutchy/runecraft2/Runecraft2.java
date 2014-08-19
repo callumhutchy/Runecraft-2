@@ -5,7 +5,7 @@ import java.net.URL;
 
 import handler.ConfigurationHandler;
 import handler.Runecraft2EventHandler;
-import mods.mud.ModUpdateDetector;
+//import mods.mud.ModUpdateDetector;
 import net.minecraft.command.ICommandManager;
 import net.minecraft.command.ServerCommandManager;
 import net.minecraft.creativetab.CreativeTabs;
@@ -85,12 +85,12 @@ public class Runecraft2 {
 
 		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
-		try {
-			ModUpdateDetector.registerMod(FMLCommonHandler.instance().findContainerFor(this), new URL("https://github.com/callumhutchy/Runecraft-2/blob/master/runecraft2updates.xml?dl=1"),new URL( "https://github.com/callumhutchy/Runecraft-2/blob/master/runecraft2updates.xml?dl=1"));
-		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		try {
+//			ModUpdateDetector.registerMod(FMLCommonHandler.instance().findContainerFor(this), new URL("https://raw.githubusercontent.com/callumhutchy/Runecraft-2/master/runecraft2updates.xml"),new URL( "https://raw.githubusercontent.com/callumhutchy/Runecraft-2/master/runecraft2changelog.xml"));
+//		} catch (MalformedURLException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		Blocks.init();
 		LogHelper.info("Blocks Initialised!");
 		

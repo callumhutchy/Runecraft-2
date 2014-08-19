@@ -16,14 +16,17 @@ Note: Recompile with -Xlint:unchecked for details.
 :classes
 :jar
 :extractUserDev UP-TO-DATE
+:extractNatives UP-TO-DATE
 :getAssetsIndex
 :getAssets
-:makeStart SKIPPED
+:makeStartwarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
 :compileTestJava UP-TO-DATE
 :processTestResources UP-TO-DATE
 :testClasses UP-TO-DATE
 :test UP-TO-DATE
-:genSrgs SKIPPED
+:genSrgs
 :reobf
 :assemble
 :check UP-TO-DATE
@@ -31,4 +34,4 @@ Note: Recompile with -Xlint:unchecked for details.
 
 BUILD SUCCESSFUL
 
-Total time: 29.827 secs
+Total time: 36.084 secs
