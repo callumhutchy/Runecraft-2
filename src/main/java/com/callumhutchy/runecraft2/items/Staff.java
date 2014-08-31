@@ -28,7 +28,7 @@ public class Staff extends BaseMagicItem {
 	public String	staffElement;
 	public int		runesProvided;
 
-	public Staff(String unlocalisedName, int maxSize, String type, int numberOfRunesProvided) {
+	public Staff(String unlocalisedName, int maxSize, String type, int numberOfRunesProvided, boolean isTalismanStaff) {
 		super(unlocalisedName, maxSize);
 		staffElement = type;
 		runesProvided = numberOfRunesProvided;
@@ -42,30 +42,28 @@ public class Staff extends BaseMagicItem {
 
 	public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player) {
 		ExtendedPlayer props = ExtendedPlayer.get(player);
-	
-		
-		
+
 		System.out.println(props.currentSpell);
 		if (props.currentSpell == "airstrike") {
 			if (player.capabilities.isCreativeMode || runesProvided >= 1 && staffElement == "air" || player.inventory.consumeInventoryItem(Items.airRune)) {
 				world.playSoundAtEntity(player, "random.bow", 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
 				if (!world.isRemote) {
 
-					world.spawnEntityInWorld(new TileEntityAirStrike(world,player));
-					props.currentMagicExp+= ExpChart.AIR_STRIKE_EXP;
-					
-if(!props.suppressExpMessages){
-					Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("Your Magic increased by " + ExpChart.AIR_STRIKE_EXP));
-}
+					world.spawnEntityInWorld(new TileEntityAirStrike(world, player));
+					props.currentMagicExp += ExpChart.AIR_STRIKE_EXP;
+
+					if (!props.suppressExpMessages) {
+						Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("Your Magic increased by " + ExpChart.AIR_STRIKE_EXP));
+					}
 				}
 			}
 
 		}
-		if(props.currentSpell == "hometeleport"){
-				player.setLocationAndAngles(props.currentHomeTPx, props.currentHomeTPy, props.currentHomeTPz, 1.0f, 1.0f);
+		if (props.currentSpell == "hometeleport") {
+			player.setLocationAndAngles(props.currentHomeTPx, props.currentHomeTPy, props.currentHomeTPz, 1.0f, 1.0f);
 
-				Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("You have been teleported home."));
-				
+			Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("You have been teleported home."));
+
 		}
 		if (props.currentSpell == "waterstrike") {
 			if (player.capabilities.isCreativeMode || runesProvided >= 1 && staffElement == "water" || player.inventory.consumeInventoryItem(Items.waterRune)) {
@@ -74,10 +72,10 @@ if(!props.suppressExpMessages){
 
 					world.spawnEntityInWorld(new TileEntityWaterStrike(world, player));
 					props.currentMagicExp++;
-					if(!props.suppressExpMessages){
-					Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("Your Magic increased by " + ExpChart.WATER_STRIKE_EXP));
+					if (!props.suppressExpMessages) {
+						Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("Your Magic increased by " + ExpChart.WATER_STRIKE_EXP));
 					}
-				
+
 				}
 			}
 
@@ -89,8 +87,8 @@ if(!props.suppressExpMessages){
 
 					world.spawnEntityInWorld(new TileEntityEarthStrike(world, player));
 					props.currentMagicExp++;
-					if(!props.suppressExpMessages){
-					Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("Your Magic increased by " + ExpChart.EARTH_STRIKE_EXP));
+					if (!props.suppressExpMessages) {
+						Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("Your Magic increased by " + ExpChart.EARTH_STRIKE_EXP));
 					}
 				}
 			}
@@ -103,16 +101,15 @@ if(!props.suppressExpMessages){
 
 					world.spawnEntityInWorld(new TileEntityFireStrike(world, player));
 					props.currentMagicExp++;
-					if(!props.suppressExpMessages){
-					Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("Your Magic increased by " + ExpChart.FIRE_STRIKE_EXP));
+					if (!props.suppressExpMessages) {
+						Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("Your Magic increased by " + ExpChart.FIRE_STRIKE_EXP));
 					}
 				}
 			}
 
 		}
-		
+
 		return item;
 	}
-	
 
 }

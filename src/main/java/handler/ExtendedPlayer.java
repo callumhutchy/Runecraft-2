@@ -176,20 +176,28 @@ public class ExtendedPlayer implements IExtendedEntityProperties {
 		switch (string) {
 		case "magic":
 			this.currentMagicLevel++;
+			break;
 		case "strength":
 			this.currentStrengthLevel++;
+			break;
 		case "vitality":
 			this.currentVitalityLevel++;
+			break;
 		case "defense":
 			this.currentDefenseLevel++;
+			break;
 		case "cooking":
 			this.currentCookingLevel++;
+			break;
 		case "runecrafting":
 			this.currentRunecraftingLevel++;
+			break;
 		case "mining":
 			this.currentMiningLevel++;
+			break;
 		case "smithing":
 			this.currentSmithingLevel++;
+			break;
 		}
 
 	}
