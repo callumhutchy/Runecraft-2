@@ -55,18 +55,21 @@ public class TileEntityRCFurnace extends TileEntity {
 
 	}
 
-	public void readFromNBT(NBTTagCompound p_145839_1_) {
-		super.readFromNBT(p_145839_1_);
-		this.direction = p_145839_1_.getInteger("direction");
-		
-
+	@Override
+	public void writeToNBT(NBTTagCompound nbt) {
+		super.writeToNBT(nbt);
+		NBTTagCompound properties = new NBTTagCompound();
+		nbt.setInteger("direction", this.direction);
+		System.out.println("Writing direction as " + this.direction);
 	}
 
-	public void writeToNBT(NBTTagCompound p_145841_1_) {
-		super.writeToNBT(p_145841_1_);
-		p_145841_1_.setInteger("direction", this.direction);
-		
-
+	@Override
+	public void readFromNBT(NBTTagCompound nbt) {
+		super.readFromNBT(nbt);
+		NBTTagCompound properties = (NBTTagCompound) nbt.getTag("furnace");
+		System.out.println("READING");
+		this.direction = nbt.getInteger("direction");
+		System.out.println("Reading direction as " + this.direction);
 	}
 
 }

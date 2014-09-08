@@ -23,10 +23,7 @@ private FurnaceModel model;
     
     public RCFurnaceRenderer() {
        
-    	this.model = new FurnaceModel();
-    	
-            
-            
+    	this.model = new FurnaceModel(); 
     }
     
     private void adjustRotatePivotViaMeta(World world, int x, int y, int z) {
@@ -51,12 +48,15 @@ private FurnaceModel model;
     //the ':' is very important
     //binding the textures
             Minecraft.getMinecraft().renderEngine.bindTexture(textures);
-
+            TileEntityRCFurnace myTile = (TileEntityRCFurnace) te;
+			int direction = myTile.direction;
+			
     //This rotation part is very important! Without it, your model will render upside-down! And for some reason you DO need PushMatrix again!                       
             GL11.glPushMatrix();
-            GL11.glRotatef(180F, 0.0F, 0.0F, 1.0F);
+            GL11.glRotatef(180f, 0.0f, 0.0f, 1.0f);
+            GL11.glRotatef(direction * 90, 0.0F, 1.0F, 0.0F);
     //A reference to your Model file. Again, very important.
-            TileEntityRCFurnace myTile = (TileEntityRCFurnace) te;
+            
 //            int i = myTile.blockMetadata;
 //            System.out.println(i + 180);
 //            GL11.glRotatef(i * 90, 0.0F, 1.0F, 0.0F);
@@ -67,6 +67,8 @@ private FurnaceModel model;
             GL11.glPopMatrix();
            
     }
+    
+    
     public void setRotationAngles(TileEntity tileEntity) {
     	TileEntityRCFurnace te = (TileEntityRCFurnace)tileEntity;
     		boolean open;

@@ -9,6 +9,7 @@ import net.minecraftforge.client.IItemRenderer;
 import net.minecraftforge.client.MinecraftForgeClient;
 
 import com.callumhutchy.runecraft2.blocks.Blocks;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityAnvil;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRCFurnace;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.altars.TileEntityAirAltar;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.altars.TileEntityAirRuneAltar;
@@ -47,6 +48,7 @@ import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityRun
 import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityRuniteOre;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntitySilverOre;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityTinOre;
+import com.callumhutchy.runecraft2.blocks.renderer.AnvilRenderer;
 import com.callumhutchy.runecraft2.blocks.renderer.RCFurnaceRenderer;
 import com.callumhutchy.runecraft2.blocks.renderer.altar.AltarRenderer;
 import com.callumhutchy.runecraft2.blocks.renderer.altar.AltarRuneRenderer;
@@ -119,6 +121,7 @@ public class ClientProxy extends CommonProxy {
 
 		
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityRCFurnace.class, new RCFurnaceRenderer());
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAnvil.class, new AnvilRenderer());
 		// Item Rendering
 		// Altars
 
@@ -153,6 +156,7 @@ public class ClientProxy extends CommonProxy {
 		MinecraftForgeClient.registerItemRenderer(Items.staff, (IItemRenderer) new ItemStaffRenderer());
 		
 		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.RCFurnace), new ItemRender(new RCFurnaceRenderer(), new TileEntityRCFurnace(), "altar"));
+		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Blocks.Anvil), new ItemRender(new AnvilRenderer(), new TileEntityAnvil(), "altar"));
 		
 		RenderingRegistry.registerEntityRenderingHandler(TileEntityAirStrike.class, new RenderAirStrike());
 		RenderingRegistry.registerEntityRenderingHandler(TileEntityEarthStrike.class, new RenderEarthStrike());

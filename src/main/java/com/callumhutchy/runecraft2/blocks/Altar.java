@@ -4,6 +4,10 @@ import handler.ExtendedPlayer;
 
 import java.util.Random;
 
+
+
+import org.lwjgl.input.Keyboard;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
@@ -49,6 +53,7 @@ import com.callumhutchy.runecraft2.blocks.models.tileentities.altars.TileEntityW
 import com.callumhutchy.runecraft2.blocks.models.tileentities.altars.TileEntityWaterRuneAltar;
 import com.callumhutchy.runecraft2.items.Items;
 import com.callumhutchy.runecraft2.items.Staff;
+import com.callumhutchy.runecraft2.keys.KeyInputHandler;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -397,21 +402,22 @@ public class Altar extends BlockContainer {
 
 							TileEntityAirRuneAltar tileEntity = (TileEntityAirRuneAltar) world.getTileEntity(varx, vary, varz);
 							boolean talismanstaffsneaking = false;
-							if (entity.isSneaking() && item.getUnlocalizedName().contains("airtalismanstaff")) {
+							if (Keyboard.isKeyDown(Keyboard.KEY_RSHIFT)) {
 								System.out.println("Sneaky");
 								talismanstaffsneaking = true;
 							}else{
-								System.out.println("Well that didnt go well");
+								
 							}
-							//!item.getUnlocalizedName().contains("talisman")
-							if ((item instanceof Staff )&& world.getBlock(varx, vary, varz) == Blocks.AirRuneAltar) {
+							System.out.println(talismanstaffsneaking);
+						
+							if ((item instanceof Staff && !item.getUnlocalizedName().contains("talismanstaff")) && world.getBlock(varx, vary, varz) == Blocks.AirRuneAltar ) {
 
 								world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.runeEssence, tileEntity.quantityOfRuneEssence)));
 								world.setBlockToAir(varx, vary, varz);
 								world.setBlock(varx, vary, varz, Blocks.AirAltar);
 
 							}
-							if ((item == Items.airTalisman || item == Items.airTalismanStaff || (item.getUnlocalizedName().contains("airtalismanstaff"))) && world.getBlock(varx, vary, varz) == Blocks.AirRuneAltar) {
+							if ((item == Items.airTalisman || (item.getUnlocalizedName().contains("airtalismanstaff") && !talismanstaffsneaking)) && world.getBlock(varx, vary, varz) == Blocks.AirRuneAltar) {
 
 								world.spawnEntityInWorld(new EntityItem(world, varx, vary + 1, varz, new ItemStack(Items.airRune, tileEntity.quantityOfRuneEssence)));
 								props.currentRunecraftingExp = props.currentRunecraftingExp + tileEntity.quantityOfRuneEssence * ExpChart.AIR_RUNE_EXP;

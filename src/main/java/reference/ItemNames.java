@@ -95,4 +95,15 @@ public class ItemNames {
 	public static String	StaffOfWater_Unlo			= "staffofwater";
 	public static String	StaffOfEarth_Unlo			= "staffofearth";
 	public static String	StaffOfFire_Unlo			= "staffoffire";
+	
+	//Hatchets
+	public static String	BronzeHatchet_Unlo				= "bronzehatchet";
+	public static String	IronHatchet_Unlo				= "ironhatchet";
+	public static String	SteelHatchet_Unlo				= "steelhatchet";
+	public static String	BlackHatchet_Unlo				= "blackhatchet";
+	public static String	MithrilHatchet_Unlo				= "mithrilhatchet";
+	public static String	AdamantHatchet_Unlo				= "adamanthatchet";
+	public static String	RuneHatchet_Unlo				= "runehatchet";
+	
+	
 }

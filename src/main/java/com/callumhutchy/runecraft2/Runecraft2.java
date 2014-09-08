@@ -12,6 +12,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.server.MinecraftServer;
 import net.minecraftforge.common.MinecraftForge;
+import reference.Materials;
 import reference.Reference;
 import reference.TileEntities;
 import utility.LogHelper;
@@ -80,6 +81,13 @@ public class Runecraft2 {
 		}
 	};
 	
+	public static CreativeTabs tabRunecraft2Tools = new CreativeTabs("tabRunecraft2Tools") {
+		@Override
+		public Item getTabIconItem() {
+			return Items.blackhatchet;
+		}
+	};
+	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 
@@ -91,6 +99,8 @@ public class Runecraft2 {
 //			// TODO Auto-generated catch block
 //			e.printStackTrace();
 //		}
+		Materials.init();
+		
 		Blocks.init();
 		LogHelper.info("Blocks Initialised!");
 		

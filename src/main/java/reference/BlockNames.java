@@ -59,7 +59,8 @@ public class BlockNames {
 	public static String	BloodRuneAltar_Unlo		= "bloodrunealtar";
 	public static String	AstralRuneAltar_Unlo	= "astralrunealtar";
 	public static String	SoulRuneAltar_Unlo		= "soulrunealtar";
-	
-	public static String RCFurnace_Unlo = "rcfurnace";
+
+	public static String	RCFurnace_Unlo			= "rcfurnace";
+	public static String	Anvil_Unlo				= "anvil";
 
 }

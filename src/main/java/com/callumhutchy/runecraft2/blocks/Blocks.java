@@ -37,7 +37,7 @@ public class Blocks {
 
 	public static Block		RuneEssenceOre, PureEssenceOre;
 	
-	public static Block RCFurnace;
+	public static Block RCFurnace, Anvil;
 
 
 	public static void init() {
@@ -86,6 +86,7 @@ public class Blocks {
 		PureEssenceOre = new OreBlock(Material.rock, "runecraft2:OreModelPureEssenceTexture", BlockNames.PureEssenceOre_Unlo, Items.pureEssence, "pureessence");
 
 		RCFurnace = new RCFurnace(Material.iron);
+		Anvil= new Anvil(Material.iron);
 		
 	
 	}
@@ -136,6 +137,7 @@ public class Blocks {
 		GameRegistry.registerBlock(PureEssenceOre, BlockNames.PureEssenceOre_Unlo);
 		
 		GameRegistry.registerBlock(RCFurnace, BlockNames.RCFurnace_Unlo);
+		GameRegistry.registerBlock(Anvil, BlockNames.Anvil_Unlo);
 		
 	
 	}

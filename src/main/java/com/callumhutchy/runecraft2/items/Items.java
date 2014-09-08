@@ -1,11 +1,13 @@
 package com.callumhutchy.runecraft2.items;
 
 import com.callumhutchy.runecraft2.Runecraft2;
+import reference.Materials;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import reference.ItemNames;
 import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemStack;
 
 public class Items {
@@ -42,6 +44,10 @@ public class Items {
 
 	public static Item	staff, staffofair, staffofwater, staffofearth,
 			staffoffire;
+
+	// Hatchets
+	public static Item	bronzehatchet, ironhatchet, steelhatchet, blackhatchet,
+			mithrilhatchet, adamanthatchet, runehatchet;
 
 	public static void init() {
 		// Runes
@@ -125,6 +131,17 @@ public class Items {
 		staffofwater = new Staff(ItemNames.StaffOfWater_Unlo, 1, "water", 1, false);
 		staffofearth = new Staff(ItemNames.StaffOfEarth_Unlo, 1, "earth", 1, false);
 		staffoffire = new Staff(ItemNames.StaffOfFire_Unlo, 1, "fire", 1, false);
+
+		// Hatchets
+		bronzehatchet = new Hatchet(Materials.bronze, ItemNames.BronzeHatchet_Unlo);
+		ironhatchet = new Hatchet(Materials.iron, ItemNames.IronHatchet_Unlo);
+		steelhatchet = new Hatchet(Materials.steel, ItemNames.SteelHatchet_Unlo);
+		blackhatchet = new Hatchet(Materials.black, ItemNames.BlackHatchet_Unlo);
+		mithrilhatchet = new Hatchet(Materials.mithril, ItemNames.MithrilHatchet_Unlo);
+		adamanthatchet = new Hatchet(Materials.adamant, ItemNames.AdamantHatchet_Unlo);
+		runehatchet = new Hatchet(Materials.rune, ItemNames.RuneHatchet_Unlo);
+	
+	
 	}
 
 	public static void gameRegistery() {
@@ -212,6 +229,15 @@ public class Items {
 		GameRegistry.registerItem(staffofearth, staffofearth.getUnlocalizedName());
 		GameRegistry.registerItem(staffoffire, staffoffire.getUnlocalizedName());
 
+		//Hatchet
+		GameRegistry.registerItem(bronzehatchet, bronzehatchet.getUnlocalizedName());
+		GameRegistry.registerItem(ironhatchet, ironhatchet.getUnlocalizedName());
+		GameRegistry.registerItem(steelhatchet, steelhatchet.getUnlocalizedName());
+		GameRegistry.registerItem(blackhatchet, blackhatchet.getUnlocalizedName());
+		GameRegistry.registerItem(mithrilhatchet, mithrilhatchet.getUnlocalizedName());
+		GameRegistry.registerItem(adamanthatchet, adamanthatchet.getUnlocalizedName());
+		GameRegistry.registerItem(runehatchet, runehatchet.getUnlocalizedName());
+		
 	}
 
 	public static void craftingRecipes() {
@@ -239,7 +265,7 @@ public class Items {
 		GameRegistry.addShapedRecipe(new ItemStack(staffofearth), new Object[] { "OZ", "XO", 'X', staff, 'Z', earthRune });
 		GameRegistry.addShapedRecipe(new ItemStack(staffoffire), new Object[] { "OZ", "XO", 'X', staff, 'Z', fireRune });
 
-		//Talisman Staff
+		// Talisman Staff
 		GameRegistry.addShapelessRecipe(new ItemStack(airTalismanStaff), staff, airTalisman);
 		GameRegistry.addShapelessRecipe(new ItemStack(waterTalismanStaff), staff, waterTalisman);
 		GameRegistry.addShapelessRecipe(new ItemStack(fireTalismanStaff), staff, fireTalisman);
@@ -252,8 +278,7 @@ public class Items {
 		GameRegistry.addShapelessRecipe(new ItemStack(lawTalismanStaff), staff, lawTalisman);
 		GameRegistry.addShapelessRecipe(new ItemStack(deathTalismanStaff), staff, deathTalisman);
 		GameRegistry.addShapelessRecipe(new ItemStack(bloodTalismanStaff), staff, bloodTalisman);
-		
-		
+
 	}
 
 }

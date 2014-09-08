@@ -1,5 +1,6 @@
 package reference;
 
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityAnvil;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRCFurnace;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.altars.TileEntityAirAltar;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.altars.TileEntityAirRuneAltar;
@@ -92,6 +93,7 @@ public class TileEntities {
 		GameRegistry.registerTileEntity(TileEntityTinOre.class, "tetinore");
 		
 		GameRegistry.registerTileEntity(TileEntityRCFurnace.class, "tercfurnace");
+		GameRegistry.registerTileEntity(TileEntityAnvil.class, "teanvil");
 		
 	}
 }
