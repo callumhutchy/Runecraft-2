@@ -49,6 +49,10 @@ public class Items {
 	public static Item	bronzehatchet, ironhatchet, steelhatchet, blackhatchet,
 			mithrilhatchet, adamanthatchet, runehatchet;
 
+	// Pickaxes
+	public static Item	bronzepickaxe, ironpickaxe, steelpickaxe,
+			mithrilpickaxe, adamantpickaxe, runepickaxe;
+
 	public static void init() {
 		// Runes
 		airRune = new Rune(ItemNames.AirRune_Unlo);
@@ -140,8 +144,15 @@ public class Items {
 		mithrilhatchet = new Hatchet(Materials.mithril, ItemNames.MithrilHatchet_Unlo);
 		adamanthatchet = new Hatchet(Materials.adamant, ItemNames.AdamantHatchet_Unlo);
 		runehatchet = new Hatchet(Materials.rune, ItemNames.RuneHatchet_Unlo);
-	
-	
+		
+		//Pickaxes
+		bronzepickaxe = new Pickaxe(Materials.bronze, ItemNames.BronzePickaxe_Unlo);
+		ironpickaxe = new Pickaxe(Materials.iron, ItemNames.IronPickaxe_Unlo);
+		steelpickaxe = new Pickaxe(Materials.steel, ItemNames.SteelPickaxe_Unlo);
+		mithrilpickaxe = new Pickaxe(Materials.mithril, ItemNames.MithrilPickaxe_Unlo);
+		adamantpickaxe = new Pickaxe(Materials.adamant, ItemNames.AdamantPickaxe_Unlo);
+		runepickaxe = new Pickaxe(Materials.rune, ItemNames.RunePickaxe_Unlo);
+
 	}
 
 	public static void gameRegistery() {
@@ -229,7 +240,7 @@ public class Items {
 		GameRegistry.registerItem(staffofearth, staffofearth.getUnlocalizedName());
 		GameRegistry.registerItem(staffoffire, staffoffire.getUnlocalizedName());
 
-		//Hatchet
+		// Hatchet
 		GameRegistry.registerItem(bronzehatchet, bronzehatchet.getUnlocalizedName());
 		GameRegistry.registerItem(ironhatchet, ironhatchet.getUnlocalizedName());
 		GameRegistry.registerItem(steelhatchet, steelhatchet.getUnlocalizedName());
@@ -237,6 +248,14 @@ public class Items {
 		GameRegistry.registerItem(mithrilhatchet, mithrilhatchet.getUnlocalizedName());
 		GameRegistry.registerItem(adamanthatchet, adamanthatchet.getUnlocalizedName());
 		GameRegistry.registerItem(runehatchet, runehatchet.getUnlocalizedName());
+
+		//Pickaxes
+		GameRegistry.registerItem(bronzepickaxe, bronzepickaxe.getUnlocalizedName());
+		GameRegistry.registerItem(ironpickaxe, ironpickaxe.getUnlocalizedName());
+		GameRegistry.registerItem(steelpickaxe, steelpickaxe.getUnlocalizedName());
+		GameRegistry.registerItem(mithrilpickaxe, mithrilpickaxe.getUnlocalizedName());
+		GameRegistry.registerItem(adamantpickaxe, adamantpickaxe.getUnlocalizedName());
+		GameRegistry.registerItem(runepickaxe, runepickaxe.getUnlocalizedName());
 		
 	}
 

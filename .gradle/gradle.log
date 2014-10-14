@@ -19,17 +19,6 @@ Note: Recompile with -Xlint:unchecked for details.
 :extractNatives UP-TO-DATE
 :getAssetsIndex
 :getAssets
-Current status: 0/105   0%
-Current status: 8/105   7%
-Current status: 16/105   15%
-Current status: 26/105   24%
-Current status: 37/105   35%
-Current status: 46/105   43%
-Current status: 59/105   56%
-Current status: 71/105   67%
-Current status: 82/105   78%
-Current status: 95/105   90%
-Current status: 105/105   100%
 :makeStart SKIPPED
 :compileTestJava UP-TO-DATE
 :processTestResources UP-TO-DATE
@@ -43,4 +32,4 @@ Current status: 105/105   100%
 
 BUILD SUCCESSFUL
 
-Total time: 1 mins 24.232 secs
+Total time: 1 mins 25.611 secs

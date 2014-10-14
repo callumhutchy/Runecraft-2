@@ -105,5 +105,11 @@ public class ItemNames {
 	public static String	AdamantHatchet_Unlo				= "adamanthatchet";
 	public static String	RuneHatchet_Unlo				= "runehatchet";
 	
-	
+	//Pickaxes
+	public static String	BronzePickaxe_Unlo				= "bronzepickaxe";
+	public static String	IronPickaxe_Unlo				= "ironpickaxe";
+	public static String	SteelPickaxe_Unlo				= "steelpickaxe";
+	public static String	MithrilPickaxe_Unlo				= "mithrilpickaxe";
+	public static String	AdamantPickaxe_Unlo				= "adamantpickaxe";
+	public static String	RunePickaxe_Unlo				= "runepickaxe";
 }

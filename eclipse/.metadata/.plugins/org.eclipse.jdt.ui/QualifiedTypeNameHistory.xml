@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="utility.commands.SkillsCMD"/>
 <fullyQualifiedTypeName name="utility.commands.SuppressExpMessagesCMD"/>
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.items.Staff"/>
 <fullyQualifiedTypeName name="mods.battlegear2.api.shield.IShield"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="net.minecraftforge.common.util.EnumHelper"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item.ToolMaterial"/>
 <fullyQualifiedTypeName name="reference.Materials"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemPickaxe"/>
 </qualifiedTypeNameHistroy>
