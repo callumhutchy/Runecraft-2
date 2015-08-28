@@ -1,0 +1,179 @@
+[17:34:06] [Client thread/INFO]: Setting user: Player416
+[17:34:08] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:34:11] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
+[17:34:12] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[17:34:12] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[17:34:12] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[17:34:12] [Thread-7/INFO]: OpenAL initialized.
+[17:34:12] [Sound Library Loader/INFO]: Sound engine started
+[17:34:16] [Client thread/WARN]: Texture runecraft2:textures/items/bronzesword.png with size 250x250 limits mip level from 4 to 1
+[17:34:16] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/items/runesword.png
+java.io.FileNotFoundException: runecraft2:textures/items/runesword.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:70) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:116) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadSprites(TextureMap.java:83) [TextureMap.class:?]
+	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:94) [ModelLoader.class:?]
+	at net.minecraft.client.resources.model.ModelManager.onResourceManagerReload(ModelManager.java:29) [ModelManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:124) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:507) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:356) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:117) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_45]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
+	at GradleStart.main(Unknown Source) [start/:?]
+[17:34:17] [Client thread/INFO]: Created: 4096x2048 textures-atlas
+[17:34:19] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
+[17:34:19] [Client thread/INFO]: SoundSystem shutting down...
+[17:34:19] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[17:34:19] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[17:34:19] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[17:34:19] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[17:34:19] [Thread-9/INFO]: OpenAL initialized.
+[17:34:20] [Sound Library Loader/INFO]: Sound engine started
+[17:34:22] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/items/runesword.png
+java.io.FileNotFoundException: runecraft2:textures/items/runesword.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:70) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:116) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadSprites(TextureMap.java:83) [TextureMap.class:?]
+	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:94) [ModelLoader.class:?]
+	at net.minecraft.client.resources.model.ModelManager.onResourceManagerReload(ModelManager.java:29) [ModelManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:767) [Minecraft.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:306) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:521) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:356) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:117) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_45]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
+	at GradleStart.main(Unknown Source) [start/:?]
+[17:34:23] [Client thread/INFO]: Created: 4096x2048 textures-atlas
+[17:37:21] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[17:37:21] [Server thread/INFO]: Generating keypair
+[17:37:21] [Server thread/INFO]: Converting map!
+[17:37:21] [Server thread/INFO]: Scanning folders...
+[17:37:21] [Server thread/INFO]: Total conversion count is 0
+[17:37:23] [Server thread/INFO]: Preparing start region for level 0
+[17:37:24] [Server thread/INFO]: Changing view distance to 12, from 10
+[17:37:25] [Server thread/INFO]: Player416[local:E:52bb2482] logged in with entity id 30 at (876.5, 4.0, 480.5)
+[17:37:25] [Server thread/INFO]: Player416 joined the game
+[17:37:25] [Client thread/INFO]: [CHAT] you just logged in!!!!!
+[17:37:25] [Client thread/INFO]: [CHAT] you just logged in!!!!!
+[17:37:26] [Client thread/INFO]: [CHAT] Runecraft 2 is out of date. The version you are using is verions: 0.0.3 and the latest version is version: 0.0.5
+[17:37:26] [Client thread/INFO]: [CHAT] http://tiny.cc/hwpxyx
+[17:39:29] [Server thread/INFO]: Saving and pausing game...
+[17:39:29] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:39:29] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:39:29] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:39:30] [Server thread/INFO]: Stopping server
+[17:39:30] [Server thread/INFO]: Saving players
+[17:39:30] [Server thread/INFO]: Saving worlds
+[17:39:30] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:39:30] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:39:30] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:39:38] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[17:39:38] [Server thread/INFO]: Generating keypair
+[17:39:38] [Server thread/INFO]: Converting map!
+[17:39:38] [Server thread/INFO]: Scanning folders...
+[17:39:38] [Server thread/INFO]: Total conversion count is 0
+[17:39:38] [Server thread/INFO]: Preparing start region for level 0
+[17:39:39] [Server thread/INFO]: Preparing spawn area: 12%
+[17:39:40] [Server thread/INFO]: Preparing spawn area: 26%
+[17:39:41] [Server thread/INFO]: Preparing spawn area: 42%
+[17:39:42] [Server thread/INFO]: Preparing spawn area: 55%
+[17:39:43] [Server thread/INFO]: Preparing spawn area: 70%
+[17:39:44] [Server thread/INFO]: Preparing spawn area: 86%
+[17:39:45] [Server thread/INFO]: Changing view distance to 12, from 10
+[17:39:45] [Server thread/INFO]: Player416[local:E:0ab53b1e] logged in with entity id 809961 at (-248.5, 64.0, 245.5)
+[17:39:45] [Server thread/INFO]: Player416 joined the game
+[17:39:46] [Client thread/INFO]: [CHAT] you just logged in!!!!!
+[17:39:46] [Client thread/INFO]: [CHAT] you just logged in!!!!!
+[17:39:46] [Client thread/INFO]: [CHAT] Runecraft 2 is out of date. The version you are using is verions: 0.0.3 and the latest version is version: 0.0.5
+[17:39:46] [Client thread/INFO]: [CHAT] http://tiny.cc/hwpxyx
+[17:41:11] [Server thread/INFO]: Saving and pausing game...
+[17:41:11] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:41:12] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:41:12] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:41:12] [Server thread/INFO]: Stopping server
+[17:41:12] [Server thread/INFO]: Saving players
+[17:41:12] [Server thread/INFO]: Saving worlds
+[17:41:12] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:41:12] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:41:12] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:41:55] [Client thread/INFO]: Setting user: Player259
+[17:41:57] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:42:01] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
+[17:42:01] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[17:42:01] [Thread-6/INFO]: Initializing LWJGL OpenAL
+[17:42:01] [Thread-6/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[17:42:01] [Thread-6/INFO]: OpenAL initialized.
+[17:42:02] [Sound Library Loader/INFO]: Sound engine started
+[17:42:04] [Client thread/WARN]: Texture runecraft2:textures/items/bronzesword.png with size 250x250 limits mip level from 4 to 1
+[17:42:05] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/items/runesword.png
+java.io.FileNotFoundException: runecraft2:textures/items/runesword.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:70) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:116) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadSprites(TextureMap.java:83) [TextureMap.class:?]
+	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:94) [ModelLoader.class:?]
+	at net.minecraft.client.resources.model.ModelManager.onResourceManagerReload(ModelManager.java:29) [ModelManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:124) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:507) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:356) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:117) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_45]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
+	at GradleStart.main(Unknown Source) [start/:?]
+[17:42:06] [Client thread/INFO]: Created: 4096x2048 textures-atlas
+[17:42:08] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
+[17:42:08] [Client thread/INFO]: SoundSystem shutting down...
+[17:42:09] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[17:42:09] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[17:42:09] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[17:42:09] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[17:42:09] [Thread-8/INFO]: OpenAL initialized.
+[17:42:09] [Sound Library Loader/INFO]: Sound engine started
+[17:42:11] [Client thread/ERROR]: Using missing texture, unable to load runecraft2:textures/items/runesword.png
+java.io.FileNotFoundException: runecraft2:textures/items/runesword.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:70) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:116) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadSprites(TextureMap.java:83) [TextureMap.class:?]
+	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:94) [ModelLoader.class:?]
+	at net.minecraft.client.resources.model.ModelManager.onResourceManagerReload(ModelManager.java:29) [ModelManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:767) [Minecraft.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:306) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:521) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:356) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:117) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_45]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
+	at GradleStart.main(Unknown Source) [start/:?]
+[17:42:11] [Client thread/INFO]: Created: 4096x2048 textures-atlas
+[17:42:27] [Client thread/INFO]: Stopping!
+[17:42:27] [Client thread/INFO]: SoundSystem shutting down...
+[17:42:27] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
