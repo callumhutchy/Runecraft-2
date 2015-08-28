@@ -1,0 +1,15 @@
+/.git
+/.gradle
+/.settings
+/bin
+/build
+/eclipse
+/logs
+.project
+build.gradle
+CREDITS-fml
+forge-1.8-11.14.1.1334-changelog.txt
+forge-1.8-11.14.1.1410-changelog.txt
+gradlew
+gradlew.bat
+
