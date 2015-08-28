@@ -12,9 +12,6 @@ public class ContainerRCFurnace extends Container {
 
 	public ContainerRCFurnace(EntityPlayer player) {
 		
-System.out.println("Buthole");
-
-
 		
 	}
 

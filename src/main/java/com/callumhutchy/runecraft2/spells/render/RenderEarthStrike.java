@@ -1,6 +1,7 @@
 package com.callumhutchy.runecraft2.spells.render;
 
 import net.minecraft.client.renderer.entity.Render;
+import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 
@@ -14,7 +15,8 @@ public class RenderEarthStrike extends Render  {
 	public final ResourceLocation	earthstrikeTextures	= new ResourceLocation("runecraft2:textures/entity/EarthStrikeTexture.png");
 	
 
-	public RenderEarthStrike() {
+	public RenderEarthStrike(RenderManager renderManager) {
+		super(renderManager);
 		model = new StrikeModel();
 	}
 
@@ -36,7 +38,6 @@ public class RenderEarthStrike extends Render  {
 		GL11.glRotatef(entity.prevRotationPitch + (entity.rotationPitch - entity.prevRotationPitch) * rx, 1.0F, 0.0F,0.0F );
 		model.setRotationAngles(0.0F, 0.0F, 0.0F, entity.rotationPitch, entity.rotationPitch, 0.0625F, entity);
 		model.render(entity, 0.0F, 0.0F, 0.0F,entity.prevRotationYaw + (entity.rotationYaw - entity.prevRotationYaw) * rx ,entity.prevRotationPitch + (entity.rotationPitch - entity.prevRotationPitch) * ry, 0.0625F);
-		System.out.println(entity.rotationYaw);
 		
 		// note all the values are 0 except the final argument, which is scale
 		// vanilla Minecraft almost excusively uses 0.0625F, but you can change it to whatever works

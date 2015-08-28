@@ -1,18 +1,19 @@
 package com.callumhutchy.runecraft2.client.gui;
 
-import com.callumhutchy.runecraft2.blocks.containers.ContainerRCFurnace;
-import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRCFurnace;
-
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
-import cpw.mods.fml.common.network.IGuiHandler;
+import net.minecraftforge.fml.common.network.IGuiHandler;
+
+import com.callumhutchy.runecraft2.blocks.containers.ContainerRCFurnace;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRCFurnace;
 
 public class GuiHandler implements IGuiHandler{
 
 	@Override
 	public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
-		 TileEntity tileEntity = world.getTileEntity(x, y, z);
+		 TileEntity tileEntity = world.getTileEntity(new BlockPos(x, y, z));
          if(tileEntity instanceof TileEntityRCFurnace){
                  return new ContainerRCFurnace(player);
          }
@@ -25,7 +26,7 @@ public class GuiHandler implements IGuiHandler{
 //		if(ID == GuiSpellBook.GUI_ID){
 //			
 //		}
-		TileEntity tileEntity = world.getTileEntity(x, y, z);
+		TileEntity tileEntity = world.getTileEntity(new BlockPos(x, y, z));
 		switch(ID){
 		case GuiSpellBook.GUI_ID:
 			return new GuiSpellBook();

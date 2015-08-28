@@ -6,7 +6,6 @@ import java.util.Random;
 
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -14,11 +13,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import reference.Reference;
 
 import com.callumhutchy.runecraft2.Runecraft2;
-import com.callumhutchy.runecraft2.blocks.models.OreModel;
-import com.callumhutchy.runecraft2.blocks.models.tileentities.altars.TileEntityAirRuneAltar;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityAdamantiteOre;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityCoalOre;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityCopperOre;
@@ -32,26 +28,27 @@ import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntitySil
 import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityTinOre;
 import com.callumhutchy.runecraft2.items.Items;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-
 public class OreBlock extends BlockContainer {
 
 	private int				blockID;
 	public Item				itemToBeDropped;
-	private final OreModel	model;
+
 	public String			tileEntityClass;
 
 	public OreBlock(Material p_i45394_1_, String resourceLocation, String unlocalisedName, Item item, String tileEntity) {
 		super(p_i45394_1_);
-		this.setCreativeTab(Runecraft2.tabRunecraft2Metal);
+		if(unlocalisedName.contains("essence")){
+		    //Nothing
+		}else{
+		    this.setCreativeTab(Runecraft2.tabRunecraft2Metal);
+		}
+		
 		this.setBlockBounds(0.0625F, 0F, 0.0625F, 0.9375F, 0.8125F, 0.9375F);
 		this.setHardness(3F);
 		this.setHarvestLevel("pickaxe", 1);
-		this.setBlockTextureName(resourceLocation);
-		this.setBlockName(unlocalisedName);
+		this.setUnlocalizedName(unlocalisedName);
 		itemToBeDropped = item;
-		this.model = new OreModel();
+		this.setDefaultState(this.blockState.getBaseState());
 		tileEntityClass = tileEntity;
 
 	}
@@ -59,7 +56,7 @@ public class OreBlock extends BlockContainer {
 	// You don't want the normal render type, or it wont render properly.
 	@Override
 	public int getRenderType() {
-		return -1;
+		return 3;
 	}
 
 	public int quantityDropped(Random rand) {
@@ -97,7 +94,7 @@ public class OreBlock extends BlockContainer {
 		return false;
 	}
 
-	// And this tell it that you can see through this block, and neighbor blocks
+	// And this tell it that you can see through this block, and neighbour blocks
 	// should be rendered.
 	public boolean isOpaqueCube() {
 		return false;
@@ -166,10 +163,7 @@ public class OreBlock extends BlockContainer {
 		}
 	}
 
-	@SideOnly(Side.CLIENT)
-	public void registerBlockIcons(IIconRegister iconRegister) {
-		this.blockIcon = iconRegister.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(5));
-	}
+	
 
 	public static int randInt(int min, int max) {
 
@@ -237,7 +231,7 @@ public class OreBlock extends BlockContainer {
 			break;
 
 		}
-		super.removedByPlayer(world, player, x, y, z, true);
+		//super.removedByPlayer(world, player, x, y, z, true);
 		return true;
 	}
 

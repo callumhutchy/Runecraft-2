@@ -1,19 +1,21 @@
 package handler;
 
-import reference.ExpChart;
-
-import com.callumhutchy.runecraft2.blocks.Altar;
-import com.callumhutchy.runecraft2.proxy.CommonProxy;
-
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.gameevent.TickEvent.PlayerTickEvent;
-import cpw.mods.fml.common.gameevent.TickEvent.WorldTickEvent;
+import net.minecraft.command.ICommandSender;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.ChatComponentText;
 import net.minecraftforge.event.entity.EntityEvent.EntityConstructing;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent.WorldTickEvent;
+import reference.ExpChart;
+import utility.UpdateChecker;
+
+import com.callumhutchy.runecraft2.blocks.Altar;
+import com.callumhutchy.runecraft2.proxy.CommonProxy;
 
 public class Runecraft2EventHandler {
 
@@ -62,7 +64,7 @@ public class Runecraft2EventHandler {
 			((ExtendedPlayer) (event.entity.getExtendedProperties(ExtendedPlayer.EXT_PROP_NAME))).saveNBTData(playerData);
 			// and store it in our proxy
 			if (event.entity instanceof EntityLiving) {
-				username = event.entity.getCommandSenderName();
+				username = event.entity.getCommandSenderEntity().getName();
 			}
 			proxy.storeEntityData(username, playerData);
 			// call our handy static one-liner to save custom data to the proxy
@@ -83,7 +85,7 @@ public class Runecraft2EventHandler {
 			// recall that 'getEntityData' also removes it from the map, so be
 			// sure to store it locally
 			if (event.entity instanceof EntityLiving) {
-				username = event.entity.getCommandSenderName();
+				username = event.entity.getCommandSenderEntity().getName();
 			}
 			NBTTagCompound playerData = proxy.getEntityData(username);
 			// make sure the compound isn't null
@@ -101,12 +103,23 @@ public class Runecraft2EventHandler {
 		if (event.entity instanceof EntityPlayer) {
 			ExtendedPlayer props = ExtendedPlayer.get((EntityPlayer) event.entity);
 			currentMagicLevel = props.currentMagicLevel;
-			System.out.println("MAgic level set to " + currentMagicLevel + " " + event.entity.getCommandSenderName());
+			System.out.println("MAgic level set to " + currentMagicLevel + " " + event.entity.getCommandSenderEntity());
 			currentRunecraftingLevel = props.currentRunecraftingLevel;
 			currentMiningLevel = props.currentMiningLevel;
 			currentSmithingLevel = props.currentSmithingLevel;
-
+			((ICommandSender) event.entity).addChatMessage (new ChatComponentText ("you just logged in!!!!!"));
 		}
+		
+		
+		if (event.entity instanceof EntityPlayer) {
+			
+			
+			
+			if(!event.entity.worldObj.isRemote){
+			UpdateChecker.update(event.entity);
+			}
+		}
+		
 
 	}
 

@@ -44,25 +44,25 @@ public class ItemRender implements IItemRenderer {
 			if (type == IItemRenderer.ItemRenderType.INVENTORY) {
 				GL11.glTranslatef(-0.5f, -0.3f, -0.5f);
 				this.render.renderTileEntityAt(this.entity, 0.0D, 0.0D, 0.0D,
-						0.0F);
+						0.0F, 0);
 				mustundotranslate = true;
 			}
 			if (type == IItemRenderer.ItemRenderType.EQUIPPED_FIRST_PERSON) {
 				GL11.glTranslatef(0.5f, 0.2f, 0.0f);
 				this.render.renderTileEntityAt(this.entity, 0.0D, 0.0D, 0.0D,
-						0.0F);
+						0.0F, 0);
 				mustundotranslate = true;
 			}
 			if (type == IItemRenderer.ItemRenderType.EQUIPPED) {
 				GL11.glTranslatef(0.5f, 0.2f, 0.0f);
 				this.render.renderTileEntityAt(this.entity, 0.0D, 0.0D, 0.0D,
-						0.0F);
+						0.0F, 0);
 				mustundotranslate = true;
 			}
 			if (type == IItemRenderer.ItemRenderType.ENTITY) {
 				GL11.glTranslatef(0.5f, 0.2f, 0.0f);
 				this.render.renderTileEntityAt(this.entity, 0.0D, 0.0D, 0.0D,
-						0.0F);
+						0.0F, 0);
 				mustundotranslate = true;
 			}
 			
@@ -73,25 +73,25 @@ public class ItemRender implements IItemRenderer {
 			if (type == IItemRenderer.ItemRenderType.INVENTORY) {
 				GL11.glTranslatef(-0.5f, -0.5f, -0.5f);
 				this.render.renderTileEntityAt(this.entity, 0.0D, 0.0D, 0.0D,
-						0.0F);
+						0.0F, 0);
 				mustundotranslate = true;
 			}
 			if (type == IItemRenderer.ItemRenderType.EQUIPPED_FIRST_PERSON) {
 				GL11.glTranslatef(0.5f, 0.2f, 0.0f);
 				this.render.renderTileEntityAt(this.entity, 0.0D, 0.0D, 0.0D,
-						0.0F);
+						0.0F, 0);
 				mustundotranslate = true;
 			}
 			if (type == IItemRenderer.ItemRenderType.EQUIPPED) {
 				GL11.glTranslatef(0.5f, 0.2f, 0.0f);
 				this.render.renderTileEntityAt(this.entity, 0.0D, 0.0D, 0.0D,
-						0.0F);
+						0.0F, 0);
 				mustundotranslate = true;
 			}
 			if (type == IItemRenderer.ItemRenderType.ENTITY) {
 				GL11.glTranslatef(0.5f, 0.2f, 0.0f);
 				this.render.renderTileEntityAt(this.entity, 0.0D, 0.0D, 0.0D,
-						0.0F);
+						0.0F, 0);
 				mustundotranslate = true;
 			}
 

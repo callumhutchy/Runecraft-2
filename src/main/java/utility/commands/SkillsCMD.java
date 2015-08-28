@@ -1,19 +1,18 @@
 package utility.commands;
 
-import reference.ExpChart;
 import handler.ExtendedPlayer;
 import handler.Runecraft2EventHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;
-import net.minecraft.entity.DataWatcher;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ChatComponentText;
+import reference.ExpChart;
 
 public class SkillsCMD extends CommandBase{
 
 	@Override
-	public String getCommandName() {
+	public String getName() {
 		// TODO Auto-generated method stub
 		return "skills";
 	}
@@ -25,7 +24,7 @@ public class SkillsCMD extends CommandBase{
 	}
 
 	@Override
-	public void processCommand(ICommandSender icommandsender, String[] string) {
+	public void execute(ICommandSender icommandsender, String[] string) {
 		
 		if(icommandsender instanceof EntityPlayer){
 			EntityPlayer player = (EntityPlayer) icommandsender;

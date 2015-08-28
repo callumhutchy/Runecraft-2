@@ -1,17 +1,14 @@
 package com.callumhutchy.runecraft2.blocks.models.tileentities;
 
 import java.util.Timer;
-import java.util.TimerTask;
 
-import com.callumhutchy.runecraft2.blocks.models.FurnaceModel;
-
-import net.minecraft.block.BlockFurnace;
 import net.minecraft.item.Item;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.server.gui.IUpdatePlayerListBox;
 import net.minecraft.tileentity.TileEntity;
 
-public class TileEntityRCFurnace extends TileEntity {
-	public static FurnaceModel	model;
+public class TileEntityRCFurnace extends TileEntity implements IUpdatePlayerListBox {
+	
 	public Item					furnaceProduct;
 	public int					amountOfProduct;
 	public boolean				doneCooking		= false;
@@ -26,9 +23,27 @@ public class TileEntityRCFurnace extends TileEntity {
 		return true;
 	}
 
-	@Override
-	public void updateEntity() {
+	
 
+	@Override
+	public void writeToNBT(NBTTagCompound nbt) {
+		super.writeToNBT(nbt);
+		NBTTagCompound properties = new NBTTagCompound();
+		nbt.setInteger("direction", this.direction);
+		System.out.println("Writing direction as " + this.direction);
+	}
+
+	@Override
+	public void readFromNBT(NBTTagCompound nbt) {
+		super.readFromNBT(nbt);
+		NBTTagCompound properties = (NBTTagCompound) nbt.getTag("furnace");
+		System.out.println("READING");
+		this.direction = nbt.getInteger("direction");
+		System.out.println("Reading direction as " + this.direction);
+	}
+
+	@Override
+	public void update() {
 		if (time != 0) {
 			openDoors = true;
 			interval++;
@@ -52,24 +67,6 @@ public class TileEntityRCFurnace extends TileEntity {
 			}
 
 		}
-
-	}
-
-	@Override
-	public void writeToNBT(NBTTagCompound nbt) {
-		super.writeToNBT(nbt);
-		NBTTagCompound properties = new NBTTagCompound();
-		nbt.setInteger("direction", this.direction);
-		System.out.println("Writing direction as " + this.direction);
-	}
-
-	@Override
-	public void readFromNBT(NBTTagCompound nbt) {
-		super.readFromNBT(nbt);
-		NBTTagCompound properties = (NBTTagCompound) nbt.getTag("furnace");
-		System.out.println("READING");
-		this.direction = nbt.getInteger("direction");
-		System.out.println("Reading direction as " + this.direction);
 	}
 
 }

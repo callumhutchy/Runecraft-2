@@ -1,9 +1,10 @@
 package utility;
 
+import net.minecraftforge.fml.common.FMLLog;
+
 import org.apache.logging.log4j.Level;
 
 import reference.Reference;
-import cpw.mods.fml.common.FMLLog;
 
 public class LogHelper {
 

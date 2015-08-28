@@ -4,12 +4,10 @@ import handler.ConfigurationHandler;
 
 import java.util.Random;
 
-import com.callumhutchy.runecraft2.blocks.Blocks;
-
-import cpw.mods.fml.common.IWorldGenerator;
+import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
-import net.minecraft.world.gen.feature.WorldGenMinable;
+import net.minecraftforge.fml.common.IWorldGenerator;
 
 public class OreWorldGeneratorRunecraft2 implements IWorldGenerator{
 	Random	rand	= new Random();
@@ -21,7 +19,7 @@ public class OreWorldGeneratorRunecraft2 implements IWorldGenerator{
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
 		// TODO Auto-generated method stub
 		int multiplier = rand.nextInt(ConfigurationHandler.WorldGenMultiplier);
-		switch (world.provider.dimensionId) {
+		switch (world.provider.getDimensionId()) {
 		case -1:
 			generateNether(world, random, chunkX * 16, chunkZ * 16);
 		case 0:
@@ -37,7 +35,7 @@ public class OreWorldGeneratorRunecraft2 implements IWorldGenerator{
 		if (ConfigurationHandler.oreWorldGen) {
 			int rand = randInt(1, 5);
 			if(rand == 1){
-				(new WorldGenOre()).generate(world, random, Xcoord, Ycoord, Zcoord);
+				(new WorldGenOre()).generate(world, random, new BlockPos( Xcoord, Ycoord, Zcoord));
 				
 			}
 			

@@ -1,27 +1,26 @@
 package com.callumhutchy.runecraft2.blocks;
 
 import handler.ExtendedPlayer;
-
-import com.callumhutchy.runecraft2.Runecraft2;
-import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRCFurnace;
-import com.callumhutchy.runecraft2.client.gui.GuiRCFurnace;
-import com.callumhutchy.runecraft2.client.gui.GuiSpellBook;
-
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.BlockPos;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
+import com.callumhutchy.runecraft2.Runecraft2;
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRCFurnace;
+import com.callumhutchy.runecraft2.client.gui.GuiRCFurnace;
+
 public class RCFurnace extends BlockContainer {
 
-	protected RCFurnace(Material p_i45394_1_) {
+	protected RCFurnace(Material p_i45394_1_, String unlocalisedName) {
 		super(p_i45394_1_);
 		this.setCreativeTab(Runecraft2.tabRunecraft2Metal);
+		this.setUnlocalizedName(unlocalisedName);
 	}
 
 	
@@ -47,7 +46,7 @@ public class RCFurnace extends BlockContainer {
 	
 	public boolean onBlockActivated(World world, int varx, int vary, int varz, EntityPlayer entity, int p_149727_6_, float p_149727_7_, float p_149727_8_, float p_149727_9_) {
 		
-		TileEntityRCFurnace tileEntity = (TileEntityRCFurnace) world.getTileEntity(varx, vary, varz);
+		TileEntityRCFurnace tileEntity = (TileEntityRCFurnace) world.getTileEntity(new BlockPos(varx, vary, varz));
 		ExtendedPlayer props = ExtendedPlayer.get(entity);
 		props.currentRCFurnace = tileEntity;
 		entity.openGui(Runecraft2.instance, GuiRCFurnace.GUI_ID, world,0, 0, 0);
@@ -56,15 +55,44 @@ public class RCFurnace extends BlockContainer {
 		
 	}
 	
-	@Override
+	
+	
+	/*@Override
 	public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack) {
 		if (entity == null) {
 			return;
 		}
-		TileEntityRCFurnace tile = (TileEntityRCFurnace) world.getTileEntity(x, y, z);
+		
+		TileEntityRCFurnace tile = (TileEntityRCFurnace) world.getTileEntity(new BlockPos(x, y, z));
 		tile.direction = MathHelper.floor_double((double) (entity.rotationYaw * 4.0F / 360) + 0.50) & 3;		
+		int l = MathHelper.floor_double((double)(entity.rotationYaw * 4.0F / 360.F) + 0.5D) & 3;
+
+
+			if(l == 0) {
+			world.setBlockState(new BlockPos(x, y, z), Blocks.RCFurnace.getStateFromMeta(0), 2);
+			tile.direction =0;
+			}
+
+
+			if(l == 1) {
+				world.setBlockState(new BlockPos(x, y, z), Blocks.RCFurnace.getStateFromMeta(1), 2);
+			tile.direction =1;
+			}
+
+
+			if(l == 2) {
+				world.setBlockState(new BlockPos(x, y, z), Blocks.RCFurnace.getStateFromMeta(2), 2);
+			tile.direction =2;
+			}
+
+
+			if(l == 3) {
+				world.setBlockState(new BlockPos(x, y, z), Blocks.RCFurnace.getStateFromMeta(3), 2);
 	
-	}
+			tile.direction =3;
+			}
+		}*/
+	
 	
 //	
 //	@Override
@@ -148,10 +176,20 @@ public class RCFurnace extends BlockContainer {
 //
 //		} 
 //	
-//	public void onBlockAdded(World world, int x, int y, int z){
-//	super.onBlockAdded(world, x, y, z);
-//		this.setDefaultDirection(world, x, y, z);
-//	}
+	
+	/*public void onBlockAdded(World world, int x, int y, int z){
+		TileEntityRCFurnace tile = (TileEntityRCFurnace) world.getTileEntity(new BlockPos(x, y, z));
+		if(world.getBlockMetadata(x, y, z) == 0){
+			tile.direction = 0;
+		}else if(world.getBlockMetadata(x, y, z) == 1){
+			tile.direction = 1;
+		}else if(world.getBlockMetadata(x, y, z) == 2){
+			tile.direction = 2;
+		}else if(world.getBlockMetadata(x, y, z) == 3){
+			tile.direction = 3;
+		}
 		
+	}
+		*/
 	
 }

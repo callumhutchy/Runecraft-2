@@ -22,8 +22,8 @@ public class BlockNames {
 	public static String	RuniteOre_Unlo			= "runiteore";
 	public static String	SilverOre_Unlo			= "silverore";
 
-	public static String	RuneEssenceOre_Unlo		= "runeessence";
-	public static String	PureEssenceOre_Unlo		= "pureessence";
+	public static String	RuneEssenceOre_Unlo		= "runeessenceore";
+	public static String	PureEssenceOre_Unlo		= "pureessenceore";
 
 	// Altars
 	public static String	Altar_Unlo				= "altar";

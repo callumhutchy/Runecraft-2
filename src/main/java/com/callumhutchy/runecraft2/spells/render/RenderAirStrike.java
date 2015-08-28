@@ -1,27 +1,30 @@
 package com.callumhutchy.runecraft2.spells.render;
 
+import net.minecraft.client.renderer.entity.Render;
+import net.minecraft.client.renderer.entity.RenderManager;
+import net.minecraft.entity.Entity;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
 import org.lwjgl.opengl.GL11;
 
 import com.callumhutchy.runecraft2.spells.models.StrikeModel;
 
-import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.client.renderer.entity.Render;
-import net.minecraft.client.renderer.entity.RenderArrow;
-import net.minecraft.entity.Entity;
-import net.minecraft.util.ResourceLocation;
-import cpw.mods.fml.relauncher.Side;
-
 @SideOnly(Side.CLIENT)
 public class RenderAirStrike extends Render {
+
+	public RenderAirStrike(RenderManager renderManagerVar) {
+		super(renderManagerVar);
+		model = new StrikeModel();
+	}
 
 	private StrikeModel						model;
 
 	public final ResourceLocation	airstrikeTextures	= new ResourceLocation("runecraft2:textures/entity/AirStrikeTexture.png");
 	
 
-	public RenderAirStrike() {
-		model = new StrikeModel();
-	}
+
 
 	@Override
 	public void doRender(Entity entity, double x, double y, double z, float rx, float ry) {

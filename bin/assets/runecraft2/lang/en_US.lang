@@ -8,8 +8,10 @@ tile.ironore.name=Iron Ore
 tile.mithrilore.name=Mithril Ore
 tile.runiteore.name=Runite Ore
 tile.silverore.name=Silver Ore
-tile.runeessence.name=Rune Essence
-tile.pureessence.name=Pure Essence
+tile.runeessence.name=Rune Essence Ore
+tile.pureessence.name=Pure Essence Ore
+
+tile.rcfurnace.name=Runecraft Furnace
 
 
 //Altars

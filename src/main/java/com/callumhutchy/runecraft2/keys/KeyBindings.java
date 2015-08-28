@@ -1,10 +1,10 @@
 package com.callumhutchy.runecraft2.keys;
 
 
-import org.lwjgl.input.Keyboard;
-
-import cpw.mods.fml.client.registry.ClientRegistry;
 import net.minecraft.client.settings.KeyBinding;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
+
+import org.lwjgl.input.Keyboard;
 
 public class KeyBindings {
 

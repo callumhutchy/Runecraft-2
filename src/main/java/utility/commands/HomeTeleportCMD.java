@@ -1,21 +1,16 @@
 package utility.commands;
 
-import reference.ExpChart;
 import handler.ExtendedPlayer;
-import handler.Runecraft2EventHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;
+import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ChatComponentText;
 
 public class HomeTeleportCMD extends CommandBase {
 
-	@Override
-	public String getCommandName() {
-		
-		return "sethometeleport";
-	}
+
 
 	@Override
 	public String getCommandUsage(ICommandSender p_71518_1_) {
@@ -24,7 +19,14 @@ public class HomeTeleportCMD extends CommandBase {
 	}
 
 	@Override
-	public void processCommand(ICommandSender icommandsender, String[] string) {
+	public String getName() {
+		// TODO Auto-generated method stub
+		return "sethometeleport";
+	}
+
+	@Override
+	public void execute(ICommandSender icommandsender, String[] string)	throws CommandException {
+		// TODO Auto-generated method stub
 		if(icommandsender instanceof EntityPlayer){
 			EntityPlayer player = (EntityPlayer) icommandsender;
 			ExtendedPlayer props = ExtendedPlayer.get(player);
@@ -35,7 +37,6 @@ public class HomeTeleportCMD extends CommandBase {
 			System.out.println(props.currentHomeTPx +"/"+ props.currentHomeTPy +"/"+ props.currentHomeTPz);
 			Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("You have set your home teleport."));
 		}
-		
 	}
 
 }

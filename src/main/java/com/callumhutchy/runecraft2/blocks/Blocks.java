@@ -2,18 +2,16 @@ package com.callumhutchy.runecraft2.blocks;
 
 import java.util.Random;
 
-import reference.BlockNames;
-
-import com.callumhutchy.runecraft2.Runecraft2;
-import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityCopperOre;
-import com.callumhutchy.runecraft2.items.Items;
-
-import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockLeaves;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import reference.BlockNames;
+import reference.Reference;
+
+import com.callumhutchy.runecraft2.items.Items;
 
 public class Blocks {
 
@@ -43,54 +41,108 @@ public class Blocks {
 	public static void init() {
 		// Altar
 
-		AirAltar = new Altar(Material.rock, "runecraft2:textures/blocks/AirAltarTexture.png", BlockNames.AirAltar_Unlo, "airaltar");
-		WaterAltar = new Altar(Material.rock, "runecraft2:textures/blocks/WaterAltarTexture.png", BlockNames.WaterAltar_Unlo, "wateraltar");
-		FireAltar = new Altar(Material.rock, "runecraft2:textures/blocks/FireAltarTexture.png", BlockNames.FireAltar_Unlo, "firealtar");
-		EarthAltar = new Altar(Material.rock, "runecraft2:textures/blocks/EarthAltarTexture.png", BlockNames.EarthAltar_Unlo, "earthaltar");
-		MindAltar = new Altar(Material.rock, "runecraft2:textures/blocks/MindAltarTexture.png", BlockNames.MindAltar_Unlo, "mindaltar");
-		BodyAltar = new Altar(Material.rock, "runecraft2:textures/blocks/BodyAltarTexture.png", BlockNames.BodyAltar_Unlo, "bodyaltar");
-		CosmicAltar = new Altar(Material.rock, "runecraft2:textures/blocks/CosmicAltarTexture.png", BlockNames.CosmicAltar_Unlo, "cosmicaltar");
-		ChaosAltar = new Altar(Material.rock, "runecraft2:textures/blocks/ChaosAltarTexture.png", BlockNames.ChaosAltar_Unlo, "chaosaltar");
-		NatureAltar = new Altar(Material.rock, "runecraft2:textures/blocks/NatureAltarTexture.png", BlockNames.NatureAltar_Unlo, "naturealtar");
-		LawAltar = new Altar(Material.rock, "runecraft2:textures/blocks/LawAltarTexture.png", BlockNames.LawAltar_Unlo, "lawaltar");
-		DeathAltar = new Altar(Material.rock, "runecraft2:textures/blocks/DeathAltarTexture.png", BlockNames.DeathAltar_Unlo, "deathaltar");
-		BloodAltar = new Altar(Material.rock, "runecraft2:textures/blocks/BloodAltarTexture.png", BlockNames.BloodAltar_Unlo, "bloodaltar");
-		AstralAltar = new Altar(Material.rock, "runecraft2:textures/blocks/AstralAltarTexture.png", BlockNames.AstralAltar_Unlo, "astralaltar");
+		AirAltar = new Altar(Material.rock, "runecraft2:textures/blocks/airaltar.png", BlockNames.AirAltar_Unlo, "airaltar");
+		WaterAltar = new Altar(Material.rock, "runecraft2:textures/blocks/wateraltar.png", BlockNames.WaterAltar_Unlo, "wateraltar");
+		FireAltar = new Altar(Material.rock, "runecraft2:textures/blocks/firealtar.png", BlockNames.FireAltar_Unlo, "firealtar");
+		EarthAltar = new Altar(Material.rock, "runecraft2:textures/blocks/earthaltar.png", BlockNames.EarthAltar_Unlo, "earthaltar");
+		MindAltar = new Altar(Material.rock, "runecraft2:textures/blocks/mindaltar.png", BlockNames.MindAltar_Unlo, "mindaltar");
+		BodyAltar = new Altar(Material.rock, "runecraft2:textures/blocks/bodyaltar.png", BlockNames.BodyAltar_Unlo, "bodyaltar");
+		CosmicAltar = new Altar(Material.rock, "runecraft2:textures/blocks/cosmicaltar.png", BlockNames.CosmicAltar_Unlo, "cosmicaltar");
+		ChaosAltar = new Altar(Material.rock, "runecraft2:textures/blocks/chaosaltar.png", BlockNames.ChaosAltar_Unlo, "chaosaltar");
+		NatureAltar = new Altar(Material.rock, "runecraft2:textures/blocks/naturealtar.png", BlockNames.NatureAltar_Unlo, "naturealtar");
+		LawAltar = new Altar(Material.rock, "runecraft2:textures/blocks/lawaltar.png", BlockNames.LawAltar_Unlo, "lawaltar");
+		DeathAltar = new Altar(Material.rock, "runecraft2:textures/blocks/deathaltar.png", BlockNames.DeathAltar_Unlo, "deathaltar");
+		BloodAltar = new Altar(Material.rock, "runecraft2:textures/blocks/bloodaltar.png", BlockNames.BloodAltar_Unlo, "bloodaltar");
+		AstralAltar = new Altar(Material.rock, "runecraft2:textures/blocks/astralaltar.png", BlockNames.AstralAltar_Unlo, "astralaltar");
 
-		AirRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/AirRuneAltarTexture.png", BlockNames.AirRuneAltar_Unlo, "airrunealtar");
-		WaterRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/WaterRuneAltarTexture.png", BlockNames.WaterRuneAltar_Unlo, "waterrunealtar");
-		FireRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/FireRuneAltarTexture.png", BlockNames.FireRuneAltar_Unlo, "firerunealtar");
-		EarthRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/EarthRuneAltarTexture.png", BlockNames.EarthRuneAltar_Unlo, "earthrunealtar");
-		MindRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/MindRuneAltarTexture.png", BlockNames.MindRuneAltar_Unlo, "mindrunealtar");
-		BodyRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/BodyRuneAltarTexture.png", BlockNames.BodyRuneAltar_Unlo, "bodyrunealtar");
-		CosmicRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/CosmicRuneAltarTexture.png", BlockNames.CosmicRuneAltar_Unlo, "cosmicrunealtar");
-		ChaosRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/ChaosRuneAltarTexture.png", BlockNames.ChaosRuneAltar_Unlo, "chaosrunealtar");
-		NatureRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/NatureRuneAltarTexture.png", BlockNames.NatureRuneAltar_Unlo, "naturerunealtar");
-		LawRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/LawRuneAltarTexture.png", BlockNames.LawRuneAltar_Unlo, "lawrunealtar");
-		DeathRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/DeathRuneAltarTexture.png", BlockNames.DeathRuneAltar_Unlo, "deathrunealtar");
-		BloodRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/BloodRuneAltarTexture.png", BlockNames.BloodRuneAltar_Unlo, "bloodrunealtar");
-		AstralRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/AstralRuneAltarTexture.png", BlockNames.AstralRuneAltar_Unlo, "astralrunealtar");
+		AirRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/airrunealtar.png", BlockNames.AirRuneAltar_Unlo, "airrunealtar");
+		WaterRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/waterrunealtar.png", BlockNames.WaterRuneAltar_Unlo, "waterrunealtar");
+		FireRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/firerunealtar.png", BlockNames.FireRuneAltar_Unlo, "firerunealtar");
+		EarthRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/earthrunealtar.png", BlockNames.EarthRuneAltar_Unlo, "earthrunealtar");
+		MindRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/mindrunealtar.png", BlockNames.MindRuneAltar_Unlo, "mindrunealtar");
+		BodyRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/bodyrunealtar.png", BlockNames.BodyRuneAltar_Unlo, "bodyrunealtar");
+		CosmicRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/cosmicrunealtar.png", BlockNames.CosmicRuneAltar_Unlo, "cosmicrunealtar");
+		ChaosRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/chaosrunealtar.png", BlockNames.ChaosRuneAltar_Unlo, "chaosrunealtar");
+		NatureRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/naturerunealtar.png", BlockNames.NatureRuneAltar_Unlo, "naturerunealtar");
+		LawRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/lawrunealtar.png", BlockNames.LawRuneAltar_Unlo, "lawrunealtar");
+		DeathRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/deathrunealtar.png", BlockNames.DeathRuneAltar_Unlo, "deathrunealtar");
+		BloodRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/bloodrunealtar.png", BlockNames.BloodRuneAltar_Unlo, "bloodrunealtar");
+		AstralRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/astralrunealtar.png", BlockNames.AstralRuneAltar_Unlo, "astralrunealtar");
 
 		// Ores
-		CopperOre = new OreBlock(Material.rock, "runecraft2:OreModelCopperTexture", BlockNames.CopperOre_Unlo, Items.copperOre, "copper");
-		TinOre = new OreBlock(Material.rock, "runecraft2:OreModelTinTexture", BlockNames.TinOre_Unlo, Items.tinOre, "tin");
-		AdamantiteOre = new OreBlock(Material.rock, "runecraft2:reModelAdamantiteTexture", BlockNames.AdamantiteOre_Unlo, Items.adamantiteOre, "adamantite");
-		CoalOre = new OreBlock(Material.rock, "runecraft2:OreModelCoalTexture", BlockNames.CoalOre_Unlo, Items.coalOre, "coal");
-		GoldOre = new OreBlock(Material.rock, "runecraft2:OreModelGoldTexture", BlockNames.GoldOre_Unlo, Items.goldOre, "gold");
-		IronOre = new OreBlock(Material.rock, "runecraft2:OreModelIronTexture", BlockNames.IronOre_Unlo, Items.ironOre, "iron");
-		MithrilOre = new OreBlock(Material.rock, "runecraft2:OreModelMithrilTexture", BlockNames.MithrilOre_Unlo, Items.mithrilOre, "mithril");
-		RuniteOre = new OreBlock(Material.rock, "runecraft2:OreModelRuniteTexture", BlockNames.RuniteOre_Unlo, Items.runiteOre, "runite");
-		SilverOre = new OreBlock(Material.rock, "runecraft2:OreModelSilverTexture", BlockNames.SilverOre_Unlo, Items.silverOre, "silver");
+		CopperOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/copperore.png", BlockNames.CopperOre_Unlo, Items.copperOre, "copperore");
+		TinOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/tinore.png", BlockNames.TinOre_Unlo, Items.tinOre, "tinore");
+		AdamantiteOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/adamantiteore.png", BlockNames.AdamantiteOre_Unlo, Items.adamantiteOre, "adamantiteore");
+		CoalOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/coalore.png", BlockNames.CoalOre_Unlo, Items.coalOre, "coalore");
+		GoldOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/goldore.png", BlockNames.GoldOre_Unlo, Items.goldOre, "goldore");
+		IronOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/ironore.png", BlockNames.IronOre_Unlo, Items.ironOre, "ironore");
+		MithrilOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/mithrilore.png", BlockNames.MithrilOre_Unlo, Items.mithrilOre, "mithrilore");
+		RuniteOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/runiteore.png", BlockNames.RuniteOre_Unlo, Items.runiteOre, "runiteore");
+		SilverOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/silverore.png", BlockNames.SilverOre_Unlo, Items.silverOre, "silverore");
 
-		RuneEssenceOre = new OreBlock(Material.rock, "runecraft2:OreModelRuneEssenceTexture", BlockNames.RuneEssenceOre_Unlo, Items.runeEssence, "runeessence");
-		PureEssenceOre = new OreBlock(Material.rock, "runecraft2:OreModelPureEssenceTexture", BlockNames.PureEssenceOre_Unlo, Items.pureEssence, "pureessence");
+		RuneEssenceOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/runeessenceore.png", BlockNames.RuneEssenceOre_Unlo, Items.runeEssence, "runeessenceore");
+		PureEssenceOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/pureessenceore.png", BlockNames.PureEssenceOre_Unlo, Items.pureEssence, "pureessenceore");
 
-		RCFurnace = new RCFurnace(Material.iron);
-		Anvil= new Anvil(Material.iron);
+		RCFurnace = new RCFurnace(Material.iron, BlockNames.RCFurnace_Unlo);
+		Anvil= new Anvil(Material.iron, BlockNames.Anvil_Unlo);
 		
 	
 	}
 
+	public static void registerRenders(){
+		registerRender(CopperOre);
+		registerRender(TinOre);
+		registerRender(AdamantiteOre);
+		registerRender(CoalOre);
+		registerRender(GoldOre);
+		registerRender(IronOre);
+		registerRender(MithrilOre);
+		registerRender(RuniteOre);
+		registerRender(SilverOre);
+		
+		registerRender(RuneEssenceOre);
+		registerRender(PureEssenceOre);
+		
+		registerRender(RCFurnace);
+		registerRender(Anvil);
+		
+		registerRender(AirAltar);
+		registerRender(WaterAltar);
+		registerRender(FireAltar);
+		registerRender(EarthAltar);
+		registerRender(MindAltar);
+		registerRender(BodyAltar);
+		registerRender(CosmicAltar);
+		registerRender(ChaosAltar);
+		registerRender(NatureAltar);
+		registerRender(LawAltar);
+		registerRender(DeathAltar);
+		registerRender(BloodAltar);
+		registerRender(AstralAltar);
+		
+		registerRender(AirRuneAltar);
+		registerRender(WaterRuneAltar);
+		registerRender(FireRuneAltar);
+		registerRender(EarthRuneAltar);
+		registerRender(MindRuneAltar);
+		registerRender(BodyRuneAltar);
+		registerRender(CosmicRuneAltar);
+		registerRender(ChaosRuneAltar);
+		registerRender(NatureRuneAltar);
+		registerRender(LawRuneAltar);
+		registerRender(DeathRuneAltar);
+		registerRender(BloodRuneAltar);
+		registerRender(AstralRuneAltar);
+		
+	}
+	
+	public static void registerRender(Block block){
+		
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(Reference.MOD_ID + ":" + block.getUnlocalizedName().substring(5), "inventory"));
+	
+	
+	}
+	
 	public static void gameRegistry() {
 		// Altars
 

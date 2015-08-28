@@ -11,9 +11,10 @@ import net.minecraft.world.World;
 
 public class Anvil extends BlockContainer{
 
-	protected Anvil(Material p_i45394_1_) {
+	protected Anvil(Material p_i45394_1_, String unlocalisedName) {
 		super(p_i45394_1_);
 		this.setCreativeTab(Runecraft2.tabRunecraft2Metal);
+		this.setUnlocalizedName(unlocalisedName);
 	}
 
 	@Override

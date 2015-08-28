@@ -89,6 +89,9 @@ public class ItemNames {
 	public static String	RuneBar_Unlo				= "runebar";
 
 	public static String	SpellBook_Unlo				= "spellbook";
+	
+	public static String 	PhilosophersStone_Unlo 		= "philosophersstone";
+	
 	// Staves
 	public static String	Staff_Unlo					= "staff";
 	public static String	StaffOfAir_Unlo				= "staffofair";
@@ -105,6 +108,16 @@ public class ItemNames {
 	public static String	AdamantHatchet_Unlo				= "adamanthatchet";
 	public static String	RuneHatchet_Unlo				= "runehatchet";
 	
+	//Swords
+	public static String BronzeSword_Unlo = "bronzesword";
+	public static String IronSword_Unlo = "ironsword";
+	public static String SteelSword_Unlo = "steelsword";
+	public static String BlackSword_Unlo = "blacksword";
+	public static String MithrilSword_Unlo = "mithrilsword";
+	public static String AdamantSword_Unlo = "adamantsword";
+	public static String RuneSword_Unlo = "runesword";
+	
+	
 	//Pickaxes
 	public static String	BronzePickaxe_Unlo				= "bronzepickaxe";
 	public static String	IronPickaxe_Unlo				= "ironpickaxe";
@@ -112,4 +125,7 @@ public class ItemNames {
 	public static String	MithrilPickaxe_Unlo				= "mithrilpickaxe";
 	public static String	AdamantPickaxe_Unlo				= "adamantpickaxe";
 	public static String	RunePickaxe_Unlo				= "runepickaxe";
+	
+	
+	
 }

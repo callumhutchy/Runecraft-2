@@ -1,14 +1,16 @@
 package com.callumhutchy.runecraft2.items;
 
-import com.callumhutchy.runecraft2.Runecraft2;
-import reference.Materials;
-
-import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
-import reference.ItemNames;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.RenderItem;
+import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
-import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
+import reference.ItemNames;
+import reference.Materials;
+import reference.Reference;
 
 public class Items {
 
@@ -40,7 +42,7 @@ public class Items {
 	public static Item	bronzeBar, ironBar, silverBar, steelBar, goldBar,
 			mithrilBar, adamantBar, runeBar;
 
-	public static Item	spellbook;
+	public static Item	spellbook, philosophersstone;
 
 	public static Item	staff, staffofair, staffofwater, staffofearth,
 			staffoffire;
@@ -52,6 +54,12 @@ public class Items {
 	// Pickaxes
 	public static Item	bronzepickaxe, ironpickaxe, steelpickaxe,
 			mithrilpickaxe, adamantpickaxe, runepickaxe;
+	
+	public static Item  bronzesword, ironsword, steelsword, blacksword, mithrilsword, adamantsword, runesword;
+	public static Item bronzescimitar, ironscimitar, steelscimitar, blackscimitar, mithrilscimitar, adamantscimitar, runescimitar;
+	public static Item bronzewarhammer, ironwarhammer, steelwarhammer, blackwarhammer, mithrilwarhammer, adamantwarhammer, runewarhammer;
+	public static Item bronzebattleaxe, ironbattleaxe, steelbattleaxe, blackbattleaxe, mithrilbattleaxe, adamantbattleaxe, runebattleaxe;
+	
 
 	public static void init() {
 		// Runes
@@ -108,27 +116,29 @@ public class Items {
 		bloodTalismanStaff = new Staff(ItemNames.BloodTalismanStaff_Unlo, 1, null, 0, true);
 
 		// Ores
-		adamantiteOre = new Ore().setUnlocalizedName(ItemNames.AdamantiteOre_Unlo);
-		coalOre = new Ore().setUnlocalizedName(ItemNames.CoalOre_Unlo);
-		copperOre = new Ore().setUnlocalizedName(ItemNames.CopperOre_Unlo);
-		goldOre = new Ore().setUnlocalizedName(ItemNames.GoldOre_Unlo);
-		ironOre = new Ore().setUnlocalizedName(ItemNames.IronOre_Unlo);
-		mithrilOre = new Ore().setUnlocalizedName(ItemNames.MithrilOre_Unlo);
-		runiteOre = new Ore().setUnlocalizedName(ItemNames.RuniteOre_Unlo);
-		silverOre = new Ore().setUnlocalizedName(ItemNames.SilverOre_Unlo);
-		tinOre = new Ore().setUnlocalizedName(ItemNames.TinOre_Unlo);
+		adamantiteOre = new Ore(ItemNames.AdamantiteOre_Unlo);
+		coalOre = new Ore(ItemNames.CoalOre_Unlo);
+		copperOre = new Ore(ItemNames.CopperOre_Unlo);
+		goldOre = new Ore(ItemNames.GoldOre_Unlo);
+		ironOre = new Ore(ItemNames.IronOre_Unlo);
+		mithrilOre = new Ore(ItemNames.MithrilOre_Unlo);
+		runiteOre = new Ore(ItemNames.RuniteOre_Unlo);
+		silverOre = new Ore(ItemNames.SilverOre_Unlo);
+		tinOre = new Ore(ItemNames.TinOre_Unlo);
 
 		// Bars
-		bronzeBar = new Bar().setUnlocalizedName(ItemNames.BronzeBar_Unlo);
-		ironBar = new Bar().setUnlocalizedName(ItemNames.IronBar_Unlo);
-		silverBar = new Bar().setUnlocalizedName(ItemNames.SilverBar_Unlo);
-		steelBar = new Bar().setUnlocalizedName(ItemNames.SteelBar_Unlo);
-		goldBar = new Bar().setUnlocalizedName(ItemNames.GoldBar_Unlo);
-		mithrilBar = new Bar().setUnlocalizedName(ItemNames.MithrilBar_Unlo);
-		adamantBar = new Bar().setUnlocalizedName(ItemNames.AdamantBar_Unlo);
-		runeBar = new Bar().setUnlocalizedName(ItemNames.RuneBar_Unlo);
+		bronzeBar = new Bar(ItemNames.BronzeBar_Unlo);
+		ironBar = new Bar(ItemNames.IronBar_Unlo);
+		silverBar = new Bar(ItemNames.SilverBar_Unlo);
+		steelBar = new Bar(ItemNames.SteelBar_Unlo);
+		goldBar = new Bar(ItemNames.GoldBar_Unlo);
+		mithrilBar = new Bar(ItemNames.MithrilBar_Unlo);
+		adamantBar = new Bar(ItemNames.AdamantBar_Unlo);
+		runeBar = new Bar(ItemNames.RuneBar_Unlo);
 
 		spellbook = new SpellBook(ItemNames.SpellBook_Unlo, 1);
+	
+		
 		// Staves
 		staff = new Staff(ItemNames.Staff_Unlo, 1, null, 0, false);
 		staffofair = new Staff(ItemNames.StaffOfAir_Unlo, 1, "air", 1, false);
@@ -145,6 +155,15 @@ public class Items {
 		adamanthatchet = new Hatchet(Materials.adamant, ItemNames.AdamantHatchet_Unlo);
 		runehatchet = new Hatchet(Materials.rune, ItemNames.RuneHatchet_Unlo);
 		
+		//Swords
+		bronzesword = new Sword(Materials.bronze, ItemNames.BronzeSword_Unlo);
+		ironsword = new Sword(Materials.iron, ItemNames.IronSword_Unlo);
+		steelsword = new Sword(Materials.steel, ItemNames.SteelSword_Unlo);
+		blacksword = new Sword(Materials.black, ItemNames.BlackSword_Unlo);
+		mithrilsword = new Sword(Materials.mithril, ItemNames.MithrilSword_Unlo);
+		adamantsword = new Sword(Materials.adamant, ItemNames.AdamantSword_Unlo);
+		runesword = new Sword(Materials.rune, ItemNames.RuneSword_Unlo);
+		
 		//Pickaxes
 		bronzepickaxe = new Pickaxe(Materials.bronze, ItemNames.BronzePickaxe_Unlo);
 		ironpickaxe = new Pickaxe(Materials.iron, ItemNames.IronPickaxe_Unlo);
@@ -157,108 +176,227 @@ public class Items {
 
 	public static void gameRegistery() {
 		// Runes
-		GameRegistry.registerItem(airRune, airRune.getUnlocalizedName());
-		GameRegistry.registerItem(armadylRune, armadylRune.getUnlocalizedName());
-		GameRegistry.registerItem(astralRune, astralRune.getUnlocalizedName());
-		GameRegistry.registerItem(bloodRune, bloodRune.getUnlocalizedName());
-		GameRegistry.registerItem(bodyRune, bodyRune.getUnlocalizedName());
-		GameRegistry.registerItem(chaosRune, chaosRune.getUnlocalizedName());
-		GameRegistry.registerItem(cosmicRune, cosmicRune.getUnlocalizedName());
-		GameRegistry.registerItem(deathRune, deathRune.getUnlocalizedName());
-		GameRegistry.registerItem(dustRune, dustRune.getUnlocalizedName());
-		GameRegistry.registerItem(earthRune, earthRune.getUnlocalizedName());
-		GameRegistry.registerItem(fireRune, fireRune.getUnlocalizedName());
-		GameRegistry.registerItem(lavaRune, lavaRune.getUnlocalizedName());
-		GameRegistry.registerItem(lawRune, lawRune.getUnlocalizedName());
-		GameRegistry.registerItem(mindRune, mindRune.getUnlocalizedName());
-		GameRegistry.registerItem(mistRune, mistRune.getUnlocalizedName());
-		GameRegistry.registerItem(mudRune, mudRune.getUnlocalizedName());
-		GameRegistry.registerItem(natureRune, natureRune.getUnlocalizedName());
-		GameRegistry.registerItem(smokeRune, smokeRune.getUnlocalizedName());
-		GameRegistry.registerItem(soulRune, soulRune.getUnlocalizedName());
-		GameRegistry.registerItem(steamRune, steamRune.getUnlocalizedName());
-		GameRegistry.registerItem(waterRune, waterRune.getUnlocalizedName());
+		GameRegistry.registerItem(airRune, airRune.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(armadylRune, armadylRune.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(astralRune, astralRune.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(bloodRune, bloodRune.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(bodyRune, bodyRune.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(chaosRune, chaosRune.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(cosmicRune, cosmicRune.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(deathRune, deathRune.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(dustRune, dustRune.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(earthRune, earthRune.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(fireRune, fireRune.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(lavaRune, lavaRune.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(lawRune, lawRune.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(mindRune, mindRune.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(mistRune, mistRune.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(mudRune, mudRune.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(natureRune, natureRune.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(smokeRune, smokeRune.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(soulRune, soulRune.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(steamRune, steamRune.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(waterRune, waterRune.getUnlocalizedName().substring(5));
 
-		GameRegistry.registerItem(runeEssence, runeEssence.getUnlocalizedName());
-		GameRegistry.registerItem(pureEssence, pureEssence.getUnlocalizedName());
+		GameRegistry.registerItem(runeEssence, runeEssence.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(pureEssence, pureEssence.getUnlocalizedName().substring(5));
 
 		// Talismans
-		GameRegistry.registerItem(airTalisman, airTalisman.getUnlocalizedName());
-		GameRegistry.registerItem(waterTalisman, waterTalisman.getUnlocalizedName());
-		GameRegistry.registerItem(fireTalisman, fireTalisman.getUnlocalizedName());
-		GameRegistry.registerItem(earthTalisman, earthTalisman.getUnlocalizedName());
-		GameRegistry.registerItem(mindTalisman, mindTalisman.getUnlocalizedName());
-		GameRegistry.registerItem(bodyTalisman, bodyTalisman.getUnlocalizedName());
-		GameRegistry.registerItem(cosmicTalisman, cosmicTalisman.getUnlocalizedName());
-		GameRegistry.registerItem(chaosTalisman, chaosTalisman.getUnlocalizedName());
-		GameRegistry.registerItem(natureTalisman, natureTalisman.getUnlocalizedName());
-		GameRegistry.registerItem(lawTalisman, lawTalisman.getUnlocalizedName());
-		GameRegistry.registerItem(deathTalisman, deathTalisman.getUnlocalizedName());
-		GameRegistry.registerItem(bloodTalisman, bloodTalisman.getUnlocalizedName());
-		GameRegistry.registerItem(astralTalisman, astralTalisman.getUnlocalizedName());
+		GameRegistry.registerItem(airTalisman, airTalisman.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(waterTalisman, waterTalisman.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(fireTalisman, fireTalisman.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(earthTalisman, earthTalisman.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(mindTalisman, mindTalisman.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(bodyTalisman, bodyTalisman.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(cosmicTalisman, cosmicTalisman.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(chaosTalisman, chaosTalisman.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(natureTalisman, natureTalisman.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(lawTalisman, lawTalisman.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(deathTalisman, deathTalisman.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(bloodTalisman, bloodTalisman.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(astralTalisman, astralTalisman.getUnlocalizedName().substring(5));
 
-		GameRegistry.registerItem(airTalismanStaff, airTalismanStaff.getUnlocalizedName());
-		GameRegistry.registerItem(waterTalismanStaff, waterTalismanStaff.getUnlocalizedName());
-		GameRegistry.registerItem(fireTalismanStaff, fireTalismanStaff.getUnlocalizedName());
-		GameRegistry.registerItem(earthTalismanStaff, earthTalismanStaff.getUnlocalizedName());
-		GameRegistry.registerItem(mindTalismanStaff, mindTalismanStaff.getUnlocalizedName());
-		GameRegistry.registerItem(bodyTalismanStaff, bodyTalismanStaff.getUnlocalizedName());
-		GameRegistry.registerItem(cosmicTalismanStaff, cosmicTalismanStaff.getUnlocalizedName());
-		GameRegistry.registerItem(chaosTalismanStaff, chaosTalismanStaff.getUnlocalizedName());
-		GameRegistry.registerItem(natureTalismanStaff, natureTalismanStaff.getUnlocalizedName());
-		GameRegistry.registerItem(lawTalismanStaff, lawTalismanStaff.getUnlocalizedName());
-		GameRegistry.registerItem(deathTalismanStaff, deathTalismanStaff.getUnlocalizedName());
-		GameRegistry.registerItem(bloodTalismanStaff, bloodTalismanStaff.getUnlocalizedName());
+		GameRegistry.registerItem(airTalismanStaff, airTalismanStaff.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(waterTalismanStaff, waterTalismanStaff.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(fireTalismanStaff, fireTalismanStaff.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(earthTalismanStaff, earthTalismanStaff.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(mindTalismanStaff, mindTalismanStaff.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(bodyTalismanStaff, bodyTalismanStaff.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(cosmicTalismanStaff, cosmicTalismanStaff.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(chaosTalismanStaff, chaosTalismanStaff.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(natureTalismanStaff, natureTalismanStaff.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(lawTalismanStaff, lawTalismanStaff.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(deathTalismanStaff, deathTalismanStaff.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(bloodTalismanStaff, bloodTalismanStaff.getUnlocalizedName().substring(5));
 
 		// Ores
-		GameRegistry.registerItem(adamantiteOre, adamantiteOre.getUnlocalizedName());
-		GameRegistry.registerItem(coalOre, coalOre.getUnlocalizedName());
-		GameRegistry.registerItem(copperOre, copperOre.getUnlocalizedName());
-		GameRegistry.registerItem(goldOre, goldOre.getUnlocalizedName());
-		GameRegistry.registerItem(ironOre, ironOre.getUnlocalizedName());
-		GameRegistry.registerItem(mithrilOre, mithrilOre.getUnlocalizedName());
-		GameRegistry.registerItem(runiteOre, runiteOre.getUnlocalizedName());
-		GameRegistry.registerItem(silverOre, silverOre.getUnlocalizedName());
-		GameRegistry.registerItem(tinOre, tinOre.getUnlocalizedName());
+		/*GameRegistry.registerItem(adamantiteOre, adamantiteOre.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(coalOre, coalOre.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(copperOre, copperOre.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(goldOre, goldOre.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ironOre, ironOre.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(mithrilOre, mithrilOre.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(runiteOre, runiteOre.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(silverOre, silverOre.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(tinOre, tinOre.getUnlocalizedName().substring(5));*/
 
 		// Bars
-		GameRegistry.registerItem(bronzeBar, bronzeBar.getUnlocalizedName());
-		GameRegistry.registerItem(ironBar, ironBar.getUnlocalizedName());
-		GameRegistry.registerItem(silverBar, silverBar.getUnlocalizedName());
-		GameRegistry.registerItem(steelBar, steelBar.getUnlocalizedName());
-		GameRegistry.registerItem(goldBar, goldBar.getUnlocalizedName());
-		GameRegistry.registerItem(mithrilBar, mithrilBar.getUnlocalizedName());
-		GameRegistry.registerItem(adamantBar, adamantBar.getUnlocalizedName());
-		GameRegistry.registerItem(runeBar, runeBar.getUnlocalizedName());
+		GameRegistry.registerItem(bronzeBar, bronzeBar.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ironBar, ironBar.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(silverBar, silverBar.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(steelBar, steelBar.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(goldBar, goldBar.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(mithrilBar, mithrilBar.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(adamantBar, adamantBar.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(runeBar, runeBar.getUnlocalizedName().substring(5));
 
-		GameRegistry.registerItem(spellbook, spellbook.getUnlocalizedName());
+		GameRegistry.registerItem(spellbook, spellbook.getUnlocalizedName().substring(5));
+		
+		//GameRegistry.registerItem(philosophersstone, philosophersstone.getUnlocalizedName());
 
 		// Staves
-		GameRegistry.registerItem(staff, staff.getUnlocalizedName());
-		GameRegistry.registerItem(staffofair, staffofair.getUnlocalizedName());
-		GameRegistry.registerItem(staffofwater, staffofwater.getUnlocalizedName());
-		GameRegistry.registerItem(staffofearth, staffofearth.getUnlocalizedName());
-		GameRegistry.registerItem(staffoffire, staffoffire.getUnlocalizedName());
+		GameRegistry.registerItem(staff, staff.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(staffofair, staffofair.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(staffofwater, staffofwater.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(staffofearth, staffofearth.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(staffoffire, staffoffire.getUnlocalizedName().substring(5));
 
 		// Hatchet
-		GameRegistry.registerItem(bronzehatchet, bronzehatchet.getUnlocalizedName());
-		GameRegistry.registerItem(ironhatchet, ironhatchet.getUnlocalizedName());
-		GameRegistry.registerItem(steelhatchet, steelhatchet.getUnlocalizedName());
-		GameRegistry.registerItem(blackhatchet, blackhatchet.getUnlocalizedName());
-		GameRegistry.registerItem(mithrilhatchet, mithrilhatchet.getUnlocalizedName());
-		GameRegistry.registerItem(adamanthatchet, adamanthatchet.getUnlocalizedName());
-		GameRegistry.registerItem(runehatchet, runehatchet.getUnlocalizedName());
-
+		GameRegistry.registerItem(bronzehatchet, bronzehatchet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ironhatchet, ironhatchet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(steelhatchet, steelhatchet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(blackhatchet, blackhatchet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(mithrilhatchet, mithrilhatchet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(adamanthatchet, adamanthatchet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(runehatchet, runehatchet.getUnlocalizedName().substring(5));
+		
+		//Sword
+		GameRegistry.registerItem(bronzesword, bronzesword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ironsword, ironsword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(steelsword, steelsword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(blacksword, blacksword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(mithrilsword, mithrilsword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(adamantsword, adamantsword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(runesword, runesword.getUnlocalizedName().substring(5));
+		
 		//Pickaxes
-		GameRegistry.registerItem(bronzepickaxe, bronzepickaxe.getUnlocalizedName());
-		GameRegistry.registerItem(ironpickaxe, ironpickaxe.getUnlocalizedName());
-		GameRegistry.registerItem(steelpickaxe, steelpickaxe.getUnlocalizedName());
-		GameRegistry.registerItem(mithrilpickaxe, mithrilpickaxe.getUnlocalizedName());
-		GameRegistry.registerItem(adamantpickaxe, adamantpickaxe.getUnlocalizedName());
-		GameRegistry.registerItem(runepickaxe, runepickaxe.getUnlocalizedName());
+		GameRegistry.registerItem(bronzepickaxe, bronzepickaxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ironpickaxe, ironpickaxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(steelpickaxe, steelpickaxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(mithrilpickaxe, mithrilpickaxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(adamantpickaxe, adamantpickaxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(runepickaxe, runepickaxe.getUnlocalizedName().substring(5));
 		
 	}
+	
+	
+	
+	public static void registerRenders(){
+		registerRender(airTalismanStaff);
+		registerRender(waterTalismanStaff);
+		registerRender(fireTalismanStaff);
+		registerRender(earthTalismanStaff);
+		registerRender(mindTalismanStaff);
+		registerRender(bodyTalismanStaff);
+		registerRender(cosmicTalismanStaff);
+		registerRender(chaosTalismanStaff);
+		registerRender(natureTalismanStaff);
+		registerRender(lawTalismanStaff);
+		registerRender(deathTalismanStaff);
+		registerRender(bloodTalismanStaff);
+		registerRender(adamantiteOre);
+		registerRender(coalOre);
+		registerRender(copperOre);
+		registerRender(goldOre);
+		registerRender(ironOre);
+		registerRender(mithrilOre);
+		registerRender(runiteOre);
+		registerRender(silverOre);
+		registerRender(tinOre);
+		registerRender(spellbook);
+		registerRender(bronzeBar);
+		registerRender(ironBar);
+		registerRender(silverBar);
+		registerRender(steelBar);
+		registerRender(goldBar);
+		registerRender(mithrilBar);
+		registerRender(adamantBar);
+		registerRender(runeBar);
+		registerRender(staff);
+		registerRender(staffofair);
+		registerRender(staffofwater);
+		registerRender(staffofearth);
+		registerRender(staffoffire);
+		registerRender(bronzehatchet);
+		registerRender(ironhatchet);
+		registerRender(steelhatchet);
+		registerRender(blackhatchet);
+		registerRender(mithrilhatchet);
+		registerRender(adamanthatchet);
+		registerRender(runehatchet);
+		registerRender(airRune);
+		registerRender(armadylRune);
+		registerRender(astralRune);
+		registerRender(bloodRune);
+		registerRender(bodyRune);
+		registerRender(chaosRune);
+		registerRender(cosmicRune);
+		registerRender(deathRune);
+		registerRender(dustRune);
+		registerRender(earthRune);
+		registerRender(fireRune);
+		registerRender(lavaRune);
+		registerRender(lawRune);
+		registerRender(mindRune);
+		registerRender(mistRune);
+		registerRender(mudRune);
+		registerRender(natureRune);
+		registerRender(smokeRune);
+		registerRender(soulRune);
+		registerRender(steamRune);
+		registerRender(waterRune);
+		registerRender(runeEssence);
+		registerRender(pureEssence);
+		registerRender(airTalisman);
+		registerRender(waterTalisman);
+		registerRender(fireTalisman);
+		registerRender(earthTalisman);
+		registerRender(mindTalisman);
+		registerRender(bodyTalisman);
+		registerRender(cosmicTalisman);
+		registerRender(chaosTalisman);
+		registerRender(natureTalisman);
+		registerRender(lawTalisman);
+		registerRender(deathTalisman);
+		registerRender(bloodTalisman);
+		registerRender(astralTalisman);
+		//registerRender(soulTalisman);
+		registerRender(bronzepickaxe);
+		registerRender(ironpickaxe);
+		registerRender(steelpickaxe);
+		registerRender(mithrilpickaxe);
+		registerRender(adamantpickaxe);
+		registerRender(runepickaxe);
+		
+		//Sword
+		registerRender(bronzesword);
+		registerRender(ironsword);
+		registerRender(steelsword);
+		registerRender(blacksword);
+		registerRender(mithrilsword);
+		registerRender(adamantsword);
+		registerRender(runesword);
+		
+		
+	}
+	
+	
+	public static void registerRender(Item item){
+		
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+	}
 
+	
 	public static void craftingRecipes() {
 		// Talismans
 		GameRegistry.addShapelessRecipe(new ItemStack(airTalisman), airRune, Item.getItemById(280));

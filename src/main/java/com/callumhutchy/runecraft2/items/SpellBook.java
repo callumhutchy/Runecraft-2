@@ -11,7 +11,7 @@ public class SpellBook extends BaseMagicItem {
 
 	public SpellBook(String unlocalisedName, int maxSize) {
 		super(unlocalisedName, maxSize);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player)

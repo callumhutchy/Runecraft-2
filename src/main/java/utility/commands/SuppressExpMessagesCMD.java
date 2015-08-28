@@ -10,7 +10,7 @@ import net.minecraft.util.ChatComponentText;
 public class SuppressExpMessagesCMD extends CommandBase {
 
 	@Override
-	public String getCommandName() {
+	public String getName() {
 		
 		return "suppressexp";
 	}
@@ -22,7 +22,7 @@ public class SuppressExpMessagesCMD extends CommandBase {
 	}
 
 	@Override
-	public void processCommand(ICommandSender icommandsender, String[] string) {
+	public void execute(ICommandSender icommandsender, String[] string) {
 		if(icommandsender instanceof EntityPlayer){
 			EntityPlayer player = (EntityPlayer) icommandsender;
 			ExtendedPlayer props = ExtendedPlayer.get(player);

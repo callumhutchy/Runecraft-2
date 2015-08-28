@@ -1,5 +1,7 @@
 package reference;
 
+import net.minecraftforge.fml.common.registry.GameRegistry;
+
 import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityAnvil;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRCFurnace;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.altars.TileEntityAirAltar;
@@ -37,10 +39,7 @@ import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityRun
 import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityRuniteOre;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntitySilverOre;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.ores.TileEntityTinOre;
-import com.callumhutchy.runecraft2.client.gui.tileentities.TileEntityRCFurnaceGui;
 import com.callumhutchy.runecraft2.client.gui.tileentities.TileEntitySkills;
-
-import cpw.mods.fml.common.registry.GameRegistry;
 
 public class TileEntities {
 

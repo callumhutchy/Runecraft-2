@@ -1,17 +1,13 @@
 package handler;
 
-import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
-
-import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRCFurnace;
-import com.callumhutchy.runecraft2.proxy.CommonProxy;
-
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
 import net.minecraftforge.common.IExtendedEntityProperties;
+
+import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRCFurnace;
+import com.callumhutchy.runecraft2.proxy.CommonProxy;
 
 public class ExtendedPlayer implements IExtendedEntityProperties {
 
@@ -217,7 +213,7 @@ public class ExtendedPlayer implements IExtendedEntityProperties {
 	}
 
 	private static String getSaveKey(EntityPlayer player) {
-		String username = player.getCommandSenderName();
+		String username = player.getCommandSenderEntity().getName();
 		return username + ":" + EXT_PROP_NAME;
 	}
 

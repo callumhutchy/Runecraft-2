@@ -2,41 +2,32 @@ package com.callumhutchy.runecraft2.client.gui;
 
 import handler.ConfigurationHandler;
 import handler.ExtendedPlayer;
-import handler.Runecraft2EventHandler;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Formatter;
 import java.util.Locale;
 
+import net.minecraft.client.gui.GuiButton;
+import net.minecraft.client.gui.GuiTextField;
+import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.ChatComponentText;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
 
-import reference.ExpChart;
 import reference.OreTimes;
 
 import com.callumhutchy.runecraft2.blocks.containers.ContainerRCFurnace;
 import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRCFurnace;
-import com.callumhutchy.runecraft2.client.gui.GuiSpellBook.FontCodes;
 import com.callumhutchy.runecraft2.items.Items;
-
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiButton;
-import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.client.gui.GuiTextField;
-import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.entity.item.EntityItem;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.ChatComponentText;
-import net.minecraft.util.IChatComponent;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.World;
 
 @SideOnly(Side.CLIENT)
 public class GuiRCFurnace extends GuiContainer {
@@ -142,12 +133,12 @@ public class GuiRCFurnace extends GuiContainer {
 		buttonList.add(rightBtn = new GuiButton(8, xStart + 223, yStart + 87, ">"));
 
 		buttonList.add(leftBtn = new GuiButton(9, xStart + 223, yStart + 109, "<"));
-		this.craftAmount = new GuiTextField(this.fontRendererObj, xStart + 6, yStart + 111, 30, 20);
+		this.craftAmount = new GuiTextField(xStart, this.fontRendererObj, xStart + 6, yStart + 111, 30, 20);
 		this.craftAmount.setFocused(true);
 		this.craftAmount.setMaxStringLength(3);
 		this.craftAmount.setText("");
 
-		this.craftTime = new GuiTextField(this.fontRendererObj, xStart + 60, yStart + 111, 60, 20);
+		this.craftTime = new GuiTextField(xStart, this.fontRendererObj, xStart + 60, yStart + 111, 60, 20);
 
 	}
 
@@ -2286,11 +2277,13 @@ public class GuiRCFurnace extends GuiContainer {
 		// render the foreground text
 		int lineCount = 0;
 		for (String s : tooltipArray) {
-			mc.fontRenderer.drawStringWithShadow(s, tooltipX + 2, tooltipY + 2 + lineCount * LINE_HEIGHT, 0xFFFFFF);
+			mc.fontRendererObj.drawString(s, tooltipX + 2, tooltipY + 2 + lineCount * LINE_HEIGHT, 0xFFFFFF);
 			lineCount++;
 		}
 	}
 
+	
+	
 	/**
 	 * Converts a String representation of a tooltip into a String[], and also
 	 * decodes any font codes used.
@@ -2310,7 +2303,7 @@ public class GuiRCFurnace extends GuiContainer {
 			String[] tooltipWords = section.split(" ");
 
 			for (int i = 0; i < tooltipWords.length; i++) {
-				int lineWidthWithNextWord = mc.fontRenderer.getStringWidth(tooltip + tooltipWords[i]);
+				int lineWidthWithNextWord = mc.fontRendererObj.getStringWidth(tooltip + tooltipWords[i]);
 				if (lineWidthWithNextWord > tooltipMaxWidth) {
 					tooltipArrayList.add(tooltip.trim());
 					tooltip = tooltipWords[i] + " ";
@@ -2350,7 +2343,7 @@ public class GuiRCFurnace extends GuiContainer {
 	private int GetTooltipWidth(String[] tooltipArray) {
 		int longestWidth = 0;
 		for (String s : tooltipArray) {
-			int width = mc.fontRenderer.getStringWidth(s);
+			int width = mc.fontRendererObj.getStringWidth(s);
 			if (width > longestWidth)
 				longestWidth = width;
 		}
@@ -2364,7 +2357,7 @@ public class GuiRCFurnace extends GuiContainer {
 	 * @return
 	 */
 	private int GetTooltipHeight(String[] tooltipArray) {
-		int tooltipHeight = mc.fontRenderer.FONT_HEIGHT - 2;
+		int tooltipHeight = mc.fontRendererObj.FONT_HEIGHT - 2;
 		if (tooltipArray.length > 1) {
 			tooltipHeight += (tooltipArray.length - 1) * LINE_HEIGHT;
 		}
@@ -2983,8 +2976,12 @@ public class GuiRCFurnace extends GuiContainer {
 			System.out.printf(sb.toString());
 			System.out.println();
 			this.craftTime.setText(sb.toString());
+			
+			formatter.close();
 
 		}
 	}
 
+	
+	
 }
