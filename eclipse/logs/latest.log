@@ -1,8 +1,0 @@
-[01:25:54] [Client thread/INFO]: Setting user: Player75
-[01:25:57] [Client thread/INFO]: LWJGL Version: 2.9.1
-[01:26:01] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
-[01:26:02] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[01:26:02] [Thread-7/INFO]: Initializing LWJGL OpenAL
-[01:26:02] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[01:26:03] [Thread-7/INFO]: OpenAL initialized.
-[01:26:03] [Sound Library Loader/INFO]: Sound engine started
