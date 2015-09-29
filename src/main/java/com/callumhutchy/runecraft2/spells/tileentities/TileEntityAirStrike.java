@@ -5,6 +5,9 @@ import java.util.List;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.projectile.EntityArrow;
+import net.minecraft.entity.projectile.EntityFireball;
+import net.minecraft.entity.projectile.EntitySnowball;
 import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.AxisAlignedBB;
@@ -15,17 +18,25 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
 
-public class TileEntityAirStrike extends EntityThrowable{
+public class TileEntityAirStrike extends EntityFireball{
 
-    public TileEntityAirStrike(World worldIn, double x, double y, double p_i1778_6_) {
-	super(worldIn, x, y, p_i1778_6_);
-	// TODO Auto-generated constructor stub
-    }
-
-    @Override
-    protected void onImpact(MovingObjectPosition p_70184_1_) {
-	// TODO Auto-generated method stub
+	public TileEntityAirStrike(World worldIn) {
+		super(worldIn);
+		// TODO Auto-generated constructor stub
+	}
 	
-    }
+	
+	public TileEntityAirStrike(World world, EntityLivingBase player){
+		super(world, player,0, 0, 0);
+		
+	}
+
+
+	@Override
+	protected void onImpact(MovingObjectPosition movingObject) {
+		// TODO Auto-generated method stub
+		
+	}
+	
   
 }

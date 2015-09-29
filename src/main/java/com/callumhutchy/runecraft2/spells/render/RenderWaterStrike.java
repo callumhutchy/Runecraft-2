@@ -10,11 +10,11 @@ import org.lwjgl.opengl.GL11;
 import com.callumhutchy.runecraft2.spells.models.StrikeModel;
 
 public class RenderWaterStrike  extends Render {
+	
 	private StrikeModel						model;
 
 	public final ResourceLocation	waterstrikeTextures	= new ResourceLocation("runecraft2:textures/entity/WaterStrikeTexture.png");
 	
-
 	public RenderWaterStrike(RenderManager renderManager) {
 		super(renderManager);
 		model = new StrikeModel();

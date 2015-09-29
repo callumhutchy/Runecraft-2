@@ -11,20 +11,16 @@ import org.lwjgl.opengl.GL11;
 
 import com.callumhutchy.runecraft2.spells.models.StrikeModel;
 
-@SideOnly(Side.CLIENT)
 public class RenderAirStrike extends Render {
-
-	public RenderAirStrike(RenderManager renderManagerVar) {
-		super(renderManagerVar);
-		model = new StrikeModel();
-	}
 
 	private StrikeModel						model;
 
 	public final ResourceLocation	airstrikeTextures	= new ResourceLocation("runecraft2:textures/entity/AirStrikeTexture.png");
 	
-
-
+	public RenderAirStrike(RenderManager renderManagerVar) {
+		super(renderManagerVar);
+		model = new StrikeModel();
+	}
 
 	@Override
 	public void doRender(Entity entity, double x, double y, double z, float rx, float ry) {

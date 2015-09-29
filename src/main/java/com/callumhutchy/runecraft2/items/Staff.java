@@ -43,7 +43,7 @@ public class Staff extends BaseMagicItem {
 		world.playSoundAtEntity(player, "random.bow", 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
 		if (!world.isRemote) {
 
-		    world.spawnEntityInWorld(new TileEntityAirStrike(world, runesProvided, runesProvided, runesProvided));
+		    world.spawnEntityInWorld(new TileEntityAirStrike(world, player));
 		    props.currentMagicExp += ExpChart.AIR_STRIKE_EXP;
 
 		    if (!props.suppressExpMessages) {

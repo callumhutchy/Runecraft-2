@@ -39,7 +39,7 @@ public class TalismanStaff extends Staff {
 				if (player.capabilities.isCreativeMode || runesProvided >= 1 && staffElement == "air" || player.inventory.consumeInventoryItem(Items.airRune)) {
 					world.playSoundAtEntity(player, "random.bow", 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
 					if (!world.isRemote) {
-						world.spawnEntityInWorld(new TileEntityAirStrike(world, runesProvided, runesProvided, runesProvided));
+						world.spawnEntityInWorld(new TileEntityAirStrike(world, player));
 						props.currentMagicExp += ExpChart.AIR_STRIKE_EXP;
 						if (!props.suppressExpMessages) {
 							Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("Your Magic increased by " + ExpChart.AIR_STRIKE_EXP));
