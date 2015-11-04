@@ -15,14 +15,21 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
 
-public class TileEntityFireStrike extends EntityArrow{
+public class TileEntityFireStrike extends TileEntitySpellStrike {
 
-	public TileEntityFireStrike(World worldIn) {
-		super(worldIn);
-		// TODO Auto-generated constructor stub
-	}
-	public TileEntityFireStrike(World worldIn, EntityLivingBase player, float var){
-		super(worldIn, player, var );
-		
-	}
+	
+	public TileEntityFireStrike(World par1World)
+    {
+        super(par1World);
+    }
+
+    public TileEntityFireStrike(World par1World, EntityLivingBase par2EntityLivingBase, String strike)
+    {
+        super(par1World, par2EntityLivingBase, strike);
+    }
+
+    public TileEntityFireStrike(World par1World, double par2, double par4, double par6)
+    {
+        super(par1World, par2, par4, par6);
+    }
 }

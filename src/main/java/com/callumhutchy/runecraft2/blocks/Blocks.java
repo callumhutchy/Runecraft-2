@@ -70,18 +70,18 @@ public class Blocks {
 		AstralRuneAltar = new Altar(Material.rock, "runecraft2:textures/blocks/astralrunealtar.png", BlockNames.AstralRuneAltar_Unlo, "astralrunealtar");
 
 		// Ores
-		CopperOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/copperore.png", BlockNames.CopperOre_Unlo, Items.copperOre, "copperore");
-		TinOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/tinore.png", BlockNames.TinOre_Unlo, Items.tinOre, "tinore");
-		AdamantiteOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/adamantiteore.png", BlockNames.AdamantiteOre_Unlo, Items.adamantiteOre, "adamantiteore");
-		CoalOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/coalore.png", BlockNames.CoalOre_Unlo, Items.coalOre, "coalore");
-		GoldOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/goldore.png", BlockNames.GoldOre_Unlo, Items.goldOre, "goldore");
-		IronOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/ironore.png", BlockNames.IronOre_Unlo, Items.ironOre, "ironore");
-		MithrilOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/mithrilore.png", BlockNames.MithrilOre_Unlo, Items.mithrilOre, "mithrilore");
-		RuniteOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/runiteore.png", BlockNames.RuniteOre_Unlo, Items.runiteOre, "runiteore");
-		SilverOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/silverore.png", BlockNames.SilverOre_Unlo, Items.silverOre, "silverore");
+		CopperOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/copperore.png", BlockNames.CopperOre_Unlo, Items.copperOre, 0, 1, 1, "copperore");
+		TinOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/tinore.png", BlockNames.TinOre_Unlo, Items.tinOre, 0,1,1, "tinore");
+		AdamantiteOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/adamantiteore.png", BlockNames.AdamantiteOre_Unlo, Items.adamantiteOre, 0,1,1,  "adamantiteore");
+		CoalOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/coalore.png", BlockNames.CoalOre_Unlo, Items.coalOre,  0,1,1, "coalore");
+		GoldOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/goldore.png", BlockNames.GoldOre_Unlo, Items.goldOre,  0,1,1, "goldore");
+		IronOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/ironore.png", BlockNames.IronOre_Unlo, Items.ironOre,  0,1,1, "ironore");
+		MithrilOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/mithrilore.png", BlockNames.MithrilOre_Unlo, Items.mithrilOre, 0,1,1,  "mithrilore");
+		RuniteOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/runiteore.png", BlockNames.RuniteOre_Unlo, Items.runiteOre, 0,1,1,  "runiteore");
+		SilverOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/silverore.png", BlockNames.SilverOre_Unlo, Items.silverOre, 0,1,1,  "silverore");
 
-		RuneEssenceOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/runeessenceore.png", BlockNames.RuneEssenceOre_Unlo, Items.runeEssence, "runeessenceore");
-		PureEssenceOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/pureessenceore.png", BlockNames.PureEssenceOre_Unlo, Items.pureEssence, "pureessenceore");
+		RuneEssenceOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/runeessenceore.png", BlockNames.RuneEssenceOre_Unlo, Items.runeEssence, 0,2,4,  "runeessenceore");
+		PureEssenceOre = new OreBlock(Material.rock, "runecraft2:textures/blocks/pureessenceore.png", BlockNames.PureEssenceOre_Unlo, Items.pureEssence,  0,2,4, "pureessenceore");
 
 		RCFurnace = new RCFurnace(Material.iron, BlockNames.RCFurnace_Unlo);
 		Anvil= new Anvil(Material.iron, BlockNames.Anvil_Unlo);

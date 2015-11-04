@@ -16,15 +16,21 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
 
-public class TileEntityWaterStrike extends EntityArrow{
+public class TileEntityWaterStrike extends TileEntitySpellStrike {
 
-	public TileEntityWaterStrike(World worldIn) {
-		super(worldIn);
-		// TODO Auto-generated constructor stub
-	}
 	
-	public TileEntityWaterStrike(World worldIn, EntityLivingBase player, float var){
-		super(worldIn, player, var );
-		
-	}
+	public TileEntityWaterStrike(World par1World)
+    {
+        super(par1World);
+    }
+
+    public TileEntityWaterStrike(World par1World, EntityLivingBase par2EntityLivingBase, String strike)
+    {
+        super(par1World, par2EntityLivingBase, strike);
+    }
+
+    public TileEntityWaterStrike(World par1World, double par2, double par4, double par6)
+    {
+        super(par1World, par2, par4, par6);
+    }
 }

@@ -42,7 +42,7 @@ public class AltarWorldGeneratorRunecraft2 implements IWorldGenerator {
 		
 		
 		int rand = randInt(1, 6);
-		//if (ConfigurationHandler.altarWorldGen) {
+		if (ConfigurationHandler.altarWorldGen) {
 			if (rand == 1) {
 				int whichAltar = randInt(1, 4);
 				Block altar;
@@ -63,41 +63,10 @@ public class AltarWorldGeneratorRunecraft2 implements IWorldGenerator {
 				      altar = Blocks.AirAltar;
 				}
 				(new WorldGenAirAltar()).generate(world, random,new BlockPos( Xcoord, Ycoord, Zcoord), altar);
-//				world.setBlock(blockX + 5 + random.nextInt(4), Ycoord	,blockZ + 5 + random.nextInt(4), Blocks.RuneEssenceOre);
-//				world.setBlock(blockX + 5 + random.nextInt(4), Ycoord	,blockZ + 5 + random.nextInt(4), Blocks.RuneEssenceOre);
-				(new WorldGenOre()).generate(world, random, new BlockPos(blockX + 5 + random.nextInt(4), Ycoord, blockZ + 5 + random.nextInt(4)));
-				(new WorldGenOre()).generate(world, random, new BlockPos(blockX + 5 + random.nextInt(4), Ycoord, blockZ + 5 + random.nextInt(4)));
 				
-				/*if (whichAltar == 1 && earth == false && fire == false && water == false) {
-					(new WorldGenAirAltar()).generate(world, random,new BlockPos( Xcoord, Ycoord, Zcoord));
-//					world.setBlock(blockX + 5 + random.nextInt(4), Ycoord	,blockZ + 5 + random.nextInt(4), Blocks.RuneEssenceOre);
-//					world.setBlock(blockX + 5 + random.nextInt(4), Ycoord	,blockZ + 5 + random.nextInt(4), Blocks.RuneEssenceOre);
-					(new WorldGenOre()).generate(world, random, new BlockPos(blockX + 5 + random.nextInt(4), Ycoord, blockZ + 5 + random.nextInt(4)));
-					(new WorldGenOre()).generate(world, random, new BlockPos(blockX + 5 + random.nextInt(4), Ycoord, blockZ + 5 + random.nextInt(4)));
-					air = true;
-					
-				}
-				if (whichAltar == 2 && air == false && fire == false && water == false) {
-					(new WorldGenEarthAltar()).generate(world, random, new BlockPos(Xcoord, Ycoord, Zcoord));
-					(new WorldGenOre()).generate(world, random,new BlockPos( blockX + 5 + random.nextInt(4), Ycoord, blockZ + 5 + random.nextInt(4)));
-					(new WorldGenOre()).generate(world, random, new BlockPos(blockX + 5 + random.nextInt(4), Ycoord, blockZ + 5 + random.nextInt(4)));
-					earth = true;
-				}
-				if (whichAltar == 3 && air == false && earth == false && water == false) {
-					(new WorldGenFireAltar()).generate(world, random, new BlockPos(Xcoord, Ycoord, Zcoord));
-					(new WorldGenOre()).generate(world, random,new BlockPos( blockX + 5 + random.nextInt(4), Ycoord, blockZ + 5 + random.nextInt(4)));
-					(new WorldGenOre()).generate(world, random, new BlockPos(blockX + 5 + random.nextInt(4), Ycoord, blockZ + 5 + random.nextInt(4)));
-					fire = true;
-				}
-				if (whichAltar == 4 && air == false && earth == false && fire == false) {
-					(new WorldGenWaterAltar()).generate(world, random,new BlockPos( Xcoord, Ycoord, Zcoord));
-					(new WorldGenOre()).generate(world, random,new BlockPos( blockX + 5 + random.nextInt(4), Ycoord, blockZ + 5 + random.nextInt(4)));
-					(new WorldGenOre()).generate(world, random, new BlockPos(blockX + 5 + random.nextInt(4), Ycoord, blockZ + 5 + random.nextInt(4)));
-					water = true;
-				}
-*/
+				
 			}
-		//}
+		}
 
 	}
 

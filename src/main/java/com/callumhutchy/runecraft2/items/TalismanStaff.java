@@ -13,6 +13,7 @@ import reference.ExpChart;
 import com.callumhutchy.runecraft2.spells.tileentities.TileEntityAirStrike;
 import com.callumhutchy.runecraft2.spells.tileentities.TileEntityEarthStrike;
 import com.callumhutchy.runecraft2.spells.tileentities.TileEntityFireStrike;
+import com.callumhutchy.runecraft2.spells.tileentities.TileEntitySpellStrike;
 import com.callumhutchy.runecraft2.spells.tileentities.TileEntityWaterStrike;
 
 public class TalismanStaff extends Staff {
@@ -39,7 +40,7 @@ public class TalismanStaff extends Staff {
 				if (player.capabilities.isCreativeMode || runesProvided >= 1 && staffElement == "air" || player.inventory.consumeInventoryItem(Items.airRune)) {
 					world.playSoundAtEntity(player, "random.bow", 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
 					if (!world.isRemote) {
-						world.spawnEntityInWorld(new TileEntityAirStrike(world, player));
+						world.spawnEntityInWorld(new TileEntitySpellStrike(world, player, "air"));
 						props.currentMagicExp += ExpChart.AIR_STRIKE_EXP;
 						if (!props.suppressExpMessages) {
 							Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("Your Magic increased by " + ExpChart.AIR_STRIKE_EXP));
@@ -58,7 +59,7 @@ public class TalismanStaff extends Staff {
 					world.playSoundAtEntity(player, "random.bow", 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
 					if (!world.isRemote) {
 
-						world.spawnEntityInWorld(new TileEntityWaterStrike(world, player, 1));
+						world.spawnEntityInWorld(new TileEntitySpellStrike(world, player, "water" ));
 						props.currentMagicExp++;
 						if (!props.suppressExpMessages) {
 							Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("Your Magic increased by " + ExpChart.WATER_STRIKE_EXP));
@@ -73,7 +74,7 @@ public class TalismanStaff extends Staff {
 					world.playSoundAtEntity(player, "random.bow", 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
 					if (!world.isRemote) {
 
-						world.spawnEntityInWorld(new TileEntityEarthStrike(world, player,1 ));
+						world.spawnEntityInWorld(new TileEntitySpellStrike(world, player, "earth" ));
 						props.currentMagicExp++;
 						if (!props.suppressExpMessages) {
 							Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("Your Magic increased by " + ExpChart.EARTH_STRIKE_EXP));
@@ -87,7 +88,7 @@ public class TalismanStaff extends Staff {
 					world.playSoundAtEntity(player, "random.bow", 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
 					if (!world.isRemote) {
 
-						world.spawnEntityInWorld(new TileEntityFireStrike(world, player, 1));
+						world.spawnEntityInWorld(new TileEntitySpellStrike(world, player, "fire"));
 						props.currentMagicExp++;
 						if (!props.suppressExpMessages) {
 							Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("Your Magic increased by " + ExpChart.FIRE_STRIKE_EXP));

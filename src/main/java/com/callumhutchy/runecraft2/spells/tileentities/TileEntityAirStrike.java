@@ -18,25 +18,21 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
 
-public class TileEntityAirStrike extends EntityFireball{
+public class TileEntityAirStrike extends TileEntitySpellStrike {
 
-	public TileEntityAirStrike(World worldIn) {
-		super(worldIn);
-		// TODO Auto-generated constructor stub
-	}
 	
-	
-	public TileEntityAirStrike(World world, EntityLivingBase player){
-		super(world, player,0, 0, 0);
-		
-	}
+	public TileEntityAirStrike(World par1World)
+    {
+        super(par1World);
+    }
 
+    public TileEntityAirStrike(World par1World, EntityLivingBase par2EntityLivingBase, String strike)
+    {
+        super(par1World, par2EntityLivingBase, strike);
+    }
 
-	@Override
-	protected void onImpact(MovingObjectPosition movingObject) {
-		// TODO Auto-generated method stub
-		
-	}
-	
-  
+    public TileEntityAirStrike(World par1World, double par2, double par4, double par6)
+    {
+        super(par1World, par2, par4, par6);
+    }
 }
