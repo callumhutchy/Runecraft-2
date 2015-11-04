@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="net.minecraft.entity.projectile.EntityArrow"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.projectile.EntitySnowball"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.projectile.EntityFireball"/>
+<fullyQualifiedTypeName name="reference.Reference"/>
+<fullyQualifiedTypeName name="handler.ConfigurationHandler"/>
+<fullyQualifiedTypeName name="net.minecraftforge.common.config.ConfigElement"/>
+<fullyQualifiedTypeName name="net.minecraftforge.common.config.Configuration"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.spells.tileentities.TileEntitySpellStrike"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+<fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.spells.tileentities.TileEntityAirStrike"/>
+<fullyQualifiedTypeName name="com.jcraft.jorbis.Block"/>
+<fullyQualifiedTypeName name="net.minecraft.block.BlockAir"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
+<fullyQualifiedTypeName name="net.minecraft.world.gen.feature.WorldGenMinable"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.Blocks"/>
+</qualifiedTypeNameHistroy>

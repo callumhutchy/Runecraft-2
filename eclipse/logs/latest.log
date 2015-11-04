@@ -1,0 +1,60 @@
+[14:02:39] [Client thread/INFO]: Setting user: Player922
+[14:02:43] [Client thread/INFO]: LWJGL Version: 2.9.1
+[14:02:52] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
+[14:02:52] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[14:02:53] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[14:02:53] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[14:02:53] [Thread-9/INFO]: OpenAL initialized.
+[14:02:53] [Sound Library Loader/INFO]: Sound engine started
+[14:03:06] [Client thread/WARN]: Texture runecraft2:textures/items/bronzesword.png with size 250x250 limits mip level from 4 to 1
+[14:03:14] [Client thread/INFO]: Created: 4096x2048 textures-atlas
+[14:03:19] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
+[14:03:19] [Client thread/INFO]: SoundSystem shutting down...
+[14:03:19] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[14:03:19] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[14:03:19] [Thread-11/INFO]: Initializing LWJGL OpenAL
+[14:03:19] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[14:03:19] [Thread-11/INFO]: OpenAL initialized.
+[14:03:20] [Sound Library Loader/INFO]: Sound engine started
+[14:03:38] [Client thread/INFO]: Created: 4096x2048 textures-atlas
+[14:04:01] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[14:04:01] [Server thread/INFO]: Generating keypair
+[14:04:03] [Server thread/INFO]: Preparing start region for level 0
+[14:04:05] [Server thread/INFO]: Preparing spawn area: 0%
+[14:04:06] [Server thread/INFO]: Preparing spawn area: 23%
+[14:04:07] [Server thread/INFO]: Preparing spawn area: 39%
+[14:04:08] [Server thread/INFO]: Preparing spawn area: 52%
+[14:04:09] [Server thread/INFO]: Preparing spawn area: 98%
+[14:04:10] [Server thread/INFO]: Changing view distance to 20, from 10
+[14:04:12] [Server thread/INFO]: Player922[local:E:bb2b11ee] logged in with entity id 417 at (190.25919861976544, 64.0, 247.47592567269302)
+[14:04:12] [Server thread/INFO]: Player922 joined the game
+[14:04:12] [Client thread/INFO]: [CHAT] you just logged in!!!!!
+[14:04:13] [Client thread/INFO]: [CHAT] you just logged in!!!!!
+[14:04:13] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@4089505c[id=e98cb9c7-30ea-33d5-9363-b24219bed40f,name=Player922,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:53) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:50) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:148) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:138) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_31]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_31]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_31]
+[14:04:13] [Client thread/INFO]: [CHAT] Runecraft 2 is out of date. The version you are using is verions: 0.0.3 and the latest version is version: 0.0.5
+[14:04:13] [Client thread/INFO]: [CHAT] http://tiny.cc/hwpxyx
+[14:04:17] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5502ms behind, skipping 110 tick(s)
+[14:04:27] [Server thread/INFO]: Player922 has just earned the achievement [Taking Inventory]
+[14:04:27] [Client thread/INFO]: [CHAT] Player922 has just earned the achievement [Taking Inventory]
+[14:04:32] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4575ms behind, skipping 91 tick(s)
+[14:04:52] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8149ms behind, skipping 162 tick(s)
