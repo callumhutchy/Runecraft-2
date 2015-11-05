@@ -100,9 +100,9 @@ public class OreBlock extends Block {
 			return Items.silverOre;
 		case "tin":
 			return Items.tinOre;
-		case "runeessence":
+		case "runeessenceore":
 			return Items.runeEssence;
-		case "pureessence":
+		case "pureessenceore":
 			return Items.pureEssence;
 		default:
 			return null;
@@ -130,9 +130,9 @@ public class OreBlock extends Block {
 			return new TileEntitySilverOre();
 		case "tin":
 			return new TileEntityTinOre();
-		case "runeessence":
+		case "runeessenceore":
 			return new TileEntityRuneEssenceOre();
-		case "pureessence":
+		case "pureessenceore":
 			return new TileEntityPureEssenceOre();
 		default:
 			return null;
