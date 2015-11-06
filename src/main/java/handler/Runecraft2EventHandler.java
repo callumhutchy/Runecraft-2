@@ -12,10 +12,9 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent.WorldTickEvent;
 import reference.ExpChart;
+import uk.co.callumhutchy.runecraft2.blocks.Altar;
+import uk.co.callumhutchy.runecraft2.proxy.CommonProxy;
 import utility.UpdateChecker;
-
-import com.callumhutchy.runecraft2.blocks.Altar;
-import com.callumhutchy.runecraft2.proxy.CommonProxy;
 
 public class Runecraft2EventHandler {
 

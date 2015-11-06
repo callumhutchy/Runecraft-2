@@ -1,684 +1,148 @@
-[00:00:03] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:00:09] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:00:15] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:00:22] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:00:28] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:00:35] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:00:41] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:00:48] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:00:54] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:01:01] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:01:07] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:01:14] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:01:20] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:01:27] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:01:33] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:01:40] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:01:46] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:01:53] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:01:59] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:02:06] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:02:12] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:02:19] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:02:25] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:02:32] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:02:38] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:02:45] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:02:51] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:02:58] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:03:04] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:03:11] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:03:17] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:03:24] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:03:30] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:03:37] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:03:43] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:03:50] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:03:56] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:04:03] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:04:09] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:04:16] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:04:23] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:04:29] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:04:36] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:04:42] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:04:49] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:04:55] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:05:02] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:05:09] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:05:15] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:05:22] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:05:28] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:05:35] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:05:41] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:05:48] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:05:54] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:06:01] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:06:07] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:06:14] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:06:21] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:06:27] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:06:34] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:06:41] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:06:47] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:06:54] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:07:01] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:07:07] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:07:14] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:07:20] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:07:27] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:07:34] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:07:40] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:07:47] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:07:53] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:08:00] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:08:07] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:08:13] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:08:20] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:08:26] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:08:33] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:08:40] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:08:46] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:08:53] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:09:00] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:09:07] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:09:13] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:09:20] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:09:27] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:09:33] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:09:40] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:09:47] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:09:53] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:10:00] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:10:07] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:10:13] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:10:20] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:10:27] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:10:33] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:10:40] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:10:47] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:10:53] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:11:00] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:11:07] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:11:13] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:11:20] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:11:27] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:11:33] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:11:40] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:11:47] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:11:53] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:12:00] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:12:07] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:12:14] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:12:20] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:12:27] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:12:34] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:12:41] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:12:47] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:12:54] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:13:01] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:13:08] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:13:14] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:13:21] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:13:28] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:13:35] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:13:42] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:13:48] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:13:55] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:14:02] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:14:09] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:14:16] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:14:23] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:14:29] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:14:36] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:14:43] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:14:50] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:14:57] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:15:04] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:15:10] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:15:17] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:15:24] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:15:31] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:15:38] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:15:45] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:15:52] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:15:58] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:16:05] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:16:12] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:16:19] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:16:26] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:16:33] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:16:40] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:16:47] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:16:53] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:17:00] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:17:07] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:17:14] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:17:21] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:17:28] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:17:35] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:17:42] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:17:49] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:17:55] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:18:02] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:18:09] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:18:16] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:18:23] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:18:30] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:18:37] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:18:44] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:18:51] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:18:59] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:19:06] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:19:12] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:19:20] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:19:27] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:19:34] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:19:41] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:19:48] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:19:55] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:20:02] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:20:09] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:20:16] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:20:24] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:20:31] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:20:38] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:20:45] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:20:52] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:20:59] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:21:06] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:21:13] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:21:21] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:21:28] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:21:35] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:21:42] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:21:49] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:21:56] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:22:04] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:22:11] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:22:18] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:22:25] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:22:32] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:22:39] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:22:47] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:22:54] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:23:01] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:23:08] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:23:15] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:23:22] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:23:30] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:23:37] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:23:44] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:23:51] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:23:59] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:24:06] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:24:13] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:24:20] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:24:27] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:24:34] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:24:42] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:24:49] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:24:56] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:25:03] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:25:10] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:25:18] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:25:25] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:25:32] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:25:39] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:25:46] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:25:54] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:26:01] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:26:08] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:26:16] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:26:23] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:26:30] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:26:37] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:26:45] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:26:52] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:26:59] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:27:07] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:27:14] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:27:21] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:27:28] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:27:36] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:27:43] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:27:50] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:27:58] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:28:05] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:28:13] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:28:20] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:28:28] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:28:35] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:28:42] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:28:50] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:28:57] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:29:05] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:29:12] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:29:19] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:29:27] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:29:34] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:29:41] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:29:49] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:29:56] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:30:03] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:30:11] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:30:18] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:30:25] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:30:33] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:30:40] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:30:48] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:30:55] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:31:02] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:31:10] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:31:17] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:31:25] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:31:32] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:31:39] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:31:47] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:31:54] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:32:01] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:32:09] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:32:16] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:32:24] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:32:31] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:32:39] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:32:46] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:32:54] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:33:01] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:33:09] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:33:16] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:33:23] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:33:31] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:33:39] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:33:46] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:33:53] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:34:01] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:34:08] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:34:16] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:34:24] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:34:31] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:34:38] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:34:46] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:34:53] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:35:01] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:35:08] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:35:16] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:35:24] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:35:31] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:35:39] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:35:46] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:35:54] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:36:01] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:36:09] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:36:16] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:36:24] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:36:31] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:36:39] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:36:46] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:36:54] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:37:01] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:37:09] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:37:17] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:37:24] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:37:32] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:37:40] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:37:47] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:37:55] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:38:02] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:38:10] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:38:18] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:38:25] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:38:33] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:38:41] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:38:48] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:38:56] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:39:04] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:39:11] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:39:19] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:39:26] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:39:34] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:39:42] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:39:50] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:39:57] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:40:05] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:40:12] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:40:20] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:40:28] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:40:36] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:40:43] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:40:51] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:40:59] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:41:07] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:41:14] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:41:22] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:41:30] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:41:38] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:41:45] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:41:53] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:42:01] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:42:09] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:42:17] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:42:24] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:42:32] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:42:40] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:42:48] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:42:56] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:43:04] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:43:11] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:43:19] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:43:27] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:43:35] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:43:43] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:43:51] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:43:59] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:44:07] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:44:14] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:44:22] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:44:30] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:44:38] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:44:46] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:44:54] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:45:01] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:45:09] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:45:17] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:45:25] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:45:33] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:45:41] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:45:48] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:45:56] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:46:04] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:46:12] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:46:20] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:46:28] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:46:36] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:46:44] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:46:52] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:47:00] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:47:08] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:47:16] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:47:23] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:47:31] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:47:39] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:47:47] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:47:55] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:48:04] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:48:12] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:48:20] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:48:28] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:48:36] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:48:44] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:48:52] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:49:00] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:49:08] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:49:16] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:49:25] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:49:33] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:49:41] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:49:49] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:49:57] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:50:05] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:50:13] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:50:21] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:50:29] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:50:37] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:50:45] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:50:53] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:51:01] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:51:09] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:51:17] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:51:25] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:51:33] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:51:41] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:51:49] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:51:57] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:52:05] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:52:13] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:52:22] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:52:30] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:52:38] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:52:46] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:52:54] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:53:02] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:53:10] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:53:18] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:53:27] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:53:35] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:53:43] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:53:51] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:53:59] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:54:07] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:54:15] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:54:23] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:54:32] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:54:40] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:54:48] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:54:56] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:55:04] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:55:13] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:55:21] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:55:29] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:55:37] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:55:46] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:55:54] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:56:02] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:56:10] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:56:18] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:56:26] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:56:35] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:56:43] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:56:51] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:57:00] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:57:08] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:57:16] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:57:25] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:57:33] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:57:41] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:57:50] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:57:58] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:58:06] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:58:14] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:58:23] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:58:31] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:58:40] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:58:48] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:58:56] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:59:04] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:59:13] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:59:21] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:59:29] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:59:38] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:59:46] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[00:59:54] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:00:03] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:00:11] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:00:19] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:00:28] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:00:36] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:00:44] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:00:53] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:01:01] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:01:09] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:01:18] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:01:26] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:01:34] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:01:43] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:01:51] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:02:00] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:02:08] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:02:16] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:02:25] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:02:33] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:02:42] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:02:50] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:02:59] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:03:07] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:03:15] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:03:24] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:03:32] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:03:41] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:03:49] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:03:58] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:04:06] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:04:14] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:04:23] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:04:32] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:04:40] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:04:48] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:04:57] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:05:05] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:05:14] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:05:22] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:05:30] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:05:39] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:05:47] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:05:56] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:06:04] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:06:13] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:06:21] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:06:30] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:06:38] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:06:47] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:06:55] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:07:04] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:07:12] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:07:21] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:07:29] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:07:38] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:07:47] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:07:55] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:08:04] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:08:12] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:08:21] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:08:29] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:08:38] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:08:47] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:08:55] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:09:04] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:09:12] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:09:21] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:09:30] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:09:38] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:09:47] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:09:55] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:10:04] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:10:13] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:10:21] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:10:30] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:10:39] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:10:47] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:10:56] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:11:05] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:11:13] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:11:22] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:11:31] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:11:39] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:11:48] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:11:57] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:12:05] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:12:14] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:12:22] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:12:31] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:12:40] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:12:49] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:12:57] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:13:06] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:13:15] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:13:24] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:13:32] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:13:41] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:13:50] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:13:58] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:14:07] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:14:16] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:14:25] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:14:33] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:14:42] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:14:51] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:14:59] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:15:08] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:15:17] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:15:26] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:15:34] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:15:43] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:15:52] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:16:01] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:16:09] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:16:18] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:16:27] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:16:36] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:16:45] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:16:53] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:17:02] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:17:11] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:17:20] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:17:29] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:17:38] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:17:47] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:17:55] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:18:04] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:18:13] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:18:22] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:18:30] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:18:39] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:18:48] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:18:57] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:19:06] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:19:14] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:19:23] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:19:32] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:19:41] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:19:50] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:19:58] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:20:07] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:20:16] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:20:25] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:20:34] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:20:42] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:20:51] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:21:00] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:21:09] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:21:18] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:21:27] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:21:36] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:21:45] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:21:54] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:22:03] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:22:11] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:22:20] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:22:29] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:22:38] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:22:47] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:22:56] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:23:05] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:23:15] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:23:24] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:23:33] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:23:42] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:23:51] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:24:01] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:24:10] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:24:19] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:24:27] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:24:37] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:24:46] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:24:54] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:25:03] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:25:12] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:25:21] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:25:30] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:25:39] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:25:49] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:25:56] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:25:56] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:25:56] [Client thread/INFO]: [CHAT] Runecraft 2 is out of date. The version you are using is verions: 0.0.3 and the latest version is version: 0.0.5
-[01:25:56] [Client thread/INFO]: [CHAT] http://tiny.cc/hwpxyx
-[01:26:32] [Server thread/INFO]: Saving and pausing game...
-[01:26:32] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:26:32] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:26:32] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:26:32] [Server thread/INFO]: Stopping server
-[01:26:32] [Server thread/INFO]: Saving players
-[01:26:32] [Server thread/INFO]: Saving worlds
-[01:26:32] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:26:32] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:26:32] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:03:57] [Client thread/INFO]: Setting user: Player400
+[01:03:59] [Client thread/INFO]: LWJGL Version: 2.9.1
+[01:04:03] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
+[01:04:03] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[01:04:03] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[01:04:03] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[01:04:03] [Thread-9/INFO]: OpenAL initialized.
+[01:04:04] [Sound Library Loader/INFO]: Sound engine started
+[01:04:06] [Client thread/WARN]: Texture runecraft2:textures/items/bronzesword.png with size 250x250 limits mip level from 4 to 1
+[01:04:08] [Client thread/INFO]: Created: 4096x2048 textures-atlas
+[01:04:10] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
+[01:04:10] [Client thread/INFO]: SoundSystem shutting down...
+[01:04:10] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[01:04:10] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[01:04:10] [Thread-11/INFO]: Initializing LWJGL OpenAL
+[01:04:10] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[01:04:10] [Thread-11/INFO]: OpenAL initialized.
+[01:04:11] [Sound Library Loader/INFO]: Sound engine started
+[01:04:14] [Client thread/INFO]: Created: 4096x2048 textures-atlas
+[01:04:25] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[01:04:25] [Server thread/INFO]: Generating keypair
+[01:04:25] [Server thread/INFO]: Converting map!
+[01:04:25] [Server thread/INFO]: Scanning folders...
+[01:04:25] [Server thread/INFO]: Total conversion count is 0
+[01:04:28] [Server thread/INFO]: Preparing start region for level 0
+[01:04:29] [Server thread/INFO]: Preparing spawn area: 11%
+[01:04:30] [Server thread/INFO]: Preparing spawn area: 27%
+[01:04:31] [Server thread/INFO]: Preparing spawn area: 42%
+[01:04:32] [Server thread/INFO]: Preparing spawn area: 54%
+[01:04:33] [Server thread/INFO]: Preparing spawn area: 65%
+[01:04:34] [Server thread/INFO]: Preparing spawn area: 82%
+[01:04:35] [Server thread/INFO]: Preparing spawn area: 95%
+[01:04:35] [Server thread/INFO]: Changing view distance to 20, from 10
+[01:04:37] [Server thread/INFO]: Player400[local:E:c1a34b00] logged in with entity id 1 at (-1237.5, 4.0, 1567.5)
+[01:04:37] [Server thread/INFO]: Player400 joined the game
+[01:04:37] [Client thread/INFO]: [CHAT] you just logged in!!!!!
+[01:04:37] [Client thread/INFO]: [CHAT] you just logged in!!!!!
+[01:04:38] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@6241ef96[id=a2995085-e0ea-31fe-a01c-a4eefcac9f6b,name=Player400,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:53) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:50) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:148) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:138) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_45]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_45]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_45]
+[01:04:53] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 16337ms behind, skipping 326 tick(s)
+[01:04:53] [Server thread/INFO]: Saving and pausing game...
+[01:04:53] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:04:54] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:04:54] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:05:02] [Server thread/INFO]: Player400 has just earned the achievement [Taking Inventory]
+[01:05:02] [Client thread/INFO]: [CHAT] Player400 has just earned the achievement [Taking Inventory]
+[01:05:35] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3221ms behind, skipping 64 tick(s)
+[01:06:40] [Server thread/INFO]: Saving and pausing game...
+[01:06:40] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:06:40] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:06:40] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:06:52] [Server thread/INFO]: Saving and pausing game...
+[01:06:52] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:06:52] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:06:52] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:07:11] [Server thread/INFO]: Saving and pausing game...
+[01:07:11] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:07:11] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:07:11] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:07:20] [Server thread/INFO]: Saving and pausing game...
+[01:07:20] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:07:20] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:07:20] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:07:24] [Server thread/INFO]: Changing difficulty to PEACEFUL, from NORMAL
+[01:07:29] [Server thread/INFO]: Saving and pausing game...
+[01:07:29] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:07:29] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:07:29] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:09:46] [Server thread/INFO]: Saving and pausing game...
+[01:09:46] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:09:46] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:09:46] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:10:14] [Server thread/INFO]: Saving and pausing game...
+[01:10:14] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:10:14] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:10:14] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:10:53] [Server thread/INFO]: Saving and pausing game...
+[01:10:53] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:10:53] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:10:53] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:11:29] [Server thread/INFO]: Saving and pausing game...
+[01:11:29] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:11:29] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:11:29] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:12:16] [Server thread/INFO]: Saving and pausing game...
+[01:12:16] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:12:16] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:12:16] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:12:29] [Server thread/INFO]: [CHAT] You gained 320 Runecrafting Experience.
+[01:12:37] [Server thread/INFO]: Saving and pausing game...
+[01:12:37] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:12:37] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:12:37] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:14:21] [Server thread/INFO]: Saving and pausing game...
+[01:14:21] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:14:21] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:14:21] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:14:21] [Server thread/INFO]: Saving and pausing game...
+[01:14:21] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:14:21] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:14:21] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:14:36] [Server thread/INFO]: Saving and pausing game...
+[01:14:36] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:14:36] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:14:36] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:15:16] [Server thread/INFO]: Saving and pausing game...
+[01:15:16] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:15:16] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:15:16] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:15:22] [Server thread/INFO]: Saving and pausing game...
+[01:15:22] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:15:22] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:15:22] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:15:41] [Server thread/INFO]: [CHAT] Your Magic increased by 5
+[01:15:45] [Server thread/INFO]: [CHAT] Your Magic increased by 5
+[01:15:48] [Server thread/INFO]: [CHAT] Your Magic increased by 5
+[01:15:53] [Server thread/INFO]: [CHAT] Your Magic increased by 5
+[01:15:56] [Server thread/INFO]: [CHAT] Your Magic increased by 5
+[01:15:57] [Server thread/INFO]: [CHAT] Your Magic increased by 5
+[01:15:57] [Server thread/INFO]: [CHAT] Your Magic increased by 5
+[01:15:57] [Server thread/INFO]: [CHAT] Your Magic increased by 5
+[01:15:57] [Server thread/INFO]: [CHAT] Your Magic increased by 5
+[01:15:58] [Server thread/INFO]: [CHAT] Your Magic increased by 5
+[01:15:58] [Server thread/INFO]: [CHAT] Your Magic increased by 5
+[01:15:58] [Server thread/INFO]: [CHAT] Your Magic increased by 5
+[01:16:18] [Server thread/INFO]: Saving and pausing game...
+[01:16:18] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:16:18] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:16:18] [Server thread/INFO]: Saving chunks for level 'New World'/The End

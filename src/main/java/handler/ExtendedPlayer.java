@@ -5,9 +5,8 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
 import net.minecraftforge.common.IExtendedEntityProperties;
-
-import com.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRCFurnace;
-import com.callumhutchy.runecraft2.proxy.CommonProxy;
+import uk.co.callumhutchy.runecraft2.blocks.models.tileentities.TileEntityRCFurnace;
+import uk.co.callumhutchy.runecraft2.proxy.CommonProxy;
 
 public class ExtendedPlayer implements IExtendedEntityProperties {
 
