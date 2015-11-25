@@ -2,7 +2,6 @@ package uk.co.callumhutchy.runecraft2;
 
 import handler.ConfigurationHandler;
 import handler.Runecraft2EventHandler;
-import net.minecraft.client.Minecraft;
 //import mods.mud.ModUpdateDetector;
 import net.minecraft.command.ICommandManager;
 import net.minecraft.command.ServerCommandManager;
@@ -30,6 +29,8 @@ import uk.co.callumhutchy.runecraft2.items.Items;
 import uk.co.callumhutchy.runecraft2.keys.KeyBindings;
 import uk.co.callumhutchy.runecraft2.keys.KeyInputHandler;
 import uk.co.callumhutchy.runecraft2.proxy.CommonProxy;
+import uk.co.callumhutchy.runecraft2.spells.Elements;
+import uk.co.callumhutchy.runecraft2.spells.Spells;
 import uk.co.callumhutchy.runecraft2.spells.tileentities.TileEntityAirStrike;
 import uk.co.callumhutchy.runecraft2.spells.tileentities.TileEntityEarthStrike;
 import uk.co.callumhutchy.runecraft2.spells.tileentities.TileEntityFireStrike;
@@ -98,13 +99,15 @@ public class Runecraft2 {
 //			e.printStackTrace();
 //		}
 		Materials.init();
-		
+		Elements.init();
+		Items.init();
+		Spells.init();
 		Blocks.init();
 		LogHelper.info("Blocks Initialised!");
 		
 		Blocks.gameRegistry();
 		LogHelper.info("Blocks have been registered with the game.");
-		Items.init();
+		
 		LogHelper.info("Items Initialised!");
 		
 		Items.gameRegistery();

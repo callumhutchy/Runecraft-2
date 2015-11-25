@@ -8,7 +8,6 @@
 <fullyQualifiedTypeName name="net.minecraftforge.common.config.ConfigElement"/>
 <fullyQualifiedTypeName name="net.minecraftforge.common.config.Configuration"/>
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.spells.tileentities.TileEntitySpellStrike"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
 <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.spells.tileentities.TileEntityAirStrike"/>
 <fullyQualifiedTypeName name="com.jcraft.jorbis.Block"/>
@@ -17,4 +16,16 @@
 <fullyQualifiedTypeName name="net.minecraft.world.gen.feature.WorldGenMinable"/>
 <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 <fullyQualifiedTypeName name="com.callumhutchy.runecraft2.blocks.Blocks"/>
+<fullyQualifiedTypeName name="utility.commands.Runecraft2Help"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="uk.co.callumhutchy.runecraft2.items.Rune"/>
+<fullyQualifiedTypeName name="com.google.common.util.concurrent.Runnables"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+<fullyQualifiedTypeName name="reference.Spell"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+<fullyQualifiedTypeName name="uk.co.callumhutchy.runecraft2.spells.Spells"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="reference.Element"/>
+<fullyQualifiedTypeName name="uk.co.callumhutchy.runecraft2.items.Items"/>
+<fullyQualifiedTypeName name="uk.co.callumhutchy.runecraft2.spells.Elements"/>
 </qualifiedTypeNameHistroy>

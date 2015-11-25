@@ -15,16 +15,36 @@ public class ExpChart {
     public static int DEATH_RUNE_EXP = 12;
     public static int BLOOD_RUNE_EXP = 13;
     public static int ASTRAL_RUNE_EXP = 14;
+   
     // Magic
+    //Strikes
     public static int AIR_STRIKE_EXP = 5;
     public static int WATER_STRIKE_EXP = 7;
     public static int EARTH_STRIKE_EXP = 9;
     public static int FIRE_STRIKE_EXP = 11;
+    //Bolts
     public static int AIR_BOLT_EXP = 13;
     public static int WATER_BOLT_EXP = 16;
     public static int EARTH_BOLT_EXP = 19;
     public static int FIRE_BOLT_EXP = 22;
-
+    //Blast
+    public static int AIR_BLAST_EXP = 25;
+    public static int WATER_BLAST_EXP = 28;
+    public static int EARTH_BLAST_EXP = 31;
+    public static int FIRE_BLAST_EXP = 34;
+    //Wave
+    public static int AIR_WAVE_EXP = 36;
+    public static int WATER_WAVE_EXP = 37;
+    public static int EARTH_WAVE_EXP = 40;
+    public static int FIRE_WAVE_EXP = 42;
+    //Surge
+    public static int AIR_SURGE_EXP = 75;
+    public static int WATER_SURGE_EXP = 80;
+    public static int EARTH_SURGE_EXP = 85;
+    public static int FIRE_SURGE_EXP = 95;
+    
+    
+    
     public static int[][] exparray = new int[][] {
 	    {
 		    1,

@@ -11,6 +11,7 @@ import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import uk.co.callumhutchy.runecraft2.spells.Spells;
 
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
@@ -128,7 +129,7 @@ public class GuiSpellBook extends GuiScreen {
 		ExtendedPlayer props = ExtendedPlayer.get(this.mc.thePlayer);
 		int currentMagic = Runecraft2EventHandler.currentMagicLevel;
 		String currentSpell = props.currentSpell;
-		if (currentMagic >= 0) {
+		if (currentMagic >= Spells.airStrike.getSpellLevelRequirement()) {
 
 			if (!airstrikeselected || currentSpell != "airstrike") {
 				mc.getTextureManager().bindTexture(this.widgetTextures);

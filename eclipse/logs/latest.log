@@ -1,41 +1,29 @@
-[01:03:57] [Client thread/INFO]: Setting user: Player400
-[01:03:59] [Client thread/INFO]: LWJGL Version: 2.9.1
-[01:04:03] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
-[01:04:03] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[01:04:03] [Thread-9/INFO]: Initializing LWJGL OpenAL
-[01:04:03] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[01:04:03] [Thread-9/INFO]: OpenAL initialized.
-[01:04:04] [Sound Library Loader/INFO]: Sound engine started
-[01:04:06] [Client thread/WARN]: Texture runecraft2:textures/items/bronzesword.png with size 250x250 limits mip level from 4 to 1
-[01:04:08] [Client thread/INFO]: Created: 4096x2048 textures-atlas
-[01:04:10] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
-[01:04:10] [Client thread/INFO]: SoundSystem shutting down...
-[01:04:10] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[01:04:10] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[01:04:10] [Thread-11/INFO]: Initializing LWJGL OpenAL
-[01:04:10] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[01:04:10] [Thread-11/INFO]: OpenAL initialized.
-[01:04:11] [Sound Library Loader/INFO]: Sound engine started
-[01:04:14] [Client thread/INFO]: Created: 4096x2048 textures-atlas
-[01:04:25] [Server thread/INFO]: Starting integrated minecraft server version 1.8
-[01:04:25] [Server thread/INFO]: Generating keypair
-[01:04:25] [Server thread/INFO]: Converting map!
-[01:04:25] [Server thread/INFO]: Scanning folders...
-[01:04:25] [Server thread/INFO]: Total conversion count is 0
-[01:04:28] [Server thread/INFO]: Preparing start region for level 0
-[01:04:29] [Server thread/INFO]: Preparing spawn area: 11%
-[01:04:30] [Server thread/INFO]: Preparing spawn area: 27%
-[01:04:31] [Server thread/INFO]: Preparing spawn area: 42%
-[01:04:32] [Server thread/INFO]: Preparing spawn area: 54%
-[01:04:33] [Server thread/INFO]: Preparing spawn area: 65%
-[01:04:34] [Server thread/INFO]: Preparing spawn area: 82%
-[01:04:35] [Server thread/INFO]: Preparing spawn area: 95%
-[01:04:35] [Server thread/INFO]: Changing view distance to 20, from 10
-[01:04:37] [Server thread/INFO]: Player400[local:E:c1a34b00] logged in with entity id 1 at (-1237.5, 4.0, 1567.5)
-[01:04:37] [Server thread/INFO]: Player400 joined the game
-[01:04:37] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:04:37] [Client thread/INFO]: [CHAT] you just logged in!!!!!
-[01:04:38] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@6241ef96[id=a2995085-e0ea-31fe-a01c-a4eefcac9f6b,name=Player400,properties={},legacy=false]
+[21:37:17] [Client thread/INFO]: Setting user: Player147
+[21:37:20] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:37:24] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
+[21:37:25] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[21:37:25] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[21:37:25] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[21:37:25] [Thread-9/INFO]: OpenAL initialized.
+[21:37:25] [Sound Library Loader/INFO]: Sound engine started
+[21:37:28] [Client thread/WARN]: Texture runecraft2:textures/items/bronzesword.png with size 250x250 limits mip level from 4 to 1
+[21:37:31] [Client thread/INFO]: Created: 4096x2048 textures-atlas
+[21:37:33] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
+[21:37:33] [Client thread/INFO]: SoundSystem shutting down...
+[21:37:33] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[21:37:33] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[21:37:33] [Thread-11/INFO]: Initializing LWJGL OpenAL
+[21:37:33] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[21:37:33] [Thread-11/INFO]: OpenAL initialized.
+[21:37:34] [Sound Library Loader/INFO]: Sound engine started
+[21:37:38] [Client thread/INFO]: Created: 4096x2048 textures-atlas
+[21:37:50] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[21:37:50] [Server thread/INFO]: Generating keypair
+[21:37:51] [Server thread/INFO]: Preparing start region for level 0
+[21:37:51] [Server thread/INFO]: Changing view distance to 20, from 10
+[21:37:53] [Server thread/INFO]: Player147[local:E:e886d6fd] logged in with entity id 314 at (545.5354468856516, 4.0, -1447.7789527562302)
+[21:37:53] [Server thread/INFO]: Player147 joined the game
+[21:37:54] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@157f284b[id=2dc91382-bdf7-3364-b2ee-09532f57b948,name=Player147,properties={},legacy=false]
 com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
@@ -56,93 +44,21 @@ com.mojang.authlib.exceptions.AuthenticationException: The client has sent too m
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_45]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_45]
 	at java.lang.Thread.run(Unknown Source) [?:1.8.0_45]
-[01:04:53] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 16337ms behind, skipping 326 tick(s)
-[01:04:53] [Server thread/INFO]: Saving and pausing game...
-[01:04:53] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:04:54] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:04:54] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:05:02] [Server thread/INFO]: Player400 has just earned the achievement [Taking Inventory]
-[01:05:02] [Client thread/INFO]: [CHAT] Player400 has just earned the achievement [Taking Inventory]
-[01:05:35] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3221ms behind, skipping 64 tick(s)
-[01:06:40] [Server thread/INFO]: Saving and pausing game...
-[01:06:40] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:06:40] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:06:40] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:06:52] [Server thread/INFO]: Saving and pausing game...
-[01:06:52] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:06:52] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:06:52] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:07:11] [Server thread/INFO]: Saving and pausing game...
-[01:07:11] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:07:11] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:07:11] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:07:20] [Server thread/INFO]: Saving and pausing game...
-[01:07:20] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:07:20] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:07:20] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:07:24] [Server thread/INFO]: Changing difficulty to PEACEFUL, from NORMAL
-[01:07:29] [Server thread/INFO]: Saving and pausing game...
-[01:07:29] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:07:29] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:07:29] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:09:46] [Server thread/INFO]: Saving and pausing game...
-[01:09:46] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:09:46] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:09:46] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:10:14] [Server thread/INFO]: Saving and pausing game...
-[01:10:14] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:10:14] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:10:14] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:10:53] [Server thread/INFO]: Saving and pausing game...
-[01:10:53] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:10:53] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:10:53] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:11:29] [Server thread/INFO]: Saving and pausing game...
-[01:11:29] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:11:29] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:11:29] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:12:16] [Server thread/INFO]: Saving and pausing game...
-[01:12:16] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:12:16] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:12:16] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:12:29] [Server thread/INFO]: [CHAT] You gained 320 Runecrafting Experience.
-[01:12:37] [Server thread/INFO]: Saving and pausing game...
-[01:12:37] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:12:37] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:12:37] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:14:21] [Server thread/INFO]: Saving and pausing game...
-[01:14:21] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:14:21] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:14:21] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:14:21] [Server thread/INFO]: Saving and pausing game...
-[01:14:21] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:14:21] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:14:21] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:14:36] [Server thread/INFO]: Saving and pausing game...
-[01:14:36] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:14:36] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:14:36] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:15:16] [Server thread/INFO]: Saving and pausing game...
-[01:15:16] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:15:16] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:15:16] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:15:22] [Server thread/INFO]: Saving and pausing game...
-[01:15:22] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:15:22] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:15:22] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:15:41] [Server thread/INFO]: [CHAT] Your Magic increased by 5
-[01:15:45] [Server thread/INFO]: [CHAT] Your Magic increased by 5
-[01:15:48] [Server thread/INFO]: [CHAT] Your Magic increased by 5
-[01:15:53] [Server thread/INFO]: [CHAT] Your Magic increased by 5
-[01:15:56] [Server thread/INFO]: [CHAT] Your Magic increased by 5
-[01:15:57] [Server thread/INFO]: [CHAT] Your Magic increased by 5
-[01:15:57] [Server thread/INFO]: [CHAT] Your Magic increased by 5
-[01:15:57] [Server thread/INFO]: [CHAT] Your Magic increased by 5
-[01:15:57] [Server thread/INFO]: [CHAT] Your Magic increased by 5
-[01:15:58] [Server thread/INFO]: [CHAT] Your Magic increased by 5
-[01:15:58] [Server thread/INFO]: [CHAT] Your Magic increased by 5
-[01:15:58] [Server thread/INFO]: [CHAT] Your Magic increased by 5
-[01:16:18] [Server thread/INFO]: Saving and pausing game...
-[01:16:18] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:16:18] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:16:18] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:37:56] [Server thread/INFO]: Saving and pausing game...
+[21:37:56] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:37:56] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:37:56] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:37:59] [Server thread/INFO]: [CHAT] Your Magic increased by 11
+[21:38:01] [Server thread/INFO]: Saving and pausing game...
+[21:38:01] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:38:01] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:38:01] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:53:31] [Client thread/INFO]: Stopping!
+[21:53:31] [Client thread/INFO]: SoundSystem shutting down...
+[21:53:31] [Server thread/INFO]: Stopping server
+[21:53:31] [Server thread/INFO]: Saving players
+[21:53:31] [Server thread/INFO]: Saving worlds
+[21:53:31] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:53:31] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:53:31] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:53:31] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

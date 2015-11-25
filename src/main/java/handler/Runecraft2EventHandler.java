@@ -106,7 +106,7 @@ public class Runecraft2EventHandler {
 			currentRunecraftingLevel = props.currentRunecraftingLevel;
 			currentMiningLevel = props.currentMiningLevel;
 			currentSmithingLevel = props.currentSmithingLevel;
-			((ICommandSender) event.entity).addChatMessage (new ChatComponentText ("you just logged in!!!!!"));
+			//((ICommandSender) event.entity).addChatMessage (new ChatComponentText ("you just logged in!!!!!"));
 		}
 		
 		
