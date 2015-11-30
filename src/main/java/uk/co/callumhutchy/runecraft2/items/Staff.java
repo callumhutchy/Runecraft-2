@@ -14,6 +14,7 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import reference.Element;
 import reference.ExpChart;
 import reference.Spell;
 import uk.co.callumhutchy.runecraft2.spells.Spells;
@@ -24,12 +25,12 @@ import uk.co.callumhutchy.runecraft2.spells.tileentities.TileEntityWaterStrike;
 
 public class Staff extends BaseMagicItem {
 
-	public String staffElement;
+	public Element staffElement;
 	public int runesProvided;
 
-	public Staff(String unlocalisedName, int maxSize, String type, int numberOfRunesProvided, boolean isTalismanStaff) {
+	public Staff(String unlocalisedName, int maxSize, Element element, int numberOfRunesProvided, boolean isTalismanStaff) {
 		super(unlocalisedName, maxSize);
-		this.staffElement = type;
+		this.staffElement = element;
 		this.runesProvided = numberOfRunesProvided;
 
 	}
@@ -41,9 +42,9 @@ public class Staff extends BaseMagicItem {
 
 	public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer entity) {
 		ExtendedPlayer props = ExtendedPlayer.get(entity);
-		//System.out.println(props.currentSpell);
+		System.out.println(props.currentSpell);
 		if (props.currentSpell == "airstrike") {
-			if (creativeCasting(entity) || elementCasting("air", Spells.airStrike.getRuneCost().size(), entity, Spells.airStrike) || hasEnoughRunes(entity, Items.airRune, 1)) {
+			if (creativeCasting(entity) || elementCasting(Spells.airStrike) && hasTheRightRunes(entity, Spells.airStrike) || hasTheRightRunes(entity, Spells.airStrike) ) {
 				playSpellSound(world, entity);
 				if (!creativeCasting(entity)) {
 					consumeAllSpellRunes(entity, Spells.airStrike);
@@ -62,7 +63,7 @@ public class Staff extends BaseMagicItem {
 			Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("You have been teleported home."));
 		}
 		if (props.currentSpell == "waterstrike") {
-			if (creativeCasting(entity) || elementCasting("water", Spells.waterStrike.getRuneCost().size(), entity, Spells.waterStrike) || hasEnoughRunes(entity, Items.waterRune, 1)) {
+			if (creativeCasting(entity) || elementCasting(Spells.waterStrike) && hasTheRightRunes(entity, Spells.waterStrike)  ||hasTheRightRunes(entity, Spells.waterStrike) ) {
 				playSpellSound(world, entity);
 				if (!creativeCasting(entity)) {
 					consumeAllSpellRunes(entity, Spells.waterStrike);
@@ -77,7 +78,7 @@ public class Staff extends BaseMagicItem {
 			}
 		}
 		if (props.currentSpell == "earthstrike") {
-			if (creativeCasting(entity) || elementCasting("earth", Spells.earthStrike.getRuneCost().size(), entity, Spells.earthStrike) || hasEnoughRunes(entity, Items.earthRune, 1)) {
+			if (creativeCasting(entity) || elementCasting(Spells.earthStrike) && hasTheRightRunes(entity, Spells.earthStrike)  || hasTheRightRunes(entity, Spells.earthStrike) ) {
 				playSpellSound(world, entity);
 				if (!creativeCasting(entity)) {
 					consumeAllSpellRunes(entity, Spells.earthStrike);
@@ -92,7 +93,7 @@ public class Staff extends BaseMagicItem {
 			}
 		}
 		if (props.currentSpell == "firestrike") {
-			if (creativeCasting(entity) || elementCasting("fire", Spells.fireStrike.getRuneCost().size(), entity, Spells.fireStrike) || hasEnoughRunes(entity, Items.fireRune, 1)) {
+			if (creativeCasting(entity) || elementCasting(Spells.fireStrike) && hasTheRightRunes(entity, Spells.fireStrike) || hasTheRightRunes(entity, Spells.fireStrike) ) {
 				playSpellSound(world, entity);
 				if (!creativeCasting(entity)) {
 					consumeAllSpellRunes(entity, Spells.fireStrike);
@@ -112,7 +113,7 @@ public class Staff extends BaseMagicItem {
 	public boolean onItemUse(ItemStack stack, EntityPlayer entity, World world, BlockPos pos, EnumFacing side, float varx, float vary, float varz) {
 		ExtendedPlayer props = ExtendedPlayer.get(entity);
 		if (props.currentSpell == "earthpillar") {
-			if (creativeCasting(entity) || elementCasting("earth", Spells.earthPillar.getRuneCost().size(), entity, Spells.earthPillar) || hasEnoughRunes(entity, Items.earthRune, 1) && hasEnoughRunes(entity, Items.airRune, 1) && hasEnoughRunes(entity, Items.waterRune, 1)  ) {
+			if (creativeCasting(entity) || elementCasting(Spells.earthPillar) && hasTheRightRunes(entity, Spells.earthPillar) || hasTheRightRunes(entity, Spells.earthPillar) ) {
 				playSpellSound(world, entity);
 				if (!creativeCasting(entity)) {
 					consumeAllSpellRunes(entity, Spells.earthPillar);
@@ -134,13 +135,75 @@ public class Staff extends BaseMagicItem {
 		return player.capabilities.isCreativeMode;
 	}
 
-	boolean elementCasting(String type, int numberOfRunes, EntityPlayer entity, Spell spell) {
-		return (staffElement == spell.getSpellElement().element && (numberOfRunes - runesProvided >= 1 && entity.inventory.hasItemStack(new ItemStack(spell.getSpellElement().rune, 1)) ));
+	boolean elementCasting(Spell spell) {
+		return (staffElement== spell.getSpellElement());
 	}
 
-	boolean hasEnoughRunes(EntityPlayer entity, Item rune, int quantity) {
-		return entity.inventory.hasItemStack(new ItemStack(rune, quantity));
+	
+	
+	boolean hasTheRightRunes(EntityPlayer entity, Spell spell){
+		ArrayList<Rune> runeList = spell.getRuneCost();
+		Rune[] uniqueValues = new Rune[runeList.size()];
+		int[] countValues = new int[runeList.size()];
+		
+		for(int i = 0; i < runeList.size(); i++){
+			
+			boolean isNewValue = true;
+			
+			if(i>0){
+				if(uniqueValues[uniqueValues.length-1] == runeList.get(i)	){
+					isNewValue = false;
+					countValues[uniqueValues.length-1]++;
+				}
+			}
+			
+			if(isNewValue){
+				uniqueValues = addToArrayRune(uniqueValues, runeList.get(i));
+				countValues = addToArrayInt(countValues, 1);
+			}
+			
+		}
+		
+		System.out.println("Results: ");
+		for(int i = 0; i < countValues.length; i++){
+			System.out.println(uniqueValues[i] + " = " + countValues[i]);
+		}
+		
+		boolean hasAllRunes = false;
+		
+		for(int i = 0; i < uniqueValues.length; i++){
+			if(uniqueValues[i] != null){
+				if(entity.inventory.hasItemStack(new ItemStack(uniqueValues[i], countValues[i])) || uniqueValues[i] == staffElement.getRune()){
+					hasAllRunes = true;
+				}else{
+					return false;
+				}
+			}
+			
+		}
+	
+		return hasAllRunes;
+		
 	}
+	
+	public static Rune[] addToArrayRune(Rune[] uniqueValues, Rune rune){
+		Rune[] returnArray = new Rune[uniqueValues.length+1];
+		for(int i = 0; i < uniqueValues.length; i++){
+			returnArray[i] = uniqueValues[i];		
+		}
+		returnArray[returnArray.length -1] = rune;
+		return returnArray;
+	}
+	
+	public static int[] addToArrayInt(int[] countValues, int newValue){
+		int[] returnArray = new int[countValues.length+1];
+		for(int i = 0; i < countValues.length; i++){
+			returnArray[i] = countValues[i];
+		}
+		returnArray[returnArray.length-1] = newValue;
+		return returnArray;
+	}
+	
 
 	void playSpellSound(World world, EntityPlayer entity) {
 		world.playSoundAtEntity(entity, "random.bow", 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
@@ -160,18 +223,18 @@ public class Staff extends BaseMagicItem {
 		boolean elementRetrieval = false;
 		boolean wasElementCasting = false;
 		
-		wasElementCasting = elementCasting(spell.getSpellElement().getElement(), spell.getRuneCost().size(), entity, spell);
+		wasElementCasting = elementCasting(spell);
 		System.out.println(wasElementCasting);
 		for (Rune i : spell.getRuneCost()) {
 			System.out.println(i.getUnlocalizedName());
+			System.out.println(spell.getSpellElement().getRune().getUnlocalizedName());
 			
-			if(!elementRetrieval && wasElementCasting){
-				if(i == spell.getSpellElement().getRune()){
-					elementRetrieval = true;
-				}
-			}else{
+			if(!elementCasting(spell)){
+				entity.inventory.consumeInventoryItem(i);
+			}else if(elementCasting(spell) && i != staffElement.getRune()){
 				entity.inventory.consumeInventoryItem(i);
 			}
+			
 			
 			
 

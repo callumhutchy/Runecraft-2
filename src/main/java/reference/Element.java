@@ -1,12 +1,13 @@
 package reference;
 
 import net.minecraft.item.Item;
+import uk.co.callumhutchy.runecraft2.items.Rune;
 
 public class Element {
 	public String element;
-	public Item rune;
+	public Rune rune;
 	
-	public Element(String element, Item rune){
+	public Element(String element, Rune rune){
 		this.element = element;
 		this.rune = rune;
 	}
@@ -28,14 +29,14 @@ public class Element {
 	/**
 	 * @return the rune
 	 */
-	public Item getRune() {
+	public Rune getRune() {
 		return rune;
 	}
 
 	/**
 	 * @param rune the rune to set
 	 */
-	public void setRune(Item rune) {
+	public void setRune(Rune rune) {
 		this.rune = rune;
 	}
 	

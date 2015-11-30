@@ -1,29 +1,29 @@
-[21:37:17] [Client thread/INFO]: Setting user: Player147
-[21:37:20] [Client thread/INFO]: LWJGL Version: 2.9.1
-[21:37:24] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
-[21:37:25] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[21:37:25] [Thread-9/INFO]: Initializing LWJGL OpenAL
-[21:37:25] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[21:37:25] [Thread-9/INFO]: OpenAL initialized.
-[21:37:25] [Sound Library Loader/INFO]: Sound engine started
-[21:37:28] [Client thread/WARN]: Texture runecraft2:textures/items/bronzesword.png with size 250x250 limits mip level from 4 to 1
-[21:37:31] [Client thread/INFO]: Created: 4096x2048 textures-atlas
-[21:37:33] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
-[21:37:33] [Client thread/INFO]: SoundSystem shutting down...
-[21:37:33] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[21:37:33] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[21:37:33] [Thread-11/INFO]: Initializing LWJGL OpenAL
-[21:37:33] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[21:37:33] [Thread-11/INFO]: OpenAL initialized.
-[21:37:34] [Sound Library Loader/INFO]: Sound engine started
-[21:37:38] [Client thread/INFO]: Created: 4096x2048 textures-atlas
-[21:37:50] [Server thread/INFO]: Starting integrated minecraft server version 1.8
-[21:37:50] [Server thread/INFO]: Generating keypair
-[21:37:51] [Server thread/INFO]: Preparing start region for level 0
-[21:37:51] [Server thread/INFO]: Changing view distance to 20, from 10
-[21:37:53] [Server thread/INFO]: Player147[local:E:e886d6fd] logged in with entity id 314 at (545.5354468856516, 4.0, -1447.7789527562302)
-[21:37:53] [Server thread/INFO]: Player147 joined the game
-[21:37:54] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@157f284b[id=2dc91382-bdf7-3364-b2ee-09532f57b948,name=Player147,properties={},legacy=false]
+[01:42:11] [Client thread/INFO]: Setting user: Player585
+[01:42:13] [Client thread/INFO]: LWJGL Version: 2.9.1
+[01:42:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
+[01:42:16] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[01:42:17] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[01:42:17] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[01:42:17] [Thread-9/INFO]: OpenAL initialized.
+[01:42:17] [Sound Library Loader/INFO]: Sound engine started
+[01:42:19] [Client thread/WARN]: Texture runecraft2:textures/items/bronzesword.png with size 250x250 limits mip level from 4 to 1
+[01:42:22] [Client thread/INFO]: Created: 4096x2048 textures-atlas
+[01:42:23] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Runecraft 2
+[01:42:23] [Client thread/INFO]: SoundSystem shutting down...
+[01:42:23] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[01:42:23] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[01:42:24] [Thread-11/INFO]: Initializing LWJGL OpenAL
+[01:42:24] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[01:42:24] [Thread-11/INFO]: OpenAL initialized.
+[01:42:24] [Sound Library Loader/INFO]: Sound engine started
+[01:42:28] [Client thread/INFO]: Created: 4096x2048 textures-atlas
+[01:52:06] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[01:52:06] [Server thread/INFO]: Generating keypair
+[01:52:06] [Server thread/INFO]: Preparing start region for level 0
+[01:52:07] [Server thread/INFO]: Changing view distance to 20, from 10
+[01:52:08] [Server thread/INFO]: Player585[local:E:8359325d] logged in with entity id 126 at (637.6328451176341, 4.0, -343.10486720348956)
+[01:52:08] [Server thread/INFO]: Player585 joined the game
+[01:52:09] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@4d2cd74[id=87838b30-d4f9-3495-97a3-26161a757982,name=Player585,properties={},legacy=false]
 com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
@@ -44,21 +44,58 @@ com.mojang.authlib.exceptions.AuthenticationException: The client has sent too m
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_45]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_45]
 	at java.lang.Thread.run(Unknown Source) [?:1.8.0_45]
-[21:37:56] [Server thread/INFO]: Saving and pausing game...
-[21:37:56] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[21:37:56] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[21:37:56] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[21:37:59] [Server thread/INFO]: [CHAT] Your Magic increased by 11
-[21:38:01] [Server thread/INFO]: Saving and pausing game...
-[21:38:01] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[21:38:01] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[21:38:01] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[21:53:31] [Client thread/INFO]: Stopping!
-[21:53:31] [Client thread/INFO]: SoundSystem shutting down...
-[21:53:31] [Server thread/INFO]: Stopping server
-[21:53:31] [Server thread/INFO]: Saving players
-[21:53:31] [Server thread/INFO]: Saving worlds
-[21:53:31] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[21:53:31] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[21:53:31] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[21:53:31] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[01:52:12] [Server thread/INFO]: Saving and pausing game...
+[01:52:12] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:52:12] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:52:12] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:52:15] [Server thread/INFO]: [CHAT] Your Magic increased by 7
+[01:52:16] [Server thread/INFO]: [CHAT] Your Magic increased by 7
+[01:52:16] [Server thread/INFO]: [CHAT] Your Magic increased by 7
+[01:52:16] [Server thread/INFO]: [CHAT] Your Magic increased by 7
+[01:52:18] [Server thread/INFO]: [CHAT] Your Magic increased by 7
+[01:52:18] [Server thread/INFO]: [CHAT] Your Magic increased by 7
+[01:52:23] [Server thread/INFO]: [Player585: Set own game mode to Survival Mode]
+[01:52:23] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[01:52:25] [Server thread/INFO]: [CHAT] Your Magic increased by 7
+[01:52:25] [Server thread/INFO]: [CHAT] Your Magic increased by 7
+[01:52:26] [Server thread/INFO]: [CHAT] Your Magic increased by 7
+[01:52:28] [Server thread/INFO]: Saving and pausing game...
+[01:52:28] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:52:28] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:52:28] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:52:31] [Server thread/INFO]: [CHAT] Your Magic increased by 11
+[01:52:32] [Server thread/INFO]: [CHAT] Your Magic increased by 11
+[01:52:33] [Server thread/INFO]: [CHAT] Your Magic increased by 11
+[01:52:34] [Server thread/INFO]: [CHAT] Your Magic increased by 11
+[01:52:38] [Server thread/INFO]: Saving and pausing game...
+[01:52:38] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:52:38] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:52:38] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:52:40] [Server thread/INFO]: [CHAT] Your Magic increased by 9
+[01:52:41] [Server thread/INFO]: [CHAT] Your Magic increased by 9
+[01:52:41] [Server thread/INFO]: [CHAT] Your Magic increased by 9
+[01:52:41] [Server thread/INFO]: [CHAT] Your Magic increased by 9
+[01:52:42] [Server thread/INFO]: [CHAT] Your Magic increased by 9
+[01:52:42] [Server thread/INFO]: [CHAT] Your Magic increased by 9
+[01:52:42] [Server thread/INFO]: [CHAT] Your Magic increased by 9
+[01:52:43] [Server thread/INFO]: [CHAT] Your Magic increased by 9
+[01:52:43] [Server thread/INFO]: [CHAT] Your Magic increased by 9
+[01:52:43] [Server thread/INFO]: [CHAT] Your Magic increased by 9
+[01:52:43] [Server thread/INFO]: [CHAT] Your Magic increased by 9
+[01:52:43] [Server thread/INFO]: [CHAT] Your Magic increased by 9
+[01:52:44] [Server thread/INFO]: [CHAT] Your Magic increased by 9
+[01:52:44] [Server thread/INFO]: [CHAT] Your Magic increased by 9
+[01:52:44] [Server thread/INFO]: [CHAT] Your Magic increased by 9
+[01:52:47] [Server thread/INFO]: Saving and pausing game...
+[01:52:47] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:52:47] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:52:47] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:52:48] [Client thread/INFO]: Stopping!
+[01:52:48] [Client thread/INFO]: SoundSystem shutting down...
+[01:52:48] [Server thread/INFO]: Stopping server
+[01:52:48] [Server thread/INFO]: Saving players
+[01:52:48] [Server thread/INFO]: Saving worlds
+[01:52:48] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:52:48] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:52:48] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:52:48] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

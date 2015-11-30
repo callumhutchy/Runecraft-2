@@ -11,11 +11,13 @@ import net.minecraftforge.fml.relauncher.Side;
 import reference.ItemNames;
 import reference.Materials;
 import reference.Reference;
+import uk.co.callumhutchy.runecraft2.spells.Elements;
 
 public class Items {
 
+
 	// Runes
-	public static Item	airRune, armadylRune, astralRune, bloodRune, bodyRune,
+	public static Rune	airRune, armadylRune, astralRune, bloodRune, bodyRune,
 			chaosRune, cosmicRune, deathRune, dustRune, earthRune, fireRune,
 			lavaRune, lawRune, mindRune, mistRune, mudRune, natureRune,
 			smokeRune, soulRune, steamRune, waterRune;
@@ -84,6 +86,11 @@ public class Items {
 		soulRune = new Rune(ItemNames.SoulRune_Unlo);
 		steamRune = new Rune(ItemNames.SteamRune_Unlo);
 		waterRune = new Rune(ItemNames.WaterRune_Unlo);
+		
+		Elements.air.setRune(airRune);
+		Elements.water.setRune(waterRune);
+		Elements.earth.setRune(earthRune);
+		Elements.fire.setRune(fireRune);
 
 		runeEssence = new Rune(ItemNames.RuneEssence_Unlo);
 		pureEssence = new Rune(ItemNames.PureEssence_Unlo);
@@ -141,10 +148,10 @@ public class Items {
 		
 		// Staves
 		staff = new Staff(ItemNames.Staff_Unlo, 1, null, 0, false);
-		staffofair = new Staff(ItemNames.StaffOfAir_Unlo, 1, "air", 1, false);
-		staffofwater = new Staff(ItemNames.StaffOfWater_Unlo, 1, "water", 1, false);
-		staffofearth = new Staff(ItemNames.StaffOfEarth_Unlo, 1, "earth", 1, false);
-		staffoffire = new Staff(ItemNames.StaffOfFire_Unlo, 1, "fire", 1, false);
+		staffofair = new Staff(ItemNames.StaffOfAir_Unlo, 1, Elements.air, 1, false);
+		staffofwater = new Staff(ItemNames.StaffOfWater_Unlo, 1, Elements.water, 1, false);
+		staffofearth = new Staff(ItemNames.StaffOfEarth_Unlo, 1, Elements.earth, 1, false);
+		staffoffire = new Staff(ItemNames.StaffOfFire_Unlo, 1, Elements.fire, 1, false);
 
 		// Hatchets
 		bronzehatchet = new Hatchet(Materials.bronze, ItemNames.BronzeHatchet_Unlo);

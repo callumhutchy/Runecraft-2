@@ -8,6 +8,7 @@ import net.minecraft.util.ChatComponentText;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import reference.Element;
 import reference.ExpChart;
 import uk.co.callumhutchy.runecraft2.spells.tileentities.TileEntityAirStrike;
 import uk.co.callumhutchy.runecraft2.spells.tileentities.TileEntityEarthStrike;
@@ -16,13 +17,13 @@ import uk.co.callumhutchy.runecraft2.spells.tileentities.TileEntitySpellStrike;
 import uk.co.callumhutchy.runecraft2.spells.tileentities.TileEntityWaterStrike;
 
 public class TalismanStaff extends Staff {
-	public String	staffElement;
+	
 	public int		runesProvided;
 	
 
-	public TalismanStaff(String unlocalisedName, int maxSize, String type, int numberOfRunesProvided, boolean isTalismanStaff) {
-		super(unlocalisedName, maxSize, type, numberOfRunesProvided, isTalismanStaff);
-		staffElement = type;
+	public TalismanStaff(String unlocalisedName, int maxSize, Element element, int numberOfRunesProvided, boolean isTalismanStaff) {
+		super(unlocalisedName, maxSize, element, numberOfRunesProvided, isTalismanStaff);
+		
 		runesProvided = numberOfRunesProvided;
 	}
 
@@ -31,7 +32,7 @@ public class TalismanStaff extends Staff {
 		return true;
 	}
 
-	public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player) {
+	/*public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player) {
 		ExtendedPlayer props = ExtendedPlayer.get(player);
 		
 			System.out.println(props.currentSpell);
@@ -99,6 +100,6 @@ public class TalismanStaff extends Staff {
 		
 		
 		return item;
-	}
+	}*/
 
 }
