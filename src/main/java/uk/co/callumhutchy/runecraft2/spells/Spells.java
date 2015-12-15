@@ -93,7 +93,7 @@ public class Spells {
 		homeTeleport = new Spell(0, 0);
 
 		//Misc
-		earthPillar = new Spell(15, 12, addRuneToArray((Rune) Items.earthRune, addRuneToArray((Rune) Items.airRune, addRuneToArray((Rune) Items.waterRune, new ArrayList<Rune>()))), Elements.earth);
+		earthPillar = new Spell(15, 12, addRuneToArray((Rune) Items.earthRune, addRuneToArray((Rune) Items.earthRune, addRuneToArray((Rune) Items.earthRune, new ArrayList<Rune>()))), Elements.earth);
 		
 	}
 
